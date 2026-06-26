@@ -21,7 +21,7 @@ from bs4 import BeautifulSoup
 # ══════════════════════════════════════════════════════════════
 
 GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
-APPS_SCRIPT_URL = os.environ["GOOGLE_APPS_SCRIPT_URL"]
+APPS_SCRIPT_URL = os.environ.get("GOOGLE_APPS_SCRIPT_URL", "")
 
 HISTORY_FILE = "history.json"
 MAX_REPOS = 20
@@ -233,17 +233,40 @@ def fetch_readme(full_name):
 
 def write_to_doc(text):
     """通过 Google Apps Script Web App 写入 Google Doc"""
-    resp = requests.post(
-        APPS_SCRIPT_URL,
-        data=text.encode("utf-8"),
-        headers={"Content-Type": "text/plain; charset=utf-8"},
-        timeout=30,
-        allow_redirects=True,
-    )
-    if resp.status_code == 200:
-        print("  ✓ 已写入 Google Doc")
-    else:
-        print(f"  ⚠ Google Doc 写入失败: {resp.status_code} {resp.text[:200]}")
+    if not APPS_SCRIPT_URL:
+        print("  ⏭ 未配置 Apps Script URL，跳过 Google Doc 写入")
+        return
+    try:
+        resp = requests.post(
+            APPS_SCRIPT_URL,
+            data=text.encode("utf-8"),
+            headers={"Content-Type": "text/plain; charset=utf-8"},
+            timeout=30,
+            allow_redirects=True,
+        )
+        if resp.status_code == 200:
+            print("  ✓ 已写入 Google Doc")
+        else:
+            print(f"  ⚠ Google Doc 写入失败: {resp.status_code} {resp.text[:200]}")
+    except Exception as e:
+        print(f"  ⚠ Google Doc 写入异常: {e}")
+
+
+def write_to_repo(text, date_str):
+    """把日报存进仓库：reports/YYYY-MM-DD.md 归档 + latest.md 指向最新
+    这样 Orca 里的 Claude Code 拉一下仓库就能读到最新日报，不依赖 Google Drive"""
+    os.makedirs("reports", exist_ok=True)
+
+    # 当日归档
+    archive_path = f"reports/{date_str}.md"
+    with open(archive_path, "w", encoding="utf-8") as f:
+        f.write(text)
+
+    # latest.md —— 始终指向最新一期，Orca 固定读这个文件
+    with open("latest.md", "w", encoding="utf-8") as f:
+        f.write(text)
+
+    print(f"  ✓ 已写入仓库: {archive_path} + latest.md")
 
 
 # ══════════════════════════════════════════════════════════════
@@ -361,10 +384,11 @@ def main():
                 repo["topics"] = info.get("topics", [])
         time.sleep(0.5)
 
-    # ── Step 6: 生成报告 & 写入 Google Doc ──
-    print(f"\n📝 Step 6: 生成报告并写入 Google Doc...")
+    # ── Step 6: 生成报告 & 写入 Google Doc + 仓库 ──
+    print(f"\n📝 Step 6: 生成报告并写入...")
     report = format_report(sorted_repos, date_str)
     write_to_doc(report)
+    write_to_repo(report, date_str)
 
     # ── Step 7: 更新历史记录 ──
     for repo in sorted_repos:
