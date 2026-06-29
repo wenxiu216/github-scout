@@ -108,6 +108,13 @@ ROCKET_QUERIES = [
     {"q": "stars:>800", "days": 14, "label": "🚀 两周800+星"},
 ]
 
+# ── 推广类特殊处理 ──
+# 推广/增长工具星标涨得慢，容易被 AI/开发类大项目挤出 Top N。
+# 给它单独降门槛 + 保底配额，确保每天都能看到推广向的新项目。
+PROMO_GROUP = "📈 增长/推广/运营"
+PROMO_MIN_STARS = 10   # 推广类只要 ≥10 星（其他类 ≥30）
+PROMO_QUOTA = 5        # 每天最少保 5 个推广类名额，不管星标高低
+
 
 # ══════════════════════════════════════════════════════════════
 # 工具函数
@@ -350,8 +357,10 @@ def main():
     print("\n🔍 Step 3: 分方向关键词搜索...")
     for group_name, queries in SEARCH_GROUPS.items():
         print(f"   {group_name}")
+        # 推广类单独降低 star 门槛
+        group_min_stars = PROMO_MIN_STARS if group_name == PROMO_GROUP else MIN_STARS
         for q in queries:
-            results = search_github(q)
+            results = search_github(q, min_stars=group_min_stars)
             for repo in results:
                 fn = repo["full_name"]
                 if fn not in history and fn not in candidates:
@@ -361,12 +370,42 @@ def main():
 
     print(f"\n📦 去重后候选项目: {len(candidates)} 个")
 
-    # ── Step 4: 排序取 Top N ──
-    sorted_repos = sorted(
+    # ── Step 4: 选取 Top N（推广类保底配额）──
+    all_sorted = sorted(
         candidates.values(),
         key=lambda x: x.get("stargazers_count", 0),
         reverse=True,
-    )[:MAX_REPOS]
+    )
+
+    # 推广类候选（按 source 前缀识别），单独按星标排序
+    promo_repos = [
+        r for r in all_sorted
+        if str(r.get("source", "")).startswith(PROMO_GROUP)
+    ]
+
+    # 先锁定推广保底名额
+    reserved = promo_repos[:PROMO_QUOTA]
+    reserved_names = {r["full_name"] for r in reserved}
+
+    # 剩余名额用全体（含未入选的推广项）按星标补满
+    remaining_slots = MAX_REPOS - len(reserved)
+    fillers = [
+        r for r in all_sorted
+        if r["full_name"] not in reserved_names
+    ][:remaining_slots]
+
+    # 合并后整体按星标重排（保底项混入正常排序，阅读体验一致）
+    sorted_repos = sorted(
+        reserved + fillers,
+        key=lambda x: x.get("stargazers_count", 0),
+        reverse=True,
+    )
+
+    promo_in_output = sum(
+        1 for r in sorted_repos
+        if str(r.get("source", "")).startswith(PROMO_GROUP)
+    )
+    print(f"   推广类保底: {len(reserved)} 个锁定 / 输出共含 {promo_in_output} 个推广项")
 
     if not sorted_repos:
         print("⚠ 今天没有发现新项目，跳过")
