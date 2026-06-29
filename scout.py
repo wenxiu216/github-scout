@@ -10,10 +10,15 @@ import json
 import time
 import re
 import base64
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import requests
 from bs4 import BeautifulSoup
+
+
+def utcnow():
+    """替代已弃用的 datetime.utcnow()（Python 3.12+）"""
+    return datetime.now(timezone.utc)
 
 
 # ══════════════════════════════════════════════════════════════
@@ -115,6 +120,36 @@ PROMO_GROUP = "📈 增长/推广/运营"
 PROMO_MIN_STARS = 10   # 推广类只要 ≥10 星（其他类 ≥30）
 PROMO_QUOTA = 5        # 每天最少保 5 个推广类名额，不管星标高低
 
+# ── 新老结合：活跃老仓库搜索 ──
+# Step 3 除了搜"最近新建"(created)，再搜一轮"老但最近活跃"(pushed)。
+# 活跃轮星标门槛抬高，避免被老牌大项目刷屏。
+ACTIVE_DAYS = 14         # 最近 14 天内有 push 视为活跃
+ACTIVE_MIN_STARS = 150   # 活跃老仓库门槛更高（新仓库 30 / 推广 10）
+ACTIVE_PROMO_MIN_STARS = 50  # 活跃推广类适当放低
+
+# ── 风险词标记 ──
+# 命中这些词的项目在日报里打 ⚠️风险 前缀，便于一眼识别、归入排除区。
+# 不阻止收录（仍需人判断），只做预警标记。
+RISK_KEYWORDS = [
+    "exploit", "0-day", "0day", "poc", "vulnerability research",
+    "trading bot", "trading agent", "trade bot", "polymarket", "copy-trader", "copy trader",
+    "play-to-earn", "play to earn", "cash out", "$plum", "gasless",
+    "bypass", "unfilter", "绕过", "绕开", "破解", "cookie", "薅羊毛", "白嫖",
+    "交易机器人", "自动交易", "量化交易",
+]
+
+
+def risk_flags(repo):
+    """检查项目是否命中风险词，返回命中的词列表（空=无风险信号）"""
+    text = " ".join([
+        str(repo.get("full_name", "")),
+        str(repo.get("description") or ""),
+        " ".join(repo.get("topics", []) or []),
+        str(repo.get("readme_excerpt", "")),
+    ]).lower()
+    hits = [kw for kw in RISK_KEYWORDS if kw.lower() in text]
+    return hits
+
 
 # ══════════════════════════════════════════════════════════════
 # 工具函数
@@ -144,9 +179,14 @@ def gh_get(url, params=None):
     return resp
 
 
-def search_github(query_str, days=SEARCH_DAYS, min_stars=MIN_STARS, per_page=8):
-    date_from = (datetime.utcnow() - timedelta(days=days)).strftime("%Y-%m-%d")
-    full_q = f"{query_str} created:>{date_from} stars:>{min_stars}"
+def search_github(query_str, days=SEARCH_DAYS, min_stars=MIN_STARS, per_page=8, mode="new"):
+    """搜索 GitHub 仓库。
+    mode='new'    → 最近 days 天内**新建**的仓库（created:>）
+    mode='active' → 任意时间创建、最近 days 天内**有更新**的活跃仓库（pushed:>）
+    """
+    date_from = (utcnow() - timedelta(days=days)).strftime("%Y-%m-%d")
+    time_filter = f"created:>{date_from}" if mode == "new" else f"pushed:>{date_from}"
+    full_q = f"{query_str} {time_filter} stars:>{min_stars}"
     params = {
         "q": full_q,
         "sort": "stars",
@@ -157,7 +197,7 @@ def search_github(query_str, days=SEARCH_DAYS, min_stars=MIN_STARS, per_page=8):
     if resp.status_code == 200:
         return resp.json().get("items", [])
     else:
-        print(f"  ⚠ 搜索失败 ({resp.status_code}): {query_str[:40]}")
+        print(f"  ⚠ 搜索失败 ({resp.status_code}): [{mode}] {query_str[:40]}")
         return []
 
 
@@ -299,7 +339,12 @@ def format_report(repos, date_str):
         readme = repo.get("readme_excerpt", "")
 
         lines.append(f"{'━' * 55}")
-        lines.append(f"#{i}  {fn}")
+        risk = repo.get("risk_hits", [])
+        if risk:
+            lines.append(f"#{i}  ⚠️风险  {fn}")
+            lines.append(f"    ⚠️ 命中风险词: {', '.join(risk[:6])} —— 默认归排除区，需人工确认")
+        else:
+            lines.append(f"#{i}  {fn}")
         lines.append(f"    ⭐ {stars} stars  |  🍴 {forks} forks  |  💻 {lang}  |  📅 {created}")
         lines.append(f"    🔗 https://github.com/{fn}")
         lines.append(f"    📡 来源: {source}")
@@ -321,8 +366,8 @@ def format_report(repos, date_str):
 
 def main():
     print("🚀 NT Scout 启动")
-    print(f"   时间: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
-    date_str = datetime.utcnow().strftime("%Y-%m-%d")
+    print(f"   时间: {utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
+    date_str = utcnow().strftime("%Y-%m-%d")
 
     history = load_history()
     print(f"   历史记录: {len(history)} 个已分析项目")
@@ -332,6 +377,8 @@ def main():
     # ── Step 1: GitHub Trending ──
     print("\n📈 Step 1: 抓取 GitHub Trending...")
     trending = scrape_trending()
+    if not trending:
+        print("  ⚠️⚠️ Trending 返回 0 个！GitHub 可能改了页面结构，scrape_trending 需检查。")
     for t in trending:
         fn = t["full_name"]
         if fn in history or fn in candidates:
@@ -353,20 +400,28 @@ def main():
                 candidates[fn] = repo
         time.sleep(1)
 
-    # ── Step 3: 分方向关键词搜索 ──
-    print("\n🔍 Step 3: 分方向关键词搜索...")
+    # ── Step 3: 分方向关键词搜索（新建 + 活跃老仓库 两路）──
+    print("\n🔍 Step 3: 分方向关键词搜索（新建 + 活跃）...")
     for group_name, queries in SEARCH_GROUPS.items():
         print(f"   {group_name}")
-        # 推广类单独降低 star 门槛
-        group_min_stars = PROMO_MIN_STARS if group_name == PROMO_GROUP else MIN_STARS
+        is_promo = group_name == PROMO_GROUP
+        new_min = PROMO_MIN_STARS if is_promo else MIN_STARS
+        active_min = ACTIVE_PROMO_MIN_STARS if is_promo else ACTIVE_MIN_STARS
         for q in queries:
-            results = search_github(q, min_stars=group_min_stars)
-            for repo in results:
+            # ① 最近新建的仓库
+            for repo in search_github(q, min_stars=new_min, mode="new"):
                 fn = repo["full_name"]
                 if fn not in history and fn not in candidates:
-                    repo["source"] = f"{group_name} | {q[:30]}"
+                    repo["source"] = f"{group_name} | 新建 | {q[:24]}"
                     candidates[fn] = repo
-            time.sleep(1)
+            time.sleep(2)  # 搜索 API 限速 30/分钟 → 间隔 ≥2s
+            # ② 老但最近活跃的仓库
+            for repo in search_github(q, days=ACTIVE_DAYS, min_stars=active_min, mode="active"):
+                fn = repo["full_name"]
+                if fn not in history and fn not in candidates:
+                    repo["source"] = f"{group_name} | 活跃 | {q[:24]}"
+                    candidates[fn] = repo
+            time.sleep(2)
 
     print(f"\n📦 去重后候选项目: {len(candidates)} 个")
 
@@ -421,6 +476,10 @@ def main():
             info = fetch_repo_info(fn)
             if info:
                 repo["topics"] = info.get("topics", [])
+        # 风险词扫描（含 README）
+        repo["risk_hits"] = risk_flags(repo)
+        if repo["risk_hits"]:
+            print(f"     ⚠️ 风险信号: {', '.join(repo['risk_hits'][:5])}")
         time.sleep(0.5)
 
     # ── Step 6: 生成报告 & 写入 Google Doc + 仓库 ──
