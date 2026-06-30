@@ -151,6 +151,41 @@ def risk_flags(repo):
     return hits
 
 
+# ── README 乱码/污染检测 ──
+# 防止 Some-Many-Books 这类项目：README 是几十万字符的生僻字乱码/盗版书单，
+# 会污染风险扫描、拖慢抓取、错配分类。四条件同时满足才判乱码，避免误杀正常长文档。
+README_GARBAGE_MIN_CHARS = 50000   # 必须超长（正常 README 极少 >50KB）
+README_GARBAGE_MAX_ASCII = 0.40    # ASCII 占比 <40%（正常技术文档 ASCII 很高）
+README_GARBAGE_MAX_WS = 0.05       # 空白占比 <5%（正常 markdown 有大量换行结构）
+README_GARBAGE_MIN_UNIQ = 0.50     # CJK 独特字符比 >50%（乱码字字不同；自然语言常用字反复）
+README_GARBAGE_SENTINEL = "(README 疑似乱码/污染数据，已跳过"
+
+
+def _cjk_unique_ratio(text):
+    """CJK 字符里不重复字符的占比。乱码≈1（字字不同），自然语言低（常用字反复出现）。"""
+    cjk = [c for c in text if "\u4e00" <= c <= "\u9fff" or "\u3400" <= c <= "\u4dbf"]
+    if len(cjk) < 200:
+        return 0.0
+    return len(set(cjk)) / len(cjk)
+
+
+def is_garbage_readme(text):
+    """四条件同时满足才判乱码，返回 (是否乱码, 说明字符串)。保守，宁漏勿误杀。"""
+    n = len(text)
+    if n < README_GARBAGE_MIN_CHARS:
+        return False, ""
+    ascii_r = sum(1 for c in text if ord(c) < 128) / n
+    ws_r = sum(1 for c in text if c.isspace()) / n
+    uniq = _cjk_unique_ratio(text)
+    is_garbage = (
+        ascii_r < README_GARBAGE_MAX_ASCII
+        and ws_r < README_GARBAGE_MAX_WS
+        and uniq > README_GARBAGE_MIN_UNIQ
+    )
+    detail = f"长度{n} ASCII{ascii_r:.0%} 空白{ws_r:.0%} 独特{uniq:.0%}"
+    return is_garbage, detail
+
+
 # ══════════════════════════════════════════════════════════════
 # 工具函数
 # ══════════════════════════════════════════════════════════════
@@ -269,6 +304,11 @@ def fetch_readme(full_name):
         raw = re.sub(r"<[^>]+>", "", raw)
         raw = re.sub(r"\[([^\]]*)\]\([^\)]*\)", r"\1", raw)
         raw = re.sub(r"\n{3,}", "\n\n", raw)
+        # 乱码/污染检测（在截断前，对完整内容判断）
+        garbage, detail = is_garbage_readme(raw)
+        if garbage:
+            print(f"     🗑️ README 疑似乱码/污染，已跳过 — {detail}")
+            return f"{README_GARBAGE_SENTINEL} — {detail})"
         return raw[:README_MAX_CHARS].strip()
     except Exception:
         return "(README 解析失败)"
@@ -478,6 +518,9 @@ def main():
                 repo["topics"] = info.get("topics", [])
         # 风险词扫描（含 README）
         repo["risk_hits"] = risk_flags(repo)
+        # README 乱码也作为风险信号，归入排除复核
+        if str(repo.get("readme_excerpt", "")).startswith(README_GARBAGE_SENTINEL):
+            repo["risk_hits"] = ["README乱码/污染"] + repo["risk_hits"]
         if repo["risk_hits"]:
             print(f"     ⚠️ 风险信号: {', '.join(repo['risk_hits'][:5])}")
         time.sleep(0.5)
