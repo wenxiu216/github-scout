@@ -16,11 +16,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def utcnow():
-    """替代已弃用的 datetime.utcnow()（Python 3.12+）"""
-    return datetime.now(timezone.utc)
-
-
 # ══════════════════════════════════════════════════════════════
 # 配置
 # ══════════════════════════════════════════════════════════════
@@ -219,7 +214,7 @@ def search_github(query_str, days=SEARCH_DAYS, min_stars=MIN_STARS, per_page=8, 
     mode='new'    → 最近 days 天内**新建**的仓库（created:>）
     mode='active' → 任意时间创建、最近 days 天内**有更新**的活跃仓库（pushed:>）
     """
-    date_from = (utcnow() - timedelta(days=days)).strftime("%Y-%m-%d")
+    date_from = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d")
     time_filter = f"created:>{date_from}" if mode == "new" else f"pushed:>{date_from}"
     full_q = f"{query_str} {time_filter} stars:>{min_stars}"
     params = {
@@ -406,8 +401,8 @@ def format_report(repos, date_str):
 
 def main():
     print("🚀 NT Scout 启动")
-    print(f"   时间: {utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
-    date_str = utcnow().strftime("%Y-%m-%d")
+    print(f"   时间: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
+    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     history = load_history()
     print(f"   历史记录: {len(history)} 个已分析项目")
