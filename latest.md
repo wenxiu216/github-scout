@@ -1,251 +1,390 @@
-📊 开源日报 — 2026-10-14
-共发现 5 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-10-15
+共发现 8 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  xtool-org/xtool
-    ⭐ 9709 stars  |  🍴 410 forks  |  💻 Swift  |  📅 2024-11-17
-    🔗 https://github.com/xtool-org/xtool
+#1  rust-lang/rust
+    ⭐ 120146 stars  |  🍴 18707 forks  |  💻 Rust  |  📅 2010-06-16
+    🔗 https://github.com/rust-lang/rust
     📡 来源: trending-daily
-    🏷️ ios, linux, swift, swift-package-manager, windows, xcode
-    📝 Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.
+    🏷️ compiler, language, rust
+    📝 Empowering everyone to build reliable and efficient software.
 
     README 摘要:
-    # xtool
+    [Website][Rust] | [Getting started] | [Learn] | [Documentation] | [Contributing]
     
-    Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, and macOS.
+    This is the main source code repository for [Rust]. It contains the compiler,
+    standard library, and documentation.
     
-    ## Overview
+    [Rust]: https://www.rust-lang.org/
+    [Getting Started]: https://www.rust-lang.org/learn/get-started
+    [Learn]: https://www.rust-lang.org/learn
+    [Documentation]: https://www.rust-lang.org/learn#learn-use
+    [Contributing]: CONTRIBUTING.md
     
-    xtool is a cross-platform (Linux/WSL/macOS) tool that replicates Xcode functionality with open standards.
+    ## Why Rust?
     
-    ✅ Build a SwiftPM package into an iOS app
+    - **Performance:** Fast and memory-efficient, suitable for critical services, embedded devices, and easily integrated with other languages.
     
-    ✅ Sign and install iOS apps
+    - **Reliability:** Our rich type system and ownership model ensure memory and thread safety, reducing bugs at compile-time.
     
-    ✅ Interact with Apple Developer Services programmatically
+    - **Productivity:** Comprehensive documentation, a compiler committed to providing great diagnostics, and advanced tooling including package manager and build tool ([Cargo]), auto-formatter ([rustfmt]), linter ([Clippy]) and editor support ([rust-analyzer]).
     
-    ## Getting Started
+    [Cargo]: https://github.com/rust-lang/cargo
+    [rustfmt]: https://github.com/rust-lang/rustfmt
+    [Clippy]: https://github.com/rust-lang/rust-clippy
+    [rust-analyzer]: https://github.com/rust-lang/rust-analyzer
     
-    1. Follow the guide to install `xtool`
-        - Installation (Linux/Windows)
-        - Installation (macOS)
-    2. Create and run your first xtool-powered app by following the tutorial!
+    ## Quick Start
     
-    ## Examples
+    Read ["Installation"] from [The Book].
     
-    ### Screenshot
+    ["Installation"]: https://doc.rust-lang.org/book/ch01-01-installation.html
+    [The Book]: https://doc.rust-lang.org/book/index.html
     
-    ### Command line interface
+    ## Installing from Source
     
-    ```bash
-    $ xtool --help
-    OVERVIEW: Cross-platform Xcode replacement
+    If you really want to install from source (though this is not recommended), see
+    INSTALL.md.
     
-    USAGE: xtool 
+    ## Getting Help
     
-    OPTIONS:
-      -h, --help              Show help information.
+    See https://www.rust-lang.org/community for a list of chat platforms and forums.
     
-    CONFIGURATION SUBCOMMANDS:
-      setup                   Set up xtool for iOS development
-      auth                    Manage Apple Developer Services authentication
-      sdk                     Manage the Darwin Swift SDK
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  storytold/designcraft
-    ⭐ 3752 stars  |  🍴 2527 forks  |  💻 Rust  |  📅 2026-10-01
-    🔗 https://github.com/storytold/designcraft
-    📡 来源: 🚀 两周800+星
-    🏷️ art, layout, print, rust
-    📝 DesignCraft: An open-source page and layout design editor written by scratch in pure Rust
+#2  ifixai-ai/iFixAi
+    ⭐ 27737 stars  |  🍴 1516 forks  |  💻 Python  |  📅 2026-04-27
+    🔗 https://github.com/ifixai-ai/iFixAi
+    📡 来源: trending-daily
+    🏷️ agent-evaluation, ai, ai-alignment, ai-evaluation, ai-governance, ai-safety, cli, diagnostic-tool, eu-ai-act, hallucination-detection
+    📝 Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.
 
     README 摘要:
-    DesignCraft
+    English · 简体中文 · 日本語 · 한국어
     
-      Page layout and publishing; an open-source, clean-room reimplementation of Adobe InDesign, rebuilt in pure Rust.
+    Catch your agent's mistakes and blind spots before the shit hits the fan.
     
-      A fast, open-source, clean-room take on the Adobe InDesign workflow. It runs natively on macOS,
-      Windows and Linux, and in the browser via WebAssembly.
-      By the ArtCraft team.
-    
+      
       
       
       
       
     
       
-    
-      DesignCraft on getartcraft.com ·
-      ArtCraft ·
-      All Crafting Apps
+        
+          
+          
+          
+        
+      
     
       
-      Quarterly, Spring Issue: threaded three-column body text, a wrapped pull quote and parent-page folios, all set by DesignCraft's own paragraph composer.
+      
     
-    > [!NOTE]
-    > **ArtCraft is a community of artists from all walks of life.** Digital, generative, music,
-    > games &mdash; if you make things, you're one of us. **Come say hi on Discord.**
+      Quick start •
+      Three ways to run •
+      Test your agent •
+      Scoring •
+      Audit recorded actions •
+      Docs •
+      Contributing
     
-      The sample magazine ·
-      Why DesignCraft ·
-      Quick start ·
-      Web ·
-      Architecture ·
-      Downloads ·
-      The Crafting Apps ·
-      License and credits
-    
-    ## The sample magazine
-    
-    Every page below was laid out by DesignCraft from code (`crates/engine/src/sample.rs`) and exported
-    by its own renderer. Try it yourself with `File → New → Sample Document`, or start the app with
-    `--sample`.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  Arekejoker/qwen21-nsfw-pose-skill
-    ⭐ 984 stars  |  🍴 221 forks  |  💻 Python  |  📅 2026-10-13
-    🔗 https://github.com/Arekejoker/qwen21-nsfw-pose-skill
-    📡 来源: 🚀 5天300+星
-    🏷️ agent-skill, comfyui, image-generation, openclaw, pose-control, qwen-image
-    📝 Qwen-Image 2.1 NSFW/姿势出图 skill：作者级提示词配方 + NSFW LoRA + 136 姿势 VNCCS 人偶控制；适用 Claude Code / Codex / Cursor / OpenClaw
-
-    README 摘要:
-    # qwen21-nsfw-pose
-    
-    **Qwen-Image 2.1 本地 NSFW / 姿势出图完整配方** — 作者级提示词结构 + NSFW LoRA + 136 个 3D 姿势库 + VNCCS 人偶精确姿势控制。
-    
-    基于 ComfyUI + `qwen_image_2.1_int8_convrot` 底模（与 Civitai 作者同款底模），复刻并验证过 Civitai 作者样图（2026-10-12）。
-    
-    - 适用：Claude Code / Codex / Cursor / OpenClaw（agent 技能）+ 人类手动使用
-    - 内容：可跟跑的作者案例、强制配方、姿势大胆度阶梯（L0–L3）、完整依赖与安装指南
+      
+      
+      
+      
+      
+      
+      
     
     ---
     
-    ## 效果展示
-    
-    ### 本配方输出：同一海边场景的三级对照（L0 → L1 → L2）
-    
-    | L0 · 全着装，无 LoRA（提示词即全部） | L1 · 湿身泳装 + LoRA@1.0 | L2 · 极低机位 + 湿身蹲姿 + LoRA@1.0 |
-    | --- | --- | --- |
-    |  |  |  |
-    
-    三张图同场景递进：L0 只有提示词；L1 加 LoRA + 显式皮肤/水珠描写；L2 再加低机位与开合姿态。**LoRA 负责质感，提示词负责信息密度，机位负责大胆度。**
-    
-    ### NSFW 效果（⚠️ 以下图片包含裸露内容）
-    
-    **作者原图**（Civitai showcase，本配方复刻的目标）：
-    
-    | 作者 · 淋浴（tawsLoRa） | 作者 · 按摩（tawsLoRa） | 作者 · 自拍（TheseAlpacas） |
-    | --- | --- | --- |
-    |  |  |  |
-    
-    用 §「快速开始」的命令可复刻淋浴那张（复刻输出已验证与作者原图同场景同构图，见 `downloads/samples/phase5_meta.json` 与本文快速开始一节）。
-    
-    ### 3D 人偶精确姿势（Route ④，136 姿势库）
-    
-    默认人物图 `references/src_standing.png`；姿势 = 骨骼旋转 JSON（MakeHuman 网格 + three.js 渲染），
-    换姿势且保身份。姿势库来源：HuggingFace 4 个公开仓库（`Totemistyk/General_Poses`、
-    `Totemistyk/Ballet_PoseStudio`、`MIUProject/VNCCS_PoseLibrary_Main`、
-    `MIUProject/MySuperPoseRepo`）+ 55 个手工精选，共 **136 个**。
-    
-    ---
-    
+    ## What it is
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  opengeos/RustGIS
-    ⭐ 848 stars  |  🍴 115 forks  |  💻 Rust  |  📅 2026-10-10
-    🔗 https://github.com/opengeos/RustGIS
-    📡 来源: 🚀 5天300+星
-    🏷️ geospatial, gis, remote-sensing, rust, rust-lang
-    📝 A fast, free and open-source GIS in pure Rust.
+#3  ntdevlabs/tiny11builder
+    ⭐ 20341 stars  |  🍴 1559 forks  |  💻 C#  |  📅 2023-02-24
+    🔗 https://github.com/ntdevlabs/tiny11builder
+    📡 来源: trending-daily
+    📝 WinUI app for building smaller, customized Windows 11 images.
 
     README 摘要:
-    RustGIS
+    # Tiny11 Builder
     
-      A fast, free and open-source GIS in pure Rust for mapping, analyzing and sharing geospatial data.
-      Native on Windows, macOS and Linux, and in your web browser. Your data stays on your machine
-      unless you send it to an AI model you choose, and every action is a command you can script.
+    Build a smaller Windows 11 ISO with a native WinUI app. Download an official
+    Windows image or use your own, choose what to remove, and create your ISO.
     
-      
-      
-      
-      
-      
-      
+    ## Download
     
-      
-      
-      
+    **Get the latest version**
     
-      
+    Choose **x64** for Intel/AMD PCs or **ARM64** for Windows on ARM. Extract the
+    entire ZIP and open `Tiny11Builder.exe`. Administrator approval is required.
     
-    ## Why RustGIS
+    ## Choose your build
     
-    - **Fast and small.** One native program, drawn on the GPU, with no runtime to install and no
-      server to run.
-    - **Runs everywhere.** The same app on Windows, macOS and Linux, and compiled to WebAssembly at
-      web.rustgis.app with nothing to install.
-    - **Local and private.** Your files are read and written on your machine, and nothing is uploaded
-      on its own. The network is used only when you ask for it: web basemaps, plugins, the GeoLibre
-      tools and the AI model you pick, which receives your questions and the data it reads to answer
-      them.
-    - **Everything is a command.** Every button in the ribbon is a command with an id. Script it from
-      `rustgis-cli`, chain it in notebooks and models, or ask the AI Assistant to run it for you.
-    - **Familiar.** A ribbon laid out in the order of the work (Home, Data, Style, Edit, Analyze,
-      View, Publish), Layers and Browser panes, an attribute table, and undo for every change.
-    - **Extensible.** Over 1,000 GeoLibre and Whitebox tools for terrain, hydrology, LiDAR and remote sensing, and
-      sandboxed WebAssembly plugins that add commands, tools and ribbon tabs.
+    | Mode | What it does |
+    | --- | --- |
+    | Tiny11 | Removes bundled apps and unwanted features while keeping updates, Defender and recovery. |
+    | Tiny11 Core | Trims further by removing servicing and recovery support and disabling Defender. |
+    | Custom | Choose individual apps, components, features and services to remove or keep. |
     
-    ## A tour
+    Turbo mode speeds up image processing. Interrupted builds can resume from saved
+    progress after the image is committed or compressed. Core and component-store
+    removals automatically use the legacy Windows installer.
     
-    Symbology and tables. Selecting a layer opens its contextual tabs: symbology, effects, labeling and data. Selection is synced between the map and the attribute table.
-    AI Assistant. Ask about your data or tell the map what to do. The assistant runs RustGIS commands for you, and each change can be undone.
+    **Core cannot be updated or serviced. Protected Custom removals can break
+    Windows. Test your ISO in a VM before installing it.**
+    
+    ## Video
+    
+    **Watch on YouTube**
+    
+    ## Screenshots
+    
+    ### Welcome
+    
+    ### Components
+    
+    ### Build settings
+    
+    ## More information
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  jwuthri-cloud/Tracely-ai
-    ⭐ 761 stars  |  🍴 107 forks  |  💻 Python  |  📅 2026-10-11
-    🔗 https://github.com/jwuthri-cloud/Tracely-ai
+#4  HeyPuter/everything
+    ⭐ 805 stars  |  🍴 118 forks  |  💻 JavaScript  |  📅 2026-10-13
+    🔗 https://github.com/HeyPuter/everything
+    📡 来源: 🚀 5天300+星
+    🏷️ adobe, cad, office, photoshop, saas, spreadsheet
+    📝 We're rebuilding and open-sourcing the world’s software from scratch.
+
+    README 摘要:
+    The world’s software. Rebuilt, open-sourced, and MIT-licensed.
+    
+    The Everything Project is an effort to rebuild and open-source the world’s software from scratch. From Office to Slack and Photoshop to AutoCAD, we are recreating free, open-source alternatives to all proprietary software. This is a mono-repository containing all the applications and tools developed under the project.
+    
+    Office · Collaboration · Creative Tools · Engineering · Productivity · Finance · Business · Developer Tools · Games
+    
+    ## Getting started
+    
+    Requires Node.js 22.12 or newer.
+    
+    ```sh
+    git clone https://github.com/HeyPuter/everything.git
+    cd everything/src/[app-name]
+    npm install
+    npm run dev
+    ```
+    
+    ## Office
+    
+    ApplicationAlternative toLinks
+     &nbsp; SpreadsheetMicrosoft Excel, Google Sheets, Apple NumbersTry it&nbsp;|&nbsp;Source
+     &nbsp; DocumentsMicrosoft Word, Google Docs, Apple PagesTry it&nbsp;|&nbsp;Source
+     &nbsp; PresentationMicrosoft PowerPoint, Google Slides, Apple KeynoteTry it&nbsp;|&nbsp;Source
+     &nbsp; WhiteboardMiro, Microsoft Whiteboard, FigJamTry it&nbsp;|&nbsp;Source
+     &nbsp; PDFAdobe Acrobat, PDF ExpertTry it&nbsp;|&nbsp;Source
+     &nbsp; NotesMicrosoft OneNote, Evernote, Apple NotesTry it&nbsp;|&nbsp;Source
+     &nbsp; RecordsAirtable, Microsoft Access, BaserowTry it&nbsp;|&nbsp;Source
+    
+    ## Collaboration
+    
+    ApplicationAlternative toLinks
+     &nbsp; MeetingsZoom, Google Meet, Microsoft TeamsTry it&nbsp;|&nbsp;Source
+     &nbsp; TeamchatSlack, Microsoft Teams, Google ChatTry it&nbsp;|&nbsp;Source
+     &nbsp; EmailGmail, Microsoft Outlook, Apple MailTry it&nbsp;|&nbsp;Source
+     &nbsp; ContactsGoogle Contacts, Apple ContactsTry it&nbsp;|&nbsp;Source
+     &nbsp; CalendarGoogle Calendar, Apple Calendar, Outlook CalendarTry it&nbsp;|&nbsp;Source
+     &nbsp; SignaturesDocuSign, Adobe Acrobat Sign, Dropbox SignTry it&nbsp;|&nbsp;Source
+    
+    ## Creative Tools
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  CoolkHz/gptibo
+    ⭐ 769 stars  |  🍴 459 forks  |  💻 TypeScript  |  📅 2026-10-13
+    🔗 https://github.com/CoolkHz/gptibo
+    📡 来源: 🚀 5天300+星
+    📝 Self-hosted GPTibo storefront, admin and Go backend — sanitized MIT source
+
+    README 摘要:
+    # GPTibo
+    
+    **可自托管的数字商品商城，包含用户前台、管理后台与代理工作台。**
+    
+    MIT License · 快速开始 · 后端文档 · 安全说明
+    
+    GPTibo 将商品展示、下单支付、订单交付、售后处理和代理商店管理整合在同一套系统中。前端使用 React 与 TypeScript，后端提供 Go + PostgreSQL 和 Cloudflare Workers + D1 两种实现，便于按部署环境选择和二次开发。
+    
+    原站点已停止运营，项目现以 MIT 许可证开放源码。支付与供应商接入使用匿名适配器，需要配置自己的服务后使用。
+    
+    ## 功能
+    
+    | 模块 | 能力 |
+    | --- | --- |
+    | 用户商城 | 商品与套餐展示、下单、支付状态、订单查询、售后申请、中英文界面、深浅色主题 |
+    | 管理后台 | 商品定价、订单与客户管理、退款处理、代理管理、结算与通知配置 |
+    | 代理工作台 | 独立商店、品牌设置、自定义域名、商品管理、订单统计与下级代理管理 |
+    | 业务后端 | 身份验证、支付回调、采购适配、异步任务、邮件通知与交易状态管理 |
+    | 开发与部署 | 数据库迁移、Docker Compose、自动化测试、GitHub Actions 与源码安全扫描 |
+    
+    ## 技术栈
+    
+    | 层级 | 技术 |
+    | --- | --- |
+    | 前端 | React 19、TypeScript、Vite、Tailwind CSS |
+    | Go 后端 | Go、Gin、PostgreSQL，API 与业务 Worker 分进程运行 |
+    | Cloudflare 后端 | Workers、D1、Wrangler |
+    | 邮件 | React Email |
+    | 验证 | Node.js Test Runner、Go Test、Gitleaks |
+    
+    两套后端均服务于商城。当前公开版本包含商城侧供应商适配器，**不包含独立供货平台及供应商执行系统**。
+    
+    ## 快速开始
+    
+    ### 环境准备
+    
+    - Node.js 24、npm、Git、Python 3。
+    - 使用 Go 后端时，准备 Docker Compose；原生开发需要 Go 1.26+ 和 PostgreSQL。
+    - 使用 Cloudflare 后端时，通过项目内的 Wrangler 运行本地环境。
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#6  h0m3us3r/w1700k-sdr
+    ⭐ 758 stars  |  🍴 75 forks  |  💻 C  |  📅 2026-10-11
+    🔗 https://github.com/h0m3us3r/w1700k-sdr
     📡 来源: 🚀 5天300+星
     📝 无描述
 
     README 摘要:
-    # Tracely
+    # W1700K SDR
     
-    ### Production failures become regression tests.
+    Turns a Gemtek W1700K Wi-Fi 7 router into a wideband software-defined receiver.
+    The router's MediaTek MT7996 radio captures raw 14-bit IQ at up to 320 Msps,
+    its Airoha AN7581 SoC streams it over 10 GbE, and a Linux host shows it as a
+    live spectrum and waterfall in the browser, with the receiver's controls next
+    to it.
     
-    **Trace-native CI/CD for AI agents.** Tracely grades every agent trace as it lands, clusters the
-    failures into issues, freezes the bad runs into hermetic replayable cases, blocks the pull request
-    that would ship them again — and tells you the moment any of it happens.
+    *The whole 2.4 GHz band at 320 Msps, live, with the decimation's roll-off
+    corrected in the stream ("flatten"): a 262,144-point FFT of every sample, 100
+    spectra a second (this recording runs at 50 frames a second).*
     
-    production trace → failure detection → regression test → CI gate → alert
+    The MT7996 runs only our own firmware: a ROM patch, WM and WA built from this
+    repository, with no MediaTek code. It brings the radio up from a cold power-on
+    by itself, from MediaTek's initialisation and calibration decoded register by
+    register against a trace of MediaTek's own firmware, and takes its commands
+    (LO, sample rate, capture, stream, gain, filter) from the host. See
+    docs/architecture.md and docs/roadmap.md.
     
-    **Website** · **Docs** · **Product guide** · **Agent skill** · **Guided tour** · **2-min demo** · **Design dossier**
+    ## What it does
     
-         
+    | | |
+    | --- | --- |
+    | Sample rates | 40, 80, 160 or 320 Msps of 14-bit complex IQ on every band, independent of the LO and the filter; on band 2 also 640/2 (every other sample of 640 Msps: flat to ±155 MHz, but signals 160–320 MHz away fold in) |
+    | Bands | 2.4 GHz (MT7976), 5 GHz and 6 GHz (two MT7977s); switching bands is a register write inside a running stream |
+    | Tuning | No channels: the LO is any Hz a band's synthesizer locks at (unit A: 2.081–2.748, 4.647–7.509 and 4.707–7.576 GHz), on its grid of 2.98 Hz (2.4 GHz) or 11.9–14.3 Hz steps; retuned mid-stream (about 1 ms) |
+    | Front end | AGC or manual LNA/baseband gain; analog filter 20–320 MHz |
+    | Transport | the radio DMAs into a 1 GiB ring in SoC DRAM; the kernel sends every 8 KiB slice as one UDP datagram, zero-copy, on the 10 GbE port; at 320 Msps half the slices are packed to 28 bits per sample pair on the radio's own cores to fit the link (lossless, automatic) |
+    | Host | `w1700k-stream` receives the export and serves the IQ stream to every consumer on the host (shared memory, complex int16, gap-tagged), with an optional correction ("flatten") of the decimation's roll-off applied to the samples themselves; `w1700k-spectrum`: 262,144-point FFT at 100 frames/s over every sample, browser UI, live controls; `sdr-recv` records the stream |
     
-    **Self-host the whole stack in one click** — API, worker, UI, Postgres, ClickHouse, Redis and MinIO:
+    ## Screenshots
     
-    One workspace: what ran, what broke, what is already pinned as a test.
+    *2.4 GHz at 320 Msps, flattened: Wi-Fi frames and shorter hopping bursts on a
+    floor that stays level to the band's edges. The Stream panel shows the link
+    carrying 9.75 Gbit/s, ha
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#7  deeplethe/solid-glass
+    ⭐ 757 stars  |  🍴 8 forks  |  💻 TypeScript  |  📅 2026-10-12
+    🔗 https://github.com/deeplethe/solid-glass
+    📡 来源: 🚀 5天300+星
+    🏷️ agent-ui, ai, ai-agents, chat-ui, design-system, llm, react, shadcn, shadcn-ui, tailwindcss
+    📝 A design system for AI applications. Material, physical, tactile, technical.
+
+    README 摘要:
+    # Solid Glass
     
-    ---
+    The style · Install · What is here · Contributing
     
-    ## Why another agent-observability tool?
+    A refined glass-inspired aesthetic that feels solid from afar and reveals its subtle materiality up
+    close. Delicate highlights, fine borders, and soft shadows create depth, while a restrained finish
+    emphasizes clarity, stability, and a sense of solidity over transparency, refraction, and fluidity.
     
-    Because observability stops at the dashboard. You can see that your agent broke — then what?
+    That is one of the blocks: whole screens made of the
+    components, to look at, read and copy in. Below, the components themselves.
     
-    Every eval tool asks you to **hand-author a dataset**: sit down, invent questions, write ideal
-    answers, keep them current as the product changes. That dataset is a guess about what might break.
+    It stands between flat design and liquid glass. Flat is an opaque block with no finish to speak of;
+    liquid glass is nearly clear, and on a page with a lot of text the reader is always fighting the
+    background for the words. Solid Glass lets only an outline through: enough to know it is glass, not
+    enough to get in the way of reading.
     
-    Production already handed you the real thing: a trace of the exact run that failed, with the exact
-    input, the exact tool calls, the exact model responses.
+    ## The style
     
-    > **The recorded run _is_ the test.** Tracely freezes that trace into a hermetic regression case and
-    > replays it on every PR. Everything else — quality scores, failure clusters, suggested fixes, CI
-    > verdicts, trends, alerts — is **derived from the trace**. There are no hand-authored datasets.
+    | | |
+    |---|---|
+    | **Tactility** | Interfaces that feel tangible. Every interaction carries a subtle sense of touch and response. |
+    | **Precision** | Clean geometry, refined details, and restrained lighting create a precise, technical aesthetic. |
+    | **Physicality** | Depth comes from thickness, shadow, and spatial hierarchy, giving every element a sense of physical presence. |
+    | **Materiality** | Subtle edge highlights, fine borders, and soft shadows define the character of each surface. |
     
-    |  | Dataset-first tools | Tracely |
-    |---|---|---|
-    | Where tests come from | You write them | Promoted from real failing traces |
-    | Fidelity to production | A guess | The exact failing run, byte for byte |
-    | Cost to replay in CI | Live model calls | **$0** — recorded tool/LLM fixtures |
-    | What happens on regression | A dashboard number moves | **The PR is blocked** |
+    ### Why it is built this way
+    
+    AI applications are built around information that is constantly changing — responses streaming in,
+    agents performing tasks, and decisions waiting for human input.
+    
+    Solid Glass keeps the interface calm and readable. Neutral surfaces reduce visual distractions,
+    depth establishes hierarchy, and color and motion are reserved for meaningful feedback.
+    
+    The entire system is built with lightweight CSS and works with existing shadcn/ui components in both
+    light and dark modes.
+    
+    The Material page shows how a pane is made,
+    and the Create page lets you turn the dials.
+    
+    ## Install
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#8  AsoBeast/asobeast
+    ⭐ 53 stars  |  🍴 6 forks  |  💻 TypeScript  |  📅 2026-08-24
+    🔗 https://github.com/AsoBeast/asobeast
+    📡 来源: 📈 增长/推广/运营 | 活跃 | app store optimization A
+    🏷️ app-store, app-store-optimization, aso, google-play, keyword-tracking, mcp, nestjs, nextjs, self-hosted, typescript
+    📝 Open source, self-hosted App Store Optimization toolkit for the Apple App Store and Google Play.
+
+    README 摘要:
+    AsoBeast
+      AsoBeast is an App Store Optimization (ASO) tool and keyword rank tracker for the Apple App Store and Google Play.
+      Use the hosted service at asobeast.com, or self-host the open source edition on your own server.
+      
+        
+        
+        
+        
+      
+      
+        Website ·
+        Quickstart ·
+        Self-host ·
+        MCP server ·
+        API ·
+        Changelog
+      
+    
+    ## What is AsoBeast?
+    
+    AsoBeast is an App Store Optimization (ASO) tool and keyword rank tracker for the Apple App Store and Google Play. It imports a listing, tracks keyword rankings daily to a depth of 200, watches competitors, reviews and metadata, and turns that history into a prioritized queue of ASO work. This repository is the free, open source edition that you run on your own server, and the hosted service at asobeast.com runs the same code.
+    
+    Every store request runs on the machine hosting AsoBeast as an ordinary public search or page request, so Apple and Google see each tracked phrase the way they see any search. There is no ASO vendor to sign up with, no API key to buy, and no ASO vendor that learns which keywords you target. Beyond those store requests, your data stays in your deployment unless you explicitly enable an outbound integration such as webhook alerts, email, OpenAI assistance, Apple Ads search popularity or store status updates.
+    
+    ## Why AsoBeast?
+    
+    - **No accounts, no vendor API keys.** AsoBeast collects from the public store endpoints at a deliberately modest rate. You need Docker and nothing else.
+    - **Your keyword list is your strategy.** It lives in your database and is never sent to an ASO vendor, so no competitor intelligence product is quietly assembling it. The stores only ever see one search at a time.
+    - **Both stores as one tracking entity.** One app row tracks keywords across many storefronts, so `us` and `de` are markets on the same listing rather than two subscriptions.
+    - **Every score shows its evidence.** Popularity and difficulty carry their source, calculation version, capture date and confidence, so you can argue with a number instead of trusting it.
+    - **Deterministic recommendations.** Fifteen rules turn stored history into an explainable work queue. AI is optional garnish that can summarize an action, never invent or reorder one.
+    - **AGPL-3.0, no open core.** Every feature the hosted service runs is in this repository.
+    
+    ## Features
+    
+    | Feature                          | What it does
