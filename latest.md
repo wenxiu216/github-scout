@@ -1,93 +1,395 @@
-📊 开源日报 — 2026-10-15
-共发现 8 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-10-16
+共发现 9 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  rust-lang/rust
-    ⭐ 120146 stars  |  🍴 18707 forks  |  💻 Rust  |  📅 2010-06-16
-    🔗 https://github.com/rust-lang/rust
+#1  ⚠️风险  LibreSpark/LibreTV
+    ⚠️ 命中风险词: cookie —— 默认归排除区，需人工确认
+    ⭐ 18227 stars  |  🍴 28786 forks  |  💻 TypeScript  |  📅 2025-04-06
+    🔗 https://github.com/LibreSpark/LibreTV
     📡 来源: trending-daily
-    🏷️ compiler, language, rust
-    📝 Empowering everyone to build reliable and efficient software.
+    🏷️ css, film, html, movie-web-app, movies-and-cinemas, nextjs, tv
+    📝 一分钟搭建影视站，支持Docker等部署方式
 
     README 摘要:
-    [Website][Rust] | [Getting started] | [Learn] | [Documentation] | [Contributing]
+    # LibreTV
     
-    This is the main source code repository for [Rust]. It contains the compiler,
-    standard library, and documentation.
+    LibreTV Next.js 迁移版：免费在线视频聚合搜索与观看平台。基于 Next.js 15（App Router）+ TypeScript + Tailwind CSS，播放内核为 ArtPlayer + hls.js，支持亮暗双主题。
     
-    [Rust]: https://www.rust-lang.org/
-    [Getting Started]: https://www.rust-lang.org/learn/get-started
-    [Learn]: https://www.rust-lang.org/learn
-    [Documentation]: https://www.rust-lang.org/learn#learn-use
-    [Contributing]: CONTRIBUTING.md
+    > 🏠 **官网**：LibreTV 官网
+    >
+    > 🌐 **演示站**：tv.bagiinlink.eu.org（访问密码：`libretv`）
+    >
+    > 📖 **完整文档**：文档首页 · 架构 · 部署 · 配置 · 数据源 · 直播 / IPTV · 首页推荐 · 播放器 · 代理与安全 · FAQ
+    >
     
-    ## Why Rust?
+      
     
-    - **Performance:** Fast and memory-efficient, suitable for critical services, embedded devices, and easily integrated with other languages.
+    ## 核心特性
     
-    - **Reliability:** Our rich type system and ownership model ensure memory and thread safety, reducing bugs at compile-time.
+    - **聚合搜索**：多采集站服务端并行搜索
+    - **跨源同名聚合**：同名影片合并为一张卡片，展开即可比较和选择各来源
+    - **HLS 播放**：ArtPlayer + hls.js，广告分片过滤、自动连播、倍速、快捷键、移动端长按 3 倍速
+    - **直播 / IPTV**：M3U 订阅解析，`/live` 页面按分组浏览、搜索频道并站内播放（HLS + HTTP-FLV），支持 XMLTV 节目单（EPG）与频道收藏；直播流经专用长连接代理（`/api/live/stream`）转发
+    - **进度同步**：播放进度与观看历史存于本机 IndexedDB，精确到秒的续播
+    - **换源测速**：跨源搜索同名资源并测速排序，一键切换保留集数位置
+    - **源测试与订阅**：一键探活点播源与直播源（支持批量测活）；搜索时自动记录各源健康度，连续失败的源按阶梯时长自动停用（30 分钟 → 24 小时 → 长期），可一键恢复；订阅远程源列表（一份 LibreTV-SourceList JSON 可同时下发点播源与直播源，也可直接填 TVBOX 配置地址，自动导入其中可直接使用的接口），可导出分享
+    - **首页推荐**：豆瓣（电影/剧集分类浏览）、Bangumi 新番放送表或影视榜单（豆瓣周榜 + 百度热播，经 60s API），设置中切换；均服务端直连 + 缓存，Bangumi/榜单免 key 免配置（`60S_API_BASE` 可指向自部署 60s 实例）
+    - **PWA**：可安装到桌面 / 主屏幕，亮暗双主题无首屏闪烁
     
-    - **Productivity:** Comprehensive documentation, a compiler committed to providing great diagnostics, and advanced tooling including package manager and build tool ([Cargo]), auto-formatter ([rustfmt]), linter ([Clippy]) and editor support ([rust-analyzer]).
+    ## 部署
     
-    [Cargo]: https://github.com/rust-lang/cargo
-    [rustfmt]: https://github.com/rust-lang/rustfmt
-    [Clippy]: https://github.com/rust-lang/rust-clippy
-    [rust-analyzer]: https://github.com/rust-lang/rust-analyzer
+    ### Docker（推荐）
     
-    ## Quick Start
+    ```bash
+    # 在 .env 中设置 PASSWORD
+    echo "PASSWORD=your-password" > .env
     
-    Read ["Installation"] from [The Book].
+    # 方式一：拉取发布镜像（零构建）
+    docker compose pull && docker compose up -d
     
-    ["Installation"]: https://doc.rust-lang.org/book/ch01-01-installation.html
-    [The Book]: https://doc.rust-lang.org/book/index.html
-    
-    ## Installing from Source
-    
-    If you really want to install from source (though this is not recommended), see
-    INSTALL.md.
-    
-    ## Getting Help
-    
-    See https://www.rust-lang.org/community for a list of chat platforms and forums.
+    # 方式二：源码构建
+    docker compose up -d --build
+    ```
     
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  ifixai-ai/iFixAi
-    ⭐ 27737 stars  |  🍴 1516 forks  |  💻 Python  |  📅 2026-04-27
-    🔗 https://github.com/ifixai-ai/iFixAi
+#2  xerj-org/xerj
+    ⭐ 5902 stars  |  🍴 319 forks  |  💻 Rust  |  📅 2026-06-30
+    🔗 https://github.com/xerj-org/xerj
     📡 来源: trending-daily
-    🏷️ agent-evaluation, ai, ai-alignment, ai-evaluation, ai-governance, ai-safety, cli, diagnostic-tool, eu-ai-act, hallucination-detection
-    📝 Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.
+    🏷️ ai-search, ai-search-algorithms, ai-search-engine, ai-search-free, ai-search-module, ai-search-optimization, ai-searchengine, bm25-search, elastic-search, elasticsearch
+    📝 XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.
 
     README 摘要:
-    English · 简体中文 · 日本語 · 한국어
+    # XERJ
     
-    Catch your agent's mistakes and blind spots before the shit hits the fan.
+    English | 简体中文
+    
+    XERJ is a community-trusted local AI search that indexes any folder automatically, so your
+    coding agent stops burning tokens reading files one by one and pulls the exact code it
+    needs instead. Reference coding is its main use case and the clearest win: point an agent
+    at a task and it downloads the open-source repos closest to it, indexes them, and reuses
+    how they solved the problem before writing its own code. In a controlled study that cut a
+    coding agent's output tokens by 2.7x at the same 16/16 solve rate
+    (case study), and people report
+    roughly 5x in everyday work
+    (field reports).
+    It is enough for a smaller, cheaper model to out-code a pricier one working from memory,
+    while you spend less time in fix loops. Try it now with a one-prompt install:
+    
+    ```text
+    Install XERJ (docs: https://xerj.org/llms.txt), index this project's sources, and set up
+    reference coding: clone and index the open-source repos closest to what we're building,
+    and search how they solved a problem before writing code.
+    ```
+    
+    Or run it yourself:
+    
+    ```sh
+    curl -fsSL https://xerj.org/get | sh
+    xerj --insecure --data-dir ./data &
+    xerj init                                        # wire XERJ into Claude Code/Cursor (MCP + skill), one command
+    xerj autoindex ~/my-project
+    xerj search "how do we rotate the WAL segment"   # ranked passages, file:line
+    xerj def "euler_to_rotationmatrix"               # go-to-definition: file:line + signature
+    xerj gain                                        # what it did for you — counted, not estimated
+    ```
+    
+    Windows and a hand-verified install are under Install by hand.
+    
+    That `--insecure` flag is a trust boundary, not a formality. It turns off TLS and API-key
+    auth, so every caller that can reach the port is a superuser who can read and delete every
+    index, including every `/_memory` namespace. It is meant for one user on a dev machine: a
+    fresh node binds `127.0.0.1` only, and a cleartext bind on any other interface refuses to
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#3  lightseekorg/tokenspeed
+    ⭐ 2555 stars  |  🍴 342 forks  |  💻 Python  |  📅 2026-05-06
+    🔗 https://github.com/lightseekorg/tokenspeed
+    📡 来源: trending-daily
+    🏷️ b200, b300, blackwell, deepseek, gb200, gb300, glm, gpt-oss, inkling, kimi
+    📝 TokenSpeed is a speed-of-light LLM inference engine.
+
+    README 摘要:
+    TokenSpeed is a speed-of-light LLM inference engine designed for **agentic workloads**, with TensorRT-LLM-level performance and vLLM-level usability. The goal is to be the most performant inference engine for production agentic workloads.
+    
+    Core components:
+    
+    - **Scheduler**: C++ control plane and Python execution plane. Request
+      lifecycle, KV cache ownership, and overlap timing are encoded as a
+      finite-state machine, with safe KV resource reuse enforced by the type system at compile time.
+    - **Kernels**: pluggable, layered kernel system with a portable public API and
+      a centralized registry including one of the fastest **MLA**
+      (Multi-head Latent Attention) implementations on Blackwell for agentic workloads.
+    - **Entrypoint**: SMG-integrated AsyncLLM for low-overhead CPU-side request
+      handling.
+    
+    ## Differentiation
+    
+    TokenSpeed takes a fundamentally different architectural approach from existing LLM inference engines. The **PyTorch Foundation highlighted these architectural differentiators** when welcoming TokenSpeed to the PyTorch Ecosystem Landscape:
+    
+    > TokenSpeed is an open source LLM inference engine and the first to separate the control plane from the execution plane. The control plane is implemented in C++ as a finite-state machine, using the type system to enforce safe resource management, including request lifecycles and KV cache state, at compile time rather than runtime. The execution plane is implemented in Python, enabling fast iteration and lowering the cognitive load for researchers and engineers. This architecture combines strong correctness guarantees in the core scheduling system with the development velocity of a high-level execution layer.
+    >
+    > TokenSpeed also treats kernels as a first-class, modular subsystem, separating them from the core engine through a portable public API, centralized registry and selection model, and an extensible plugin mechanism for heterogeneous accelerators.
+    
+    More importantly, TokenSpeed is the **Switzerland** of open-source LLM inference engines: neutral because it's backed by the non-profit LightSeek Foundation rather than a commercial company, with **serious hardware and engineering support** from vendors like NVIDIA and AMD.
+    
+    ## News
+    
+    - [2026/10] 🔥 TokenSpeed MLA 2 for NVIDIA Vera Rubin. [blog]
+    - [2026/10] 🔥 685 tokens/s per user: serving Qwen3.8-Flash-Next on NVIDIA GB300 with TokenSpeed. [blog]
+    - [2026/10] 🔥 Advancing Kimi K3 inference on AMD Instinct MI355X GPUs with TokenSpeed. [AMD blog]
+    - [2026/09
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#4  Kav-K/GPTDiscord
+    ⭐ 1851 stars  |  🍴 288 forks  |  💻 Python  |  📅 2022-12-08
+    🔗 https://github.com/Kav-K/GPTDiscord
+    📡 来源: 🤖 AI / LLM / RAG | 活跃 | AI image generation
+    🏷️ artificial-intelligence, asyncio, chatbot, code-interpreter, collaborate, dalle2, digitalocean, discord, embeddings, extractive-question-answering
+    📝 A robust, all-in-one GPT interface for Discord. ChatGPT-style conversations, image generation, AI-moderation, custom indexes/knowledgebase, youtube summarizer, and more!
+
+    README 摘要:
+    # GPTDiscord
+    
+    OpenAI chat, vision, image generation, transcription, moderation, and web search in Discord. Python **3.11–3.13** is supported.
+    
+    ## Current API support
+    
+    - `/gpt ask` and `/gpt converse` use current Chat Completions models, including vision and reasoning models. Defaults and model limits are centralized; incompatible sampling options are omitted for reasoning models.
+    - `/web` uses the **Responses API with native web search** and visible source links for recent information. It needs an OpenAI key with access to the chosen model and web search, with no Google account required. Search tool calls incur additional OpenAI charges.
+    - `/dalle draw` keeps the familiar command name and generates images with the current **GPT Image** API. Image bytes are sent as Discord attachments. Retired DALL·E endpoints are no longer used.
+    - Transcription and moderation use current OpenAI APIs. Long conversations, per-user keys, server roles, prompt optimization, and saved conversations remain available.
+    - Document indexing, Google/Wolfram chat, Pinecone memory, Replicate, and E2B code execution are optional integrations with separate dependencies.
+    
+    The default chat model is `gpt-6.1-sol`, the low-cost helper model is `gpt-6-luna`, and image generation defaults to `gpt-image-2.5-flare`. Availability depends on your OpenAI project. Override models using the environment settings below. Model names and prices change; consult the OpenAI model catalog and pricing.
+    
+    ## Run from source
+    
+    ```bash
+    git clone https://github.com/Kav-K/GPTDiscord.git
+    cd GPTDiscord
+    python3.13 -m venv .venv
+    source .venv/bin/activate  # Windows: .venv\Scripts\activate
+    python -m pip install --upgrade pip
+    python -m pip install .
+    cp sample.env .env
+    # Edit .env with your credentials and Discord server ID.
+    python gpt3discord.py
+    ```
+    
+    Install FFmpeg with your operating system's package manager to transcribe downloaded media. The basic bot does not require Torch, Transformers, LlamaIndex, or LangChain.
+    
+    The same code installs as the `gpt3discord` console command. Prompt files and conversation openers ship in the wheel; you can run the installed bot outside the source directory.
+    
+    ### Required configuration
+    
+    | Setting | Purpose |
+    | --- | --- |
+    | `OPENAI_API_KEY` | OpenAI project API key. `OPENAI_TOKEN` remains a supported alias. ChatGPT subscriptions do not include API billing. |
+    | `DISCORD_TOKEN` | Bot token from the Discord Developer Portal. |
+    | `ALLOWED_GUILDS` | Comma-separated Discord server IDs where com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  ahwootech/BRUTAL
+    ⭐ 1254 stars  |  🍴 63 forks  |  💻 C#  |  📅 2026-10-14
+    🔗 https://github.com/ahwootech/BRUTAL
+    📡 来源: 🚀 5天300+星
+    📝 A free, open source C# framework for making games, or your own game engine. Direct access to native APIs and Vulkan, with the low-level libraries around them. The foundation under Kitten Space Agency and RimWorld's Waylith engine.
+
+    README 摘要:
+    # BRUTAL Framework
+    
+    **A free, open source C# framework for making games, or your own game engine.**
+    
+    BRUTAL is a framework. You can make a game directly with it, or use it as the foundation for a separate engine. We made Kitten Space Agency directly on BRUTAL. Ludeon built their Waylith engine on it to move RimWorld off Unity.
+    
+    At its core is a custom interop layer giving C# direct access to native APIs and libraries. Around that we've built mathematics, memory management, strings, collections, job scheduling, logging, localization, and bindings for Vulkan, GLFW, Dear ImGui, FMOD, RakNet, Jolt and Box2D. BRUTAL doesn't make the architectural decisions for you. You write your own stack. You can use whatever NuGet packages you want, including third-party ones.
+    
+    It's called BRUTAL for a reason. In some ways it's much harder to use than Unity, Unreal or Godot. In other ways, particularly if you're doing something unusual, it's considerably easier. You actually have to know what you want to do first.
+    
+    ## Why
+    
+    You are only as independent as your tools are.
+    
+    Developers have surrendered an extraordinary amount of control over their work to companies whose interests are not necessarily aligned with their own. We're not suggesting everyone should make their own game engine. We're suggesting every developer should have the option to, without having to spend four years building the foundations first.
+    
+    What that means in practice:
+    
+    - **Free, including for commercial games.** No royalties. We don't want a percentage of your game's revenue. We ask for credit.
+    - **Open source.** The source is here under an MIT-based licence. If one day we stop being accountable to developers, you can fork it and go your own way.
+    - **Deliberately small.** We do a few low-level things well: interop, memory, concurrency, maths, strings, and bindings to native libraries, on the latest C# and Vulkan. We avoid allocations and unnecessary overhead and use unmanaged memory and unsafe code where it makes sense.
+    - **A foundation, like a kernel.** Think of the Linux kernel and something like Ubuntu. It's not an exact comparison, but it gets the idea across. We provide the foundation and you build your own systems on top.
+    
+    ### What BRUTAL is not
+    
+    BRUTAL is not trying to be a general-purpose engine. There is no editor, no scene graph and no renderer, and we're not adding them. We push back on efforts to add more, because adding everything is how the industry ended up with the kind of
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#6  chenglou/handwired
+    ⭐ 1195 stars  |  🍴 88 forks  |  💻 TypeScript  |  📅 2026-10-15
+    🔗 https://github.com/chenglou/handwired
+    📡 来源: 🚀 5天300+星
+    📝 Turn your regular JavaScript code into a neural net.
+
+    README 摘要:
+    # Handwired
+    
+    Turn your regular JavaScript code into a neural net; no training, exact, yet also fully differentiable!
+    
+    ## How It Works
+    
+    A program's made of if-else, loops, and state. Handwired transforms them into matrix multiplication + reglu over floats. For example:
+    
+    ```ts
+    const a = 5
+    const result = (a > 4) ? 10 : 12
+    ```
+    
+    The above can be expressed as basic arithmetic:
+    
+    ```ts
+    const a = 5
+    // Math.max(0, x) is ReLU. For an integer a, above4 is 1 if a > 4, and 0 otherwise
+    const above4 = Math.max(0, a - 4) - Math.max(0, a - 5)
+    // Both branches compute, and above4 picks one
+    const result = above4 * 10 + (1 - above4) * 12
+    ```
+    
+    You can calculate that by hand and see that both arrive at the same result.
+    
+    We then collect the + and * and relu into a giant matmul, and either run it on JS or WebGPU, for fun.
+    
+    Because we basically only use these 2 primitives:
+    - the full program stays differentiable
+    - the weights don't need training since they're written manually
+    - existing gpu techniques, such as fusion, sparsity, reordering, have a great time optimizing such minimal primitives
+    
+    This unlocks lots of funny use-cases, like:
+    - unfreezing the weights and train them (what does that even do? Let's find out!)
+    - attaching a specific frozen program to a generic neural net and train end-to-end (now a nanoGPT can do both Shakespeare and your particular UI?)
+    - achieving GPU-level of parallelism with JS code that was written in a traditional single-threaded way (see the JSON search demo that runs in milliseconds over 100k documents)
+    
+    ## Play With It
+    
+    Try the demos live: https://chenglou.me/handwired/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#7  feder-cr/open_scion
+    ⭐ 896 stars  |  🍴 107 forks  |  💻 Go  |  📅 2026-10-15
+    🔗 https://github.com/feder-cr/open_scion
+    📡 来源: 🚀 5天300+星
+    🏷️ ai-agents, coding-agents, git, golang, scion, version-control
+    📝 Open-source version of Scion: version control built for coding agents.
+
+    README 摘要:
+    # open_scion
+    
+    **Source control for the age of coding agents.**
+    
+    Anthropic built **Scion**, a faster version control system for coding agents,
+    and described it in
+    Redesigning source control:
+    a server-centric system built for hundreds of agents that read, write and land
+    code at the same time. Scion is internal to Anthropic and is not available to
+    the public.
+    
+    So I built **open_scion**: an open-source version of that design that anyone can
+    run, and that the community can improve and maintain together.
+    
+    MIT licensed. Vendor neutral: the server never calls a language model, and every
+    AI feature works with any provider, or none.
+    
+    open_scion is an independent implementation of the publicly described design. It is not affiliated with or endorsed by Anthropic.
+    
+    ---
+    
+    ## Why
+    
+    Classic Git hosting was built for humans who clone a repository, work for hours
+    and push once. Coding agents work differently: thousands of short-lived tasks,
+    each touching a few files, each wanting to land in seconds, all on the same
+    branches. Full clones, merge queues and client-side history walks become the
+    bottleneck.
+    
+    Scion's answer is to move the work to the server: clients stay online and fetch
+    only what they need, history questions are answered (and cached) by the server,
+    changes land through a compare-and-swap instead of a queue, every update is an
+    entry in a changeset log, and the repository state lives in a consistent
+    database plus object storage so servers scale out. open_scion implements these
+    ideas, with normal Git repositories underneath.
+    
+    ## The Scion ideas, implemented
+    
+    | Scion idea | In open_scion |
+    |---|---|
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#8  outcrawlai/scout
+    ⭐ 845 stars  |  🍴 26 forks  |  💻 TypeScript  |  📅 2026-10-13
+    🔗 https://github.com/outcrawlai/scout
+    📡 来源: 🚀 5天300+星
+    🏷️ ai-agent, browser-agent, browser-automation, cdp, llm, typescript, web-automation
+    📝 Scout: the open-source browser agent, by Outcrawl. Mirrored automatically from Outcrawl's own repository.
+
+    README 摘要:
+    Quickstart
+      &nbsp;·&nbsp;
+      Examples
+      &nbsp;·&nbsp;
+      Models
+      &nbsp;·&nbsp;
+      Cloud
+      &nbsp;·&nbsp;
+      Docs
     
       
       
       
-      
-      
     
-      
-        
-          
-          
-          
-        
-      
+    # Tell it the task. It opens a browser and gets it done.
+    
+    Scout is an open-source agent that uses a real browser to finish a task for you. Describe what you need in plain words. Scout reads the page, clicks, types and scrolls until the job is done, then hands back the answer. If it cannot finish, it tells you what is missing and returns what it found.
+    
+    **Scout runs best on Outcrawl's cloud.** One line gives it a browser that sites treat like anyone at home, with captcha solving and a replay of every run. It also runs on your own machine.
     
       
       
+      
     
-      Quick start •
-      Three ways to run •
-      Test your agent •
-      Scoring •
-      Audit recorded actions •
-      Docs •
-      Contributing
+    A recorded run on Outcrawl's cloud, 13 October 2026, shown at 6x speed with nothing cut.
+    
+    ## Start in three steps
+    
+    **1. Install Scout.** You need Node 22 or later. On the cloud there is no browser to install.
+    
+    ```sh
+    npm i @outcrawl/scout
+    ```
+    
+    **2. Add your keys.** An Outcrawl key for the browser (get one free at outcrawl.ai: 1,000 credits every month, no card needed) and a key for your model. Scout works with any AI model service that speaks the standard chat completions API, including a model running on your own computer:
+    
+    ```sh
+    export OUTCRAWL_API_KEY=your-outcrawl-key
+    export SCOUT_BASE_URL=https://your-endpoint/v1
+    export SCOUT_API_KEY=your-model-key
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#9  Caho1/open-claude-ui
+    ⭐ 819 stars  |  🍴 193 forks  |  💻 TypeScript  |  📅 2026-10-14
+    🔗 https://github.com/Caho1/open-claude-ui
+    📡 来源: 🚀 5天300+星
+    🏷️ anthropic, audioworklet, claude, design-system, framer-motion, motion-physics, react, reverse-engineering, tailwindcss, ui-components
+    📝 基于 REA 深度拆解并高保真还原 Claude 官方桌面端 UI。纯手写 30 个独立 React 组件与 8 项硬核交互物理算法，附带 3000+ 行逆向分析手册。
+
+    README 摘要:
+    # Open Claude UI (`open-claude-ui`)
+    
+      
+    
+      基于 REA 深度拆解，高保真生产级还原 Claude 设计系统 (CDS) 与工程交互物理学。
+    
+      简体中文 · English
     
       
       
@@ -99,292 +401,25 @@
     
     ---
     
-    ## What it is
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  ntdevlabs/tiny11builder
-    ⭐ 20341 stars  |  🍴 1559 forks  |  💻 C#  |  📅 2023-02-24
-    🔗 https://github.com/ntdevlabs/tiny11builder
-    📡 来源: trending-daily
-    📝 WinUI app for building smaller, customized Windows 11 images.
-
-    README 摘要:
-    # Tiny11 Builder
+    ## 📖 简介 (Introduction)
     
-    Build a smaller Windows 11 ISO with a native WinUI app. Download an official
-    Windows image or use your own, choose what to remove, and create your ISO.
+    `open-claude-ui` 是基于对现代桌面端 AI 客户端进行深度拆解与逆向分析构建的高保真开源 UI 组件库与动效引擎。
     
-    ## Download
+    整个逆向推导、反混淆静态分析与 ASAR 资源解构，均依托于先进的多平台逆向工程框架 **REA (Reverse Engineer Anything)** 完成——通过 REA 的静态 AST 解析、闭包代码反混淆与运行时跟踪能力，穿透生产级压缩包，精准还原了底层工程物理常数与数学模型。
     
-    **Get the latest version**
+    不同于市面上常见的盲猜或近似复刻，本项目所有组件规范、物理阻尼常数、着色器关键帧及音频管道均**严格依据真实前端架构反编译验证**提炼而成：
+    * **温润的人文质感 (Editorial Warmth)**：纯正陶土橙（Clay `#d97757`）、4 层微对比表面阶梯（Surface 0-3）与视网膜高分屏发丝细边补偿（Hairline Ring）；
+    * **严苛的交互物理学 (Interaction Physics)**：4 套生产级物理弹簧参数调校、4px 指针移动死区、CJK 输入法合成守卫、7 档渐隐非线性 Alpha 遮罩；
+    * **高阶视听与系统架构 (Audiovisual & Architecture)**：基于原生 Web Audio API 的零延迟合成提示音、以光标为锚点的画廊跑道平移缩放、macOS 桌面毛玻璃透明融合与 Cowork 多代理协同拓扑。
     
-    Choose **x64** for Intel/AMD PCs or **ARM64** for Windows on ARM. Extract the
-    entire ZIP and open `Tiny11Builder.exe`. Administrator approval is required.
+    > ⚖️ **版权与合规声明 (DMCA & Assets Policy)**：  
+    > 本开源项目**不公开分发任何专有二进制资产**（包括商业字体 `.ttf` 与录音 `.mp3`）。本项目提供原生系统级字体回退栈与 Web Audio API 纯代码合成音效，完全自包含、合规安全。详情参见 assets/README.md。
     
-    ## Choose your build
+    ---
     
-    | Mode | What it does |
-    | --- | --- |
-    | Tiny11 | Removes bundled apps and unwanted features while keeping updates, Defender and recovery. |
-    | Tiny11 Core | Trims further by removing servicing and recovery support and disabling Defender. |
-    | Custom | Choose individual apps, components, features and services to remove or keep. |
+    ## 🌟 核心特性 (Key Features)
     
-    Turbo mode speeds up image processing. Interrupted builds can resume from saved
-    progress after the image is committed or compressed. Core and component-store
-    removals automatically use the legacy Windows installer.
-    
-    **Core cannot be updated or serviced. Protected Custom removals can break
-    Windows. Test your ISO in a VM before installing it.**
-    
-    ## Video
-    
-    **Watch on YouTube**
-    
-    ## Screenshots
-    
-    ### Welcome
-    
-    ### Components
-    
-    ### Build settings
-    
-    ## More information
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  HeyPuter/everything
-    ⭐ 805 stars  |  🍴 118 forks  |  💻 JavaScript  |  📅 2026-10-13
-    🔗 https://github.com/HeyPuter/everything
-    📡 来源: 🚀 5天300+星
-    🏷️ adobe, cad, office, photoshop, saas, spreadsheet
-    📝 We're rebuilding and open-sourcing the world’s software from scratch.
-
-    README 摘要:
-    The world’s software. Rebuilt, open-sourced, and MIT-licensed.
-    
-    The Everything Project is an effort to rebuild and open-source the world’s software from scratch. From Office to Slack and Photoshop to AutoCAD, we are recreating free, open-source alternatives to all proprietary software. This is a mono-repository containing all the applications and tools developed under the project.
-    
-    Office · Collaboration · Creative Tools · Engineering · Productivity · Finance · Business · Developer Tools · Games
-    
-    ## Getting started
-    
-    Requires Node.js 22.12 or newer.
-    
-    ```sh
-    git clone https://github.com/HeyPuter/everything.git
-    cd everything/src/[app-name]
-    npm install
-    npm run dev
-    ```
-    
-    ## Office
-    
-    ApplicationAlternative toLinks
-     &nbsp; SpreadsheetMicrosoft Excel, Google Sheets, Apple NumbersTry it&nbsp;|&nbsp;Source
-     &nbsp; DocumentsMicrosoft Word, Google Docs, Apple PagesTry it&nbsp;|&nbsp;Source
-     &nbsp; PresentationMicrosoft PowerPoint, Google Slides, Apple KeynoteTry it&nbsp;|&nbsp;Source
-     &nbsp; WhiteboardMiro, Microsoft Whiteboard, FigJamTry it&nbsp;|&nbsp;Source
-     &nbsp; PDFAdobe Acrobat, PDF ExpertTry it&nbsp;|&nbsp;Source
-     &nbsp; NotesMicrosoft OneNote, Evernote, Apple NotesTry it&nbsp;|&nbsp;Source
-     &nbsp; RecordsAirtable, Microsoft Access, BaserowTry it&nbsp;|&nbsp;Source
-    
-    ## Collaboration
-    
-    ApplicationAlternative toLinks
-     &nbsp; MeetingsZoom, Google Meet, Microsoft TeamsTry it&nbsp;|&nbsp;Source
-     &nbsp; TeamchatSlack, Microsoft Teams, Google ChatTry it&nbsp;|&nbsp;Source
-     &nbsp; EmailGmail, Microsoft Outlook, Apple MailTry it&nbsp;|&nbsp;Source
-     &nbsp; ContactsGoogle Contacts, Apple ContactsTry it&nbsp;|&nbsp;Source
-     &nbsp; CalendarGoogle Calendar, Apple Calendar, Outlook CalendarTry it&nbsp;|&nbsp;Source
-     &nbsp; SignaturesDocuSign, Adobe Acrobat Sign, Dropbox SignTry it&nbsp;|&nbsp;Source
-    
-    ## Creative Tools
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  CoolkHz/gptibo
-    ⭐ 769 stars  |  🍴 459 forks  |  💻 TypeScript  |  📅 2026-10-13
-    🔗 https://github.com/CoolkHz/gptibo
-    📡 来源: 🚀 5天300+星
-    📝 Self-hosted GPTibo storefront, admin and Go backend — sanitized MIT source
-
-    README 摘要:
-    # GPTibo
-    
-    **可自托管的数字商品商城，包含用户前台、管理后台与代理工作台。**
-    
-    MIT License · 快速开始 · 后端文档 · 安全说明
-    
-    GPTibo 将商品展示、下单支付、订单交付、售后处理和代理商店管理整合在同一套系统中。前端使用 React 与 TypeScript，后端提供 Go + PostgreSQL 和 Cloudflare Workers + D1 两种实现，便于按部署环境选择和二次开发。
-    
-    原站点已停止运营，项目现以 MIT 许可证开放源码。支付与供应商接入使用匿名适配器，需要配置自己的服务后使用。
-    
-    ## 功能
-    
-    | 模块 | 能力 |
-    | --- | --- |
-    | 用户商城 | 商品与套餐展示、下单、支付状态、订单查询、售后申请、中英文界面、深浅色主题 |
-    | 管理后台 | 商品定价、订单与客户管理、退款处理、代理管理、结算与通知配置 |
-    | 代理工作台 | 独立商店、品牌设置、自定义域名、商品管理、订单统计与下级代理管理 |
-    | 业务后端 | 身份验证、支付回调、采购适配、异步任务、邮件通知与交易状态管理 |
-    | 开发与部署 | 数据库迁移、Docker Compose、自动化测试、GitHub Actions 与源码安全扫描 |
-    
-    ## 技术栈
-    
-    | 层级 | 技术 |
-    | --- | --- |
-    | 前端 | React 19、TypeScript、Vite、Tailwind CSS |
-    | Go 后端 | Go、Gin、PostgreSQL，API 与业务 Worker 分进程运行 |
-    | Cloudflare 后端 | Workers、D1、Wrangler |
-    | 邮件 | React Email |
-    | 验证 | Node.js Test Runner、Go Test、Gitleaks |
-    
-    两套后端均服务于商城。当前公开版本包含商城侧供应商适配器，**不包含独立供货平台及供应商执行系统**。
-    
-    ## 快速开始
-    
-    ### 环境准备
-    
-    - Node.js 24、npm、Git、Python 3。
-    - 使用 Go 后端时，准备 Docker Compose；原生开发需要 Go 1.26+ 和 PostgreSQL。
-    - 使用 Cloudflare 后端时，通过项目内的 Wrangler 运行本地环境。
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  h0m3us3r/w1700k-sdr
-    ⭐ 758 stars  |  🍴 75 forks  |  💻 C  |  📅 2026-10-11
-    🔗 https://github.com/h0m3us3r/w1700k-sdr
-    📡 来源: 🚀 5天300+星
-    📝 无描述
-
-    README 摘要:
-    # W1700K SDR
-    
-    Turns a Gemtek W1700K Wi-Fi 7 router into a wideband software-defined receiver.
-    The router's MediaTek MT7996 radio captures raw 14-bit IQ at up to 320 Msps,
-    its Airoha AN7581 SoC streams it over 10 GbE, and a Linux host shows it as a
-    live spectrum and waterfall in the browser, with the receiver's controls next
-    to it.
-    
-    *The whole 2.4 GHz band at 320 Msps, live, with the decimation's roll-off
-    corrected in the stream ("flatten"): a 262,144-point FFT of every sample, 100
-    spectra a second (this recording runs at 50 frames a second).*
-    
-    The MT7996 runs only our own firmware: a ROM patch, WM and WA built from this
-    repository, with no MediaTek code. It brings the radio up from a cold power-on
-    by itself, from MediaTek's initialisation and calibration decoded register by
-    register against a trace of MediaTek's own firmware, and takes its commands
-    (LO, sample rate, capture, stream, gain, filter) from the host. See
-    docs/architecture.md and docs/roadmap.md.
-    
-    ## What it does
-    
-    | | |
-    | --- | --- |
-    | Sample rates | 40, 80, 160 or 320 Msps of 14-bit complex IQ on every band, independent of the LO and the filter; on band 2 also 640/2 (every other sample of 640 Msps: flat to ±155 MHz, but signals 160–320 MHz away fold in) |
-    | Bands | 2.4 GHz (MT7976), 5 GHz and 6 GHz (two MT7977s); switching bands is a register write inside a running stream |
-    | Tuning | No channels: the LO is any Hz a band's synthesizer locks at (unit A: 2.081–2.748, 4.647–7.509 and 4.707–7.576 GHz), on its grid of 2.98 Hz (2.4 GHz) or 11.9–14.3 Hz steps; retuned mid-stream (about 1 ms) |
-    | Front end | AGC or manual LNA/baseband gain; analog filter 20–320 MHz |
-    | Transport | the radio DMAs into a 1 GiB ring in SoC DRAM; the kernel sends every 8 KiB slice as one UDP datagram, zero-copy, on the 10 GbE port; at 320 Msps half the slices are packed to 28 bits per sample pair on the radio's own cores to fit the link (lossless, automatic) |
-    | Host | `w1700k-stream` receives the export and serves the IQ stream to every consumer on the host (shared memory, complex int16, gap-tagged), with an optional correction ("flatten") of the decimation's roll-off applied to the samples themselves; `w1700k-spectrum`: 262,144-point FFT at 100 frames/s over every sample, browser UI, live controls; `sdr-recv` records the stream |
-    
-    ## Screenshots
-    
-    *2.4 GHz at 320 Msps, flattened: Wi-Fi frames and shorter hopping bursts on a
-    floor that stays level to the band's edges. The Stream panel shows the link
-    carrying 9.75 Gbit/s, ha
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  deeplethe/solid-glass
-    ⭐ 757 stars  |  🍴 8 forks  |  💻 TypeScript  |  📅 2026-10-12
-    🔗 https://github.com/deeplethe/solid-glass
-    📡 来源: 🚀 5天300+星
-    🏷️ agent-ui, ai, ai-agents, chat-ui, design-system, llm, react, shadcn, shadcn-ui, tailwindcss
-    📝 A design system for AI applications. Material, physical, tactile, technical.
-
-    README 摘要:
-    # Solid Glass
-    
-    The style · Install · What is here · Contributing
-    
-    A refined glass-inspired aesthetic that feels solid from afar and reveals its subtle materiality up
-    close. Delicate highlights, fine borders, and soft shadows create depth, while a restrained finish
-    emphasizes clarity, stability, and a sense of solidity over transparency, refraction, and fluidity.
-    
-    That is one of the blocks: whole screens made of the
-    components, to look at, read and copy in. Below, the components themselves.
-    
-    It stands between flat design and liquid glass. Flat is an opaque block with no finish to speak of;
-    liquid glass is nearly clear, and on a page with a lot of text the reader is always fighting the
-    background for the words. Solid Glass lets only an outline through: enough to know it is glass, not
-    enough to get in the way of reading.
-    
-    ## The style
-    
-    | | |
-    |---|---|
-    | **Tactility** | Interfaces that feel tangible. Every interaction carries a subtle sense of touch and response. |
-    | **Precision** | Clean geometry, refined details, and restrained lighting create a precise, technical aesthetic. |
-    | **Physicality** | Depth comes from thickness, shadow, and spatial hierarchy, giving every element a sense of physical presence. |
-    | **Materiality** | Subtle edge highlights, fine borders, and soft shadows define the character of each surface. |
-    
-    ### Why it is built this way
-    
-    AI applications are built around information that is constantly changing — responses streaming in,
-    agents performing tasks, and decisions waiting for human input.
-    
-    Solid Glass keeps the interface calm and readable. Neutral surfaces reduce visual distractions,
-    depth establishes hierarchy, and color and motion are reserved for meaningful feedback.
-    
-    The entire system is built with lightweight CSS and works with existing shadcn/ui components in both
-    light and dark modes.
-    
-    The Material page shows how a pane is made,
-    and the Create page lets you turn the dials.
-    
-    ## Install
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  AsoBeast/asobeast
-    ⭐ 53 stars  |  🍴 6 forks  |  💻 TypeScript  |  📅 2026-08-24
-    🔗 https://github.com/AsoBeast/asobeast
-    📡 来源: 📈 增长/推广/运营 | 活跃 | app store optimization A
-    🏷️ app-store, app-store-optimization, aso, google-play, keyword-tracking, mcp, nestjs, nextjs, self-hosted, typescript
-    📝 Open source, self-hosted App Store Optimization toolkit for the Apple App Store and Google Play.
-
-    README 摘要:
-    AsoBeast
-      AsoBeast is an App Store Optimization (ASO) tool and keyword rank tracker for the Apple App Store and Google Play.
-      Use the hosted service at asobeast.com, or self-host the open source edition on your own server.
-      
+    ```mermaid
+    graph TD
+        OCUI["open-claude-ui"]
         
-        
-        
-        
-      
-      
-        Website ·
-        Quickstart ·
-        Self-host ·
-        MCP server ·
-        API ·
-        Changelog
-      
-    
-    ## What is AsoBeast?
-    
-    AsoBeast is an App Store Optimization (ASO) tool and keyword rank tracker for the Apple App Store and Google Play. It imports a listing, tracks keyword rankings daily to a depth of 200, watches competitors, reviews and metadata, and turns that history into a prioritized queue of ASO work. This repository is the free, open source edition that you run on your own server, and the hosted service at asobeast.com runs the same code.
-    
-    Every store request runs on the machine hosting AsoBeast as an ordinary public search or page request, so Apple and Google see each tracked phrase the way they see any search. There is no ASO vendor to sign up with, no API key to buy, and no ASO vendor that learns which keywords you target. Beyond those store requests, your data stays in your deployment unless you explicitly enable an outbound integration such as webhook alerts, email, OpenAI assistance, Apple Ads search popularity or store status updates.
-    
-    ## Why AsoBeast?
-    
-    - **No accounts, no vendor API keys.** AsoBeast collects from the public store endpoints at a deliberately modest rate. You need Docker and nothing else.
-    - **Your keyword list is your strategy.** It lives in your database and is never sent to an ASO vendor, so no competitor intelligence product is quietly assembling it. The stores only ever see one search at a time.
-    - **Both stores as one tracking entity.** One app row tracks keywords across many storefronts, so `us` and `de` are markets on the same listing rather than two subscriptions.
-    - **Every score shows its evidence.** Popularity and difficulty carry their source, calculation version, capture date and confidence, so you can argue with a number instead of trusting it.
-    - **Deterministic recommendations.** Fifteen rules turn stored history into an explainable work queue. AI is optional garnish that can summarize an action, never invent or reorder one.
-    - **AGPL-3.0, no open core.** Every feature the hosted service runs is in this repository.
-    
-    ## Features
-    
-    | Feature                          | What it does
