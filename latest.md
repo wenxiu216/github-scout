@@ -1,235 +1,260 @@
-📊 开源日报 — 2026-10-17
-共发现 5 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-10-18
+共发现 6 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  ⚠️风险  hmjz100/LinkSwift
-    ⚠️ 命中风险词: 破解, cookie —— 默认归排除区，需人工确认
-    ⭐ 23919 stars  |  🍴 1457 forks  |  💻 JavaScript  |  📅 2022-08-10
-    🔗 https://github.com/hmjz100/LinkSwift
-    📡 来源: trending-daily
-    🏷️ 123pan, aliyun-drive, aliyunpan, aria2, baidu, baidu-netdisk, baidunetdisk, baidupan, baiduyun, guangya-netdisk
-    📝 一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘
+#1  tangency-labs/solidcraft
+    ⭐ 4445 stars  |  🍴 529 forks  |  💻 Rust  |  📅 2026-10-07
+    🔗 https://github.com/tangency-labs/solidcraft
+    📡 来源: 🚀 两周800+星
+    🏷️ 3d-modeling, brep, cad, egui, mcp, parametric-cad, rust, step, wasm
+    📝 SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.
 
     README 摘要:
-    > [!IMPORTANT]
-    > 如果您是从 GreasyFork 找到这的，建议前往下方的 安装 选择一个合适的源覆盖安装，避免因脚本失效或 GF 黑产刷子导致无法及时更新。
+    SolidCraft
     
-    “出淤泥而不染，濯清涟而不妖”
+      An open-source parametric 3D CAD application built in pure Rust.
+      Sketch, constrain, and build solids with a parametric feature timeline. Change a dimension
+      and watch your model rebuild. Run it on your desktop, in your browser, or let AI agents
+      model through the built-in MCP server.
     
-       搭配使用，效果更佳！👋扩展脚本
-       
-       123 云盘会员青春版 | 百度网盘会员青春版 | 阿里云盘会员青春版
-       
-       ↓&nbsp;&nbsp;↓&nbsp;&nbsp;↓&nbsp;&nbsp;↓&nbsp;&nbsp;↓
+    [![Download for Windows][badge-windows]][windows-msi]
+    [![Download for macOS][badge-macos]][macos-dmg]
+    [![Download for Linux][badge-linux]][linux-appimage]
+    [![Get it from the Snap Store][badge-snap]][snap-store]
+    [![Try it in your browser][badge-web]][web-app]
     
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+      Website ·
+      Download ·
+      Try it in the browser ·
+      Documentation ·
+      Discord ·
+      SolidCore
     
-    ## 介绍
+      
+      
+      
+      
+      
+      
+      
     
-    支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 光鸭云盘 / 夸克网盘 / UC网盘 / 123云盘 九大网盘  
-    相比较原脚本，增加了更多功能~
+    *A Raspberry Pi 4 case from an empty design: a sketch dimensioned with the board's parameters, extrude, fillet, shell, the rim rounded in one pick, an M2.5 standoff patterned on the 58 × 49 mm hole rectangle, port cut-outs, vent slots, "Pi 4" engraved in DejaVu Sans Bold and a PETG material defined in the design, with its mass in Properties, then height 24 → 32 mm in Parameters and it all rebuilds. 9× playback. Full video, recorded with the demo script.*
     
-    ## 安装
+    ## Download
     
-    根据需要选择合适的源，点击链接即可安装
-    
-    ### LinkSwift
-    直链获取、UI 美化、支持多种下载器
-    
-    #### 正式版
-    - Github 国际: hmjz100/LinkSwift/（改）网盘直链下载助手.user.js
-    - OpenUserJS 国际（更新不及时）: hmjz100/LinkSwift.user.js
-    - 脚本猫 国内: hmjz100/1604/LinkSwift.user.js
+    - **Windows:** download and run the [installer][windows-msi].
+      Also for [ARM64][windows-arm64-msi] and [32-bit][windows-x86-msi] PCs, or as a
+      [portable zip][windows-portable] that runs without installing.
+      With WinGet:
+      `winget install bherbruck.SolidCraft`.
+    - **macOS:** open the [disk image][macos-dmg] and drag SolidCraft into Applications
+      (Apple silicon and Intel).
+    - **Linux:** download the [AppImage][linux-appimage], allow it to run as a program and open it.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  android/skills
-    ⭐ 8143 stars  |  🍴 539 forks  |  💻 Kotlin  |  📅 2026-03-16
-    🔗 https://github.com/android/skills
-    📡 来源: trending-daily
-    🏷️ skills
-    📝 无描述
-
-    README 摘要:
-    ## Android skills
-    
-    **Android skills** are a dedicated repository of **AI-optimized, modular instructions** and
-    resources, to help agents better understand and execute specific patterns that follow the best
-    practices and guidance on Android development
-    from developer.android.com.
-    
-    Android skills follow the open-standard agent skills - markdown
-    files (SKILL.md) that provide a technical specification of a task, and **ground LLMs** with
-    information on specialized domains and workflows.
-    
-    Our Android skill development focuses on **use cases and workflows where evaluations show LLMs
-    underperform**.
-    We aren't prioritizing well-established areas where LLMs are already proficient, such
-    as basic Jetpack Compose best practices.
-    
-    To learn more, read the official documentation:
-    
-    - Android skills
-    - Android CLI
-    - Android Studio
-    
-    ### Install Android skills
-    
-    Use Android CLI to install a specific skill into the current directory:
-    
-    ```
-    android skills add r8-analyzer --project=.
-    ```
-    
-    Use Android CLI to install all Android skills to directories for all detected agents:
-    
-    ```
-    android skills add --all
-    ```
-    
-    If you don't have any existing agent directories and don't specify particular agents, the skills
-    will be installed for Gemini and Antigravity at `~/.gemini/antigravity/skills`.
-    
-    **Options:**
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  feder-cr/git-ai
-    ⭐ 1071 stars  |  🍴 115 forks  |  💻 Go  |  📅 2026-10-15
-    🔗 https://github.com/feder-cr/git-ai
+#2  xscreensaver-official/xscreensaver
+    ⭐ 750 stars  |  🍴 20 forks  |  💻 None  |  📅 2026-10-16
+    🔗 https://github.com/xscreensaver-official/xscreensaver
     📡 来源: 🚀 5天300+星
-    🏷️ ai-agents, coding-agents, git, golang, scion, version-control
-    📝 Git designed for AI agents.
+    📝 There is no official XScreenSaver GitHub repository.
 
     README 摘要:
-    Git designed for AI agents.
+    # There is no official XScreenSaver GitHub repository.
+    I am jwz, the author of XScreenSaver, and I do not publish a public source code repository. I publish releases as tar files on the official web site and only there. If you see any other XScreenSaver repository (on GitHub or elsewhere) that has nothing to do with me and you should not trust it.
     
-    Anthropic built **Scion**, a faster version control system for coding agents,
-    and described it in
-    Redesigning source control:
-    a server-centric system built for hundreds of agents that read, write and land
-    code at the same time. Scion is internal to Anthropic and is not available to
-    the public.
+    I welcome submissions and change requests via email. It's fine. You'll get over it.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#3  Leonxlnx/earshot
+    ⭐ 702 stars  |  🍴 42 forks  |  💻 Python  |  📅 2026-10-15
+    🔗 https://github.com/Leonxlnx/earshot
+    📡 来源: 🚀 5天300+星
+    🏷️ ai-agents, audio, claude-code, mcp, sound-design
+    📝 Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.
+
+    README 摘要:
+    # earshot
     
-    So I built **gitai**: an open-source version of that design that anyone can
-    run, and that the community can improve and maintain together.
+    **Ears for coding agents.**
     
-    MIT licensed. Vendor neutral: the server never calls a language model, and every
-    AI feature works with any provider, or none.
+    **Watch the 22 s launch film** - every sound in it was made
+    in code by `earshot forge`; no recordings, no music track.
     
-    gitai is an independent implementation of the publicly described design. It is not affiliated with or endorsed by Anthropic.
+    AI coding agents can now write the code that renders a film, a product demo or a game. They still cannot hear what
+    they made. They cannot tell a premium key press from a cheap one, notice that a hit lands 80 ms after the cut, or
+    hear that the music swells in the wrong place.
     
-    ---
+    earshot turns sound into evidence an agent can reason about: what a file sounds like in words, how well it fits a
+    description, the best moment inside a long recording, whether it is a real recording or code-synthesized, a
+    second-by-second listening transcript of a whole film, an annotated picture of it, and a scorecard against
+    professional launch films. It runs locally on CPU, as a CLI, a Python API and an MCP server.
     
-    ## Why
+    With ears, an agent can also **make its own sounds in code** and improve them by listening (`earshot forge`), and
+    **translate a recording into code** it can vary (`earshot fit`). Both below.
     
-    Classic Git hosting was built for humans who clone a repository, work for hours
-    and push once. Coding agents work differently: thousands of short-lived tasks,
-    each touching a few files, each wanting to land in seconds, all on the same
-    branches. Full clones, merge queues and client-side history walks become the
-    bottleneck.
+    ```
+    $ earshot describe enter.ogg
+      0.56 s short transient (attack 3 ms, decays in 190 ms). Sounds most like: a single mechanical keyboard key press
+      (z +5.4), a soft key release click (z +3.6) ... [clear reading]. peak -0.1 dBFS, brightness 1.5 kHz ...
     
-    Scion's answer is to move the work to the server: clients stay online and fetch
-    only what they need, history questions are answered (and cached) by the server,
-    changes land through a compare-and-swap instead of a queue, every update is an
-    entry in a changeset log, and the repository state lives in a consistent
-    database plus object storage so servers scale out. gitai implements these
-    ideas, with normal Git repositories underneath.
+    $ earshot match key.ogg "a deep thocky mechanical keyboard press" --alts "a clicky blue switch keyboard" "a mouse click"
+      -> strong (z +3.7; would rank #2 among 322 vocabulary descriptions) ...
     
-    ## The Scion ideas, implemented
+    $ earshot find keys.ogg "a single mechanical key press" --top 4
+      0:03.94-0:04.19 (0.24 s stroke, z +4.1 strong); 0:10.60-0:10.86 ...
     
-    | Scion idea | In gitai |
+    $ earshot critique film.mp4
+      VERDICT: close - 21 of 23 scored metrics in range ... FIX FIRST: 1. [major] nothing reaches body level until 0:01.01 ...
+    ```
+    
+    ## What it does
+    
+    | command | what an agent gets |
     |---|---|
-    | **Always-online clients** that fetch exactly what they need | `ObjectService` serves single objects and sparse trees; `graft clone` and `graft sparse` materialize only the paths you ask for. |
-    | **Source control as an API**: history runs on the server | Blame, path history, ancestry and code search run server-side and are memoized as derived data, computed once per commit. |
+    | `describe FILE` | what it sounds like: calibrated tags (z) with the closest alternative readings, AudioSet labels, measurements |
+    | `match FILE QUERY [--alts ...]` | how well a description fits: cosine, z among the vocabulary, a verdict (strong / plausible / weak / no match) with held-out evidence |
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  Supermedo/uncharted_pc
-    ⭐ 1056 stars  |  🍴 52 forks  |  💻 C++  |  📅 2026-10-15
-    🔗 https://github.com/Supermedo/uncharted_pc
+#4  MyLuxy/overdrive
+    ⭐ 677 stars  |  🍴 160 forks  |  💻 C++  |  📅 2026-10-14
+    🔗 https://github.com/MyLuxy/overdrive
     📡 来源: 🚀 5天300+星
-    📝 Uncharted: The Nathan Drake Collection running natively on Windows - by SuperMedo
+    🏷️ exfat, game-store, homebrew, jailbreak, ps5, ps5-homebrew, reverse-engineering, shadowmountplus
+    📝 Overdrive, a PS5 homebrew game store with 1,800+ games.
 
     README 摘要:
-    # Uncharted: The Nathan Drake Collection for Windows
+    English ·
+      Русский
     
-    **Uncharted 1, 2 and 3 from the PS4 collection running natively on Windows 10 and 11, by SuperMedo.** Mohammed Albarghouthi
+      Your PS5 game store.
+      Back from the dead, rebuilt from its own binary, with every line of source in the open.
     
-    Same idea as my Bloodborne port: the original PS4 game
-    code runs directly on your PC and the graphics are translated to Vulkan. Unpack the zip, start
-    `Uncharted.exe`, pick your game folder, choose a game and press **PLAY**.
+      
+      
+      
     
-    **Download the latest version** · **Join the Discord**
+      Install ·
+      Features ·
+      Updates ·
+      Troubleshooting ·
+      Build it yourself
     
-    > **No game files are included.** You need your own decrypted dump of the collection
-    > (CUSA02343, CUSA02320, ...: the folder with eboot.bin, big2-ps4_Shipping.elf,
-    > big3-ps4_Shipping.elf, sce_sys, u1data, u2data and u3data).
-    > This project is not affiliated with Sony Interactive Entertainment or Naughty Dog.
-    
-    ## Features
-    
-    - All three games from one launcher: Drake's Fortune, Among Thieves and Drake's Deception.
-    - 60 FPS like on PS4, or 120 FPS (higher rates are experimental).
-    - Anti-aliasing with TAA, AMD FSR 3.1, AMD FSR 4 or NVIDIA DLSS (DLAA).
-    - Frame generation: AMD FSR 3 (any GPU) or NVIDIA DLSS (RTX 40 2x, RTX 50 up to 4x).
-    - Keyboard, mouse and controller together, all remappable. Mouse look in U3.
-    - Add to Steam and desktop shortcuts from the launcher, automatic updates.
-    
-    ## Requirements
-    
-    - Windows 10 (1903 or later) or Windows 11, 64-bit.
-    - A graphics card with Vulkan 1.3 and a current driver, with **6 GB of video memory or more**.
-      4 GB cards (GTX 1650, RX 570) run out of video memory and crash after a while; on those, keep
-      Anti-aliasing and Frame generation off.
-    - About 8 GB of free memory (RAM + page file).
-    
-    ## Known problems
-    
-    - **Uncharted 3, Cartagena square (chapter 2):** at high frame rates (240 Hz setting, ~80 FPS)
-      the game could freeze and close with "GPU crash: the graphics device was lost". It came from
-      the speed fix for that area and is fixed in 0.3. If it still happens to you, set Frame rate to
-      60 on the Display page and open an issue with your `user\last_run.log`.
-    - **Uncharted 3:** green or black shapes flash for a single frame on some characters (Sully's
-      shirt in Cartagena). It happens in shadPS4 too, so it's a shader translation problem. Not fixed yet.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  Zfinix/eleven
-    ⭐ 633 stars  |  🍴 104 forks  |  💻 TypeScript  |  📅 2026-10-13
-    🔗 https://github.com/Zfinix/eleven
-    📡 来源: 🚀 5天300+星
-    🏷️ acp, ai-agents, android, decompiler, disassembler, ghidra, hopper, macos, rea, reverse-engineering
-    📝 Agent-first reverse engineering for macOS, Windows and Linux: any ACP agent reads, renames and patches binaries, Android apps and GPU kernels next to you.
-
-    README 摘要:
-    Eleven
-    
-    An agent-first reverse-engineering app for macOS, Windows and Linux.
-    
-    **English** · 简体中文 · 繁體中文 · 日本語 · 한국어 · Türkçe · Русский · Tiếng Việt · ไทย · Deutsch · Español · Français · Українська · Polski · Português (Brasil) · العربية · فارسی · Bahasa Indonesia · Italiano
+    > [!NOTE]
+    > The original Overdrive project has been shut down so I decompiled the last released build,
+    > recovered the complete source and rebuilt it.
     
       
     
-    Eleven is a reverse-engineering app built around agents. Drop in an app, a binary, an Android APK, a GPU kernel, a shader or a model and ask what it does. Any agent that speaks the Agent Client Protocol can read the code, follow references, rename functions, leave notes and suggest patches, while you watch and approve in the same window.
-    
-    Native code is read by Ghidra through REA, or by Rizin when you want files to open in seconds. Android apps are read by jadx. The UI is React rendered natively on GPUI by GPUIX.
+      
+      
     
     ## Features
     
-    - **Bring your own agent.** Aster, Claude, Codex, Gemini, Cursor, Copilot, OpenCode and any other ACP agent. Run several on the same project, each in its own chat.
-    - **Agents drive the window.** Eleven serves its own MCP tools so an agent can open a function, switch views, rename, add notes, change types and propose patches.
-    - **Ask about any code.** Select lines in pseudocode, assembly or a source file and ask, explain or copy them. The answer opens under the lines, and a suggested rename arrives as a card you accept or decline.
-    - **You stay in control.** Every change by you or an agent is logged with its author and can be undone. Byte patches from agents arrive as suggestions you accept or decline.
-    - **Mach-O, ELF and PE.** Functions, pseudocode, assembly, control-flow graph, cross-references, strings, segments and hex. Change a line's type (code, procedure, data, string) and number format with Hopper's keys.
-    - **Android apps.** APKs open with Java from jadx, smali from apktool when it's installed, string resources, and the manifest, `res`, assets and native libraries in a Resources list. Split bundles (`.xapk`, `.apks`) open with every split in place.
-    - **Source files.** Eleven finds the source files a binary was built from, reads Swift types straight from the binary, and has your agent recreate a whole file, with each function linked back to its address.
-    - **Rewrite in any language.** Show a function's pseudocode rewritten by your agent in C, C++, Rust, Go, Swift, Python, TypeScript, Java, C# or Zig.
-    - **GPU kernels.** CUDA and HIP fat binaries open as highlighted PTX, with notes beside each block and rewrites in CUDA C++, HIP C++ or Me
+    - **1,800+ games** to discover, with **Top rated**, **New releases** and a featured spotlight
+    - **Browse the whole library** with filters, sorting, scores and download sizes at a glance
+    - **Downloads straight to the console**, to internal storage or any USB drive, with live speed and storage stats
+    - **Favorites**, **search** with an on-screen keyboard, and a **Files** page to see and clean up what's on your drives
+    - **13 languages**: English, Deutsch, Español, Français, Português (Brasil), Русский, Bahasa Indonesia, 日本語, 简体中文, العربية, اردو, हिन्दी, বাংলা
+    - **Updates itself**: a new version installs from the console, no PC needed
+    - Made for the controller: L1 R1 to switch sections, ✕ to select, ○ to go back
+    
+    ## Install in four steps
+    
+      
+    
+    ### Before you start
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  anujasid/blender-ai-mcp-addon
+    ⭐ 654 stars  |  🍴 188 forks  |  💻 Python  |  📅 2026-10-15
+    🔗 https://github.com/anujasid/blender-ai-mcp-addon
+    📡 来源: 🚀 5天300+星
+    🏷️ ai-assistant, blender, blender-addon, blender-ai, blender-automation, blender-extension, blender-mcp, blender-plugin, blender-python, blender-scripting
+    📝 AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with OpenAI, ChatGPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon and plugin, copilot for 3D, bpy Python scripting, MCP integration.
+
+    README 摘要:
+    # mcp-for-blender-pro
+    
+    ### Your Blender scene. Your AI models. One creative workspace.
+    
+    **An AI assistant for Blender that can inspect your scene, build objects, edit materials, find assets and carry out multi-step workflows—with a visual chat workspace and a built-in Model Context Protocol (MCP) server.**
+    
+    Download · Getting started · Connections and agents
+    
+    ## Turn a creative brief into scene operations
+    
+    Start with an idea. Ask the assistant to inspect your scene, create a product-display layout, arrange objects, assign materials or prepare an export. Follow its actions in the conversation and inspect the result in the viewport preview. Keep working in Blender throughout the process.
+    
+    **mcp-for-blender-pro brings conversation, scene tools, model choice and agent workflows together.** It is designed for artists who want faster iteration, technical artists who automate repetitive work, and developers connecting AI tools to Blender.
+    
+    ## Why choose mcp-for-blender-pro?
+    
+    | Capability | What it gives you |
+    |---|---|
+    | **Blender-aware assistance** | Scene and object inspection gives the assistant context before it acts. |
+    | **A visual Studio workspace** | Chat, scene objects, viewport snapshots, approvals and a task board in a companion window. |
+    | **Your choice of AI** | Connect supported cloud providers, local Ollama models or compatible custom endpoints. |
+    | **Saved connections** | Keep work and personal connections separate, including multiple keys for the same provider. |
+    | **One assistant or a team** | Use a single model for quick changes, or managers, workers and reviewers for structured tasks. |
+    | **Built-in MCP server** | Connect OpenCode and other clients supporting authenticated Streamable HTTP MCP. |
+    | **21 scene tools** | Create, inspect, edit, capture, search assets, consult Blender APIs and export scenes. |
+    | **Multilingual menus** | Choose English, German, French, Spanish or Chinese for the main interface. |
+    
+    ## From a quick edit to an agent team
+    
+    Use **Single assistant** for direct, conversational work. For larger tasks, configure a **Team chain** with individual responsibilities, instructions and models.
+    
+    - **Manager:** breaks the request into assignments and acceptance criteria.
+    - **Workers:** perform the assigned scene operations.
+    - **Reviewers:** inspect results and approve work or return specific findings.
+    
+    Tasks run sequentially so scene edits stay ordered. A blocked task gets one correction attempt; a second failed review stops the workf
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#6  Tencent-Hunyuan/Hy-Memory
+    ⭐ 615 stars  |  🍴 59 forks  |  💻 Python  |  📅 2026-10-15
+    🔗 https://github.com/Tencent-Hunyuan/Hy-Memory
+    📡 来源: 🚀 5天300+星
+    📝 无描述
+
+    README 摘要:
+    Hy Memory
+    
+    Production-grade dual-system cognitive memory for LLM agents.
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    English | 中文
+    
+    **Hy Memory** (Official Website) is a production-grade dual-system cognitive memory engine and Python SDK (`hy-memory`) for self-evolving LLM agents, providing specialized memory pipelines across three task scenes: hierarchical long-term cognitive memory for **Chat**, two-layer fact and reusable-experience memory for **Working**, and version-evolution diff-chain tracking for **Coding**. Built on top of Hy Memory, **MemHub** is a local-first desktop and CLI product that unifies conversation history and coding traces from user-authorized AI applications (such as Claude Code, Cursor, Codex, OpenCode, and Qwen Code) into a single managed runtime and local data directory, enabling governed cross-application memory recall.
+    
+      
+      MemHub Demo Video
+    
+    ---
+    
+    ## Latest News
+    
+    * *[new]* 🔥🔥🔥 **[2026-10]**: 🚀 **Released** **Hy Memory 2.0 (`hy-memory==2.0.3`)** on PyPI and open-sourced the **Hy-Memory** monorepo together with **MemHub**!
+    * *[new]* 🔥🔥🔥 **[2026-10]**: 🚀 **Open-sourced** **Hy-Memory-30B-A3B** on Hugging Face along with its technical report on attributed reinforcement learning for long-term memory writing!
+    * *[new]* 🔥🔥 **[2026-09]**: 📊 **Released** **CMB: A Coding Memory Benchmark for Long-Horizon and Interleaved Coding Agents** (submitted to **ICLR 2027**).
+    * *[new]* 🔥🔥 **[2026-08]**: 🎉 **Accepted** at **EMNLP 2026**: **Memory Beyond Recall: A Dual-Process Cognitive Memory System for Self-Evolving LLM Agents**!
+    * 🔥 **[2026-05]**: 🌟 **Initial Release** Released **Hy Memory 1.0**, our first-generation dual-system cognitive memory framework for self-evolving LLM agents.
+    
+    ---
+    
+    ## Papers
+    
+    Welcome to the **Hy Memory Research Family**, covering cognitive chat memory, long-horizon coding memory, and RL-trained memory writing models:
+    
+    > **Memory Beyond Recall: A Dual-Process Cognitive Memory System for Self-Evolving LLM Agents** *(Accepted at **EMNLP 2026**)*  
+    > **TL;DR:** Proposes the dual-process (System 1 + System 2) cognitive memory architecture for **Chat**, organizing personal memory into an 8-layer hierarchy (raw dialogues, atomic facts, summaries, schemas, and prospective intentions) with conflict reconciliation and cross-domain schema induction.  
