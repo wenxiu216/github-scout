@@ -1,621 +1,247 @@
-📊 开源日报 — 2026-10-23
-共发现 13 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-10-24
+共发现 5 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  fastapi/fastapi
-    ⭐ 103894 stars  |  🍴 10097 forks  |  💻 Python  |  📅 2018-12-08
-    🔗 https://github.com/fastapi/fastapi
+#1  Renhuai123/ziwei-doushu
+    ⭐ 7003 stars  |  🍴 1428 forks  |  💻 TypeScript  |  📅 2026-05-01
+    🔗 https://github.com/Renhuai123/ziwei-doushu
     📡 来源: trending-daily
-    🏷️ api, async, asyncio, fastapi, framework, json, json-schema, openapi, openapi3, pydantic
-    📝 FastAPI framework, high performance, easy to learn, fast to code, ready for production
+    🏷️ bazi, chinese-astrology, divination, fortune-telling, nextjs, open-source, purple-star-astrology, typescript, zi-wei-dou-shu, ziwei-doushu
+    📝 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据
 
     README 摘要:
-    FastAPI framework, high performance, easy to learn, fast to code, ready for production
+    # 紫微斗数 · 开源排盘引擎
     
-        
+    ### 算法是公开的传统智慧，不应该被锁在围墙里
     
-        
+    **中文** · English
     
-        
+    **一、项目理念**：紫微斗数是中国传统命理学的瑰宝，倪海厦老师在《天纪》中系统梳理了正宗的紫微斗数体系。我们希望通过技术手段让更多人接触和学习这门学问。
     
-        
+    开源排盘算法和知识库，是因为我们相信：**算法是公开的传统智慧，不应该被锁在围墙里**。真正的价值在于解读的深度、用户体验的打磨、以及持续运营的积累。
     
-    ---
+    **二、项目信息**：基于倪海厦《天纪》教学体系的紫微斗数排盘系统，包含完整排盘算法、四化系统、格局知识库、古籍原文数据，以及一套完整开源的紫微斗数解读数据：**v4.0 解读数据集——67.5 万张命盘 × 13 维 = 877 万段解读，正文约 204 亿字，解压后 56.6 GB**（2026-10-15 发布）。
     
-    **Documentation**: https://fastapi.tiangolo.com
+    | 数据集 | 命盘 | 解读段数 | 解压后 | 覆盖年份 | 每张盘解读字数 |
+    |---|---|---|---|---|---|
+    | **v4.0 解读数据集**（2026-10-15） | **674,976** | **8,774,688** | **56.6 GB** | **1950–2026**（只含真实日期） | **约 3.0 万字** |
+    | v3.0 样本数据集 | 518,400 | 6,739,200 | 33.1 GB | 1924–1983 | 约 2.1 万字 |
+    | 变化 | +30% | +30% | **+71%** | +17 年 | +44% |
     
-    **Source Code**: https://github.com/fastapi/fastapi
+    v3.0 每张盘解读字数按 2,160 张盘抽样估算，其余数字为全量统计；两版每张盘都是 13 维。
     
-    ---
+    在线体验：metisziwei.com，排盘、AI 解读、命盘历史全部开放。
     
-    FastAPI is a modern, fast (high-performance), web framework for building APIs with Python based on standard Python type hints.
-    
-    The key features are:
-    
-    * **Fast**: Very high performance, on par with **NodeJS** and **Go** (thanks to Starlette and Pydantic). One of the fastest Python frameworks available.
-    * **Fast to code**: Increase the speed to develop features by about 200% to 300%. *
-    * **Fewer bugs**: Reduce about 40% of human (developer) induced errors. *
-    * **Intuitive**: Great editor support. Completion everywhere. Less time debugging.
-    * **Easy**: Designed to be easy to use and learn. Less time reading docs.
-    * **Short**: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.
-    * **Robust**: Get production-ready code. With automatic interactive documentation.
-    * **Standards-based**: Based on (and fully compatible with) the open standards for APIs: OpenAPI (previously known as Swagger) and JSON Schema.
-    
-    * estimation based on tests conducted by an internal development team, building production applications.
-    
-    ## Sponsors
-    
-    ### Keystone Sponsor
-    
-    ### Gold Sponsors
-    
-    ### Silver Sponsors
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  php/php-src
-    ⭐ 41288 stars  |  🍴 8325 forks  |  💻 C  |  📅 2011-06-16
-    🔗 https://github.com/php/php-src
-    📡 来源: trending-daily
-    📝 The PHP Interpreter
-
-    README 摘要:
-    # The PHP Interpreter
-    
-    PHP is a popular general-purpose scripting language that is especially suited to
-    web development. Fast, flexible and pragmatic, PHP powers everything from your
-    blog to the most popular websites in the world.
-    
-    PHP is distributed under the Modified BSD License
-    (SPDX-License-Identifier: `BSD-3-Clause`).
-    
-    ## Documentation
-    
-    The PHP manual is available at php.net/docs.
-    
-    ## Installation
-    
-    ### Prebuilt packages and binaries
-    
-    Prebuilt packages and binaries can be used to get up and running fast with PHP.
-    
-    For Windows, the PHP binaries can be obtained from
-    windows.php.net. After extracting the archive the
-    `*.exe` files are ready to use.
-    
-    For other systems, see the installation chapter.
-    
-    ### Building PHP source code
-    
-    *For Windows, see Build your own PHP on Windows.*
-    
-    For a minimal PHP build from Git, you will need autoconf, bison, and re2c. For
-    a default build, you will additionally need libxml2 and libsqlite3.
-    
-    On Ubuntu, you can install these using:
-    
-    ```shell
-    sudo apt install -y pkg-config build-essential autoconf bison re2c libxml2-dev libsqlite3-dev
-    ```
-    
-    On Fedora, you can install these using:
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  Meloong-Git/PCL
-    ⭐ 8772 stars  |  🍴 1220 forks  |  💻 Visual Basic .NET  |  📅 2022-07-26
-    🔗 https://github.com/Meloong-Git/PCL
-    📡 来源: trending-daily
-    🏷️ launcher, minecraft, minecraft-launcher
-    📝 Minecraft 启动器 Plain Craft Launcher（PCL）。
-
-    README 摘要:
-    # Plain Craft Launcher
-    
-    包含 PCL 的大部分源代码，包括 UI 库、动画模块、下载模块、Minecraft 启动模块等！
-    代码并不是实时更新的，它会在每次 PCL 发布更新时同步一次。
-    非常感谢社区的大力支持！
-    
-    ### 相关资源
-    - PCL 下载：下载可免费使用的正式版 PCL！
-    - PCL 功能投票：来参加投票吧，开发者会优先处理票数较高的项目！
-    - 帮助文档库：PCL 内置帮助文档的存储库
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  Anil-matcha/open-duet
-    ⭐ 6065 stars  |  🍴 749 forks  |  💻 Python  |  📅 2023-05-25
-    🔗 https://github.com/Anil-matcha/open-duet
-    📡 来源: 🤖 AI / LLM / RAG | 活跃 | open source ChatGPT alte
-    🏷️ agentic-ai, ai-agent, ai-assistant, ai-coworker, ai-employees, ai-workspace, chatgpt-agent, claude-cowork, claude-duet, computer-use
-    📝 Open-source, self-hosted alternative to Claude Duet: AI coworkers (named agents) with instructions, memory, routines, their own isolated computer, and your approval before they act. Also an alternative to OpenAI Dots, Meta Muse, Grok Bot, Manus Cue and ChatGPT agent.
-
-    README 摘要:
-    # Open Duet: Open-Source AI Coworkers You Run Yourself
-    
-    **Open Duet is an open-source, self-hosted workspace for AI coworkers: named
-    agents that each have a job, instructions, memory, their own workspace and
-    isolated computer, a schedule, and a human approval step before they do anything
-    risky.** You chat with them in a browser, a desktop app or Telegram, hand them
-    recurring routines, and keep their data and credentials on your own machine or
-    server. It is an open alternative to Claude Duet and to other paid AI agent products such as OpenAI Dots,
-    Meta Muse, Grok Bot, Instinct, Manus Cue, Claude Cowork, and ChatGPT agent, and
-    is not yet a feature-for-feature replacement for them.
-    
-    An agent can be anything you would hand work to: a researcher, a support
-    triager, a reporting assistant, a developer. Coding is one thing agents do, not
-    what Open Duet is. Agents run on an engine you already have signed in (Claude,
-    Codex, any Agent Client Protocol CLI, or an OpenAI-compatible endpoint). Teams of
-    agents that delegate to each other, rooms, and connectors to other apps are
-    planned, not built; see docs/ROADMAP.md.
-    
-    ▶ Watch the Open Duet demo on YouTube
-    
-    > **Status:** Active development. See Known limitations before running it for others.
-    
-    ## Contents
-    
-    - What it does
-    - Why Open Duet
-    - Quick start
-    - Using Open Duet
-    - Telegram and Boat sandboxes (optional)
-    - Architecture
-    - Project layout
-    - Known limitations
-    - Contributing
-    - License
-    
-    ## What it does
-    
-    - **Named agents** with a title, instructions, engine and model, workspace folder, approval mode and notes; export and import them as portable files.
-    - **Memory:** each agent keeps notes (`MEMORY.md` plus topic notes) that load into its conversations, with recall across conversations and undo.
-    - **Routines:** cron, weekday, interval, one-off and webhook schedules with timezones, run history, missed-run tracking, restart recovery and an in-app notification feed (see docs/ROUTINES.md).
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  tek-sys-hub/Rubix-lang
-    ⭐ 1904 stars  |  🍴 4 forks  |  💻 Assembly  |  📅 2026-10-19
-    🔗 https://github.com/tek-sys-hub/Rubix-lang
-    📡 来源: 🚀 5天300+星
-    🏷️ assembler, assembly, assembly-lang, assembly-language, assembly-language-programming, assembly-x86-64, native-compiler, programming, programming-language, programming-languages
-    📝 The 100% Pure x86-64 Assembly Systems Language
-
-    README 摘要:
-    # Rubix Programming Language (`.ix`)
-    
-      
-    
-      
-    
-      The Ultra-Lightweight x86-64 Systems Programming Language
-      Zero C. Zero libc. Zero LLVM. A ~42 KB compiler building standalone native binaries in sub-milliseconds.
-    
-    ```
-       ██████╗ ██╗   ██╗██████╗ ██╗██╗  ██╗
-       ██╔══██╗██║   ██║██╔══██╗██║╚██╗██╔╝
-       ██████╔╝██║   ██║██████╔╝██║ ╚███╔╝ 
-       ██╔══██╗██║   ██║██╔══██╗██║ ██╔██╗ 
-       ██║  ██║╚██████╔╝██████╔╝██║██╔╝ ██╗
-       ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝╚═╝  ╚═╝
-    ```
-    
-    > **A sovereign systems programming language whose entire compiler is written in 100% pure x86-64 assembly.**  
-    > **Zero libc. Zero C. Zero LLVM. Zero Virtual Machines. Zero bloated toolchains.**  
-    > **Produces standalone native executables for Linux ELF64 and Windows PE64.**
-    
-    ---
-    
-    ## ⚡ 10-Second Syntax Preview
-    
-    ```rubix
-    struct Point {
-        x: int,
-        y: int
-    }
-    
-    fn hypot_squared(p: Point): int {
-        return p.x * p.x + p.y * p.y;
-    }
-    
-    fn main() {
-        print_str("Hello from Rubix!\n");
-    
-        let pt = Point { x: 3, y: 4 };
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  ⚠️风险  ikow/php2shell-poc
-    ⚠️ 命中风险词: exploit, poc —— 默认归排除区，需人工确认
-    ⭐ 1576 stars  |  🍴 555 forks  |  💻 Python  |  📅 2026-10-21
-    🔗 https://github.com/ikow/php2shell-poc
-    📡 来源: 🚀 5天300+星
-    🏷️ cve-2026-109618, cve-2026-109619, detection-rules, exploit, php-exploit, php-security, php2shell, poc, rce, session-upload-progress
-    📝 CVE-2026-109618/109619 — 5 RCE chains + detection rules (Suricata, Sigma, ModSecurity). PHP session.upload_progress pre-auth exploit research.
-
-    README 摘要:
-    php2shell
-    
-      CVE-2026-109618 & CVE-2026-109619 — PHP Pre-Auth RCE Exploit & Detection Toolkit
-    
-      
-      
-      
-      
-      
-    
-      Exploits · Detection · Lab · Writeup
-    
-    ---
-    
-    Five independent RCE chains exploiting PHP's `session.upload_progress` and the Zend engine's OOM bailout. **14 years of vulnerable code** — PHP 5.4.0 (2012) through 8.5.11. Pre-auth. No application vulnerability required for some chains.
-    
-    Impacts **78% of all websites** — including WordPress (43%), Joomla, Drupal, Laravel, Magento, and every default PHP installation.
-    
-    **Author:** Qi Deng &nbsp;|&nbsp; **Writeup:** Substack &nbsp;|&nbsp; **Date:** 2026-10-21
-    
-    ## CVE Details
-    
-    | CVE | GHSA | CVSS | Description |
-    |-----|------|------|-------------|
-    | CVE-2026-109618 | GHSA-w8hw-w9fx-j79w | 9.2 | OOM → `longjmp()` leaves Zend engine state invalid → RCE |
-    | CVE-2026-109619 | GHSA-6wmf-4rv5-p3rp | 9.2 | Stale global state across FPM worker requests → UAF → RCE |
-    
-    **Patch:** Commit 3584a98 — 300 files changed across the Zend engine.
-    
-    ## Attack Chains
-    
-    | Chain | Vector | Pre-auth | Conditions | SAPI |
-    |-------|--------|:--------:|------------|------|
-    | **A** | Session injection + LFI | Yes | App has any LFI sink | All |
-    | **B** | var_destroy UAF → handler overwrite | No | App calls `unserialize()` | All |
-    | **C** | Handler mismatch → `__destruct` | Yes | Two dirs with different serialize_handler | FPM |
-    | **D** | OOM corruption → stale `EG()` | Yes | **None** — any endpoint | mod_php |
-    | **E** | FPM session OOM → stale `BG()` | Yes | Producer: any `session_start()` endpoint; Consumer: **any** endpoint | FPM |
-    
-    Chain D is the most critical: **zero-dependency pre-auth RCE** against any Apache mod_php installation.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  Acclorite/book-story
-    ⭐ 1414 stars  |  🍴 98 forks  |  💻 Kotlin  |  📅 2023-12-29
-    🔗 https://github.com/Acclorite/book-story
-    📡 来源: 📖 阅读/内容平台 | 活跃 | epub reader open source
-    🏷️ android, app, application, book-reader, epub, epub-reader, fb2, fb2-reader, fdroid, foss
-    📝 Book's Story — Material You eBook reader built with Jetpack Compose. Free & Open source & Ad-free, with extensive customization options and support for multiple file formats.
-
-    README 摘要:
-    > [!Caution]
+    > **注：关于六亲判断**
     >
-    > Starting in September 2026, Android will require all apps to be registered by verified developers
-    > in order to be installed on certified Android devices.
-    > It means that **Book's Story will no longer be available** for installation on any certified
-    > Android device.
-    >
-    > https://keepandroidopen.org/
+    > 紫微斗数在六亲（父母、兄弟、子女等）判断上存在一定局限。倪师在《天纪》中指出：“斗数批六亲本来就比较差一点。”（2上 · 00:25:27）在传统术数中，铁板神数在核对六亲方面有其独特优势（2上 · 00:03:15）；倪师仍以紫微斗数为核心，是因为它能结合地理、环境与人事进行综合判断，形成“上知天文、下知地理、中知人事”的完整体系（2上 · 00:25:43）。因此，与六亲相关的分析仅供参考；metisziwei.com 上父母、兄弟、子女三个维度也附有同样的说明。
     
     ---
     
-      
-      Book's Story
-      Material You eBook Reader for Android
-      Dive into the world of adventure as you discover your favorite book's story!
+    ## 目录
     
-    ---
-    
-    Overview
-    
-    Enjoy a sleek, customizable **reading app** with modern design, built with Jetpack Compose. It’s
-    open-source, offering you a personalized, ad-free journey through your favorite books!
-    
-    ---
-    
-    ## 🖌️ Screenshots
-    
-      
-      
-      
-      
-      
-      
-      
-    
-    ---
-    
-    ## 🔮 Features
-    
-    - Storage Access Framework
+    | | 章节 | 一句话 |
+    |---|------|--------|
+    | 一 | 本轮更新 | 13 维断语按倪师原话与《全书》逐句校正，发布 67.5 万命盘 × 13 维解读数据集 v4.0 |
+    | 二·新 | 13 维解读数据集 v4.0 | 2026-10-15 新版断语，67.5 万命盘，按年份下载 |
+    | 二 | 51.8 万命盘样本数据集 | 规格、下载、用途、许可 |
+    | 三 | 快速开始 | 克隆到跑起来 |
+    | 四 | 排盘引擎 | 能做到什么、文件怎么分、古籍数据 |
+    | 五 | 倪师《天纪·紫微斗数》原话 | 14 讲 + 2 段补充、1848 条，一图看全，每条可回放 |
+    | 六 | 界面是一份 Demo | 不是线上那套，差距写明 |
+    | 七 | 开源边界 | 什么开源、什么不开源 |
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  ⚠️风险  9bie/php2shell-bypass-aslr-exp
-    ⚠️ 命中风险词: exploit, bypass, 绕过, cookie —— 默认归排除区，需人工确认
-    ⭐ 994 stars  |  🍴 349 forks  |  💻 Python  |  📅 2026-10-21
-    🔗 https://github.com/9bie/php2shell-bypass-aslr-exp
+#2  wesbos/3d-model-anything
+    ⭐ 1211 stars  |  🍴 202 forks  |  💻 Swift  |  📅 2026-10-21
+    🔗 https://github.com/wesbos/3d-model-anything
     📡 来源: 🚀 5天300+星
-    📝 A php2shell exploit that requires no modifications to the official version, and does not require display_errors or limit_memory.
+    📝 Capture iPhone LiDAR and photos, reconstruct editable Three.js rooms, and explore them in a browser.
 
     README 摘要:
-    # php2shell - 官方环境 无需display_errors，不修改memory_limit
+    # 3D Model Anything
     
-    中文 | English
+    Capture a room on an iPhone, then use its geometry and photographs to build an editable Three.js scene with an AI coding agent.
     
-    **官方 prefork 配置（MaxRequestWorkers=150）下**，在完全远程、只用 HTTP、目标页面只有 ``、不写目标侧
-    PHP 的约束下，一条命令拿到 RCE：
+    Open the office viewer · App support
     
-    - stock 官方镜像 + 官方 ini + 官方 worker：**10/10**
-    - 单 worker 基线（早期标定/调试）：**20/20**
-    - 单次约 3–4 秒（含 149 个占位连接），被固定的 worker 不重启，目标 ini 未改
+    This repository includes the **3D Model Anything iPhone app**, a **Three.js viewer**, the **scan-to-threejs agent skill**, and **Wes’s detailed office demo**.
     
-    # 通用利用
+    The app records the evidence. The skill guides an agent through measurement, modeling and matched-camera visual comparisons. This is an iterative reconstruction workflow, not a one-click scan-to-perfect-model converter. The current workflow focuses on rooms and interiors.
     
-    理论上只要你计算出所有php版本的偏移，然后利用这些偏移批量去fuzz，总有一条fuzz是能rce的。反正worker崩了也会重启，不怕目标打挂。
+    ## Run the viewer
     
-    关于 worker：官方 prefork 的 `MaxRequestWorkers=150` 也已打通。脚本先占住 149 个 worker 的未完成请求，再把 A1/B1/A2/B2 固定到剩下的同一个 child；单 worker 只是早期的调试形态（`--workers 1` 仍可复现）。
-    
-    ## 快速开始（官方 php.ini-production / display_errors=Off / 128M）
-    
-    ```bash
-    git clone https://github.com/9bie/php2shell-bypass-aslr-exp.git
-    cd php2shell-bypass-aslr-exp
-    
-    # 1) 起目标：stock 官方镜像；容器里只把官方 php.ini-production 复制成 php.ini
-    ./pure/run_pure.sh
-    # target: OK
-    # PHP 8.4.26 ...
-    # display_errors => Off => Off
-    # memory_limit => 128M => 128M
-    # workers: official (run exploit with --workers 150)
-    
-    # 2) 一条命令：A1 -> B1 泄漏 -> A2 -> B2 -> id
-    python3 exploit.py --port 18110
-    #       pinned 150/150 workers (149 holders)
-    # [try 1] A1: END-cleanup send_cookie OOM
-    # [try 1] B1: stale-id OOB read (chunk base + libphp)
-    #       decoded=819208 zval_ptr_dtor=0x7fe00ef5db60 -> libphp=0x7fe00e8ff000
-    #       chunk buckets: [('0x7fe00c600000', 7495), ('0x7fe00ee00000', 1095),
-    #                       ('0x7fe00cc00000', 87), ('0x7fe00c400000', 79)]
-    # [try 1] A2 + B2: main=0x7fe00cc00000 S=0x7fe00ccf8398 zif_system=0x7fe00ed64370
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#9  ⚠️风险  eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC
-    ⚠️ 命中风险词: exploit, poc —— 默认归排除区，需人工确认
-    ⭐ 908 stars  |  🍴 219 forks  |  💻 Shell  |  📅 2026-10-21
-    🔗 https://github.com/eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC
-    📡 来源: 🚀 5天300+星
-    📝 Proof-of-Concept (PoC) exploit for php2shell (CVE-2026-109618 / CVE-2026-109619), demonstrating remote code execution in vulnerable PHP environments. For security research and educational purposes only.
-
-    README 摘要:
-    # php2shell — CVE-2026-109618 / CVE-2026-109619
-    
-    > **Critical Advisory (CVSS v4.0: 9.2 - Critical):** On October 20, details of two pre-auth Remote Code Execution (RCE) flaws in the PHP core leaked online ahead of coordinated disclosure. Exploitation allows arbitrary command execution straight from the web server.
-    
-    ---
-    
-    ## Table of Contents
-    
-    - Overview
-      - Root Cause
-      - Verification & Targets
-    - Affected PHP Versions
-    - Threat Landscape & Detection Guidance
-      - Behavioral Indicators & Suspicious Child Processes
-      - Monitoring Recommendation
-    - Action Items for Organizations
-    - Proof of Concept (PoC)
-      - Exploit Architecture & Stages
-      - Target Requirements
-      - Usage & Parameters
-      - Profiles & Offsets
-    - Mitigation & Source Patching
-      - 1. Configuration Mitigation (Immediate Stopgap)
-      - 2. Automated Quick-Fix Script
-      - 3. Source Code Patch (`session-upload-progress-counters.patch`)
-      - 4. Cloudflare WAF Custom Rules
-      - 5. FrankenPHP Caddyfile Configuration
-      - 6. Lighttpd Configuration
-      - 7. Apache Mitigation (ModSecurity & .htaccess)
-    - Disclaimer
-    
-    ---
-    
-    ### Overview
-    
-    `php2shell` refers to two critical vulnerabilities (CVE-2026-109618 & CVE-2026-109619) affecting core PHP functionality. The primary demonstrated vector is a heap use-after-free (UAF) in the PHP core session upload progress mechanism leading to arbitrary code execution (`zend_call_function` / `system()`).
-    
-    - **Severity:** Critical (CVSS v4.0: 9.2)
-    - **Impacted Versions:** Reports indicate PHP versions 5, 6, 7, and 8 may be affected. Fixes are primarily expected for currently supported PHP 8 branches, leaving end-of-life (EOL) versions (PHP 5.x, 7.x, 8.0, 8.1) exposed without official vendor patches.
-    - **Industry Tracking:** Confirmed by security researchers (watchTowr reproduced CVE-2026-109618; monitoring by Huntress and Florian Roth / process-watcher).
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#10  ELY-Open-Source/ElyOffice
-    ⭐ 889 stars  |  🍴 56 forks  |  💻 Rust  |  📅 2026-10-19
-    🔗 https://github.com/ELY-Open-Source/ElyOffice
-    📡 来源: 🚀 5天300+星
-    📝 Ely Office: offline-first desktop apps in Rust and GPUI
-
-    README 摘要:
-    # Ely Office
-    
-    Offline-first desktop apps in Rust and GPUI. Files stay in your folders; no account, no cloud service.
-    
-    | App | Does | Engine |
-    | --- | --- | --- |
-    | ElyDoc | Word processing (DOCX, ODT) | LibreOfficeKit |
-    | ElyTable | Spreadsheets (XLSX, ODS, CSV) | LibreOfficeKit |
-    | ElyShow | Presentations (PPTX, ODP) | LibreOfficeKit, system media |
-    | ElyPDF | PDF reading and editing, OCR, signatures | MuPDF, Tesseract |
-    | ElyTree | Git client | Git |
-    | ElyMark | Markdown | markdown-rs, RaTeX, mermaid-rs-renderer |
-    | ElyMail, ElyAgent | Second release | — |
-    
-    ## Build (macOS)
+    Use Node.js 22.12+ (or a newer supported release).
     
     ```sh
-    scripts/doctor.sh                 # toolchain versions
-    scripts/fetch-references.sh       # upstream sources at pinned commits
-    scripts/build-libreoffice.sh      # patched LibreOffice 26.2.6.3 (about an hour)
-    scripts/build-mupdf.sh            # patched MuPDF 1.28.5
-    scripts/build-git.sh && scripts/fetch-git-lfs.sh
-    scripts/fetch-tessdata.sh
-    cargo build -p ely-lok --bins -p ely-pdf-engine --bins
-    cargo run -p ely-doc              # or ely-table, ely-show, ely-pdf, ely-tree, ely-mark
+    npm ci
+    npm run dev
     ```
     
-    Packages: `packaging/macos/release.sh` writes each app's `.app` and `.dmg`, the source archive and the upstream source archive (patched MuPDF, Git) to `dist/`. Linux and Windows recipes are in `packaging/linux` and `packaging/windows`; they have not been run on those systems.
+    Open http://localhost:5188. Explore the office in dollhouse, walking, overhead, wireframe and knolling views. The playground is at `/play.html?room=office-v4&mode=fpv`.
     
-    ## Tests
+    ```sh
+    npm run build
+    npm run preview
+    ```
     
-    `cargo test --workspace`, the window scripts in `tests/scripts` (macOS, Accessibility permission), and the benchmark `tests/perf/bench.py`.
+    The demo includes the reconstructed office and selected textures. Original scans and photo collections are not distributed; Scan and Overlay are disabled for this example. Those modes remain available for your own rooms with reference assets.
     
-    ## Documents
+    ## Capture your own space
     
-    | | |
-    | --- | --- |
-    | `docs/help.md` | Help: opening and saving, recovery, offline limits, repositories |
-    | `docs/compatibility.md` | Versioned compatibility list |
-    | `docs/accessibility.md` | Accessibility and language review |
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#11  eagle-hq/EAGLE-4
-    ⭐ 888 stars  |  🍴 27 forks  |  💻 Python  |  📅 2026-10-20
-    🔗 https://github.com/eagle-hq/EAGLE-4
-    📡 来源: 🚀 5天300+星
-    🏷️ eagle, gpu, llm-inference, sglang, speculative-decoding, tokenspeed, vllm
-    📝 Official Inference Code of EAGLE-4
-
-    README 摘要:
-    EAGLE-4
+    See the iPhone app for building with Xcode, device requirements, scanning and sharing. Scanning needs a LiDAR-equipped iPhone or iPad. Non-LiDAR devices can import and review scans.
     
-      One Flexible Drafter for All Batch Sizes and Hardware
+    The app is source-available here; an App Store release is a separate distribution step. Do not assume an App Store download is available yet.
     
-      Paper (EAGLE-4) ·
-      EAGLE-4 draft for Qwen3.8-27B ·
-      Documentation
+    Export a room or session through the system share sheet and extract it into an ignored `data/captures-in//` directory. Exports keep the existing `house-capture/5` contract; changing the app name does not change the files.
     
-      
-      
-      
+    ## Use the skill
     
-      
-      
-      
-      
-      
-    
-      
-    
-      
-    
-      
-        Figure 1(a) of the EAGLE-4 paper: Qwen3.8-27B on the SPEED-Bench qualitative split, 4× NVIDIA B300, one request, temperature 0.
-        The numbers this release measured with EAGLE-4 are in the support matrix.
-      
-    
-    ## EAGLE-4
-    
-    **Leave speculation on. EAGLE-4 adapts to your hardware, batch and workload.**
-    
-    For high load, serve SGLang on four B300 GPUs with the high-load recipe, which
-    keeps pace with plain decoding up to 512 concurrent requests.
-    
-    EAGLE-4 (Extrapolation Algorithm for Greater Language-model Efficiency) speeds up LLM inference with
-    speculative decoding. EAGLE-4 draft models are built to run with `eagle-harness`, which decides how far to
-    speculate from measured costs on your setup, so every draft tree fits the batch size, the hardware and the
-    workload. The output stays exactly what the target model would generate on its own: up to 3.4× faster
-    generation on Qwen3.8-27B, with the same answers. Measured speedups
+    The skill lives at `.agents/skills/scan-to-threejs/SKILL.md`. Open this repository in an agent that supports local skills and ask it to use **scan-to-threejs** with your extracted export. You can also copy that skill directory into your agent's skill directory; the companion viewer/runtime in this repo is still needed for its capture workflow.
     
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#12  ⚠️风险  openai/php2shell-checker
-    ⚠️ 命中风险词: exploit —— 默认归排除区，需人工确认
-    ⭐ 851 stars  |  🍴 84 forks  |  💻 JavaScript  |  📅 2026-10-21
-    🔗 https://github.com/openai/php2shell-checker
+#3  ⚠️风险  oosexgang/hackios-xnu-kernel
+    ⚠️ 命中风险词: poc —— 默认归排除区，需人工确认
+    ⭐ 1146 stars  |  🍴 195 forks  |  💻 C  |  📅 2026-10-22
+    🔗 https://github.com/oosexgang/hackios-xnu-kernel
     📡 来源: 🚀 5天300+星
     📝 无描述
 
     README 摘要:
-    # PHP Version Checker
+    # HackiOS — XNU kernel
     
-    Get a version-based PHP2Shell warning from a website's PHP headers or local installation.
+    **HackiOS** boots Apple's open-source **XNU kernel** (`xnu-8796.121.2`, the kernel of iOS 16.5) on Android phone
+    hardware and runs the **unmodified iOS 16.5 user space** on top of it: launchd → backboardd → SpringBoard →
+    apps. Our own EFI loader, our own replacements for Apple's closed drivers, a UEFI port, and a Linux Wi-Fi driver
+    on a compatibility layer make that possible.
     
-    To install both skills, ask Codex:
+    It runs in two places:
     
-    ```text
-    $skill-installer install both skills from https://github.com/openai/php2shell-checker
-    ```
+    - **POCO X5 Pro 5G (redwood, Snapdragon 778G)** — nothing is flashed: the UEFI is started with `fastboot boot`,
+      the whole system lives in RAM, and after a reboot the phone is back in Android;
+    - **QEMU** (`virt`, aarch64) — the same thing on any Linux computer, no phone needed.
     
-    Use phpcheck-server when you have server
-    access, or phpcheck-url when you only have a URL:
+    This repository is half of the project:
     
-    ```text
-    $phpcheck-url check https://example.com
-    ```
+    | Repository | What |
+    |---|---|
+    | **hackios-xnu-kernel** (this one) | XNU patches, the EFI loader, the UEFI port, Wi-Fi, QEMU scripts, `xl`, prebuilt kernel/loader/UEFI, `common/` scripts |
+    | hackios-xnu-userland | our init, injected libraries, launchd jobs, the APFS image builder, the scripts that take iOS out of Apple's IPSW, Metal/Mesa work |
     
-    ```text
-    $phpcheck-server check the PHP version serving my site
-    ```
+    > **No Apple files are in either repository.** `ios165/fetch.sh` downloads the iOS 16.5 IPSW from Apple's own CDN
+    > to *your* machine and extracts what is needed there. HackiOS is an independent research project by OOSEX GANG and
+    > is not affiliated with, authorised or endorsed by Apple Inc. iOS, iPhone and Apple are trademarks of Apple Inc.
     
-    ## Run directly
+    Photographed on the phone, the Adreno GPU drawing (`gpu=1`). More in Screenshots.
     
-    Check a website:
+    ## What works
     
-    ```sh
-    node phpcheck.js "https://example.com"
-    ```
-    
-    ## Results
-    
-    | Result | Exit code | Meaning |
-    | --- | --- | --- |
-    | `OK` | `0` | Advertised version meets an upstream fixed release. |
-    | `POTENTIALLY VULNERABLE` | `1` | Advertised version is in an affected range. |
-    | `UNKNOWN` | `3` | Missing or unrecognized version, prerelease, or failed check. |
-    
-    Use `--json` for machine-readable output. `patch_status` is `ok`,
-    `potentially_vulnerable` or `unknown`. Invalid arguments exit with code `2`.
-    
+    | Works | Does not work (yet) |
+    |---|---|
+    | Lock screen, swipe to unlock, home screen with all icons (two pages), stock iOS 16 wallpapers | Cellular, Bluetooth |
+    | System gestures: swipe up (home, app switcher), edge swipe (back), Control Center | Charging under our kernel (the phone only discharges) |
+    | Apps: Settings, Clock, Calendar, Photos, Notes, Safari and more; widgets (Weather, Calendar) on the phone | Metal for apps (in progress: 293 of 456 system shaders already run on the Adreno, see `docs/air.md` in hackios-xnu-userland) |
+    | Phone touchscreen (Goodix GT9916), multitouch, wake on touch; real power and volume keys | App Store content and Apple ID sign-in (no Secure Enclave; FairPlay daemon exits) |
+    | Up to 8 CPU cores (`cpus=8`), big core at 2.4 GHz, ~20 s to the lock screen | Video and Live Photo recording |
+    | Adreno 642L GPU through Mesa/freedreno (`gpu=1`, OpenGL ES for CoreAnimation) | |
+    | Wi-Fi (WCN6750, ath11k): join from Settin
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#13  IncarnaMind/IncarnaMind
-    ⭐ 843 stars  |  🍴 59 forks  |  💻 TypeScript  |  📅 2023-08-25
-    🔗 https://github.com/IncarnaMind/IncarnaMind
-    📡 来源: 🤖 AI / LLM / RAG | 活跃 | open source ChatGPT alte
-    🏷️ ai-assistant, chat-with-pdf, citations, desktop-app, document-qa, fact-checking, granola-alternative, knowledge-management, literature-review, llm
-    📝 Open-source, Notion-like AI editor for your local documents and meetings: chat with PDFs, Word, Excel and PowerPoint, write and fact-check with page citations, and take AI meeting notes transcribed on your computer. Compare documents in a table. Mac, Windows, Linux. Works with ChatGPT, Claude, Gemini or Ollama. A NotebookLM and Granola alternative.
+#4  xevrion/hatchzip
+    ⭐ 1110 stars  |  🍴 22 forks  |  💻 Rust  |  📅 2026-10-21
+    🔗 https://github.com/xevrion/hatchzip
+    📡 来源: 🚀 5天300+星
+    🏷️ 7z, archive, cli, crash-safe, disk-space, extract, extractor, gui, rust, tar
+    📝 Extract huge archives in place: the archive shrinks as your files hatch, so you only need room for the output. ZIP, 7z, tar, split archives.
 
     README 摘要:
-    English · 简体中文
+    HatchZip
     
-      
-        
-        
-      
+      Extract huge archives in place. The archive shrinks as your files hatch,
+      so you only need free space for the output, not for the output and the archive.
     
-    IncarnaMind
+      Installation |
+      Usage |
+      Safety |
+      How it works |
+      Contributing
     
-      Your files, your AI: write, ask, check and compare in one place.
-      Every sentence and figure checked against your own documents, with the AI model you choose. Free and open source, on your computer.
-    
-      Download ·
-      What you can do ·
-      Privacy ·
-      Discussions
       
       
       
-       -->
     
-    Everything shown is in the app today.
+      
     
-    **IncarnaMind** is a free, open-source desktop app for macOS, Windows and Linux where you write with AI and ask questions about your own documents (PDF, Word, PowerPoint, Excel and more). It can check every sentence and figure in a draft against those documents, whoever wrote it, and every answer cites the exact page it comes from. It works with the AI you already use: your ChatGPT, Claude or Copilot plan, or your own API key.
+    A 180 GB game download that unpacks to 200 GB needs 380 GB of disk with WinRAR, 7-Zip or `unzip`, because the archive and everything extracted from it have to exist at the same time. HatchZip needs a little over 200 GB. It extracts the archive from the end and cuts each finished part off the archive file as it goes, so the space the archive gives back is reused for the next files.
     
-    ## Download
+    It checks that the extraction will fit before it changes anything, keeps a safety margin of free space the whole way through, and can be stopped or crash at any moment and pick up where it left off. It reads ZIP, 7z, tar, `.tar.gz` and split archives.
     
-    **IncarnaMind isn't released yet.** Once it is, the Releases page will have installers for macOS (Apple silicon and Intel), Windows and Linux. To hear when, leave your e-mail or click **Watch → Custom → Releases** at the top of this page. To try it now, run it from source with Node.js 24 or newer:
+    ### Get it
     
-    ```shell
-    git clone https://github.com/IncarnaMind/IncarnaMind.git && cd IncarnaMind
-    npm install && npm run dev
+    No coding needed. **Download for Windows** (Windows 10 and 11), or for macOS (Apple Silicon), macOS (Intel) and Linux.
+    
+    1. Run the installer. Windows may show "Windows protected your PC" because HatchZip is not code-signed yet: choose **More info**, then **Run anyway**.
+    2. Right-click the archive, choose **HatchZip**, then **Extract here**. On Windows 11 the menu is under **Show more options**.
+    3. Or open HatchZip from the Start menu, open the archive, and choose **Extract**.
+    
+    HatchZip shows whether the files will fit before it changes anything. The archive is used up as the files come out, so when it finishes, only the extracted files are left.
+    
+    ## Highlights
+    
+    The same 200 MB of game data (21 files), packed by the real tools, extracted on a 220 MiB disk with about 50 MB free:
+    
+    | Archive | `unzip` / 7-Zip | HatchZip |
+    |---|---|---|
+    | ZIP, 180 MB | `unzip` ran out of space at file 6 of 21 | Finished, every file byte-identical |
+    | 7z from 7-Zip 25.01, `-ms=20m` (10 solid blocks) | Needs 380 MB | Finished in 0.64 s, every file byte-identical |
+    | 7z split into 5 volumes of 40 MB | Needs 380 MB | Finished; volumes deleted one at a time, peak 210 MB used |
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  colinhacks/reylo
+    ⭐ 1080 stars  |  🍴 8 forks  |  💻 Rust  |  📅 2026-10-21
+    🔗 https://github.com/colinhacks/reylo
+    📡 来源: 🚀 5天300+星
+    📝 Import .sql files into TypeScript with full type inference and zero codegen.
+
+    README 摘要:
+    Import .sql files into your TypeScript code with full type inference
+    
+      
+      
+      
+      
+    
+      Read the docs →
+    
+      
+    
+    If you have a file like this:
+    
+    ```sql
+    -- get_author.sql
+    select u.id, u.name, count(p.id)::int as post_count
+    from users u
+    left join posts p on p.user_id = u.id
+    where u.id = :id::int
+    group by u.id
     ```
     
-    Windows releases will be signed through the SignPath Foundation's free signing for open-source projects; until then the installer is unsigned. See the Code signing policy.
+    You can import it directly from a TypeScript file like this:
     
-    If your system won't open it
+    ```ts
+    // main.ts
+    import postgres from "postgres";
+    import getAuthor from "./get_author.sql";
     
-    - **Windows** says "Windows protected your PC": the installer isn't code-signed yet. Click **More info**, then **Run anyway**.
-    - **macOS** says it can't verify IncarnaMind: until the app is notarized, open it once and click **Done**, then **System Settings → Privacy & Security → Open Anyway**. Or run `xattr -dr com.apple.quarantine /Applications/IncarnaMind.app`. An unsigned Mac app can't update itself: IncarnaMind tells you when a new version is out and offers its download page.
+    const db = postgres(process.env.DATABASE_URL);
+    
+    const author = await getAuthor.run(db, { id: 1 });
+    // { id: number; name: string; post_count: number } | null
+    ```
+    
+    Reylo is powered by TypeScript content mappers, introduced in TypeScript 7.1 (currently in beta), which let you dynamically define static types for external file types and integrate them directly into TypeScript compilation.
+    
+    Reylo is the perfect option for the agent era:
+    
+    - 💪 **The full power of SQL** — any statement, function, operator or syntax your database supports, in its own dialect.
