@@ -1,247 +1,393 @@
-📊 开源日报 — 2026-10-24
-共发现 5 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-10-25
+共发现 8 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  Renhuai123/ziwei-doushu
-    ⭐ 7003 stars  |  🍴 1428 forks  |  💻 TypeScript  |  📅 2026-05-01
-    🔗 https://github.com/Renhuai123/ziwei-doushu
+#1  google-gemini/gemini-cli
+    ⭐ 108202 stars  |  🍴 14820 forks  |  💻 TypeScript  |  📅 2025-04-17
+    🔗 https://github.com/google-gemini/gemini-cli
     📡 来源: trending-daily
-    🏷️ bazi, chinese-astrology, divination, fortune-telling, nextjs, open-source, purple-star-astrology, typescript, zi-wei-dou-shu, ziwei-doushu
-    📝 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据
+    🏷️ ai, ai-agents, cli, gemini, gemini-api, mcp-client, mcp-server
+    📝 An open-source AI agent that brings the power of Gemini directly into your terminal.
 
     README 摘要:
-    # 紫微斗数 · 开源排盘引擎
-    
-    ### 算法是公开的传统智慧，不应该被锁在围墙里
-    
-    **中文** · English
-    
-    **一、项目理念**：紫微斗数是中国传统命理学的瑰宝，倪海厦老师在《天纪》中系统梳理了正宗的紫微斗数体系。我们希望通过技术手段让更多人接触和学习这门学问。
-    
-    开源排盘算法和知识库，是因为我们相信：**算法是公开的传统智慧，不应该被锁在围墙里**。真正的价值在于解读的深度、用户体验的打磨、以及持续运营的积累。
-    
-    **二、项目信息**：基于倪海厦《天纪》教学体系的紫微斗数排盘系统，包含完整排盘算法、四化系统、格局知识库、古籍原文数据，以及一套完整开源的紫微斗数解读数据：**v4.0 解读数据集——67.5 万张命盘 × 13 维 = 877 万段解读，正文约 204 亿字，解压后 56.6 GB**（2026-10-15 发布）。
-    
-    | 数据集 | 命盘 | 解读段数 | 解压后 | 覆盖年份 | 每张盘解读字数 |
-    |---|---|---|---|---|---|
-    | **v4.0 解读数据集**（2026-10-15） | **674,976** | **8,774,688** | **56.6 GB** | **1950–2026**（只含真实日期） | **约 3.0 万字** |
-    | v3.0 样本数据集 | 518,400 | 6,739,200 | 33.1 GB | 1924–1983 | 约 2.1 万字 |
-    | 变化 | +30% | +30% | **+71%** | +17 年 | +44% |
-    
-    v3.0 每张盘解读字数按 2,160 张盘抽样估算，其余数字为全量统计；两版每张盘都是 13 维。
-    
-    在线体验：metisziwei.com，排盘、AI 解读、命盘历史全部开放。
-    
-    > **注：关于六亲判断**
+    > [!NOTE]
     >
-    > 紫微斗数在六亲（父母、兄弟、子女等）判断上存在一定局限。倪师在《天纪》中指出：“斗数批六亲本来就比较差一点。”（2上 · 00:25:27）在传统术数中，铁板神数在核对六亲方面有其独特优势（2上 · 00:03:15）；倪师仍以紫微斗数为核心，是因为它能结合地理、环境与人事进行综合判断，形成“上知天文、下知地理、中知人事”的完整体系（2上 · 00:25:43）。因此，与六亲相关的分析仅供参考；metisziwei.com 上父母、兄弟、子女三个维度也附有同样的说明。
+    > **Unpaid tier and Google One users:** Gemini CLI was replaced by Antigravity
+    > CLI on June 18th, 2026. To learn more, see our
+    > blog post.
+    >
+    > **Gemini CLI has not been optimized for Gemini 4 Argon.** To use Gemini 4
+    > Argon, please use Antigravity.
     
-    ---
+    # Gemini CLI
     
-    ## 目录
+    > [!NOTE]
+    >
+    > Gemini CLI is not optimized for the latest Gemini models. For the best coding
+    > experience with Gemini models use
+    > Antigravity CLI
     
-    | | 章节 | 一句话 |
-    |---|------|--------|
-    | 一 | 本轮更新 | 13 维断语按倪师原话与《全书》逐句校正，发布 67.5 万命盘 × 13 维解读数据集 v4.0 |
-    | 二·新 | 13 维解读数据集 v4.0 | 2026-10-15 新版断语，67.5 万命盘，按年份下载 |
-    | 二 | 51.8 万命盘样本数据集 | 规格、下载、用途、许可 |
-    | 三 | 快速开始 | 克隆到跑起来 |
-    | 四 | 排盘引擎 | 能做到什么、文件怎么分、古籍数据 |
-    | 五 | 倪师《天纪·紫微斗数》原话 | 14 讲 + 2 段补充、1848 条，一图看全，每条可回放 |
-    | 六 | 界面是一份 Demo | 不是线上那套，差距写明 |
-    | 七 | 开源边界 | 什么开源、什么不开源 |
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  wesbos/3d-model-anything
-    ⭐ 1211 stars  |  🍴 202 forks  |  💻 Swift  |  📅 2026-10-21
-    🔗 https://github.com/wesbos/3d-model-anything
-    📡 来源: 🚀 5天300+星
-    📝 Capture iPhone LiDAR and photos, reconstruct editable Three.js rooms, and explore them in a browser.
-
-    README 摘要:
-    # 3D Model Anything
+    Gemini CLI is an open-source AI agent that brings the power of Gemini directly
+    into your terminal. It provides lightweight access to Gemini, giving you the
+    most direct path from your prompt to our model.
     
-    Capture a room on an iPhone, then use its geometry and photographs to build an editable Three.js scene with an AI coding agent.
+    Learn all about Gemini CLI in our documentation.
     
-    Open the office viewer · App support
+    ## 📦 Installation
     
-    This repository includes the **3D Model Anything iPhone app**, a **Three.js viewer**, the **scan-to-threejs agent skill**, and **Wes’s detailed office demo**.
+    See
+    Gemini CLI installation, execution, and releases
+    for recommended system specifications and a detailed installation guide.
     
-    The app records the evidence. The skill guides an agent through measurement, modeling and matched-camera visual comparisons. This is an iterative reconstruction workflow, not a one-click scan-to-perfect-model converter. The current workflow focuses on rooms and interiors.
+    ### Quick Install
     
-    ## Run the viewer
+    #### Run instantly with npx
     
-    Use Node.js 22.12+ (or a newer supported release).
-    
-    ```sh
-    npm ci
-    npm run dev
+    ```bash
+    # Using npx (no installation required)
+    npx @google/gemini-cli
     ```
     
-    Open http://localhost:5188. Explore the office in dollhouse, walking, overhead, wireframe and knolling views. The playground is at `/play.html?room=office-v4&mode=fpv`.
-    
-    ```sh
-    npm run build
-    npm run preview
-    ```
-    
-    The demo includes the reconstructed office and selected textures. Original scans and photo collections are not distributed; Scan and Overlay are disabled for this example. Those modes remain available for your own rooms with reference assets.
-    
-    ## Capture your own space
-    
-    See the iPhone app for building with Xcode, device requirements, scanning and sharing. Scanning needs a LiDAR-equipped iPhone or iPad. Non-LiDAR devices can import and review scans.
-    
-    The app is source-available here; an App Store release is a separate distribution step. Do not assume an App Store download is available yet.
-    
-    Export a room or session through the system share sheet and extract it into an ignored `data/captures-in//` directory. Exports keep the existing `house-capture/5` contract; changing the app name does not change the files.
-    
-    ## Use the skill
-    
-    The skill lives at `.agents/skills/scan-to-threejs/SKILL.md`. Open this repository in an agent that supports local skills and ask it to use **scan-to-threejs** with your extracted export. You can also copy that skill directory into your agent's skill directory; the companion viewer/runtime in this repo is still needed for its capture workflow.
+    #### Install globally with npm
     
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  ⚠️风险  oosexgang/hackios-xnu-kernel
-    ⚠️ 命中风险词: poc —— 默认归排除区，需人工确认
-    ⭐ 1146 stars  |  🍴 195 forks  |  💻 C  |  📅 2026-10-22
-    🔗 https://github.com/oosexgang/hackios-xnu-kernel
-    📡 来源: 🚀 5天300+星
-    📝 无描述
+#2  jbiaojerry/ebook-treasure-chest
+    ⭐ 22808 stars  |  🍴 3200 forks  |  💻 Python  |  📅 2023-09-13
+    🔗 https://github.com/jbiaojerry/ebook-treasure-chest
+    📡 来源: trending-daily
+    📝 欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。 该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。
 
     README 摘要:
-    # HackiOS — XNU kernel
+    # 电子书下载宝库
     
-    **HackiOS** boots Apple's open-source **XNU kernel** (`xnu-8796.121.2`, the kernel of iOS 16.5) on Android phone
-    hardware and runs the **unmodified iOS 16.5 user space** on top of it: launchd → backboardd → SpringBoard →
-    apps. Our own EFI loader, our own replacements for Apple's closed drivers, a UEFI port, and a Linux Wi-Fi driver
-    on a compatibility layer make that possible.
+    > **🌐 在线访问 GitHub Pages** - 体验强大的实时搜索功能和多关键字搜索，快速找到你想要的电子书！
     
-    It runs in two places:
+    欢迎来到电子书下载宝库，一个汇聚了各类电子书下载链接的地方。无论你是喜欢阅读经典文学、经管励志、终身学习、职场创业、技术手册还是其他类型的书籍，这里都能满足你的需求。
+    该库涵盖了帆书app(原樊登读书)、微信读书、京东读书、喜马拉雅等读书app的大部分电子书。
     
-    - **POCO X5 Pro 5G (redwood, Snapdragon 778G)** — nothing is flashed: the UEFI is started with `fastboot boot`,
-      the whole system lives in RAM, and after a reboot the phone is back in Android;
-    - **QEMU** (`virt`, aarch64) — the same thing on any Linux computer, no phone needed.
+    ## 简介
     
-    This repository is half of the project:
+    我们从各个电子书网站上精心收集了各种电子书下载链接，并根据常用的标签对它们进行了简单分类。每本书都包括了三种常见格式文件：epub、mobi 和 azw3，以满足不同阅读设备和喜好的需求。
     
-    | Repository | What |
-    |---|---|
-    | **hackios-xnu-kernel** (this one) | XNU patches, the EFI loader, the UEFI port, Wi-Fi, QEMU scripts, `xl`, prebuilt kernel/loader/UEFI, `common/` scripts |
-    | hackios-xnu-userland | our init, injected libraries, launchd jobs, the APFS image builder, the scripts that take iOS out of Apple's IPSW, Metal/Mesa work |
+    ## 🔍 如何使用
     
-    > **No Apple files are in either repository.** `ios165/fetch.sh` downloads the iOS 16.5 IPSW from Apple's own CDN
-    > to *your* machine and extracts what is needed there. HackiOS is an independent research project by OOSEX GANG and
-    > is not affiliated with, authorised or endorsed by Apple Inc. iOS, iPhone and Apple are trademarks of Apple Inc.
+    浏览我们的下载宝库非常简单：
     
-    Photographed on the phone, the Adreno GPU drawing (`gpu=1`). More in Screenshots.
+    ### 🌐 实时快速搜索（推荐）
     
-    ## What works
+    **访问 GitHub Pages 实时在线搜索页面**，体验强大的实时快速搜索和多关键词搜索功能：
     
-    | Works | Does not work (yet) |
-    |---|---|
-    | Lock screen, swipe to unlock, home screen with all icons (two pages), stock iOS 16 wallpapers | Cellular, Bluetooth |
-    | System gestures: swipe up (home, app switcher), edge swipe (back), Control Center | Charging under our kernel (the phone only discharges) |
-    | Apps: Settings, Clock, Calendar, Photos, Notes, Safari and more; widgets (Weather, Calendar) on the phone | Metal for apps (in progress: 293 of 456 system shaders already run on the Adreno, see `docs/air.md` in hackios-xnu-userland) |
-    | Phone touchscreen (Goodix GT9916), multitouch, wake on touch; real power and volume keys | App Store content and Apple ID sign-in (no Secure Enclave; FairPlay daemon exits) |
-    | Up to 8 CPU cores (`cpus=8`), big core at 2.4 GHz, ~20 s to the lock screen | Video and Live Photo recording |
-    | Adreno 642L GPU through Mesa/freedreno (`gpu=1`, OpenGL ES for CoreAnimation) | |
-    | Wi-Fi (WCN6750, ath11k): join from Settin
+    - **🔎 实时搜索**：输入书名、作者或分类关键词，即时显示匹配结果
+    - **💡 多关键词搜索**：支持同时搜索多个关键词（用空格分隔）
+    
+    ### 💡 搜索技巧
+    - **在线搜索**：访问 GitHub Pages 页面，使用实时搜索功能（推荐）
+    - **Ctrl+F**：在 GitHub 页面使用浏览器搜索功能
+    - **热门分类**：文学、历史、科普、管理、社会、推理等
+    - **按需查找**：职场、创业、技术、投资、心理学等专业领域
+    
+    ## ☕ 请我们喝咖啡
+    
+    > **🌟 如果这个项目对你有帮助，欢迎请我们喝杯咖啡！你的支持是我们持续维护和更新这个项目的动力。**
+    
+    **感谢所有支持我们的赞助人！**  
+    查看 📋 赞助人名单 了解已赞赏的赞助人信息。
+    
+    # 📚 索引目录
+    
+    > **💡 使用 Ctrl+F 快速搜索关键词，或点击下方标签直接进入分类页面**
+    
+    ## 🔥 热门分类
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  xevrion/hatchzip
-    ⭐ 1110 stars  |  🍴 22 forks  |  💻 Rust  |  📅 2026-10-21
-    🔗 https://github.com/xevrion/hatchzip
-    📡 来源: 🚀 5天300+星
-    🏷️ 7z, archive, cli, crash-safe, disk-space, extract, extractor, gui, rust, tar
-    📝 Extract huge archives in place: the archive shrinks as your files hatch, so you only need room for the output. ZIP, 7z, tar, split archives.
+#3  pollen-robotics/microduck
+    ⭐ 11116 stars  |  🍴 1420 forks  |  💻 Rust  |  📅 2026-07-29
+    🔗 https://github.com/pollen-robotics/microduck
+    📡 来源: trending-daily
+    📝 A Tiny biped duck robot 🦆
 
     README 摘要:
-    HatchZip
+    Microduck
     
-      Extract huge archives in place. The archive shrinks as your files hatch,
-      so you only need free space for the output, not for the output and the archive.
+      A tiny biped robot that moves using reinforcement learning policies.
     
-      Installation |
-      Usage |
-      Safety |
-      How it works |
+      Get yours here ·
+      Cheat sheet ·
+      Training the policies ·
+      How it works ·
       Contributing
     
       
-      
-      
+    
+    ---
+    
+    **This repo is the duck's brain.** About 25 cm and 800 g of robot, run by a handful of daemons on a
+    Rockchip RK3566: a 50 Hz control loop driving fifteen servos from neural policies, the radios and
+    the camera, and the update machinery that gets new software onto a robot without bricking it.
+    
+    Everything you need to run a Microduck is here. **If you want one,
+    get yours here.**
+    
+    The policies it runs are trained next door, in
+    **microduck_rl** — MuJoCo and PPO, the sim2real
+    recipe, and the export to ONNX that this repo loads.
+    
+    ## It does things
     
       
     
-    A 180 GB game download that unpacks to 200 GB needs 380 GB of disk with WinRAR, 7-Zip or `unzip`, because the archive and everything extracted from it have to exist at the same time. HatchZip needs a little over 200 GB. It extracts the archive from the end and cuts each finished part off the archive file as it goes, so the space the archive gives back is reused for the next files.
+      
     
-    It checks that the extraction will fit before it changes anything, keeps a safety margin of free space the whole way through, and can be stopped or crash at any moment and pick up where it left off. It reads ZIP, 7z, tar, `.tar.gz` and split archives.
+    It walks. Pick up a gamepad and drive.
+    It rolls. Put wheels on, ask for roller mode, and it loads the other brain.
     
-    ### Get it
+      
     
-    No coding needed. **Download for Windows** (Windows 10 and 11), or for macOS (Apple Silicon), macOS (Intel) and Linux.
+      
     
-    1. Run the installer. Windows may show "Windows protected your PC" because HatchZip is not code-signed yet: choose **More info**, then **Run anyway**.
-    2. Right-click the archive, choose **HatchZip**, then **Extract here**. On Windows 11 the menu is under **Show more options**.
-    3. Or open HatchZip from the Start menu, open the archive, and choose **Extract**.
-    
-    HatchZip shows whether the files will fit before it changes anything. The archive is used up as the files come out, so when it finishes, only the extracted files are left.
-    
-    ## Highlights
-    
-    The same 200 MB of game data (21 files), packed by the real tools, extracted on a 220 MiB disk with about 50 MB free:
-    
-    | Archive | `unzip` / 7-Zip | HatchZip |
-    |---|---|---|
-    | ZIP, 180 MB | `unzip` ran out of space at file 6 of 21 | Finished, every file byte-identical |
-    | 7z from 7-Zip 25.01, `-ms=20m` (10 solid blocks) | Needs 380 MB | Finished in 0.64 s, every file byte-identical |
-    | 7z split into 5 volumes of 40 MB | Needs 380 MB | Finished; volumes deleted one at a time, peak 210 MB used |
+    It picks things up. Beak to the floor, one button.
+    It gets back up. Knock it over and it stands itself up.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  colinhacks/reylo
-    ⭐ 1080 stars  |  🍴 8 forks  |  💻 Rust  |  📅 2026-10-21
-    🔗 https://github.com/colinhacks/reylo
-    📡 来源: 🚀 5天300+星
-    📝 Import .sql files into TypeScript with full type inference and zero codegen.
+#4  makecindy/cindy
+    ⭐ 4229 stars  |  🍴 607 forks  |  💻 TypeScript  |  📅 2026-07-22
+    🔗 https://github.com/makecindy/cindy
+    📡 来源: trending-daily
+    🏷️ agent, ai-agent, ai-assistant, android, claude-code, codex, electron, ios, llm, macos
+    📝 Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。
 
     README 摘要:
-    Import .sql files into your TypeScript code with full type inference
+    English · 简体中文
     
       
       
       
       
     
-      Read the docs →
+      🌐 cindy.app &nbsp;·&nbsp; ⬇️ Download
+    
+    Cindy is an open-source AI agent that works out of the box. She brings multiple
+    harnesses, models and tools into one agent that finishes real work in your
+    projects and apps. Ready from day one, yours to shape over time.
+    
+    Cindy runs locally on your own machine, using your real files and logged-in
+    apps. The first supported harnesses are **Claude Code** and **Codex** — more are
+    being added, and a native harness is in the works. Models and harnesses mix
+    freely and can switch mid-task while your workspace, memory, skills and tools
+    stay continuous; one task can even be planned, executed in parallel, and
+    reviewed by agents on different harness × model combos. She can drive your
+    browser, computer and phone, and take work from IM and schedules.
+    
+    This repository is the open-source **client** for Cindy — the desktop and mobile
+    apps plus their shared packages, organized as a pnpm monorepo.
+    
+    The client is free to use, and its source code is open under Apache-2.0. Bring
+    models your way: sign in to the official Cindy service (usage deducted
+    transparently), authorize the **Claude Code / Codex Coding Plan** you already
+    pay for and keep using it inside Cindy — no duplicate bill — connect your own
+    API keys, or use local models.
+    See cindy.app for service details,
+    pricing, and downloads.
+    
+    Linux users: see the Ubuntu, Arch Linux and Omarchy installation guide
+    for installation, updates, keyring setup and migration from a manual install.
+    
+    ## Yours to shape
+    
+    Open source means more than visible — it means changeable:
+    
+    - **Memory** — correct her once and she does it right from then on, shared across harnesses.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  Zagitta/gpu-unlock
+    ⭐ 3579 stars  |  🍴 395 forks  |  💻 C  |  📅 2026-10-18
+    🔗 https://github.com/Zagitta/gpu-unlock
+    📡 来源: 🚀 两周800+星
+    📝 Unlock FP/BF16 instruction issue rate on Nvidia 3000's cards to their professional equivalents
+
+    README 摘要:
+    # GPU unlock 1.0.0
+    
+    Unlock FP/BF16 instruction issue rate on Nvidia 3000's cards to their professional equivalents
+    
+    This Linux kernel module combines the CMP unlocker's V67/PLM technique with the pre-driver timing of the UEFI approach. It runs the unlock, writes the speed selectors (SS0 `0x88888888`, which selects the full BF16 rate, and the 4-bit SS1 `0x8` IMLA4) and performs FLR before the unmodified NVIDIA driver binds the card. It is neither a UEFI application nor a patched NVIDIA driver. 
+    
+    The benefit of this early kmod driver is that it does not require manual patching each time nvidia releases a new driver version.
+    
+    The effect of this unlock is that it doubles the instruction issuing speed of FP/BF16 FMA into FP32 operations on GA102, GA103, GA104 and GA106 cards.
+    
+    3090 Ti dense 8192³ GEMM at 450 W, five-sample medians with FP32 accumulation:
+    
+    | Input | Before       | After         |
+    | ----- | ------------ | ------------- |
+    | FP16  | 87.46 TFLOPS | 118.39 TFLOPS |
+    | BF16  | 87.50 TFLOPS | 157.41 TFLOPS |
+    | TF32  | 42.58 TFLOPS | 82.61 TFLOPS  |
+    
+    ## Tested cards
+    
+    Results reported by users. The module accepts every GeForce ID listed in
+    `kernel/gpu_unlock/main.c`, but the cards below are the ones someone has
+    reported on. Please add yours with a
+    compatibility report,
+    whether it worked or not.
+    
+    | Chip  | Card                              | PCI ID      | Result                              | BF16 GEMM gain | Reports |
+    | ----- | --------------------------------- | ----------- | ----------------------------------- | -------------- | ------- |
+    | GA102 | RTX 3090 Ti                       | `10de:2203` | Unlocked                            | +68–80%        | #1 |
+    | GA102 | RTX 3090                          | `10de:2204` | Unlocked                            | +25–67%        | #5, #9, #10, #17, #25, #27, #33 |
+    | GA102 | RTX 3080 Ti 20 GB (OEM, GA102-250) | `10de:2205` | Unlock completes, BF16 stays at half rate | —        | #28 |
+    | GA102 | RTX 3080 10 GB                    | `10de:2206` | Unlocked                            | +70–73%        | #14 |
+    | GA102 | RTX 3080 20 GB (memory upgrade)   | `10de:2206` | Unlocked                            | +56–59%        | #10, #15 |
+    | GA104 | RTX 3070                          | `10de:2484` | Unlocked                            | +73–81%        | #10, #12 |
+    | GA104 | RTX 3070 Ti                       | `10de:2482` | Not tested with this module (the same unlock worked from a UEFI port on Windows) | — | #32 |
+    | GA106 | RTX 3
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#6  JustAResearcher/gpu-unlock-ada
+    ⭐ 1159 stars  |  🍴 130 forks  |  💻 C  |  📅 2026-10-23
+    🔗 https://github.com/JustAResearcher/gpu-unlock-ada
+    📡 来源: 🚀 5天300+星
+    📝 GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmware generated locally
+
+    README 摘要:
+    # GPU unlock 1.1.1 — RTX 4090, RTX 4070 Ti SUPER and RTX 4060 Ti 16GB
+    
+    New to this project? Start with the copy-paste Quick Start.
+    
+    This Linux kernel module enables the SM speed-select override before the stock
+    NVIDIA driver starts. RTX 4090 (`10de:2684`, AD102) support has demonstrated
+    approximately **2× FP16 and BF16 tensor throughput with FP32 accumulation**:
+    
+    | Mode | Before | After |
+    |---|---:|---:|
+    | FP16 → FP32 accumulate | 165.6 TF/s | 331.6 TF/s |
+    | BF16 → FP32 accumulate | 165.5 TF/s | 330.6 TF/s |
+    
+    The override survived PCIe Function Level Reset (FLR), stock NVIDIA `615.78.08`
+    initialization and CUDA benchmarks. INT8, `dp4a` and scalar FP32 stayed near their
+    baseline rates. The original transaction preceded the repository cleanup; see
+    the technical report and
+    original evidence.
+    
+    An independent owner run of revision `8855e7b` also completed the RTX 4090
+    transaction and NVIDIA driver handoff on Linux `7.2.11-arch1-1`. Matched
+    stock/unlocked measurements with NVIDIA `615.78.08` and the same 450 W cap
+    found FP16/FP32 instruction throughput **160.4 → 320.4 TF/s** and BF16/FP32
+    **159.7 → 320.2 TF/s**. All exercised numerical checks passed. Real cuBLAS
+    GEMM median throughput varied by shape: FP16 gained 12–34%, BF16 gained
+    16–20% at two shapes and was essentially unchanged at 4096³. These are one
+    matched run pair with the desktop active, not whole-application speedups or
+    an extended stability test. See the matched evidence and limits
+    and testing workflow.
+    
+    A separate cold test of the Ada port on one RTX 4070 Ti SUPER
+    (`10de:2705`) with NVIDIA `580.178.04` measured FP16/FP32 tensor issue rate
+    at **95.0 → 189.9 TF/s** and BF16/FP32 at **95.0 → 189.7 TF/s** under the
+    same 240 W power cap. INT8 stayed at 379.5 TOP/s. The stock driver loaded,
+    the NVIDIA RM getter reported full FMLA32 rate, deterministic FP16/BF16 GEMM
+    outputs matched exactly, and owner mining recovered with fresh accepted shares.
+    A second matched instruction benchmark found **TF32/FP32 47.49 → 94.51 TF/s**
+    (1.99×), with its FP16/FP32 control also near 2×. Unsigned INT4/INT32 stayed
+    at approximately **754.8 TOP/s** in both states. These are register-resident
+    issue rates, not application GEMM or inference speedups.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#7  Snapintosh/Snapintosh
+    ⭐ 891 stars  |  🍴 51 forks  |  💻 Python  |  📅 2026-10-22
+    🔗 https://github.com/Snapintosh/Snapintosh
+    📡 来源: 🚀 5天300+星
+    📝 EL2 hypervisor and toolchain that boots macOS on the ASUS A16 (Snapdragon X2 Elite), with an Adreno Metal/IOGPU stack
+
+    README 摘要:
+    # Snapintosh
+    
+    Snapintosh boots Apple's macOS 27 (build 26A428) on an ASUS Zenbook A16 laptop
+    with a Qualcomm Snapdragon X2 Elite (X2E-96-100). It is an EL2 monitor
+    (hypervisor) and the toolchain around it. The monitor runs Apple's stock
+    kernelcache (the J700/T8140 kernel) unmodified by default. It supplies the
+    platform contracts that the kernel expects from Apple silicon: the SPTM and TXM
+    monitor calls, translation of the kernel's 16 KiB page tables, and the Apple
+    devices the kernel looks for.
+    
+    Graphics run on the laptop's own Adreno X2-90 GPU through a driver stack
+    written for this project:
+    
+    - **AdrenoMetal.bundle**: a Metal driver plug-in.
+    - **AdrenoX2**: an IOGPU kernel extension, with **AdrenoDisplay** driving the
+      internal panel.
+    - **air2ir3**: a shader compiler that translates Apple's AIR (Metal's IR) into
+      Mesa's ir3 for the Adreno.
+    
+    There is no software, CPU or paravirtual rendering path.
+    
+    The project also includes an I2C-HID keyboard and touchpad driver (SnapI2CHID),
+    native QCC2072 Wi-Fi work, and NVMe storage through an emulated Apple storage
+    controller.
+    
+    Snapintosh is used together with q1n1, a
+    UEFI EL2 proxy forked from Asahi Linux's m1n1. q1n1 takes the machine at EL2
+    after UEFI and serves m1n1's proxy protocol over USB-C to a Mac host, which
+    drives Snapintosh from there.
+    
+    ## Status
+    
+    This is experimental software, written for one laptop model.
+    
+    | Area | State |
+    | --- | --- |
+    | macOS desktop on the A16 | Boots to the desktop with GPU acceleration. Rendering is correct: the pixel checks across the desktop test scenes pass. |
+    | Smoothness | In progress. Interaction is usable but not yet smooth. The target is a steady ~60 Hz first and the panel's 120 Hz later. |
+    | Input | The built-in keyboard and touchpad work, including trackpad gestures, Mission Control and app switching. |
+    | Wi-Fi (QCC2072) | Scanning, a WPA2 connection, DHCP and ping work through a host-proxy harness driven from the Mac. Joining from the macOS Wi-Fi menu does not work yet. |
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#8  breakbrawlerheart/pixeluxe-ai
+    ⭐ 100 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-10-25
+    🔗 https://github.com/breakbrawlerheart/pixeluxe-ai
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
+    🏷️ explicit-content, hitomi-la, sex
+    📝 PixeLuxe is an AI image generation interface built around a single idea: a consistent, cinematic visual direction — deep shadow, magenta light, confident framing — instead of generic model output.
+
+    README 摘要:
+    ✨ PixeLuxe
+    
+      An AI image generator for striking, neon-lit visuals.
+      
+      Describe a scene or upload a reference photo — get images with presence.
     
       
     
-    If you have a file like this:
+      
+      
+      
+      
     
-    ```sql
-    -- get_author.sql
-    select u.id, u.name, count(p.id)::int as post_count
-    from users u
-    left join posts p on p.user_id = u.id
-    where u.id = :id::int
-    group by u.id
-    ```
+    🪄 About
+      PixeLuxe is an AI image generation interface built around a single idea: a consistent, cinematic visual direction — deep shadow, magenta light, confident framing — instead of generic model output.
+      Write one line, or drop in a reference photo. Shape the style before anything renders. Compare several takes at once and export the one you want at full resolution.
+      The project is aimed at designers, developers and creative teams who want a fast, opinionated front end for text-to-image and image-to-image workflows.
+    🚀 Features
+    ⚡ Fast generation — images come back in seconds, not minutes
+    🖼️ High quality — sharp, detailed results that hold up at full size
+    🎛️ Flexible controls — style, mood, palette, framing and level of detail
+    📷 Reference images — upload, drag-and-drop or paste a photo to guide pose, light and mood
+    🔀 Variations side by side — several takes per prompt, so you choose rather than settle
+    ♾️ No limits — generate as many frames as you like, whenever you like
+    📐 Full-resolution export — ready for print or screen
+    📱 Mobile-first — installable PWA, camera and gallery input, dark by default
+    🌐 Website
+    > ### 👉 **pixeluxe.sbs**
+    >
+    > Open the generator in your browser — no installation, no sign-up required to look around.
     
-    You can import it directly from a TypeScript file like this:
+      
+        
+      
     
-    ```ts
-    // main.ts
-    import postgres from "postgres";
-    import getAuthor from "./get_author.sql";
+      https://pixeluxe.sbs/
     
-    const db = postgres(process.env.DATABASE_URL);
-    
-    const author = await getAuthor.run(db, { id: 1 });
-    // { id: number; name: string; post_count: number } | null
-    ```
-    
-    Reylo is powered by TypeScript content mappers, introduced in TypeScript 7.1 (currently in beta), which let you dynamically define static types for external file types and integrate them directly into TypeScript compilation.
-    
-    Reylo is the perfect option for the agent era:
-    
-    - 💪 **The full power of SQL** — any statement, function, operator or syntax your database supports, in its own dialect.
+    🔧 How it works
+    1. Describe or upload
+      A sentence is enough. Add a reference photo if the result should follow its pose, light or mood.
