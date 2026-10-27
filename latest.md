@@ -1,646 +1,477 @@
-📊 开源日报 — 2026-10-26
-共发现 14 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-10-27
+共发现 11 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  coollabsio/coolify
-    ⭐ 64614 stars  |  🍴 5804 forks  |  💻 PHP  |  📅 2021-01-25
-    🔗 https://github.com/coollabsio/coolify
+#1  gitroomhq/postiz-app
+    ⭐ 38643 stars  |  🍴 7465 forks  |  💻 TypeScript  |  📅 2023-07-08
+    🔗 https://github.com/gitroomhq/postiz-app
     📡 来源: trending-daily
-    🏷️ coolify, databases, deployment, docker, docker-compose, inertiajs, laravel, mariadb, mysql, nextjs
-    📝 An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers.
+    🏷️ nextjs, open-source, open-source-social-media-scheduling-tool, oss, postiz-cloud, postiz-hosted, redis, scheduling-tool, social-media-scheduling-tool, typescript
+    📝 📨 The ultimate agentic social media scheduling tool 🤖
 
     README 摘要:
-    # Coolify
+    Postiz is a social media management platform for scheduling, automating, and analyzing your content.
+        
+      Use Postiz Cloud for a fully managed experience, or deploy the open-source edition on your own infrastructure.
+      
     
-    **An open-source platform to deploy applications, databases, and services on your own servers.**
+      
+      Explore the docs »
+      
     
-    Open source & free forever, backed by our philosophy.
+      
+      Watch the YouTube Tutorials»
+      
     
-    !Latest Release Version
+      Register
+      ·
+      Join Our Discord (devs only)
+      ·
+      Public API
     
-    Website · Documentation · Cloud · Discord · Community
+      NodeJS SDK
+      ·
+      N8N custom node
+      ·
+      Make.com integration
     
-    ## What is Coolify?
+    Schedule posts to:
     
-    Coolify is an open-source and self-hostable alternative to Heroku, Netlify, and Vercel. It helps you manage servers, applications, and databases on your own hardware. You only need an SSH connection.
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#2  alchaincyf/huashu-design
+    ⭐ 27200 stars  |  🍴 2984 forks  |  💻 HTML  |  📅 2026-04-19
+    🔗 https://github.com/alchaincyf/huashu-design
+    📡 来源: trending-daily
+    🏷️ agent-skills, ai-design, claude-code, claude-skills, codex, cursor, design, html, pptx, prototype
+    📝 Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent
+
+    README 摘要:
+    🌐 中文 · English
     
-    You can use a VPS, a bare-metal server, a Raspberry Pi, or any other server that accepts SSH connections. Coolify gives you the convenience of a cloud platform while you keep control of your infrastructure.
+    # Huashu Design
     
-    Your configurations stay on your servers. If you stop using Coolify, your running resources continue to work and remain manageable.
+    > *「打字。回车。一份能交付的设计。」*
+    > *"Type. Hit enter. A finished design lands in your lap."*
     
-    ## What can Coolify do?
+    **在你的 agent 里打一句话，拿回一份能交付的设计。**
     
-    - **Deploy any application:** Build from GitHub, GitLab, Bitbucket, or Gitea with Nixpacks, Railpack, Dockerfile, Docker Compose, or a prebuilt Docker image.
-    - **Run databases and services:** Deploy managed databases and more than 360 one-click services with persistent storage and generated credentials.
-    - **Automate deployments:** Deploy on every Git push, create pull-request previews, call deployment webhooks, and roll back to retained application images.
-    - **Manage networking:** Configure custom domains, automatic HTTPS certificates, reverse proxies, health checks, and container networks.
-    - **Operate your infrastructure:** Manage multiple servers, inspect deployment and runtime logs, open container terminals, and monitor resource status.
-    - **Protect your workloads:** Configure database and storage backups, scheduled tasks, environment variables, secrets, and notifications.
-    - **Integrate with your workflow:** Manage resources through the dashboard, API, CLI, MCP, and team-based access controls.
+    3 到 30 分钟，你能 ship 一段**产品发布动画**、一个能点击的 App 原型、一套能编辑的 PPT、一份印刷级的信息图。
     
-    ## Quick start
+    不是「AI 做的还行」那种水平——是看起来像大厂设计团队做的。给 skill 你的品牌资产（logo、色板、UI 截图），它会读懂你的品牌气质；什么都不给，**六张缩略图里挑出的三个真实方向 + 84 种带样张的风格库**也能兜底到不出 AI slop。
     
-    Install Coolify on a supported server with one command:
+    **你看到这篇 README 里的每一页设计，都是 huashu-design 自己做的。** 不是 Figma，不是 AE，就是一句话 prompt + skill 跑通。下次产品发布要做宣传片？现在你也能做。
     
-    ```bash
-    curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
+    ```
+    npx skills add alchaincyf/huashu-design
     ```
     
-    Read the installation guide for requirements and detailed instructions. You can also review the installation script before you run it.
+    跨 agent 通用——Claude Code、Cursor、Codex、OpenClaw、Hermes 都能装。
     
-    ## Self-hosted or Cloud
+    > 📣 **已改为 MIT 协议。** 自 2026-05-14 起本 skill 完全开源（MIT License），个人和**商用都免费**，无需事先授权。原「个人使用免费、企业商用需授权」的条款已作废。(查看变更)
     
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  AgriciDaniel/claude-seo
-    ⭐ 21224 stars  |  🍴 2971 forks  |  💻 Python  |  📅 2026-02-07
-    🔗 https://github.com/AgriciDaniel/claude-seo
-    📡 来源: trending-daily
-    🏷️ ai, ai-seo, claude-code, claude-code-skill, marketing-automation, open-source, seo
-    📝 Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.
-
-    README 摘要:
-    Claude SEO
+    > 🆕 **3.0：三个方向更敢，项目之间也不再长一个样。** 先出六张缩略图再挑三版做成真稿；风格库扩到 84 种（新增 App、中文与东亚两个分区），每种都有样张；参照作品先截图再动手；带一个只量事实的设计体检，和一本记住你做过什么样子的外观账本。详见核心机制
     
-      Free, open-source SEO audits inside Claude Code.
-      Rank higher in Google and get cited by AI search.
-    
-      Install ·
-      Demo ·
-      Results ·
-      Team ·
-      Commands ·
-      Pricing ·
-      FAQ
-    
-      
-      
-      
-      
-      
-      
-      
-    
-      
-    
-    **Claude SEO is a free SEO plugin for Claude Code.** Give it any website and it runs a full SEO audit in 10 to 15 minutes, then hands you a clear action plan, sorted by what matters most.
-    
-    It checks everything a good SEO consultant would:
-    
-    - **Technical SEO.** Crawlability, indexing, sitemaps, robots.txt, redirects, page speed and Core Web Vitals.
-    - **Content quality.** E-E-A-T (experience, expertise, authority and trust), thin pages and topic coverage.
-    - **Structured data.** Finds, validates and writes Schema.org markup for rich results.
-    - **AI search (GEO).** How likely Google AI Overviews, AI Mode, ChatGPT, Perplexity and Gemini are to cite your pages.
-    - **Local and e-commerce SEO.** Google Business Profile, reviews, map pack, product pages and international sites.
-    
-    Claude SEO is built from 26 sub-skills and 19 specialist agents, and up to 17 agents work on your site at the same time. Every recommendation explains why it matters and how you will know it worked.
-    
-    ## See it in action
-    
-    Type `/seo` in Claude Code to see every command:
-    
-    Run a full audit and watch the agents fan out across the site:
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  seedds/nxnative
-    ⭐ 4565 stars  |  🍴 799 forks  |  💻 Objective-C  |  📅 2026-10-13
-    🔗 https://github.com/seedds/nxnative
-    📡 来源: 🚀 两周800+星
-    📝 Switch games running natively on iPhone, iPad and Mac: an NSP folder becomes an unsigned IPA (NSO rewriter, Horizon HLE host, NVN→Metal)
-
-    README 摘要:
-    # nxnative
-    
-    Play your own Nintendo Switch games natively on iPhone and iPad. Bring your game (its NSP files) and your `prod.keys`; one script turns them into an IPA that you sideload.
-    
-    It is not an emulator: the game's own code runs directly on the Apple chip, with Switch graphics rebuilt on Metal. Nothing from any game is in this repository, and the project is not affiliated with Nintendo or any game publisher.
-    
-    ## Acknowledgements
-    
-    This project is built on other people's work:
-    
-    - **d2r-mobile** (MIT) developed this native-execution approach, for Diablo II: Resurrected. nxnative started as a copy of its generic parts: the NSO rewriter, the host that stands in for Horizon, the NVN-on-Metal layer and the iOS app shell. Fixes go both ways.
-    - **Ryujinx** (MIT): its shader translator (`Ryujinx.Graphics.Shader`, `Ryujinx.Common` and `Spv.Generator` 1.3.2, in `dm/third_party/ryujinx` with a few fixes listed in its README) turns the games' Maxwell shaders into SPIR-V. Its emulation of the kernel and system services is also a reference when the host's behaviour is in doubt.
-    - **Atmosphère**: its kernel, mesosphère, is the reference for Horizon's synchronization semantics (address arbiter, condition variables).
-    - **yuzu**: Maxwell instruction encodings for the shader reference tool, and a cross-check for kernel behaviour.
-    - **LibHac**: reads NSPs and layers updates over the base game in `dm/tools/nx_extract`. **hactool** did the first extractions.
-    - **SPIRV-Cross**: SPIR-V to Metal Shading Language. **glslang** compiles the GLSL of OpenGL games to SPIR-V for it.
-    - **deko3d** (zlib): its texture layout size algorithm is ported in `dm/gfx/nvn/nvn_tex.c`.
-    - **libvpx** (VP9 movies), **stb_vorbis** (movie sound), the **Vulkan headers** and **NVIDIA FLIP** ship in `dm/third_party` with their licenses (list).
-    - **Capstone**, **lz4**, **fontTools** and **XcodeGen** are used by the build.
-    
-    ## Games
-    
-    Games tested on Mac or iPhone. See the per-game notes for tested platforms, progress and known issues:
-    
-    Needs iOS / iPadOS 26 or later on an iPhone 15 Pro or newer (A17 Pro chip or later) or an iPad with an M1 chip or later: the games' textures are BC-compressed, and older iPhones can't read that format. Other games aren't supported yet. For them the script writes a survey and still tries its best to pack an IPA, guessing the game's settings; such an IPA may not start.
-    
-    Under each game: the IPA's size, and "60 fps with 1.2.0" where the game runs at 60 fps (30 on the Switch) with
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  JetBrains/thinkrail
-    ⭐ 2021 stars  |  🍴 112 forks  |  💻 TypeScript  |  📅 2026-07-08
-    🔗 https://github.com/JetBrains/thinkrail
-    📡 来源: trending-daily
-    🏷️ agent, agent-skills, agentic-ai, agentic-workflow, ai-coding, ai-tools, pi-agent, pi-agent-extension, spec-driven, spec-driven-coding
-    📝 Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need
-
-    README 摘要:
-    # ThinkRail
-    
-    ThinkRail is the agentic IDE that gets better every time you use it — learning your project through
-    living specs today, and building its own capabilities tomorrow.
-    
-    We built a rich interface around the `pi`
-    coding agent, isolated work into separate workspaces, and gave the agent durable project knowledge
-    through living specs and reusable skills. Next, we're adding full extension support, so ThinkRail can
-    create the tools it needs based on how you actually work.
-    
-    **Website:** thinkrail.ai · **Blog:** thinkrail.ai/blog
-    
-    ⭐ If you find ThinkRail useful, give it a star — it helps others discover it.
-    
-      
-      
-    
-    *A `pi` session and the change it made, scoped to an isolated git-worktree workspace.*
-    
-    ## What you get
-    
-    - **Isolated workspaces.** Open any git repo as a project and cut workspaces from it as `git worktree`s,
-      each with its own branch and working directory. Agents work in parallel without touching your
-      checkout; merge the good branch, delete the rest. You can also attach existing worktrees or explicitly
-      work in the project folder itself. Finished and dormant workspaces settle onto a per-project shelf on
-      their own — when their pull request merges or closes, or after a quiet week — and come back the moment
-      you work in them. The topbar shows where the active branch stands against `origin` and its pull request,
-      with the next step one click away: publish, push, or open a PR described from the plan, the commits,
-      your PR template, or an agent-written draft. Once a GitHub PR is open it shows the CI checks and review
-      decision, and lets you mark it ready, hand failing checks or a diverged branch to the agent, merge it
-      with the repository's last-used method, reopen it, or delete the remote branch.
-    - **A real IDE around the agent.** A splittable workbench of Monaco editor tabs, a Files tree with live git
-      change marks and a Changed view, terminals, and documents — all scoped to the active workspace. Leave
-      anchored review comments on files and diffs and send them to a chat as structured context, or open the
-      worktree in your installed IDE.
-    - **Chats that stream like the engine thinks.** Several concurrent `pi` sessions per workspace, each with
-      its own model and live token and cost readout. Steer a running turn or queue a follow-up, delegate to
-      subagents, and work a shared plan the agent updates and you edit — each completed step can be committed
-      and reviewed on its own.
-    - **Specs as ground truth.** A connected graph of `SPEC.md` f
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  rddmwmddr/android-ad-cleaner
-    ⭐ 1097 stars  |  🍴 88 forks  |  💻 Python  |  📅 2026-10-24
-    🔗 https://github.com/rddmwmddr/android-ad-cleaner
-    📡 来源: 🚀 5天300+星
-    🏷️ adb, ai-agent, android, coloros, debloat, hyperos, magicos, originos
-    📝 关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。
-
-    README 摘要:
-    # 手机去广告
-    
-    关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。
-    
-    介绍页：**https://rddmwmddr.github.io/android-ad-cleaner/**
-    
-    ## 下载桌面客户端
-    
-    插上手机，点几下按钮。不需要 Python，也不需要 AI 工具。
-    
-    > **v0.2.3 · 2026-10-25**：处理读屏服务 `already registered` 冲突：退出前释放本次服务，同机任务互斥，短暂冲突只重试一次；持续占用时给出恢复步骤并跳过后续读屏任务。收尾不再误报全部完成。保留通知扫描、完整诊断及此前修复。旧版不会自动更新，请重新下载，已有备份会保留。详见 更新记录。
-    
-    > **最新源码补充（尚未进入 0.2.3 安装包）**：新增一加 Ace 2 Pro / ColorOS 14 的实测与有限适配，修复独立通知设置页识别、混合付款通知排除和应用启动后退出到上一应用的保护。范围与未完成项见 一加旧系统实测。
-    
-    > **2026-10-26 源码更新（未发布安装包）**：读屏失败时提示排查 GKD、自动记账等自动化 / 无障碍功能；找机位功能通知加入保护，旧清单也不能再次误关。排查和误关恢复见专项说明。
-    
-    此前版本已处理 Windows 本地页面超时、荣耀截图越界、通知渠道误操作风险、vivo 快应用与备份问题。各 Issue 的处理范围和待验证项见 社区问题处理记录。仅支持通过 adb 连接的安卓设备，暂不支持使用 HDC 的原生鸿蒙。
-    
-    | 电脑 | 下载 | 说明 |
-    |---|---|---|
-    | Mac · Apple 芯片（M1 及以后） | AndroidAdCleaner-0.2.3-mac-arm64.dmg | 已签名、通过苹果公证，双击就能打开 |
-    | Mac · Intel 芯片 | AndroidAdCleaner-0.2.3-mac-intel.dmg | 同上 |
-    | Windows 10 / 11 · 安装版 | AndroidAdCleaner-0.2.3-windows-setup.exe | 弹「Windows 已保护你的电脑」时点「更多信息」→「仍要运行」 |
-    | Windows 10 / 11 · 免安装 | AndroidAdCleaner-0.2.3-windows-portable.zip | 解压后双击 `AndroidAdCleaner.exe` |
-    
-    不知道 Mac 是哪种芯片：左上角苹果图标 → 关于本机，「芯片」写 Apple M 开头的选 Apple 芯片。所有版本：Releases。用法：docs/08-桌面客户端.md。
-    
-    | | |
-    |---|---|
-    | **1 连接手机**：插线即认出手机，内置开启 USB 调试的图文教程 | **2 检测**：型号、系统版本、机型脚本、快应用、广告组件 |
-    | **3 选择要关的**：营销通知按渠道勾选，服务类默认不勾 | **4 执行**：进度条和实时日志 |
-    | **5 完成**：每一步的结果，最后提醒关闭开发者模式 | **反馈**：自动附诊断信息，一键提交 GitHub Issue |
+    看效果 · 安装 · 能做什么 · 核心机制 · 和 Claude Design 的关系
     
     ---
     
-    - 不 root，不解锁，不刷机，系统更新不受影响。
-    - 只拨系统和 App 自带的开关。挂起广告包这一步要机主点头，一条命令可以还原。
-    - 搜索、负一屏卡片、应用商店的安装和更新、天气预警、快递提醒，这些功能保留。
+      
     
-    改之前：OPPO 软件商店首页。轮播图、必备、必玩、福利标签，全是推广位。
+      ▲ 3.0 发布片 · 32 秒 · 片里每一页设计都是 3.0 自己做的，剪辑用的是 huashu-motion
+      👉 下载 MP4（1080p · 含配乐 · 24MB） ·
+      2.0 的带音效 HTML 互动版
+    
+    ---
+    
+    ## 3.0 案例
+    
+    下面这些都是 3.0 跑出来的。前五个是从发布时新跑的 6 道题里挑的，每道只给一句话需求，方向是 agent 自己挑的，作者没插手；后两个一个是第三轮盲选赢下来的那版，一个是发布后作者拿它做的真实项目。
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  ⚠️风险  assetnote/php2shell-scanner
-    ⚠️ 命中风险词: cookie —— 默认归排除区，需人工确认
-    ⭐ 908 stars  |  🍴 133 forks  |  💻 Python  |  📅 2026-10-22
-    🔗 https://github.com/assetnote/php2shell-scanner
-    📡 来源: 🚀 5天300+星
-    📝 High fidelity scanner for php2shell (CVE-2026-109618 and CVE-2026-109619)
+#3  NVIDIA/SkillSpector
+    ⭐ 22411 stars  |  🍴 1953 forks  |  💻 Python  |  📅 2026-03-21
+    🔗 https://github.com/NVIDIA/SkillSpector
+    📡 来源: trending-daily
+    🏷️ agent-security, agent-skills, agentic-ai, ai-security, claude-code, mcp, prompt-injection, security-scanner, security-tools, security-workflow
+    📝 Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.
 
     README 摘要:
-    # php2shell-scanner
+    # SkillSpector
     
-    A command-line tool for detecting CVE-2026-109618 and CVE-2026-109619 in PHP applications.
+    **Security scanner for AI agent skills.** Detect vulnerabilities, malicious patterns, and security risks before installing agent skills.
     
-    ## How It Works
+    ## Overview
     
-    The scanner sends a minimal multipart control request followed by up to three crafted multipart probes. The probes use PHP array keys nested 62 levels deep and increase from 1 MiB to 20 MiB, matching the detection logic used by Assetnote's internal scanner.
+    AI agent skills (used by Claude Code, Codex CLI, Gemini CLI, etc.) execute with implicit trust and minimal vetting. In the 31,132-skill analyzed subset of the research dataset, **26.1% of skills contain vulnerabilities** and **5.2% show likely malicious intent**.
     
-    A target is reported vulnerable when the probe produces a PHP memory-exhaustion error, a differential empty HTTP 500, a PHP-FPM worker failure, or an advertised PHP version known to be unpatched. Initial 5xx responses, common request-rejection statuses, and nonempty HTTP 500 responses without the PHP fatal-error signature are not treated as crash signals.
+    SkillSpector helps you answer: **"Is this skill safe to install?"**
     
-    The scanner tests `/index.php` by default. A path supplied in the URL is preserved, and `--path` or `--path-file` can test custom paths. phpMyAdmin targets are automatically retested at `/show_config_errors.php`. Redirects are not followed unless `--follow-redirects` is set.
+    SkillSpector is part of the NVIDIA Verified Skills pipeline, which scans, evaluates, and signs agent skills before publication. Skills that pass are published to the NVIDIA skills catalog.
     
-    ### SAPI Modes
+    ## Documentation
     
-    The default `--sapi auto` mode applies both mod_php and PHP-FPM verdict rules, matching the combined behavior of Assetnote's postmodules. Use `--sapi mod_php` or `--sapi fpm` to restrict detection to a known SAPI.
+    - **Scan agent skills before installation** — Hosted guide: when to scan, how to read a report, and how to gate installs.
+    - **Development guide** — Architecture, package layout, and how to extend the analyzer pipeline.
+    - **Analysis resource bounds** — Fail-closed bundle, parser, nested-artifact, ledger, and finding ceilings.
+    - **Pi extension** — Install SkillSpector as a Pi tool for scanning skills from inside agent sessions.
+    - **OpenCode extension** — Install SkillSpector as an OpenCode tool and `/skillspector` command for scanning skills from inside agent sessions.
     
-    ### Network Impact
+    ## Features
     
-    Each tested path may receive a 42-byte control request and three probes totalling about 29 MiB. Probing stops as soon as the verdict is settled, and duplicate input URLs are scanned once.
+    - **Multi-format input**: Scan Git repos, URLs, zip files, directories, or single files
+    - **71 vulnerability patterns** across 17 categories: prompt injection, data exfiltration, privilege escalation, supply chain, excessive agency, output handling, system prompt leakage, memory poisoning, tool misuse, rogue agent, anti-refusal, trigger abuse, dangerous code (AST), taint tracking, YARA signatures, MCP least privilege, and MCP tool poisoning
+    - **Two-stage analysis**: Fast static analysis + optional LLM semantic evaluation
+    - **Live vulnerability lookups**: SC4 queries OSV.dev for real-time CVE data with automatic offline fallback
+    - **Multiple output formats**: Terminal, JSON, Markdown, and SARIF reports
+    - **Risk scoring**: 0-100 score with severity labels and clear recommendations
+    - **Baseline / false-positive suppression**: Accept known findings via a glob-rule or fingerprint baseline so re-scans surface only *new* issues (docs)
+    
+    ## Quick Start
+    
+    ### Installation
+    
+    > **Open-source software notice:** This project will download and install additional third-party open source software projects. Review the license terms of these open source projects before use.
+    
+    Create and activate a virtual
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#4  t3dotgg/tstack
+    ⭐ 1672 stars  |  🍴 100 forks  |  💻 Python  |  📅 2026-10-24
+    🔗 https://github.com/t3dotgg/tstack
+    📡 来源: 🚀 5天300+星
+    📝 The agent skills I use every day. Works with Claude Code and Codex.
+
+    README 摘要:
+    # tstack
+    
+    The agent skills I use every day, cleaned up so anyone can use them. They work
+    in Claude Code and Codex. Some use T3 Code
+    features when they are available and fall back to native tools when they are
+    not.
+    
+    ## Skills
+    
+    | Skill | Say | What it does |
+    |---|---|---|
+    | `full-send` | "full send" | Takes a change to a merged PR with nobody watching: proves it, reviews it, files it, babysits it, merges it. |
+    | `full-stop` | "full stop" | Same as `full-send`, but stops when the PR is ready for you to merge. |
+    | `council` | "council" | Gets review from three models from different providers, and loops until they agree. |
+    | `sol-loop` | "sol loop" | Reviews a change with GPT Sol in a loop until both agents agree. |
+    | `file-pr` | "file a PR" | Files a short PR that leads with the problem, not an inventory of changes. |
+    | `takeover` | "take over" | Finishes someone else's PR, branch, or agent thread, and keeps their credit. |
+    | `babysit-pr` | "babysit" | Watches a PR through CI and review bots, and fixes the real findings. |
+    | `modernize` | "modernize" | Rebases an old PR and decides if it should still exist. |
+    | `leaving-pr-comments` | (automatic) | Formats comments that an agent posts on your behalf. |
+    
+    Some skills call others. Install the ones they need too:
+    
+    - `full-send` uses `sol-loop`, `file-pr`, and `babysit-pr`.
+    - `full-stop` uses `full-send`.
+    - `takeover` uses `modernize`, `file-pr`, `babysit-pr`, and `leaving-pr-comments`.
+    - `file-pr`, `babysit-pr`, and `modernize` use `leaving-pr-comments`.
+    
+    ## Install
+    
+    ```bash
+    git clone https://github.com/t3dotgg/tstack
+    cp -R tstack/skills/* ~/.claude/skills/   # Claude Code
+    cp -R tstack/skills/* ~/.codex/skills/    # Codex
+    ```
     
     ## Requirements
     
-    - Python 3.9+
-    - h11
-    - tqdm
-    
-    ## Installation
-    
-    ```
-    pip install -r requirements.txt
-    ```
-    
-    ### Docker
-    
-    Build the image:
-    
-    ```
-    docker build -t php2shell-scanner .
-    ```
-    
+    - An authenticated GitHub CLI (`gh`).
+    - `python3` for `babysit-pr`'s `pr-wait` script.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  designfuchen/word-atlas
-    ⭐ 900 stars  |  🍴 231 forks  |  💻 TypeScript  |  📅 2026-10-25
-    🔗 https://github.com/designfuchen/word-atlas
-    📡 来源: 🚀 5天300+星
-    🏷️ chinese, dataset, english-learning, flashcards, fsrs, ielts, language-learning, pwa, react, spaced-repetition
-    📝 词光 · 一词一画，点亮雅思 — 7,298 IELTS words, each with an original illustration, UK/US audio, 14,596 example sentences and FSRS review. Free, open source, no login. Dataset CC BY 4.0.
+#5  nightly-labs/openbot
+    ⭐ 1656 stars  |  🍴 201 forks  |  💻 TypeScript  |  📅 2026-08-12
+    🔗 https://github.com/nightly-labs/openbot
+    📡 来源: trending-daily
+    🏷️ ai-agents, bun, codex, electron, local-first, macos, solidjs, typescript
+    📝 A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.
 
     README 摘要:
-    # 词光 · Word Atlas
+    # OpenBot
     
-    **一词一画，点亮雅思。**
+    OpenBot is a local-first desktop workspace for persistent AI teammates. It supports the local
+    Codex App Server and
+    Claude Code, plus Grok CLI,
+    OpenCode, Gemini, Cursor CLI, and Cline CLI through ACP. It gives every agent its own workspace and
+    conversation, and provides local queues, file transfers, an embedded browser, and agent-to-agent
+    messaging in one desktop app.
     
-    7,298 个雅思核心词，每个词一幅原创插画、两条原创例句、英美发音和一套刚刚好的复习节奏。
-    免费，开源，无需注册，打开网页就能背。
+    > [!WARNING]
+    > OpenBot is a development preview. Agents currently run with `danger-full-access` and
+    > `approvalPolicy: never`. They can read and modify files, run commands, use the network, and control
+    > the embedded browser without per-action confirmations after the explicit first-launch consent.
+    > Run only agents and tasks you trust, keep backups, and review Security before use.
     
-    **打开词光 →** &nbsp;·&nbsp; ▶ 看宣传片 &nbsp;·&nbsp; 下载词库 &nbsp;·&nbsp; **在 X 关注更新 →** &nbsp;·&nbsp; English
+    ## What works
     
-          
+    - Prompt-driven agent creation and editing on desktop and mobile, with editable instructions, avatar, and section review before saving.
+    - Persistent agents backed by independent Codex, Claude, Grok, OpenCode, Gemini, Cursor, or Cline sessions and local workspaces.
+    - Custom OpenAI-compatible endpoints and custom ACP agents, with detection of local model servers (Ollama, LM Studio) and installed agents.
+    - Per-agent context monitoring with automatic compaction before long threads exhaust the model window.
+    - FIFO message queues with pause, resume, cancellation, and crash-safe persistence.
+    - Agent-to-agent messages, replies, reactions, images, and managed file transfers.
+    - Shared desktop channel chats with one task owner, explicit delegation, shared history, and Stop, Resume, Reassign, Archive, and Restore controls.
+    - A persistent embedded browser that agents can open, inspect, and control.
+    - Optional Computer Use on macOS, Windows and Linux through the `cua-driver` binary in the release, which OpenBot starts as its own child process and gives to every provider.
+    - Per-agent model, reasoning, profile, notification, browser, and panel state.
+    - Local data and privacy-safe diagnostics exports from the account menu.
+    - Optional OpenBot accounts through one-time email codes. The account API runs on Cloudflare Workers and D1.
     
-    每本单词书都从 abandon 开始，也停在 abandon。▶ 点击画面看 48 秒完整宣传片（有声音）
+    OpenBot is local-first, not offline-only. Codex connects to OpenAI, Claude connects to Anthropic,
+    Grok connects to xAI, Gemini connects to Google, Cursor connects to Cursor, Cline connects to Cline,
+    visited pages use the network, and installed plugins may connect to their own services.
+    
+    ## Install
+    
+    OpenBot supports macOS 13 or newer on Apple silicon or Intel, Windows 10 or newer
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#6  ⚠️风险  KillaBoi/StealMyBitcoin-PoC
+    ⚠️ 命中风险词: poc, cookie —— 默认归排除区，需人工确认
+    ⭐ 870 stars  |  🍴 129 forks  |  💻 Python  |  📅 2026-10-25
+    🔗 https://github.com/KillaBoi/StealMyBitcoin-PoC
+    📡 来源: 🚀 5天300+星
+    📝 A public release of the Steal My Bitcoin challenge
+
+    README 摘要:
+    sponsored with ❤️ by&nbsp;
+    
+    # Steal My Bitcoin CTF proof of concept
+    
+    > One live PHP callback against the Steal My Bitcoin challenge, start to finish, in a single standard-library Python file.
+    
+    This README explains stealmybitcoin_poc.py, a single-file Python reproduction of the request sequence used in my Steal My Bitcoin CTF run. It uses only Python's standard library. The script builds the requests itself, checks each leak before moving on, and records the HTTP bytes from a new run.
+    
+    This can probably be done easier without all the extra debug crap and as in my John Hammond video about the Steam Local Privilege Escalation I discovered, you could probably clean up this ugly PoC.
+    
+    > [!NOTE]
+    > ⚠️ **Honestly please clean it up or make your own better version that isn't crumpled by Sol.** ⚠️
+    
+    **Everything below is written against the Docker lab**, not the live challenge. The lab is a local Alpine PHP 8.4.26 CLI server behind nginx, which is the same build and worker model the offsets were calibrated on. Stand it up in a minute and the whole chain runs end to end on your own machine. The live run that actually solved the challenge is kept as a historical note at the bottom.
+    
+    ```
+      stage                 what goes out                        what comes back
+      ─────────────────────────────────────────────────────────────────────────────
+      0  health      GET /php-version.php                 ->  PHP 8.4.26 confirmed
+      1  heap leak   249,042 B producer + 8 x   6,672 B   ->  256 B cookie
+                     (OOM poisons a worker)                   └─ Zend chunk base
+      2  code leak   251,557 B producer + 8 x  92,388 B   ->   16 B cookie
+                     (OOM poisons a worker)                   └─ zval_ptr_dtor
+      3  callback    368,812 B POST                       ->  forged HashTable runs
+                     (fake HashTable + command)               └─ zif_system(cmd)
+      ─────────────────────────────────────────────────────────────────────────────
+      20 HTTP requests at most. No looping, no retries.
+    ```
+    
+    ## The short version
+    
+    1. A small multipart upload makes PHP chew through far more memory than the wire size suggests.
+    2. When it runs out of memory partway through session upload-progress parsing, PHP leaves stale state behind in a worker that then gets reused.
+    3. Shape the follow-up requests right and bytes fall out through session cookies. I read those as a heap address and a PHP code address.
+    4. With both addresses, a final request drops a forged PHP structure where cleanu
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#7  andyhuo520/digital-human-koubo
+    ⭐ 846 stars  |  🍴 214 forks  |  💻 TypeScript  |  📅 2026-10-26
+    🔗 https://github.com/andyhuo520/digital-human-koubo
+    📡 来源: 🚀 5天300+星
+    📝 AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing styles + 48 creator-grade packaging components. Agent skill for Claude Code / Codex / OpenClaw / WorkBuddy …
+
+    README 摘要:
+    # Digital Human Koubo · AI 数字人口播
+    
+    **One photo + one sentence → a finished talking-head video with a digital human.**
+    Script, lip-synced AI presenter, voice clean-up, captions, and pro-YouTuber-style packaging — fully automated by your AI agent.
+    
+    **English** · 简体中文
+    
+    > This 27-second livestream ad has no real presenter. Face, voice, studio, captions and the price animation are all AI.
+    > The only input was one sentence: *"Use this digital human to make a 30-second livestream ad for the WorkBuddy course — 10 lessons, ¥99, was ¥999."*
+    > Total cost: **482 Renoise credits**.
     
     ---
     
-    ## 为什么做词光
+    ## Demos
     
-    背单词最难的不是“看过”，而是“想得起来”。
+    Click a GIF (or "Watch") to play the full video. Every demo below was produced with this repo.
     
-    纸质单词书把 7,000 个词排成一张清单，大多数人翻到第一页就停下了。词光换了个做法：给每个词一幅画，让你先**看见**它；用主动回忆让你**想起**它；再用 FSRS 算法在你快要忘记的时候让你和它**重逢**。你学会的每一个词，都会在自己的词汇星图上点亮一颗星。
+    | | | |
+    |:---:|:---:|:---:|
+    |  |  |  |
+    | **Livestream sales ad** · 9:16 · 27 sStyle B + depth-text price ¥999→¥99▶ Watch | **Product recommendation** · 9:16 · 89 sAnimated captions, emoji, picture-in-picture▶ Watch | **Text behind the presenter** · 5 sVision person matting, 3-layer composite▶ Watch |
     
-    这是一个个人项目。所有释义、例句、插画和录音都是为这个项目新做的，制作成本由作者自己承担，然后全部开源，任何人都可以免费使用、修改和再分发。
+    | | |
+    |:---:|:---:|
+    |  |  |
+    | **Step-by-step tutorial** · 16:9 · 4:36The digital human teaches how she was made (Style D)▶ Watch | **Digital human, upgraded** · 16:9 · 5:55Two presenters, 6 languages, 4 scenes, cat & dog (Style E)▶ Watch |
+    |  |  |
+    | **Launch breakdown** · 16:9 · 39 sPresenter on the side, code B-roll on the right (Style C)▶ Watch | **Finance / tech explainer** · 16:9 · 2:21Charts, documents, chapter cards (Style A)▶ Watch |
     
-    ## 一眼看懂
+    Packaging component gallery · 48 components · 2:40 · ▶ Watch
     
-    | 数量 | 内容 |
-    |---:|---|
-    | **7,298** | 雅思核心词条，CEFR A1–C2 分级，19 个雅思高频话题 |
-    | **7,298** | 幅原创插画，统一的复古图鉴画风，画的就是例句里的场景 |
-    | **14,596** | 条原创例句：一条日常短句帮你记住，一条雅思语境长句帮你会用 |
-    | **22,905** | 段录音：英音、美音单词发音，以及例句朗读 |
-    | **0** | 账号、广告、追踪。进度只保存在你自己的设备上 |
-    
-    ## 看一看，听一听
-    
-    7,298 幅插画、22,905 段录音、24 段界面声音，都是为词光专门做的。下面是一小部分。
-    
-    ### 🖼 每个词一幅画
-    
-    画面讲的就是例句里的那件事，同一种复古图鉴画风贯穿全部 7,298 个词。
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  morganlinton/BeautifulRust
-    ⭐ 855 stars  |  🍴 40 forks  |  💻 Python  |  📅 2026-10-23
-    🔗 https://github.com/morganlinton/BeautifulRust
-    📡 来源: 🚀 5天300+星
-    🏷️ claude-code, claude-plugin, claude-skills, coding-agent, rust, style-guide
-    📝 A Claude Code plugin that teaches Claude to write idiomatic, robust Rust
-
-    README 摘要:
-    # Beautiful Rust
-    
-    Three standard Agent Skills and a lints config that teach coding
-    agents to write, review, port, and enforce idiomatic Rust:
-    
-    - **`rust-best-practices`** loads whenever an agent writes or changes Rust, and steers it
-      toward idiomatic, robust, maintainable code.
-    - **`rust-review`** reviews existing Rust code, a file, a crate, or a diff, and writes a
-      prioritized report where every finding cites the rule it breaks and shows the fix.
-    - **`rust-port`** ports C, C++, Python, Go, or JavaScript to idiomatic Rust with the same
-      behavior, porting the original tests first so you can prove the two match.
-    - **`lints/`** is a drop-in clippy configuration that enforces the machine-checkable rules
-      in CI.
-    
-    They work with Claude Code, OpenAI Codex, GitHub Copilot, Cursor, Gemini CLI, and any other
-    agent that reads the Agent Skills format. Every code example in the skills compiles on
-    stable Rust, and every lint in the config was checked against current clippy.
-    
-    The guidance is distilled from five sources, with a condensed digest of each bundled in
-    the skill so the agent can consult the original reasoning when it needs to:
-    
-    - Google Rust Style Guide
-    - Rust API Guidelines (official rust-lang checklist)
-    - Effective Rust by David Drysdale
-    - Rust Design Patterns (idioms, patterns, anti-patterns)
-    - Microsoft Pragmatic Rust Guidelines
-    
-    Where the sources disagree, the skill picks a side and says why.
-    
-    ## What it changes
-    
-    Asked for a small semver-parsing library, an agent without the skill produced working
-    code with public fields, no `# Errors` docs, and `unwrap()` in its doc examples. With the
-    skill, the same agent kept the fields private, documented failure modes, and wrote doc
-    examples users can copy safely. Condensed from those two runs:
-    
-    ```rust
-    // Without the skill
-    /// A semantic version. The fields are public for convenience.
-    pub struct Version {
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#9  mizorewww/gdirect
-    ⭐ 619 stars  |  🍴 37 forks  |  💻 Rust  |  📅 2026-10-25
-    🔗 https://github.com/mizorewww/gdirect
-    📡 来源: 🚀 5天300+星
-    📝 Rust Google Drive direct downloader using pinned libaria2
-
-    README 摘要:
-    # gdirect
-    
-    中文 · Changelog
-    
-    gdirect browses, downloads, uploads and mounts your Google Drive from the terminal. It finds Google IPs that are reachable from your network and sends Drive traffic straight to them, with multi-connection, resumable downloads.
-    
-    ## How it works
-    
-    | Traffic | Route |
-    | --- | --- |
-    | Drive API, downloads, uploads (`browse`, `ls`, `download`, `upload`) | A scanned Google IP. The hostname and certificate check stay the same. If connections carrying the real SNI are reset, gdirect automatically retries under a forged identity (`g.cn` as TLS name, the real host in the Host header) — same idea as Sheas-Cealer — and remembers what worked per IP |
-    | Sign-in, account verification and token refresh (`accounts.google.com`, `oauth2.googleapis.com`, `www.googleapis.com`) | Your normal system network (DNS, proxy) |
-    | `mount` (rclone) | Your normal system network |
-    
-    The first transfer command checks a known relay and sweeps Google's own front ends, and keeps the ones that work for 24 hours. The relay, 183.56.143.147, is not Google: it forwards connections to Google, which makes it fast and stable in mainland China, so it is tried first. It cannot read your traffic (TLS runs end to end and is verified against Google's roots), but its operator sees your IP address and, unless the forged identity is used, which Google host you connect to. To avoid it, pass `--google-only` (or set `GDIRECT_GOOGLE_ONLY=1`); only Google's own front ends are then used. Those come from the address space Google publishes as its own (goog.json minus cloud.json, embedded and refreshed weekly). Most Google IPs are blocked in mainland China, but some front ends are not: the sweep tries a TCP connection first, fully verifies only what answers (TLS, the Drive API and a test download), and stops once it has 8. Each candidate is probed with the real SNI first, then with the forged identity. If an endpoint (the relay included) stops answering, requests and downloads move to the next verified one. `login` and `mount` do not scan. Certificates are verified against Google's own GTS roots (embedded in the binary), never against a system CA bundle — a compromised third-party CA cannot impersonate Google for gdirect.
-    
-    Network requirements:
-    
-    - Sign-in needs browser access to `accounts.google.com` and application access to `oauth2.googleapis.com` and `www.googleapis.com`. Token refresh needs `oauth2.googleapis.com`. If Google is blocked, keep a proxy available for these requests, including
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#10  DenisSergeevitch/ex-ussr-kinship-research
-    ⭐ 566 stars  |  🍴 53 forks  |  💻 Python  |  📅 2026-10-25
-    🔗 https://github.com/DenisSergeevitch/ex-ussr-kinship-research
-    📡 来源: 🚀 5天300+星
-    🏷️ agent-skills, archives, claude-code, codex, family-history, familysearch, genealogy, ussr
-    📝 Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.
-
-    README 摘要:
-    # ex-USSR Kinship Research
-    
-    **An evidence-first genealogy skill for AI agents (Codex, Claude Code and other Agent Skills runtimes).** It turns an agent into a careful family-history researcher for the former USSR, the Soviet Union and the Russian Empire. The agent reads church books and civil records, military, deportation and repression files, and unindexed archive scans. It keeps every find traceable, separates records from interpretation and says plainly what is proven and what is not.
-    
-    Coverage includes all 15 former Soviet republics: Russia, Ukraine, Belarus, Moldova, Estonia, Latvia, Lithuania, Georgia, Armenia, Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan and Uzbekistan. Archives are chosen by the event's historical jurisdiction and current record custodian; a regional example does not replace local research.
-    
-    The skill's instructions are written in Russian, but **the agent talks to you in your language**: English, Ukrainian, Russian, Polish, German and so on. It quotes sources in their original spelling with a translation, and builds search queries in the languages of the records.
+    > All presenters in the demos are AI digital humans and every video is labelled "内容由 AI 数字人演绎" (performed by an AI digital human). The male presenter is the author's own digital twin, made from his own photo.
     
     ---
     
     ## What it does
     
-    - **Case intake and scope.** One research question, known facts, who may be alive, what is off-limits.
-    - **Reproducible registers.** Persons, artifacts, claims, relationships and a full search log (CSV), plus a final report template.
-    - **Historical jurisdiction model.** It resolves every event to the state, province, district, parish or civil registry *as of the event date*, not today's map.
-    - **Name-variant matrices.** Pre-reform Russian, Ukrainian, Polish, Romanian, German and Yiddish forms, patronymics, maiden names and transliterations.
-    - **Source strategy.** Originals first, then official catalogs, indexes, published document collections, and only then trees and forums as leads.
-    - **Evidence protocol.** Claims get explainable statuses, not percentages: `hypothesis`, `single-source`, `corroborated`, `strongly-corroborated`, `contradicted`, `unresolved`. Copies and mirrors of one record share an `independence_group`, so they never count as independent proof.
-    - **Identity resolution.** Namesakes stay separate `person_id`s until distinguishing evidence appears: house number, parents, godparents, exact birth date or military unit.
-    - **Audit script.** It checks referential integrity and flags weak corroboration before you write conclusions. An independence group counts only when a cited artifact belongs to it, so corroboration cannot
+    - **Digital human from one photo** — a fixed presenter (face, outfit, voice description, prompt template) stored in `persona.json`, so every video is the same person. Composite her into any scene (livestream studio, shop, classroom, Kyoto street) with GPT Image first, then make her talk.
+    - **Lip-synced talking clips** — the script is split into ≤ 15-second segments and generated with **Grok Video 1.5** through **Renoise MCP**. Other models (Wan 3.0, OmniHuman for your own recording) are documented.
+    - **Cost gate** — the agent always quotes *segments · seconds · credits · balance* first and waits for your "yes". It generates segment 1 for you to check before batching the rest.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#11  enesozturk/dimensional-drawing
-    ⭐ 563 stars  |  🍴 31 forks  |  💻 HTML  |  📅 2026-10-23
-    🔗 https://github.com/enesozturk/dimensional-drawing
+#8  unclebob/ub-mode
+    ⭐ 750 stars  |  🍴 36 forks  |  💻 None  |  📅 2026-10-25
+    🔗 https://github.com/unclebob/ub-mode
     📡 来源: 🚀 5天300+星
     📝 无描述
 
     README 摘要:
-    dimensional-drawing ✏️📐
+    # ub-mode
     
-      Give it a UI component, get back a one-page technical drawing of it.
-      Paddings, gaps, corner radii, layers and viewport placement, measured and labeled like Apple's dimensional drawings.
+    `ub-mode` is an agent skill that enforces disciplined software engineering principles when writing or changing code. It is loosely based on portions of @poteto's rules (`poteto-mode` / `pstack`), reduced and paired with deterministic quality-gate tools:
     
+    1. **First Make it Work** — Laziness Protocol, Foundational Thinking, TDD, Redesign From First Principles, Attack the Premise, Subtract Before You Add, Outcome-Oriented Execution, Build the Lever, and Architecture (Model the Domain, Boundary Discipline, Type System Discipline, Make Operations Idempotent, Separate Before Serializing Shared State).
+    2. **Then Make it Right** — Fix Root Causes, Sequence Work into Verifiable Units, Test Behavior (Not Implementation), Crapper (`CRAP = 0.8` similarity) are eliminated.
+    - unclebob/mutator — Runs mutation testing to expose uncovered code and surviving mutants that tests fail to catch.
+    - unclebob/uml-viewer — Visualizes components, coverage, CRAP, mutation scores, and dependency directions.
+    
+    ## Installation
+    
+    Copy `SKILL.md` into your agent's skills directory as `ub-mode/SKILL.md` (for example `~/.grok/skills/ub-mode/SKILL.md`, `~/.claude/skills/ub-mode/SKILL.md`, or `~/.cursor/skills/ub-mode/SKILL.md`), then invoke `/ub-mode`.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#9  GabrieleLozupone/kokon
+    ⭐ 224 stars  |  🍴 28 forks  |  💻 TypeScript  |  📅 2026-10-08
+    🔗 https://github.com/GabrieleLozupone/kokon
+    📡 来源: 🤖 AI / LLM / RAG | 活跃 | open source ChatGPT alte
+    🏷️ ai-photo-editor, comfyui-alternative, generative-fill, image-editing, image-generation, inpainting, linux, local-ai, macos, mcp
+    📝 Edit photos by describing the change, on your own GPU. A free, open-source alternative to Nano Banana and ChatGPT image editing: photos stay on your computer, no daily limit. One installer for Windows, Mac and Linux sets up the best open model (Qwen-Image 2.1). MCP server for AI agents.
+
+    README 摘要:
+    Edit photos by describing the change, on your own computer.
+    
+      A free, open-source alternative to Nano Banana and Generative Fill that runs on your own GPU.
+      One installer for Windows, Mac and Linux sets up the best open model for your hardware.
+      Brush an area, type what you want, get the edit. Your photos stay with you, and you can edit as often as you like.
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      
+    
+      Website ·
       Install ·
-      Use it ·
-      Make it move ·
-      Examples
+      Phone & server ·
+      Features ·
+      Examples ·
+      AI agents ·
+      FAQ ·
+      Prompt guide ·
+      How it works
     
-    ---
+    https://github.com/user-attachments/assets/8851c580-99b9-432a-82be-b6d42fa9a749
     
-    Apple publishes dimensional drawings for every device so accessory makers can build cases that fit. They are calm, dense and beautiful: one sheet, a few views, tiny detail circles, numbers everywhere.
+    Watch in 4K on YouTube · What's new in 0.10 (42 s)
     
-    This repo teaches your agent to draw **your components** the same way. A card or a dialog becomes a spec sheet you could hand to anyone and they would rebuild its *architecture*: paddings, gaps, radii, layers, how it sits in the viewport. Copy and content are left out on purpose, so the drawing stays true when the text changes.
+      
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#10  FrigadeHQ/hob
+    ⭐ 164 stars  |  🍴 5 forks  |  💻 TypeScript  |  📅 2026-10-14
+    🔗 https://github.com/FrigadeHQ/hob
+    📡 来源: 🤖 AI / LLM / RAG | 活跃 | open source ChatGPT alte
+    🏷️ ai-agent, ai-assistant, chatgpt-alternative, claude-alternative, desktop-app, electron, gemma, gpt-oss, linux, llama-cpp
+    📝 An easier way to use AI on your own computer. A free, open-source alternative to Claude and ChatGPT that runs open-weight models like Gemma and gpt-oss locally on Mac, Windows and Linux. Private, and works offline.
+
+    README 摘要:
+    Hob
     
-    ## What's inside 🎁
+      An easier way to use AI on your own computer.
+      A free, open-source alternative to Claude and ChatGPT.
     
+      Visit hob.chat → &nbsp;·&nbsp;
+      Download for Mac · Windows · Linux
+    
+      
+    
+      Fill out PDFs, work through documents, and much more. Free, private, and works offline.
+      Hob picks the best frontier open-weight model that fits your computer and sets everything up for you.
+    
+      Help · Contributing · MIT license
+      Made by Frigade.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#11  NekoCCN/ImagenCli
+    ⭐ 43 stars  |  🍴 0 forks  |  💻 Python  |  📅 2026-10-22
+    🔗 https://github.com/NekoCCN/ImagenCli
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
+    📝 Persistent image creation workbench for humans and AI agents, with a shared CLI/TUI workspace, multi-provider generation and editing, local post-processing, and structured JSON output.
+
+    README 摘要:
+    A bridge between people, agents, and image generation models.
+      中文
+    
+    Imagen connects people and coding agents to image generation models through a shared workspace. People can browse images, adjust parameters, review requests, and manage artifacts in the TUI. Agents can use the CLI, JSON output, and bundled skills to do the same work in the same sessions.
+    
+    Configure your own image endpoint, create a session, and keep working from either interface. Plans, execution records, jobs, and image artifacts are stored locally, so a request made by an agent can be inspected and continued by a person, and the other way around.
+    
+    ## What it provides
+    
+    - **One workspace, two interfaces.** The TUI and CLI read and write the same sessions, plans, jobs, and artifacts.
+    - **Your endpoint, your models.** Profiles support OpenAI-compatible Images endpoints, Gemini native `generateContent`, and other adapters. Available models and parameters come from the configured endpoint.
+    - **Explicit execution.** A plan freezes the request for review. Approval and execution are separate steps; creating a plan never sends a generation request.
+    - **Local postprocessing.** Smoothing, line work, tone and color changes, periodic-frequency suppression, resizing, comparison, and contact sheets.
+    - **Batch and background work.** Local queues, independent child jobs, and an async worker.
+    - **Agent skills.** Bundled guides teach coding agents the CLI, approval rules, artifact handling, and cost and weight boundaries. They install into project or global directories for supported agents.
+    - **Optional local upscaling.** Model weights are selected and downloaded by the user, then checked against a pinned SHA-256 digest.
+    - **English and Chinese interface text.** English is the default; JSON keys, statuses, and command identifiers do not change with the language.
+    
+    Processing always creates a new artifact. It never overwrites the input.
+    
+    ## How it fits together
+    
+    ```text
+    request ──► plan (review) ──► approve ──► execute ──► job + artifact
+                                                            │
+                                              postprocess ◄─┴─► compare / sheet
     ```
-    skills/
-    ├── dimensional-drawing/          the drawing skill
-    │   ├── SKILL.md
-    │   └── examples/                 card + dialog sheets (single HTML files)
-    └── dimensional-drawing-motion/   turns a sheet into a ~10 s film
-        ├── SKILL.md
-        ├── templates/                reference scene + stylesheet
-        └── adapters/
-            ├── claude-motion.md      Claude's Motion artifact (primary)
-            └── headless/             Playwright + ffmpeg, no Claude needed
-    ```
     
-    ### The house rules
+    A turn records one creation attempt. A plan records the frozen request and digest. An artifact records the image and its provenance. Sessions group turns and artifacts. None of these require the TUI: the CLI produces the same records, and the TUI renders them.
     
-    | | |
-    |---|---|
-    | ⚫️ **Monochrome** | grays only; things are told apart by line weight, dashes and hatches |
-    | 🧱 **Architecture, not content** | `TITLE SLOT · FLEX`, `ACTION · HUG`, `CONTENT SLOT · FILL` |
-    | 🔤 **Variables, not numbers** | `S1`, `R2`, `H1 = 2·S1 + H3`, `R2 = R1 − B − S6` |
-    | 🏷️ **Unbranded** | neutral names like `UI-CARD-001` |
-    | 🙅 **Never invent values** | unknowns stay `[TBD]` |
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#12  ⚠️风险  mateogon/pdf-narrator
-    ⚠️ 命中风险词: bypass —— 默认归排除区，需人工确认
-    ⭐ 214 stars  |  🍴 37 forks  |  💻 Python  |  📅 2024-12-15
-    🔗 https://github.com/mateogon/pdf-narrator
-    📡 来源: 📖 阅读/内容平台 | 活跃 | audiobook text-to-speech
-    🏷️ audiobook, audiobook-generator, epub, immersive-reading, kokoro-tts, low-resource, pdf, pdf-audiobook, pdf-extraction, pdf-to-audiobook
-    📝 Convert your PDFs and EPUBs into audiobooks effortlessly. Features intelligent text extraction, customizable text-to-speech settings, and efficient processing for low-resource systems.
-
-    README 摘要:
-    # PDF Narrator
+    ## TUI and CLI at a glance
     
-    PDF Narrator turns PDF, EPUB, TXT and HTML books into audiobooks. It uses Kokoro-82M, a speech model that runs on your computer. Your books do not go to the internet.
-    
-    > For a reader that shows the text while the audio plays, see Cadence.
-    
-    ## Contents
-    
-    1. Features
-    2. Requirements
-    3. Install
-    4. Make an audiobook
-    5. Where your files are
-    6. Command line
-    7. Optional setups
-    8. Troubleshooting
-    9. Development
-    10. License
-    
-    ## Features
-    
-    - **Desktop app.** A library of your books and a four-step flow: check the text, pick a voice, create the audio, export.
-    - **Local speech.** Kokoro runs on the CPU, on an Apple GPU (MPS) or on an NVIDIA GPU (CUDA). The app selects the fastest one.
-    - **Fast.** On an Apple M-series GPU, the app creates audio about 10 to 13 times faster than real time.
-    - **Clean text.** The app skips covers, copyright pages, contents and Project Gutenberg license text. You can edit any chapter before you create audio.
-    - **54 voices in 9 languages.** You hear each voice read a paragraph from your own book. Each voice shows its quality grade from Kokoro.
-    - **Audiobook export.** M4B with chapters, title, author and cover, or one MP3 file for each chapter.
-    - **Safe to stop.** You can pause, stop and continue. Finished chapters stay finished. If you edit a chapter, the app creates only that chapter again.
-    
-    ## Requirements
-    
-    | Item | Requirement |
-    |---|---|
-    | Operating system | macOS, Windows 10/11 or Linux |
-    | Tools | uv and Git |
-    | Disk space | About 2 GB for Python packages, plus about 350 MB for the speech model |
-    | Internet | Only for the first install and the first use of each voice |
-    | M4B export (optional) | FFmpeg |
-    | Scanned PDFs (optional) | Tesseract and Poppler. See Scanned PDFs |
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#13  ngo275/app-agent
-    ⭐ 191 stars  |  🍴 31 forks  |  💻 TypeScript  |  📅 2024-12-17
-    🔗 https://github.com/ngo275/app-agent
-    📡 来源: 📈 增长/推广/运营 | 活跃 | app store optimization A
-    🏷️ agent, app-agent, app-store, app-store-connect, appagent, appstore, appstoreconnect, aso, google-play-console
-    📝 AppAgent is an AI-first tool that handles your app release and App Store Optimization (ASO). An OSS alternative to App Radar, Sensor Tower, AppTweak, AppFollow, other ASO tools, built for developers who should focus on what really matters; build products.
-
-    README 摘要:
-    # AppAgent
-    
-    AppAgent is an open-source tool for app store optimization (ASO), multilingual
-    metadata, and App Store Connect release workflows. It is intended to run in your
-    own local environment, using your own database and API accounts.
-    
-    **The hosted offering is being discontinued. Use the local setup below instead
-    of signing up for a hosted AppAgent account.** The OSS project remains available
-    under AGPL-3.0-or-later. This change in direction is not a claim that old hosting,
-    credentials, or stored data have already been removed.
-    
-    ## What it does
-    
-    - Research keywords and competitors, and generate localized store metadata.
-    - Generate descriptions and release notes with OpenAI.
-    - Import App Store Connect apps and metadata, prepare changes locally, and
-      explicitly push updates or submit a version for review.
-    
-    App Store Connect is the primary release workflow. Google Play support is
-    partial; do not assume feature parity. This is not an offline application:
-    AI generation, store searches, and store updates call external services. Review
-    changes before pushing or submitting them to an app store.
-    
-    ## Requirements
-    
-    - Node.js **24.22.1 or a newer 24.x release** (`.nvmrc` and `package.json`).
-    - Yarn **1.22.22**, through Corepack or your own installation.
-    - PostgreSQL and an empty database for a new installation.
-    - An OpenAI API key for AI features, with access to the models used by the code
-      (including `gpt-4.1`, `gpt-4o`, and `o3-mini`). API charges are yours.
-    - Upstash Redis REST URL/token for keyword and store-search caching. These
-      features currently use Upstash directly; a plain local Redis TCP URL is not a
-      drop-in replacement.
-    - Your App Store Connect API key for importing or modifying your apps. Enter
-      these credentials in the app's team settings, not in this repository.
-    
-    Stripe, Vercel, Resend, Google OAuth, and analytics accounts are **not required
-    for the recommended local development setup**. Authentication is still enabled.
-    
-    ## Local setup
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#14  chmouel/liseur
-    ⭐ 158 stars  |  🍴 8 forks  |  💻 Kotlin  |  📅 2026-07-28
-    🔗 https://github.com/chmouel/liseur
-    📡 来源: 📖 阅读/内容平台 | 活跃 | epub reader open source
-    🏷️ ai-assisted, android, calibre-web, ebook-reader, epub, epub-reader, f-droid, foss, jetpack-compose, kobo-sync
-    📝 Open-source EPUB reader and remote library client for Android, with a Kindle-inspired reading experience
-
-    README 摘要:
-    # Liseur
-    
-      
-        
-      
-      
-      
-        
-      
-    
-      
-        
-        
-      
-    
-    An open-source ebook reader for Android, and a client for calibre-web, Komga, BookOrbit, liseur-sync and any OPDS catalog: EPUBs on your phone or in sync with book server.
-    
-      
-        
-        
-        
-      
-      
-        The shelf, sorted by what you are currently reading.
-        Distraction-free page with notes and bookmarks.
-        Read aloud with device voices or your own speech server.
-      
-      
-        
-        
-        
-        
-      
-      
-        Reading order, progress, and which volumes are missing.
-        Character profiles grounded in earlier passages.
-        See which characters appear together across chapters.
-      
-    
-    More screenshots here
+    Most daily work is available in both interfa
