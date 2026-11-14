@@ -1,398 +1,692 @@
-📊 开源日报 — 2026-11-13
-共发现 8 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-11-14
+共发现 14 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  ggml-org/llama.cpp
-    ⭐ 134730 stars  |  🍴 25528 forks  |  💻 C++  |  📅 2023-03-10
-    🔗 https://github.com/ggml-org/llama.cpp
+#1  louislam/uptime-kuma
+    ⭐ 93968 stars  |  🍴 8728 forks  |  💻 JavaScript  |  📅 2021-07-03
+    🔗 https://github.com/louislam/uptime-kuma
     📡 来源: trending-daily
-    🏷️ ggml
-    📝 LLM inference in C/C++
+    🏷️ docker, monitor, monitoring, responsive, self-hosted, selfhosted, single-page-app, socket-io, uptime, uptime-monitoring
+    📝 A fancy self-hosted monitoring tool
 
     README 摘要:
-    # llama.cpp
+    # Uptime Kuma
     
-    LLM inference in C/C++
-    
-    ggml / ops / maintainer PRs%20sort%3Aupdated-desc) / dev stats / lib llama API / llama-server REST API
-    
-    ## Quick start
-    
-    A few options to get `llama.cpp` installed on your machine:
-    
-    ```bash
-    # curl
-    curl -LsSf https://llama.app/install.sh | sh
-    
-    # powershell
-    irm https://llama.app/install.ps1 | iex
-    ```
-    
-    - Visit https://llama.app and follow the instructions
-    - Run with Docker - see our Docker documentation
-    - Download pre-built binaries from the releases page
-    - Build from source by cloning this repository - check out our build guide
-    
-    Once installed:
-    
-    ```sh
-    # Download and run a model directly from Hugging Face
-    llama cli -hf ggml-org/Qwen3.5-0.8B-GGUF
-    
-    # Launch OpenAI-compatible API server
-    llama serve -hf ggml-org/Qwen3.5-0.8B-GGUF
-    ```
+    Uptime Kuma is an easy-to-use self-hosted monitoring tool.
     
         
-            
-                
-                VLM session with llama cli
-            
-            
-                
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  QwenLM/qwen-code
-    ⭐ 29994 stars  |  🍴 3410 forks  |  💻 TypeScript  |  📅 2025-06-26
-    🔗 https://github.com/QwenLM/qwen-code
-    📡 来源: trending-daily
-    🏷️ agentic, ai, ai-agent, ai-coding, cli, coding-agent, developer-tools, llm, mcp, qwen
-    📝 An open-source AI coding agent that lives in your terminal.
-
-    README 摘要:
-    **The open-source AI coding agent for your terminal, editor, desktop, browser, and chat.**
     
-    中文 |
-    Deutsch |
-    français |
-    日本語 |
-    Русский |
-    Português (Brasil) |
-    한국어
+    ## 🥔 Live Demo
     
-    | **Qwen Code 1.0 Preview**                                                                                                                                                                                                                                                                                                                                                              |
-    | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | Qwen Code 1.0 Preview brings together the agent harness capabilities of Qoder and Qwen Code in an open-source release.Try Qwen Code 1.0 Preview · Documentation · 中文文档. |
+    Try it!
     
-    ## Why Qwen Code?
+    Demo Server (Location: Frankfurt - Germany): 
     
-    - **Agentic out of the box** — Auto-Memory, Auto-Skills, SubAgents, Agent Teams, and MCP. Dynamic workflows, zero setup.
-    - **Open-source, inside and out** — The framework and the Qwen models are open-source. They evolve together. No vendor lock-in.
-    - **Multi-protocol** — Supports OpenAI, Anthropic, Gemini, and Qwen APIs. Any third-party provider or local model (Ollama / vLLM). Switch at runtime.
-    - **Beyond the terminal** — IDE plugins, Desktop app, Web UI, SDKs, and chat integrations (Telegram / DingTalk / WeChat / Feishu).
+    It is a temporary live demo, all data will be deleted after 10 minutes. Sponsored by Uptime Kuma Sponsors.
     
-    > [!TIP]
-    > Qwen Code is actively iterating on itself — using its own agent and models to file issues, submit PRs, review code, and run tests. Powered by the community, driven by AI.
+    > [!WARNING]
+    > Be careful - the top result in Google, uptimekuma.co, is not our official website, we don't control the website. I recommend following the installation guide in this GitHub repo.
     
-    ## Installation
+    ## ⭐ Features
     
-    Looking for **Qwen Code 1.0 Preview**? Get started here. The instructions below are for the main version.
+    - Monitoring uptime for HTTP(s) / TCP / HTTP(s) Keyword / HTTP(s) Json Query / Websocket / Ping / DNS Record / Push / Steam Game Server / Docker Containers
+    - Fancy, Reactive, Fast UI/UX
+    - Notifications via Telegram, Discord, Gotify, Slack, Pushover, Email (SMTP), and 90+ notification services, click here for the full list
+    - 20-second intervals
+    - Multi Languages
+    - Multiple status pages
+    - Map status pages to specific domains
+    - Ping chart
+    - Certificate info
+    - Proxy support
+    - 2FA support
     
-    **Linux / macOS:**
+    ## 🔧 How to Install
+    
+    ### 🐳 Docker Compose
     
     ```bash
-    curl -fsSL https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen-standalone.sh | bash
-    ```
-    
-    **Windows:**
-    
-    ```powershell
-    irm https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen-standalone.ps1 | iex
-    ```
-    
+    mkdir uptime-kuma
+    cd uptime-kuma
+    curl -o compose.yaml https://raw.githubusercontent.com/louislam/uptime-kuma/master/compose.yaml
+    docker compose up -d
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  ashhart/TensorFold
-    ⭐ 2022 stars  |  🍴 397 forks  |  💻 Zig  |  📅 2026-06-19
-    🔗 https://github.com/ashhart/TensorFold
-    📡 来源: trending-daily
-    🏷️ ai, ai-tools, llm, llm-inference, llm-tools
-    📝 LLM Inference Engine for Metal, CUDA and Vulkan.
+#2  google/elephant-goldfish-model
+    ⭐ 18737 stars  |  🍴 1399 forks  |  💻 Python  |  📅 2026-09-13
+    🔗 https://github.com/google/elephant-goldfish-model
+    📡 来源: trending-weekly
+    🏷️ agent-skills, ai-agents, antigravity, claude-code, claude-code-plugin, claude-skills, codex, codex-plugin, coding-agents, context-engineering
+    📝 Open-source plugin for designing and reviewing software with agents
 
     README 摘要:
-    # TensorFold
+    Design with an elephant. Review with a goldfish.
     
-    TensorFold serves language models from a Zig binary on Apple Silicon and NVIDIA GPUs.
-    The engine reads checkpoints, tokenizes requests and runs Metal or CUDA kernels directly.
-    Serving needs no Python or MLX installation.
+      Install &ensp;·&ensp;
+      Quickstart &ensp;·&ensp;
+      Documentation &ensp;·&ensp;
+      Website
     
-    Building with a coding agent? Have it load the contributor skill before it writes any code.
+    Develop ideas with context and review documents with fresh eyes. EGM is an open-source plugin for AI assistants.
     
-    ## Contributing with agents
+    **Elephant** holds your project context and drafts the specification. **Goldfish** reviewers examine the draft and referenced source material without the earlier conversation, helping expose unstated assumptions and blind spots. **You** make the architectural trade-offs and approve the specification before implementing.
     
-    Please use Agent Traffic Control before editing TensorFold so contributors and agents can avoid duplicate work and conflicting changes.
-    Check the live agent radar before choosing an issue and follow CONTRIBUTING.md and the ATC contributor instructions.
+    The built-in draft and design-review workflow targets software specifications. For other documents, choose reviewers and standards with `/egm-review-loop`. Bootstrap and drift reporting apply to software codebases.
     
-    Install or upgrade ATC to 0.9.4 or later, then run from an updated TensorFold clone:
-    
-    ```sh
-    npm install -g github:ashhart/ATC
-    atc check ISSUE --json
-    atc claim ISSUE --json
-    ```
-    
-    Replace `ISSUE` with the issue number and claim only after a complete check says the work is free.
-    TensorFold enables automatic public check-ins: a successful new claim starts an anonymous session on the radar and returns its `session` number.
-    Keep that number instead of starting a duplicate session.
-    For work already yours, start a session with `atc start ISSUE --json`.
-    Add `--github-name` to `claim` or `start` only if you want your verified GitHub name shown; `--local` keeps a new session on your machine.
-    The board shows the issue, activity state and last check-in; GitHub still associates the verification comment with its author.
-    Check that `publication` is `public`; `unavailable` means the public update failed even if the local claim or session succeeded.
-    
-    Pulse only while the agent is working, before its five-minute check-in expires:
-    
-    ```sh
-    atc pulse ISSUE SESSION working --json
-    atc who path/to/file --json
-    atc overlap --json
-    atc land ISSUE SESSION --json
-    atc release ISSUE --json
-    ```
-    
-    Use `reviewing` or `blocked` when appropriate, land the session when it stops, and resolve overlaps before opening a pull request.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  pookjw/HermesEnabler
-    ⭐ 1653 stars  |  🍴 146 forks  |  💻 Objective-C  |  📅 2024-12-14
-    🔗 https://github.com/pookjw/HermesEnabler
-    📡 来源: trending-daily
-    📝 Enable Hermès Watch Faces on any Apple Watch devices
-
-    README 摘要:
-    # HermesEnabler 2
-    
-    English · Tiếng Việt · 한국어 · 简体中文 · 繁體中文 · 日本語 · Español · Français · Deutsch · Português
-    
-    > Supported only on watchOS 27.0 through 27.3 beta 1.
-    
-    ## Installation
-    
-    ### macOS
-    
-    On macOS you can install the prebuilt IPA with Sideloadly or build the app directly with Xcode. Either way, the iPhone must be paired with the target Apple Watch, and the Watch must run a supported watchOS version.
-    
-    #### Install the IPA
-    
-    > **Known issue with Sideloadly 0.72:** Issue #43 reports that this version may remove the embedded Watch app while signing. If the iPhone app installs but HermesEnabler2 is missing from the Watch, use Xcode instead. This report is specific to version 0.72; compatibility with other versions has not been confirmed.
-    
-    1. Download the IPA from Releases.
-    2. Install Sideloadly on your Mac, connect your iPhone with a cable, and select it in Sideloadly.
-    3. Drag the IPA into Sideloadly and enter your Apple ID. Turn off **Use automatic bundle ID**, set a fixed Bundle Identifier, and start signing.
-    4. On the iPhone, open **Settings → General → VPN & Device Management** and trust your developer certificate.
-    5. On the iPhone, open **Settings → Privacy & Security → Developer Mode**, turn it on, restart, and confirm.
-    6. On the iPhone, open the **Watch** app, go to **My Watch → Apps**, and install **HermesEnabler2** on the Watch.
-    7. On the Apple Watch, open **Settings → Privacy & Security → Developer Mode**, turn it on, restart, and confirm. If the option is not shown, install the Watch app first and check again.
-    8. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.
-    
-    #### Build with Xcode
-    
-    1. Open HermesEnabler2.xcodeproj in Xcode.
-    2. Select your Apple Watch as the run destination and click **Run**.
-    3. Open **HermesEnabler2** on your Apple Watch and follow the steps in the app.
-    
-    ### Windows
-    
-    Windows uses WatchBridge, a community tool that prepares Developer Mode and installs an IPA containing both an iPhone host app and a Watch app. It is not affiliated with Apple or with this project.
-    
-    1. Install **Apple Mobile Device Service** by installing iTunes or the **Apple Devices** app from the Microsoft Store. WatchBridge needs it for USB and Wi-Fi communication. WebView2 is built into Windows 11.
-    2. Make sure your iPhone is paired with the target Apple Watch. WatchBridge supports only one paired Watch at a time; if more than one is paired, the preparation step stops instead of guessing.
-    3. Download `watchbridge-windows.zip` from
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  apex-compute/ANR
-    ⭐ 1107 stars  |  🍴 13 forks  |  💻 C++  |  📅 2026-11-11
-    🔗 https://github.com/apex-compute/ANR
-    📡 来源: 🚀 5天300+星
-    📝 Apex Neural Rendering (ANR) by Apex Compute
-
-    README 摘要:
-    # Apex Neural Rendering (ANR)
-    
-    Apex Neural Rendering by Apex Compute.
-    
-    - **ANR FG**: frame generation. In beta.
-    - **ANR SR**: super resolution (upscaling). Beta soon.
-    - **ANR RR**: ray reconstruction (denoising for ray tracing). Beta soon.
-    - **Source code**: coming soon.
-    - **nr-record**: records a game's frame generation or upscaler inputs to compare ANR FG, NVIDIA DLSS-G, DLSS, FSR, XeSS and others (below). Source in this repository.
-    
-    ## ANR FG Beta
-    
-    1. Download a package from Releases:
-       - `anr-fg-full`: for games without OptiScaler.
-       - `anr-fg-addon`: for games that already use OptiScaler.
-    2. Close the game, extract the package and run the installer with the folder of the game's `.exe`:
-       - Windows: `install.cmd`
-       - Linux and Steam Deck (Proton): `sh install.sh ""`, then set the game's launch options to the line it
-         prints: `WINEDLLOVERRIDES="dxgi=n,b" %command%`, or `winmm=n,b` in Vulkan games
-    3. In the game, turn on frame generation (the NVIDIA option where the game offers several).
-    
-    To uninstall, run `uninstall.cmd` or `sh uninstall.sh` with the same folder.
-    
-    ## Supported GPUs
-    
-    - NVIDIA GeForce RTX 20, 30, 40 and 50 series, and GTX 16 series
-    - AMD Radeon RX 5000, 6000, 7000 and 9000 series, and Steam Deck
-    - Intel Arc A and B series
-    
-    On Windows 10 and 11, and on Linux and SteamOS with Proton.
-    
-    ## Results and problems
-    
-    Please post them as issues:
-    - **Performance results**: run the test kit from the release and attach its result file.
-    - **Problems**: the game, GPU and driver, operating system, settings and what you saw, with the newest `nr_fg-*.log`
-      from under the game's `OptiScaler/custom/Apex Neural Rendering FG` folder.
-    
-    OptiScaler is GPL-3.0; its source for each release is attached to the release.
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  serveroshq/panel
-    ⭐ 657 stars  |  🍴 54 forks  |  💻 PHP  |  📅 2026-11-09
-    🔗 https://github.com/serveroshq/panel
-    📡 来源: 🚀 5天300+星
-    🏷️ agpl, control-panel, devops, laravel, open-source, self-hosted, server-management, serveros, vps
-    📝 The open source ServerOS panel: one place to run the Linux servers you already own.
-
-    README 摘要:
-    ServerOS panel
-    
-    One place to run the Linux servers you already own.
-    
-      
-      
-      
-      
-      
-    
-      
-    
-    ServerOS runs the Linux servers you already own from one place. Connect a VPS from any provider with one command, then deploy apps, sites and databases, watch them, back them up and fix them, without living in a terminal. Your servers stay with your provider, on your account.
-    
-    This repo is the panel, the web app you and your team work in. Each server runs serverosd, a small daemon the panel talks to. serveros.com runs this same panel as a hosted service.
-    
-    ## What's in it
-    
-    - **Machines**: connect a server with one command, see CPU, memory and disk, and install updates.
-    - **Services and projects**: deploy from Git or a template, with domains and HTTPS, and copy a project to a test environment before it goes live.
-    - **Backups, monitors and logs**: scheduled backups, uptime checks with alerts, status pages, and every service's logs in one place.
-    - **Workflows**: run steps on a schedule, on a push or by hand, like deploy, check and promote.
-    - **Teams**: members, roles, two-factor sign-in and an activity log.
-    - **AI and the API**: an MCP server and an API, so your own tools and assistants can work with your servers.
-    
-    ## Self-hosting
-    
-    You need a Linux server with Docker, ports 80, 443 and 8443 open, and a domain like `panel.example.com` with two A records pointing at the server: one for `panel.example.com` and one for `*.panel.example.com`.
-    
-    Then run this on the server:
-    
-    ```sh
-    curl -fsSL https://raw.githubusercontent.com/serveroshq/panel/main/docker/self-hosted/install.sh | sudo bash -s -- --domain=panel.example.com --email=you@example.com
-    ```
-    
-    It installs Docker if it's missing, runs the official image (`ghcr.io/serveroshq/panel`) and prints a setup code. Open `https://panel.example.com`, enter it, and the installer walks you through email and your first account. `serveros-panel setup-code` shows the code again if you lose it.
-    
-    Then connect your servers from Machines › Connect machine. Each one runs serverosd, the open source daemon, which connects out to your panel on port 8443.
-    
-    docs/self-hosting.md covers the rest: building the community edition yourself, installing without Docker, upgrades, backups, connecting machines, and the anonymous daily ping (and how to turn it off).
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  alexeyw/lot-map
-    ⭐ 646 stars  |  🍴 73 forks  |  💻 TypeScript  |  📅 2026-11-09
-    🔗 https://github.com/alexeyw/lot-map
-    📡 来源: 🚀 5天300+星
-    🏷️ agent-observability, ai-agents, claude, claude-code, claude-code-plugin, developer-tools, svg-animation, typescript, visualization
-    📝 A live map beside the chat that shows what Claude Code is doing: tool calls, model steps, hooks, skills and subagents light up as they happen. Local only, in 7 languages.
-
-    README 摘要:
-    # lot-map
-    
-    A mod for Claude Code: a live map of the work, in a pane beside the chat. Every tool call, model step, hook and skill sends a pulse from the centre to its station, so you see memory, files, shell, web and agents at work instead of reading a list of commands.
-    
-    *A made-up session replayed through the mod's own drawing code. Video (MP4).*
+    https://github.com/user-attachments/assets/93c799a2-10a3-4266-af02-eb79dd33a9a2
     
     ## Install
     
-    At the prompt of a terminal session:
+    Choose your coding agent. Install the complete plugin so its skills can read the reviewer prompts and document standards.
     
-    ```
-    /plugin install lot-map --marketplace alexeyw/lot-map
-    ```
+    ### ChatGPT and Codex desktop
     
-    Answer `y` to add the marketplace, then choose a scope. From a shell:
+    Open the published EGM plugin in the desktop app and install it. This listing is desktop-only. For Codex CLI, use the commands below.
     
-    ```bash
-    claude plugin install lot-map --marketplace alexeyw/lot-map
-    ```
+    ### Antigravity CLI
     
-    If it answers that the plugin is not found in any marketplace, add the marketplace first:
-    
-    ```bash
-    claude plugin marketplace add alexeyw/lot-map
-    claude plugin install lot-map@lot-map
+    ```sh
+    agy plugin install https://github.com/google/elephant-goldfish-model
     ```
     
-    In the desktop app: click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `alexeyw/lot-map`, then **Add plugin**.
+    For the **Antigravity App** and **Antigravity for IDEs** (Visual Studio Code extension), run `/plugin` or see the installation instructions.
     
-    The pane opens by itself when a session starts. In a terminal it needs at least 144 columns, otherwise type `/lot-map`, and it draws text only unless you ask for the map's picture: see In a terminal. Built and tested on Claude Code 2.1.321 on macOS; users report it working on Windows as well.
+    ### Claude Code
     
-    ## Updating
+    ```sh
+    claude plugin marketplace add google/elephant-goldfish-model
+    claude plugin install egm@egm
+    ```
     
-    From a shell:
+    ### Codex CLI
     
-    ```bash
-    claude plugin marketplace update lot-map
-    claude plugin update lot-map@lot-map
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#3  backnotprop/plannotator
+    ⭐ 10572 stars  |  🍴 791 forks  |  💻 TypeScript  |  📅 2025-12-28
+    🔗 https://github.com/backnotprop/plannotator
+    📡 来源: trending-daily
+    🏷️ agents, claude-code, code-review, codex, obsidian, opencode, pi-mono, plan-mode, skills
+    📝 The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. 
+
+    README 摘要:
+    Everything you need to annotate and stay in the loop with your agents
+      Inbox Surface • Artifacts • Code Review
+      Annotate plans, specs, markdown, HTML, and other interactive artifacts. Review diffs and PRs. Send feedback to your agent.
+    
+      &nbsp;&nbsp;
+      &nbsp;&nbsp;
+      &nbsp;&nbsp;
+      
+        
+        
+      &nbsp;&nbsp;
+      &nbsp;&nbsp;
+      &nbsp;&nbsp;
+      &nbsp;&nbsp;
+      
+        
+        
+      &nbsp;&nbsp;
+      
+        
+        
+      
+    
+      Plannotator Inbox · Official site · Code Review · Visual HTML Skills · Herdr Annotate · (Legacy) Plan Mode
+    
+    # Plannotator
+    
+    **⭐️ NEW:** Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants.
+    
+    Plannotator is a local, browser-based review surface for AI coding agents: Claude Code, Codex, Copilot CLI, Gemini CLI, OpenCode, Kiro, Droid, Amp, DeepSeek Harness, and Pi. Plannotator Inbox also works with personal assistants (Grok Bot, Muse, Hermes, OpenClaw).
+    
+    **It plugs directly into your agent** through plugins, hooks and commands. When the agent proposes a decision, plan, html, or finishes working, the app opens in your browser and you mark it up, comment, and send feedback directly to the agent for it to act on it.
+    
+    ### Review documents, plans, and agent messages
+    
+    Annotate plans, specs, messages, html, then send the feedback to your agent. 
+    
+    Demo: Plan review with Pi
+    
+    ### Code Review
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#4  tradermonty/claude-trading-skills
+    ⭐ 4314 stars  |  🍴 881 forks  |  💻 Python  |  📅 2025-10-19
+    🔗 https://github.com/tradermonty/claude-trading-skills
+    📡 来源: trending-daily
+    📝 Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.
+
+    README 摘要:
+    # Claude Trading Skills
+    
+    Claude Trading Skills started as a personal project to use AI to improve my own trading process.
+    
+    Claude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors.
+    
+    It is designed for investors who use long-term investing, ETFs, and dividend stocks as their core, while using disciplined swing trading as a satellite strategy when market conditions are favorable.
+    
+    The goal is not to outsource buy/sell decisions to AI. The goal is to structure market review, risk management, trade planning, journaling, and continuous improvement. It is open source because the workflows, checklists, and review habits behind better trading decisions can improve through shared practice.
+    
+    This is not a signal service or a promise of profitability. It is a toolkit for traders who want to build a better decision process.
+    
+    The project follows a **first for self, open for others** stance: it is built first as a practical workflow the author uses, then shared openly for others who face similar constraints.
+    
+    📖 **Documentation site:** 
+    
+    **Project vision:** `PROJECT_VISION.md`
+    
+    日本語版READMEは`README.ja.md`をご覧ください。
+    
+    ## Disclaimer
+    
+    This repository is for educational, research, and process-improvement purposes only. It is not financial advice, investment advisory service, tax advice, legal advice, a signal service, or a broker execution platform. Trading and investing involve risk, including loss of principal. Past performance, backtests, screens, reports, and AI-generated analysis do not guarantee future results. All trading decisions, position sizing, tax/regulatory compliance, and broker usage are the user's responsibility.
+    
+    The project is provided under the MIT License, **AS IS, WITHOUT WARRANTY**.
+    
+    ## Who This Is For
+    
+    This repository is designed for:
+    
+    - Time-constrained individual investors
+    - Long-term investors who also want disciplined swing-trading upside
+    - Dividend and ETF investors who want structured portfolio review
+    - Traders who want to manage risk before finding trade candidates
+    - Investors who want to journal and improve their decision process
+    
+    It is not designed for fully automated trading, signal outsourcing, or short-term scalping.
+    
+    ## Recommended Starting Path
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  expo/exact
+    ⭐ 4062 stars  |  🍴 98 forks  |  💻 Rust  |  📅 2026-11-02
+    🔗 https://github.com/expo/exact
+    📡 来源: 🚀 两周800+星
+    🏷️ ai-agents, appkit, coding-agents, cross-platform, css, ios, linux, macos, native-apps, rust
+    📝 Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them.
+
+    README 摘要:
+    # Exact
+    
+    **Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI
+    agent can build it, run it, see it, and test it on every one of them.**
+    
+    **Building an app?** With the tools installed (Quick start, step 1),
+    run `bun scripts/exact.mjs setup` once, make the app with `bun scripts/exact.mjs new `,
+    and read `docs/start-here.md` (for a website,
+    `docs/start-here-site.md`): that guide is the only required
+    reading. The rest of this page describes Exact for people deciding whether to use it
+    or working on it.
+    
+    > [!TIP]
+    > **Try it with a coding agent.** On a Mac with Xcode, Rust, Bun, and Chrome installed,
+    > give Claude Code this prompt:
+    >
+    > ```text
+    > Clone https://github.com/expo/exact and follow its README to make a new Exact
+    > app with `exact new`. Run `bun scripts/exact.mjs setup` once first. Make a todo
+    > list where I can add items, check them off, delete them,
+    > and see how many are left. Put the view in Contract and keep the list in `app.ts`.
+    > Write an `app.test.contract`, pass it on web, macOS, and the iOS Simulator with
+    > `scripts/agent.mjs`, then open the app for me on all three.
+    > ```
+    >
+    > A fresh agent given the earlier version of this prompt on a clean clone (2026-10-04, Hermes already in the
+    > machine cache, Cargo's cache warm) finished in about 57 minutes, and its tests passed
+    > on all three platforms. About 25 of those minutes were the first macOS and iOS builds,
+    > roughly 13 minutes each; later builds take a minute or two. On a machine that has
+    > lacked Hermes, its source build came first and added time. Current setup downloads and
+    > verifies the pinned host/iOS bundles once instead; ordinary builds stay offline.
+    
+      
+        Web
+        iOS
+        macOS
+      
+      
+        
+        
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#6  shanselman/gputaskman
+    ⭐ 3123 stars  |  🍴 151 forks  |  💻 Python  |  📅 2026-11-03
+    🔗 https://github.com/shanselman/gputaskman
+    📡 来源: 🚀 两周800+星
+    📝 A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).
+
+    README 摘要:
+    # gputaskman
+    
+    **An `htop` for what's inside your GPU, not just how full it is.**
+    
+    Windows with NVIDIA/AMD telemetry and Intel WDDM activity, plus Linux and WSL support (NVIDIA
+    everywhere, AMD and Intel on native Linux; see
+    Linux and WSL) and macOS on Apple Silicon (see macOS). A terminal UI
+    that connects per-process GPU memory and engine activity with loaded runtimes, model files, and
+    LLM buffer breakdowns.
+    
+    Task Manager says "15 GB used." This tries to answer: *by what? Model weights? KV cache?
+    Your browser? The desktop compositor? And why is so much GPU memory in system RAM?*
+    
+    **Scope: local GPU workloads, not cloud services.** Decision models, vision, speech, LLM inference,
+    training/fine-tuning (including Unsloth), graphics, and video all belong here. Visibility varies:
+    process memory and engine activity are measured; identifying individual models and their work
+    requires supporting evidence. A PyTorch/CUDA DLL alone cannot identify a model or prove training,
+    and a mapped file does not prove that model is resident on the GPU or being exercised.
+    CPU-only, NPU-only, and cloud workloads are out of scope.
+    
+    > Early, experimental software. Device and process counters are measurements; classifications
+    > and GGUF-derived breakdowns are estimates. This does not dump VRAM or enumerate a game's textures.
+    
+    ## Install from PyPI
+    
+    gputaskman is on PyPI. No repository clone is needed:
+    
+    ```powershell
+    uv tool install gputaskman
+    gputaskman
+    ```
+    
+    Or, with pipx:
+    
+    ```powershell
+    pipx install gputaskman
+    gputaskman
+    ```
+    
+    Works on Windows, Linux/WSL, and macOS with Python 3.11+ and the supported GPU/driver
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#7  Likely7/Veyra-NRVideo
+    ⭐ 1728 stars  |  🍴 77 forks  |  💻 C++  |  📅 2026-09-09
+    🔗 https://github.com/Likely7/Veyra-NRVideo
+    📡 来源: trending-daily
+    📝 Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.
+
+    README 摘要:
+    # Veyra
+    
+    ### Real-time GPU Video Enhancement for Windows
+    
+    **Super Resolution · Denoising · HDR · Frame Generation · Capture · PS5 / Xbox / PC Streaming**
+    
+    Turn local video, capture cards and game streaming into one real-time GPU enhancement pipeline.
+    
+    **79K+ cumulative Veyra portable-package downloads** (79,332 as of 2026-11-08) · **103K+ downloads across all GitHub Release assets** (103,337 including source archives, checksums and images). GitHub Releases · Counts are download events, not unique users.
+    
+    **⬇ Download Latest Release**
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    **📖 User Guide / Wiki**
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    **🇨🇳 简体中文**
+    &nbsp;&nbsp;·&nbsp;&nbsp;
+    **🐛 Report an Issue**
+    
+      
+        
+      
+    
+    One engine. Any source. Real-time enhancement.
+    
+      
+    
+    ⭐ Star History
+    
+      
+    
+      Open source · GPL-3.0 · Windows 11 · C++ · DirectX 12 · NVIDIA & AMD
+    
+    ---
+    
+    **2.1.2 update:** dual SR, SR-then-downsample, NVIDIA Low Latency, experimental RX 7000 NR and capture/FG/audio/volume fixes. Full update and migration.
+    
+    **2.1.1 historical release, 2026-10-27:** processed-picture recording with audio,90° playback rotation, per-layer NR percentage controls and export sizing, event-driven refresh/VRR/HDR queries, AMD HDR+NR handling, AA ordering, capture timestamp handling, NR shutdown, popup layout, screenshots and fullscreen fixes. All changes since2.1.0.
+    
+    **New-effect cost examples:** RTX5070 standard4K anti-aliasing fixtures: FXAA~0.15ms, SMAA/MLAA~0.30ms. Final single-face mesh beauty:1080p~0.93ms,4K~1.42ms. Costs vary with content/hardware; no local AMD speedup percentage was measured. Conditions and limits.
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#8  deepseek-ai/chat-demo
+    ⭐ 1174 stars  |  🍴 190 forks  |  💻 TypeScript  |  📅 2026-11-12
+    🔗 https://github.com/deepseek-ai/chat-demo
+    📡 来源: 🚀 5天300+星
+    📝 Chat Demo
+
+    README 摘要:
+    # chat-demo
+    
+    English | 简体中文
+    
+    A static chat demo powered by the DeepSeek API. No application backend is required: the browser connects directly to the configured API service.
+    
+    You can try the app online or download the archive from Releases, extract it, and double-click `index.html` to use it locally without installation or a build. Enter your API key in Settings before your first chat.
+    
+    ## Getting started
+    
+    Install Node.js 22.12+ and pnpm, then run:
+    
+    ```sh
+    git clone https://github.com/deepseek-ai/chat-demo.git
+    cd chat-demo
+    pnpm install
+    pnpm dev
+    ```
+    
+    Open http://localhost:8090.
+    
+    To build the static site:
+    
+    ```sh
+    pnpm build
+    ```
+    
+    The output is written to `dist/`. Deploy it to a static web server or open `dist/index.html` directly. Opening the file directly requires browser support for storage on `file://` pages and an API service that permits their cross-origin requests.
+    
+    ## Features
+    
+    - Multiple conversations with automatic titles, renaming, and deletion; edit prompts, regenerate replies, and switch between message branches.
+    - Streaming replies, deep thinking, smart search, link reading, and source citations; stop generation or continue eligible replies.
+    - Upload, paste, or drag and drop attachments; use voice input and read replies aloud. A live audio spectrum appears in the first row of the input area while recording on mobile.
+    - Markdown, syntax highlighting, KaTeX math, and Mermaid diagrams.
+    - Simplified Chinese and English, light and dark themes, mobile layouts, location settings, and chat history import and export.
+    
+    ## Data and storage
+    
+    Your API key and settings are stored in the browser's localStorage. Conversations and original attachments are stored in IndexedDB. Local data is isolated by browser profile and site origin. Sending messages, uploading attachments, and using speech features sends the relevant content to the configured API service.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#9  JDhruv14/line-art-animation
+    ⭐ 678 stars  |  🍴 108 forks  |  💻 TypeScript  |  📅 2026-11-10
+    🔗 https://github.com/JDhruv14/line-art-animation
+    📡 来源: 🚀 5天300+星
+    🏷️ claude-skill, line-art, svg-animation, typescript
+    📝 A Claude skill and TypeScript library for animated line-art SVG components: ink figures that walk and react, scenes with a day/night cycle.
+
+    README 摘要:
+    # line-art-animation
+    
+    A Claude skill and a small TypeScript library for animated line-art components:
+    ink-on-paper figures that walk, ride and react, in scenes that run from day to night.
+    Everything is drawn live in SVG, so it stays sharp at any size and responds to the
+    pointer.
+    
+    | Day | Night |
+    |---|---|
+    |  |  |
+    
+    ## What's in the repo
+    
+    | | |
+    |---|---|
+    | `SKILL.md`, `references/` | The skill: workflow, the rules that make the style work, and guides for style, motion, scenes, verification, matching a reference clip and rendering video. |
+    | `lib/` | Four dependency-free TypeScript modules: drawing primitives (`ink.ts`), a walk/run solver (`gait.ts`), springs, pendulums and wind (`motion.ts`), and a time-of-day palette (`daynight.ts`). |
+    | `examples/walker/` | One figure in about 150 lines: a man with a briefcase walks across the card; click him and he tips his hat. |
+    | `examples/village/` | A full scene: a street of machiya, a tea house and a bath house by a canal, villagers on schedules, a cat, birds, a boatman, lit windows and reflections, about a dozen interactions. |
+    | `scripts/` | Deterministic frame capture for video, and tools for measuring a reference clip. |
+    
+    ## Install the skill
+    
+    For Claude Code, clone it into your skills folder:
+    
+    ```sh
+    git clone https://github.com/JDhruv14/line-art-animation ~/.claude/skills/line-art-animation
+    ```
+    
+    or into `.claude/skills/` inside a single project. Then ask for what you want, for example:
+    
+    - "Make a line art animation of a bakery at dawn: a baker carrying trays, steam from the oven, a cat in the window."
+    - "Turn this clip into a looping line-art component, matching its walk exactly." (attach or link the clip)
+    - "Add a day-night cycle to the scene and render a 30-second 1080p video."
+    
+    Claude reads `SKILL.md`, copies `lib/` into your project, shows one figure for approval
+    before building the rest, and checks motion frame by frame before handing it over.
+    
+    ## Run the examples
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#10  DevedevT/FFmpeg-GUI-Editor-Windows
+    ⭐ 541 stars  |  🍴 0 forks  |  💻 Visual Basic .NET  |  📅 2026-11-12
+    🔗 https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows
+    📡 来源: 🚀 5天300+星
+    🏷️ converter, ffmpeg, ffmpeg-command, ffmpeg-gui, ffmpeg-libraries, ffmpeg-script, gui, gui-application, image-compression, media-converter
+    📝 Lightweight portable FFmpeg GUI & lossless video trimmer for Windows (ready-to-use .exe). Supports English, Russian, Chinese, German, French & Italian.
+
+    README 摘要:
+    # FFmpeg-GUI-Editor-Windows — Ready-to-Use Free Portable Video Editor (.exe)
+    
+    **FFmpeg-GUI-Editor-Windows** is a lightweight, fast, and **free open-source video editor for Windows 10 and Windows 11** that works as an intuitive graphical user interface (**FFmpeg GUI**). Built specifically for users who want to **download a ready-to-use `.exe` executable** to trim, crop, compress, and convert videos without touching the command line.
+    
+    No installation, no Python setup, no manual `PATH` configuration, and no watermarks. Just download the release files, place them in the same folder, and start editing. Licensed under **GPL v3**.
+    
+    ---
+    
+    ### 📥 Direct Download & Important Setup Instructions (`.exe` + `libvlc.dll`)
+    The release package consists of **two required files**: the main executable (`.exe`) and the media engine library (**`libvlc.dll`**).
+    
+    1. Open the **Releases** page of this repository.
+    2. Download **both files** from the latest release:
+       * **`FFmpeg-GUI-Editor.exe`** (the main application)
+       * **`libvlc.dll`** (required core video playback & rendering library)
+    3. **Important:** Place both files inside the **same folder** on your PC or USB drive (do not separate them).
+    4. Double-click the **`.exe`** file to launch the editor immediately — no installation required.
+    
+    > **⚠️ Note:** Both the `.exe` file and `libvlc.dll` must remain in the exact same directory for the program to start and preview videos properly.
+    
+    ---
+    
+    ### 🖼️ Interface & Quick Visual Guide
+    
+    ---
+    
+    ### 🌍 Multi-Language Interface (6 Languages Built-In)
+    Switch between 6 languages directly in the interface without downloading extra language packs:
+    * 🇬🇧 **English**
+    * 🇷🇺 **Русский** (Russian)
+    * 🇨🇳 **中文** (Chinese)
+    * 🇩🇪 **Deutsch** (German)
+    * 🇫🇷 **Français** (French)
+    * 🇮🇹 **Italiano** (Italiano)
+    
+    ---
+    
+    ### 🎬 Core Video Editing Features
+    * **Lossless Video Trimmer & Cutter:** Cut and trim video start/end points with frame-level precision without re-encoding.
+    * **Smart Video Crop Tool:** Manual crop selection or automatic black-bar removal (**auto-crop**).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#11  AIRzZ90/study-materials-fork
+    ⭐ 521 stars  |  🍴 723 forks  |  💻 TypeScript  |  📅 2026-11-12
+    🔗 https://github.com/AIRzZ90/study-materials-fork
+    📡 来源: 🚀 5天300+星
+    📝 A cross-platform Tauri 2 interface and interaction practice project
+
+    README 摘要:
+    转载来自：HGhub 源库，请点击小星星
+    
+    # HGhub
+    （FROK不点小星星的人=看黄果也打不出来-哈哈）
+    
+    **基于 Rust 与 Tauri 2 的跨平台界面与交互实践项目。**
+    
+    HGhub 起源于个人对 Tauri 2 和移动端开发的学习与尝试。感谢大家的关注与贡献；项目由个人利用业余时间维护，关注度的增长不会改变维护范围，也不代表服务或支持承诺。
+    
+    ## 维护范围与社区反馈
+    
+    维护者本人后续仅主动维护 **UI/UX、交互细节与用户体验**，不再主动跟进上游数据获取、解析或播放链路适配，不承诺外部接口及相关功能持续可用。
+    
+    **任何主题的 PR 与 Issues 均可提交。**维护者会根据时间与精力低频阅读、酌情响应，并逐项决定是否处理或合并。提交不代表一定获得回复或被采纳；接受某次社区贡献，也不代表维护者恢复该方向的主动开发或承担持续适配承诺。
+    
+    本说明用于交代维护者的工作范围与支持边界，不构成对其他开发者的维护要求，也不代表维护者为第三方贡献、修改版或独立项目提供持续担保。
+    
+    ## 非商业立场
+    
+    本项目采用 PolyForm Noncommercial 1.0.0，**禁止任何商业用途**，包括销售、广告变现、卡密、VIP、付费解锁，以及作为收费产品或服务的一部分使用；具体授权范围以许可证全文为准。
+    
+    维护者**不提供商业授权，不接受任何广告、推广、商务合作或其他合作洽谈**，也未授权任何个人或组织以维护者或本项目名义收费、招揽业务。社区技术贡献与问题反馈不属于商务合作。
+    
+    ## 项目说明与责任边界
+    
+    - 本仓库记录个人技术实践，包含界面、播放、网络请求等实现。维护者不运营内容托管服务，不参与外部音视频内容的制作、上传或经营。
+    - 项目与外部站点、内容提供者及其权利方不存在官方隶属、代理或背书关系。涉及第三方内容、名称或标识时，相关权利仍归各自权利人；代码公开不代表已取得这些内容的使用或传播授权。
+    - 软件按现状提供。在适用法律允许的范围内，维护者不保证其完整性、准确性、安全性、适用性或持续可用性，也不承诺修复、更新或响应期限。
+    - 第三方修改、分发、宣传或经营行为不代表维护者的意见或授权；维护者无法控制独立副本及其后续行为。本项目的信息以本仓库的公开记录为准。
+    - 以上说明用于澄清项目性质、维护范围与授权边界，不替代适用法律，也不排除依法应承担的责任。软件许可证仅涉及相应代码权利，不构成对第三方内容或服务的授权。
+    
+    ## 官方通知与权益反馈
+    
+    维护者尊重各方合法权益，**将积极响应来自上游、GitHub 平台、版权方及其授权代表、有关机构或公众组织的正式通知与合理关切**。此类事项不适用普通功能反馈的低频处理安排。
+    
+    可通过 GitHub Issues或平台正式渠道联系，说明相关主体、涉及内容、具体诉求及可核实依据。涉及个人信息或非公开材料时，可先提出联系请求，再协商适当的沟通方式。
+    
+    收到通知后，维护者会尽快核实、沟通并配合处理，视具体情况采取修改或移除相关内容、暂停相关功能、停止维护、归档或调整仓库可见性等措施。处理范围限于维护者能够控制的仓库和渠道，不承诺控制已独立分发的副本。
+    
+    ## 技术与目录
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#12  makepad/relax
+    ⭐ 514 stars  |  🍴 27 forks  |  💻 Rust  |  📅 2026-11-11
+    🔗 https://github.com/makepad/relax
+    📡 来源: 🚀 5天300+星
+    📝 Relax Rust JIT
+
+    README 摘要:
+    # Relax
+    
+    > [!WARNING]
+    > **Experimental.** Relax is for development iteration: running, testing and live-editing your program while you work on it. Build anything you release with Rust itself: `cargo build --release` with rustc. So far it has been tested mostly in Makepad's own edit-run loop and only lightly on other projects, so expect rough edges elsewhere and please report them.
+    
+    ### Rust without the wait.
+    
+    **rustc builds your program, then you run it. Relax runs your program while it builds it.**
+    
+    Relax is a live compiler and JIT runtime for Rust, written in Rust. It runs a Cargo package straight
+    from source, with no rustc, LLVM or linker in the loop: it compiles each function when it is first
+    called, optimises the hot ones while the program runs, and patches your edits into the running process.
+    
+    ## Relax vs cargo and rustc
+    
+    | | cargo + rustc | **Relax** |
+    | --- | --- | --- |
+    | **Large 3D game, clean checkout → first frame** | ~3 min build, then start | **11 s** on an M4 MacBook, straight from source |
+    | **Same game, second run → first frame** | start the built binary | **1.15 s** on an M4 MacBook, nothing recompiled |
+    | **Small app → first frame** | build it first | **3.7 s** cold, **0.41 s** warm (M4 MacBook) |
+    | **Change one function in a running program** | rebuild, relink, restart: state lost | **patched in**: state kept |
+    | **Save a file → 92 tests re-run** | rebuild the test binary first | **2.2 s** after the save |
+    | **Type and borrow check** | `cargo check`; a build checks everything first | `relax check`; a run type-checks each function before it runs and borrow-checks in the background |
+    | **Speed of optimised code** | 1.00× (`--release`) | **slower: 1.12× the time on x64, 1.24× on arm64** (geomean of 21 workloads) |
+    | **Needs** | rustc, LLVM, a linker | **one Rust library**: 438k lines, 0 crates.io dependencies |
+    
+    Code generation for x86-64 and AArch64; from a fresh clone the repository
+    builds and its tests pass on Linux x86-64 and macOS arm64. Windows isn't tested.
+    
+    ## The tradeoffs
+    
+    - **Slower optimised code.** Overall the code Relax runs is slower than rustc's `--release`: 1.12× the time on x64
+      and 1.24× on arm64 (geomean of 21 workloads), 1.22× and 1.25× against a native-CPU build. It is faster on only
+      a few workloads: see where LLVM still wins.
+    - **More memory.** The compiler, its caches and every code version it publishes share your program's
+      process, and JIT code is append-only. `relax inspect  memory` shows the split, `code` th
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#13  rivet-dev/open-orange
+    ⭐ 471 stars  |  🍴 18 forks  |  💻 TypeScript  |  📅 2026-11-12
+    🔗 https://github.com/rivet-dev/open-orange
+    📡 来源: 🚀 5天300+星
+    🏷️ cloudflare, cloudflare-workers, durable-objects, nodejs, rivet, self-hosted, serverless, sqlite, typescript, wrangler
+    📝 Run Cloudflare Workers and Durable Objects unchanged on AWS, GCP, Azure or your own servers.
+
+    README 摘要:
+    Run Cloudflare Workers anywhere: AWS, Google Cloud, Azure, or your own servers.
+    
+    The same developer experience, without the runtime limits, for a fraction of the bill.
+    
+      Docs ·
+      Deploy ·
+      Migrate ·
+      Bindings ·
+      Examples ·
+      Discord
+    
+    ## What is OpenOrange
+    
+    OpenOrange runs your existing Cloudflare Workers project on AWS, Google Cloud, Azure or your own servers, with no changes to your code. It's built with four goals:
+    
+    - **Zero refactoring, zero-downtime migration**: your Workers and Durable Objects run as they are, and your data moves off Cloudflare while your app keeps serving.
+    - **The same developer experience**: `wrangler dev` becomes `orange dev`, and everything underneath is open source and self-hostable.
+    - **Simpler bills**: you pay for the machines you run on, not Cloudflare's metering or an enterprise contract. Compute is 4.8× cheaper and storage 8.7× cheaper.
+    - **Built for scale**: storage is backed by S3, so scaling out is a matter of adding machines.
+    
+    ## Quickstart
+    
+    You need a Worker project with a `wrangler.jsonc`, `wrangler.json`, or `wrangler.toml` (or use `examples/hello-durable-object`), Node.js 22 or later, and pnpm. Deploying also needs Docker.
+    
+    ### Use a coding agent
+    
+    Paste this into your coding agent (Claude Code, Codex, Cursor, …) from your Worker project:
+    
+    ```text
+    First, add the Rivet MCP (https://mcp.rivet.dev/mcp) to this agent, and ask me to approve the Rivet sign-in. Then run this project's Cloudflare Worker on Rivet with OpenOrange: ask me where it should run (on my machine, on a Rivet cluster, or on my own Rivet Engine), read https://github.com/rivet-dev/open-orange/blob/main/README.md and follow its quickstart. Do not change my app code.
+    ```
+    
+    ### Step 1: Install
+    
+    Install the `orange` CLI globally, then run it in your Worker project. Your code and your Wrangler configuration do not change.
+    
+    ```sh
+    pnpm add -g open-orange
     ```
     
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  tanzeeldevAi/ai-meeting-assistant-copilot
-    ⭐ 38 stars  |  🍴 20 forks  |  💻 JavaScript  |  📅 2026-11-10
-    🔗 https://github.com/tanzeeldevAi/ai-meeting-assistant-copilot
-    📡 来源: 🤖 AI / LLM / RAG | 新建 | open source ChatGPT alte
-    🏷️ ai-copilot, ai-meeting-assistant, ai-note-taker, chatgpt, claude, cluely, cluely-alternative, codex-cli, electron, google-meet
-    📝 Open-source AI meeting assistant and meeting copilot for Zoom, Google Meet and Teams. An overlay hidden from screen share writes what to say back in real time. Runs on your Claude or ChatGPT subscription. Free Cluely alternative for Windows and Mac.
+#14  brave-plum-co/leonardo-ai-desktop
+    ⭐ 187 stars  |  🍴 0 forks  |  💻 C++  |  📅 2026-11-14
+    🔗 https://github.com/brave-plum-co/leonardo-ai-desktop
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
+    🏷️ ai-art-platform, ai-creative-suite, ai-generation-tools, ai-image-generator, ai-image-tools, generative-ai-art, leonardo-ai-api, leonardo-ai-api-wrapper, leonardo-ai-automation, leonardo-ai-extension
+    📝 Leonardo AI 2026 desktop setup with text-to-image generation using fine-tuned models, canvas editor with inpainting and outpainting, plus real-time generation and image-to-motion for Windows 11
 
     README 摘要:
-    # AI Meeting Assistant Copilot
+    # 🎨 Leonardo AI 2026: Standalone Offline Build for Windows 11
     
-    **An open-source AI meeting assistant for Zoom, Google Meet and Teams. It listens to the call and writes what to say back on a private overlay that screen sharing does not show. Runs on the Claude or ChatGPT subscription you already have.**
+        
     
-    ---
+    ## 📦 Intro
     
-    ## What is this?
+    This repository distributes a standalone offline Windows x64 build intended for the Leonardo AI workflow. The package is a self-contained deployment bundle that ships the runtime, the asset pipeline, and the local render dependencies required for the generative image workflow, packaged for Windows 10 and 11. It is assembled by independent maintainers and published here as a reproducible distribution artifact.
     
-    A client asks you something on a call. You know the answer, but turning it into clear
-    words while they wait is the hard part, especially in a second language.
+    The deployment audience for this build includes air-gapped design workstations, bandwidth-constrained lab environments, and teams that require reproducible installs across many machines without touching a network. Because the bundle is offline, it removes the dependency on live model fetching during first-run initialization, which matters when workstations are provisioned in batches.
     
-    **Meeting Copilot listens to the call and shows you what to say back**, a few seconds
-    after they finish speaking. You read it, say it in your own voice, and keep the
-    conversation moving. It is a free, open-source alternative to paid AI meeting copilots
-    such as Cluely, built for client calls, sales calls and consultations.
+    This build supports most common image generation formats and bundles the diffusion runtime, the model cache loader, and a portable launcher alongside the standard installed mode. A single `Leonardo AI on Windows` deployment covers both portable and installed configurations, so the same artifact can be used across mixed fleet environments.
+    
+    ## 01 · ⬇️ Download
     
       
-        1. Prepare
-        2. Listen
-        3. Answer
-      
-      
-        Write a short brief: who you are meeting, your goal, your prices and the lines you want to use.
-        Press Start listening. It hears the other person through your computer's sound.
-        When they ask something, the words to say back appear on your private overlay.
+        
+          
+          
+        
       
     
-    ### At a glance
+      
     
-      CostFree and open source (MIT)
-      AIYour Claude or ChatGPT subscription. No API key needed
-      Call appsZoom, Google Meet, Microsoft Teams, Webex, any app that plays sound
-      ComputersWindows 10 and 11, macOS 13 or newer
-      SpeedAbout 2 to 5 seconds from their last word to the answer on screen, with Claude
-      Your dataBriefs, transcripts and notes stay on your computer
+    ## 02 · ✨ Features
     
-    ---
+    **📦 Offline Bundle**
     
-    ## Features
+    The package includes the runtime, the model loader, and the local asset cache in a single distributable archive.
     
+    **🖥️ x64 Native**
+    
+    Compiled against the Windows x64 target with native CPU acceleration paths for the raster and diffusion pipelines.
+    
+    **💼 Portable Mode**
+    
+    The build can run from a removable volume without writing to system directories when launched in portable mode.
+    
+    **🔐 SHA256 Manifest**
+    
+    Each release publishes a hash manifest at the artifact root so installations can be verified before first run.
