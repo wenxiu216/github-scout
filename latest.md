@@ -1,692 +1,598 @@
-📊 开源日报 — 2026-11-14
-共发现 14 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-11-15
+共发现 13 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  louislam/uptime-kuma
-    ⭐ 93968 stars  |  🍴 8728 forks  |  💻 JavaScript  |  📅 2021-07-03
-    🔗 https://github.com/louislam/uptime-kuma
+#1  ag-ui-protocol/ag-ui
+    ⭐ 17471 stars  |  🍴 1724 forks  |  💻 TypeScript  |  📅 2025-05-07
+    🔗 https://github.com/ag-ui-protocol/ag-ui
     📡 来源: trending-daily
-    🏷️ docker, monitor, monitoring, responsive, self-hosted, selfhosted, single-page-app, socket-io, uptime, uptime-monitoring
-    📝 A fancy self-hosted monitoring tool
+    🏷️ ag-ui-protocol, agent-frontend, agent-ui, agentic-workflow, ai-agents
+    📝 AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.
 
     README 摘要:
-    # Uptime Kuma
+    #  AG-UI: The Agent-User Interaction Protocol
     
-    Uptime Kuma is an easy-to-use self-hosted monitoring tool.
-    
-        
-    
-    ## 🥔 Live Demo
-    
-    Try it!
-    
-    Demo Server (Location: Frankfurt - Germany): 
-    
-    It is a temporary live demo, all data will be deleted after 10 minutes. Sponsored by Uptime Kuma Sponsors.
-    
-    > [!WARNING]
-    > Be careful - the top result in Google, uptimekuma.co, is not our official website, we don't control the website. I recommend following the installation guide in this GitHub repo.
-    
-    ## ⭐ Features
-    
-    - Monitoring uptime for HTTP(s) / TCP / HTTP(s) Keyword / HTTP(s) Json Query / Websocket / Ping / DNS Record / Push / Steam Game Server / Docker Containers
-    - Fancy, Reactive, Fast UI/UX
-    - Notifications via Telegram, Discord, Gotify, Slack, Pushover, Email (SMTP), and 90+ notification services, click here for the full list
-    - 20-second intervals
-    - Multi Languages
-    - Multiple status pages
-    - Map status pages to specific domains
-    - Ping chart
-    - Certificate info
-    - Proxy support
-    - 2FA support
-    
-    ## 🔧 How to Install
-    
-    ### 🐳 Docker Compose
-    
-    ```bash
-    mkdir uptime-kuma
-    cd uptime-kuma
-    curl -o compose.yaml https://raw.githubusercontent.com/louislam/uptime-kuma/master/compose.yaml
-    docker compose up -d
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  google/elephant-goldfish-model
-    ⭐ 18737 stars  |  🍴 1399 forks  |  💻 Python  |  📅 2026-09-13
-    🔗 https://github.com/google/elephant-goldfish-model
-    📡 来源: trending-weekly
-    🏷️ agent-skills, ai-agents, antigravity, claude-code, claude-code-plugin, claude-skills, codex, codex-plugin, coding-agents, context-engineering
-    📝 Open-source plugin for designing and reviewing software with agents
-
-    README 摘要:
-    Design with an elephant. Review with a goldfish.
-    
-      Install &ensp;·&ensp;
-      Quickstart &ensp;·&ensp;
-      Documentation &ensp;·&ensp;
-      Website
-    
-    Develop ideas with context and review documents with fresh eyes. EGM is an open-source plugin for AI assistants.
-    
-    **Elephant** holds your project context and drafts the specification. **Goldfish** reviewers examine the draft and referenced source material without the earlier conversation, helping expose unstated assumptions and blind spots. **You** make the architectural trade-offs and approve the specification before implementing.
-    
-    The built-in draft and design-review workflow targets software specifications. For other documents, choose reviewers and standards with `/egm-review-loop`. Bootstrap and drift reporting apply to software codebases.
-    
-    https://github.com/user-attachments/assets/93c799a2-10a3-4266-af02-eb79dd33a9a2
-    
-    ## Install
-    
-    Choose your coding agent. Install the complete plugin so its skills can read the reviewer prompts and document standards.
-    
-    ### ChatGPT and Codex desktop
-    
-    Open the published EGM plugin in the desktop app and install it. This listing is desktop-only. For Codex CLI, use the commands below.
-    
-    ### Antigravity CLI
-    
-    ```sh
-    agy plugin install https://github.com/google/elephant-goldfish-model
-    ```
-    
-    For the **Antigravity App** and **Antigravity for IDEs** (Visual Studio Code extension), run `/plugin` or see the installation instructions.
-    
-    ### Claude Code
-    
-    ```sh
-    claude plugin marketplace add google/elephant-goldfish-model
-    claude plugin install egm@egm
-    ```
-    
-    ### Codex CLI
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  backnotprop/plannotator
-    ⭐ 10572 stars  |  🍴 791 forks  |  💻 TypeScript  |  📅 2025-12-28
-    🔗 https://github.com/backnotprop/plannotator
-    📡 来源: trending-daily
-    🏷️ agents, claude-code, code-review, codex, obsidian, opencode, pi-mono, plan-mode, skills
-    📝 The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. 
-
-    README 摘要:
-    Everything you need to annotate and stay in the loop with your agents
-      Inbox Surface • Artifacts • Code Review
-      Annotate plans, specs, markdown, HTML, and other interactive artifacts. Review diffs and PRs. Send feedback to your agent.
-    
-      &nbsp;&nbsp;
-      &nbsp;&nbsp;
-      &nbsp;&nbsp;
-      
-        
-        
-      &nbsp;&nbsp;
-      &nbsp;&nbsp;
-      &nbsp;&nbsp;
-      &nbsp;&nbsp;
-      
-        
-        
-      &nbsp;&nbsp;
-      
-        
-        
-      
-    
-      Plannotator Inbox · Official site · Code Review · Visual HTML Skills · Herdr Annotate · (Legacy) Plan Mode
-    
-    # Plannotator
-    
-    **⭐️ NEW:** Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants.
-    
-    Plannotator is a local, browser-based review surface for AI coding agents: Claude Code, Codex, Copilot CLI, Gemini CLI, OpenCode, Kiro, Droid, Amp, DeepSeek Harness, and Pi. Plannotator Inbox also works with personal assistants (Grok Bot, Muse, Hermes, OpenClaw).
-    
-    **It plugs directly into your agent** through plugins, hooks and commands. When the agent proposes a decision, plan, html, or finishes working, the app opens in your browser and you mark it up, comment, and send feedback directly to the agent for it to act on it.
-    
-    ### Review documents, plans, and agent messages
-    
-    Annotate plans, specs, messages, html, then send the feedback to your agent. 
-    
-    Demo: Plan review with Pi
-    
-    ### Code Review
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  tradermonty/claude-trading-skills
-    ⭐ 4314 stars  |  🍴 881 forks  |  💻 Python  |  📅 2025-10-19
-    🔗 https://github.com/tradermonty/claude-trading-skills
-    📡 来源: trending-daily
-    📝 Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.
-
-    README 摘要:
-    # Claude Trading Skills
-    
-    Claude Trading Skills started as a personal project to use AI to improve my own trading process.
-    
-    Claude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors.
-    
-    It is designed for investors who use long-term investing, ETFs, and dividend stocks as their core, while using disciplined swing trading as a satellite strategy when market conditions are favorable.
-    
-    The goal is not to outsource buy/sell decisions to AI. The goal is to structure market review, risk management, trade planning, journaling, and continuous improvement. It is open source because the workflows, checklists, and review habits behind better trading decisions can improve through shared practice.
-    
-    This is not a signal service or a promise of profitability. It is a toolkit for traders who want to build a better decision process.
-    
-    The project follows a **first for self, open for others** stance: it is built first as a practical workflow the author uses, then shared openly for others who face similar constraints.
-    
-    📖 **Documentation site:** 
-    
-    **Project vision:** `PROJECT_VISION.md`
-    
-    日本語版READMEは`README.ja.md`をご覧ください。
-    
-    ## Disclaimer
-    
-    This repository is for educational, research, and process-improvement purposes only. It is not financial advice, investment advisory service, tax advice, legal advice, a signal service, or a broker execution platform. Trading and investing involve risk, including loss of principal. Past performance, backtests, screens, reports, and AI-generated analysis do not guarantee future results. All trading decisions, position sizing, tax/regulatory compliance, and broker usage are the user's responsibility.
-    
-    The project is provided under the MIT License, **AS IS, WITHOUT WARRANTY**.
-    
-    ## Who This Is For
-    
-    This repository is designed for:
-    
-    - Time-constrained individual investors
-    - Long-term investors who also want disciplined swing-trading upside
-    - Dividend and ETF investors who want structured portfolio review
-    - Traders who want to manage risk before finding trade candidates
-    - Investors who want to journal and improve their decision process
-    
-    It is not designed for fully automated trading, signal outsourcing, or short-term scalping.
-    
-    ## Recommended Starting Path
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  expo/exact
-    ⭐ 4062 stars  |  🍴 98 forks  |  💻 Rust  |  📅 2026-11-02
-    🔗 https://github.com/expo/exact
-    📡 来源: 🚀 两周800+星
-    🏷️ ai-agents, appkit, coding-agents, cross-platform, css, ios, linux, macos, native-apps, rust
-    📝 Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them.
-
-    README 摘要:
-    # Exact
-    
-    **Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI
-    agent can build it, run it, see it, and test it on every one of them.**
-    
-    **Building an app?** With the tools installed (Quick start, step 1),
-    run `bun scripts/exact.mjs setup` once, make the app with `bun scripts/exact.mjs new `,
-    and read `docs/start-here.md` (for a website,
-    `docs/start-here-site.md`): that guide is the only required
-    reading. The rest of this page describes Exact for people deciding whether to use it
-    or working on it.
-    
-    > [!TIP]
-    > **Try it with a coding agent.** On a Mac with Xcode, Rust, Bun, and Chrome installed,
-    > give Claude Code this prompt:
-    >
-    > ```text
-    > Clone https://github.com/expo/exact and follow its README to make a new Exact
-    > app with `exact new`. Run `bun scripts/exact.mjs setup` once first. Make a todo
-    > list where I can add items, check them off, delete them,
-    > and see how many are left. Put the view in Contract and keep the list in `app.ts`.
-    > Write an `app.test.contract`, pass it on web, macOS, and the iOS Simulator with
-    > `scripts/agent.mjs`, then open the app for me on all three.
-    > ```
-    >
-    > A fresh agent given the earlier version of this prompt on a clean clone (2026-10-04, Hermes already in the
-    > machine cache, Cargo's cache warm) finished in about 57 minutes, and its tests passed
-    > on all three platforms. About 25 of those minutes were the first macOS and iOS builds,
-    > roughly 13 minutes each; later builds take a minute or two. On a machine that has
-    > lacked Hermes, its source build came first and added time. Current setup downloads and
-    > verifies the pinned host/iOS bundles once instead; ordinary builds stay offline.
-    
-      
-        Web
-        iOS
-        macOS
-      
-      
-        
-        
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  shanselman/gputaskman
-    ⭐ 3123 stars  |  🍴 151 forks  |  💻 Python  |  📅 2026-11-03
-    🔗 https://github.com/shanselman/gputaskman
-    📡 来源: 🚀 两周800+星
-    📝 A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).
-
-    README 摘要:
-    # gputaskman
-    
-    **An `htop` for what's inside your GPU, not just how full it is.**
-    
-    Windows with NVIDIA/AMD telemetry and Intel WDDM activity, plus Linux and WSL support (NVIDIA
-    everywhere, AMD and Intel on native Linux; see
-    Linux and WSL) and macOS on Apple Silicon (see macOS). A terminal UI
-    that connects per-process GPU memory and engine activity with loaded runtimes, model files, and
-    LLM buffer breakdowns.
-    
-    Task Manager says "15 GB used." This tries to answer: *by what? Model weights? KV cache?
-    Your browser? The desktop compositor? And why is so much GPU memory in system RAM?*
-    
-    **Scope: local GPU workloads, not cloud services.** Decision models, vision, speech, LLM inference,
-    training/fine-tuning (including Unsloth), graphics, and video all belong here. Visibility varies:
-    process memory and engine activity are measured; identifying individual models and their work
-    requires supporting evidence. A PyTorch/CUDA DLL alone cannot identify a model or prove training,
-    and a mapped file does not prove that model is resident on the GPU or being exercised.
-    CPU-only, NPU-only, and cloud workloads are out of scope.
-    
-    > Early, experimental software. Device and process counters are measurements; classifications
-    > and GGUF-derived breakdowns are estimates. This does not dump VRAM or enumerate a game's textures.
-    
-    ## Install from PyPI
-    
-    gputaskman is on PyPI. No repository clone is needed:
-    
-    ```powershell
-    uv tool install gputaskman
-    gputaskman
-    ```
-    
-    Or, with pipx:
-    
-    ```powershell
-    pipx install gputaskman
-    gputaskman
-    ```
-    
-    Works on Windows, Linux/WSL, and macOS with Python 3.11+ and the supported GPU/driver
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  Likely7/Veyra-NRVideo
-    ⭐ 1728 stars  |  🍴 77 forks  |  💻 C++  |  📅 2026-09-09
-    🔗 https://github.com/Likely7/Veyra-NRVideo
-    📡 来源: trending-daily
-    📝 Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuring real-time preview for videos, images, and capture card sources. Combine AI-powered Super Resolution, DLSS5 image enhancement, and Frame Generation to deliver a next-generation visual experience.
-
-    README 摘要:
-    # Veyra
-    
-    ### Real-time GPU Video Enhancement for Windows
-    
-    **Super Resolution · Denoising · HDR · Frame Generation · Capture · PS5 / Xbox / PC Streaming**
-    
-    Turn local video, capture cards and game streaming into one real-time GPU enhancement pipeline.
-    
-    **79K+ cumulative Veyra portable-package downloads** (79,332 as of 2026-11-08) · **103K+ downloads across all GitHub Release assets** (103,337 including source archives, checksums and images). GitHub Releases · Counts are download events, not unique users.
-    
-    **⬇ Download Latest Release**
-    &nbsp;&nbsp;·&nbsp;&nbsp;
-    **📖 User Guide / Wiki**
-    &nbsp;&nbsp;·&nbsp;&nbsp;
-    **🇨🇳 简体中文**
-    &nbsp;&nbsp;·&nbsp;&nbsp;
-    **🐛 Report an Issue**
-    
-      
-        
-      
-    
-    One engine. Any source. Real-time enhancement.
-    
-      
-    
-    ⭐ Star History
-    
-      
-    
-      Open source · GPL-3.0 · Windows 11 · C++ · DirectX 12 · NVIDIA & AMD
+    AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.
+    Built for simplicity and flexibility, it enables seamless integration between AI agents, real time user context, and user interfaces.
     
     ---
     
-    **2.1.2 update:** dual SR, SR-then-downsample, NVIDIA Low Latency, experimental RX 7000 NR and capture/FG/audio/volume fixes. Full update and migration.
+     Join our Discord →  &nbsp;&nbsp;&nbsp;  Read the Docs →  &nbsp;&nbsp;&nbsp;  Go to the AG-UI Dojo →  &nbsp;&nbsp;&nbsp;  Follow us → 
     
-    **2.1.1 historical release, 2026-10-27:** processed-picture recording with audio,90° playback rotation, per-layer NR percentage controls and export sizing, event-driven refresh/VRR/HDR queries, AMD HDR+NR handling, AA ordering, capture timestamp handling, NR shutdown, popup layout, screenshots and fullscreen fixes. All changes since2.1.0.
+    ## 🚀 Getting Started
+    Create a new AG-UI application in seconds:
+    ```bash
+    npx create-ag-ui-app my-agent-app
+    ```
     
-    **New-effect cost examples:** RTX5070 standard4K anti-aliasing fixtures: FXAA~0.15ms, SMAA/MLAA~0.30ms. Final single-face mesh beauty:1080p~0.93ms,4K~1.42ms. Costs vary with content/hardware; no local AMD speedup percentage was measured. Conditions and limits.
+     Useful Links:
+    
+    - The AG-UI Dojo
+    - Build AG-UI-powered applications(Quickstart)
+    - Build new AG-UI framework integrations (Quickstart)
+    - Book a call to discuss an AG-UI integration with a new framework
+    - Join the Discord Community
+    
+    ## What is AG-UI?
+    
+    AG-UI is an open, lightweight, event-based protocol for agent-human interaction, designed for simplicity & flexibility:
+    
+    - During agent executions, agent backends **emit events _compatible_ with one of AG-UI's ~16 standard event types**
+    - Agent backends can **accept one of a few simple AG-UI compatible inputs** as arguments
+    
+    **AG-UI includes a flexible middleware layer** that ensures compatibility across diverse environments:
+    
+    - Works with **any event transport** (SSE, WebSockets, webhooks, etc.)
+    - Allows for **loose event format matching**, enabling broad agent and app interoperability
+    
+    It also ships with a **reference HTTP implementation** and **default connector** to help teams get started fast.
+    
+    Learn more about the specs →
+    
+    ## Why AG-UI?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#2  martin-olivier/airgorah
+    ⭐ 6041 stars  |  🍴 1045 forks  |  💻 Rust  |  📅 2022-09-30
+    🔗 https://github.com/martin-olivier/airgorah
+    📡 来源: trending-daily
+    🏷️ gui, kali, linux-app, security, security-audit, wifi, wifi-security, wireless
+    📝 A WiFi security auditing software
+
+    README 摘要:
+    Airgorah
+    
+      A WiFi security auditing software
+    
+      Installation
+      &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      Usage
+      &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      Credits
+    
+    `Airgorah` is a WiFi security auditing software that can capture nearby WiFi traffic, discover clients connected to access points, perform deauthentication attacks, capture handshakes and PMKIDs, and crack the password of access points.
+    
+    It is written in Rust and uses GTK4 for the graphical part.
+    
+    `⭐ Don't forget to put a star if you like the project!`
+    
+    ## Legal
+    
+    ⚠️ Airgorah is designed to be used in testing and discovering flaws in networks you are owner of. Performing attacks on WiFi networks you are not owner of is illegal in almost all countries. I am not responsible for whatever damage you may cause by using this software.
+    
+    ## Requirements
+    
+    This software only works on `linux`. The graphical interface runs as a normal
+    user (so it works under both `X11` and `Wayland`). When a privileged operation is
+    needed, it launches a small privileged agent (`airgorah-agent`) via `polkit`,
+    which will prompt for authentication once.
+    
+    You will also need a wireless network card that supports `monitor mode` and `packet injection`.
+    
+    ## Installation
+    
+    The installation instructions are available here.
+    
+    ## Usage
+    
+    The documentation about the usage of the application is available here.
+    
+    ## License
+    
+    This project is released under MIT license.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#3  libracoder/kiri
+    ⭐ 4194 stars  |  🍴 204 forks  |  💻 Rust  |  📅 2026-11-02
+    🔗 https://github.com/libracoder/kiri
+    📡 来源: 🚀 两周800+星
+    🏷️ containers, docker, kubernetes, linux, macos, oci, windows
+    📝 A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative
+
+    README 摘要:
+    A tiny, fast container runtime for macOS, Windows and Linux.
+      Runs your Docker images and works with the docker CLI, Compose and buildx you already use.
+    
+      Download ·
+      Features ·
+      Build from source ·
+      Releases
+    
+      
+      
+      
+    
+      🇬🇧 🇮🇩 🇩🇪 🇪🇸 🇫🇷 🇮🇹 🇵🇱 🇧🇷 🇻🇳 🇹🇷 🇷🇺 🇸🇦 🇯🇵 🇰🇷 🇨🇳 🇹🇼
+      Kiri speaks 38 languages. Is yours one?
+    
+      
+    
+    ---
+    
+    Kiri is a lightweight replacement for Docker Desktop and OrbStack, written in
+    Rust. It runs containers in one small Linux VM (or straight on the kernel on
+    Linux) and speaks the Docker Engine API, so your tools just work.
+    
+    The name comes from the Igbo word *ntakịrị*, "small".
+    
+    ## Why Kiri
+    
+    - **Fast**: a container starts and exits in about 2.5 ms through the Docker API. That's around 80 times faster than Docker Desktop.
+    - **Light**: the VM sleeps after 60 s idle, the daemon stays at about 15 MB, and it wakes in about 0.15 s.
+    - **Compatible**: `docker`, Compose, buildx, `docker login` and amd64 images through Rosetta.
+    - **Local domains**: `http://.kiri.local`, with HTTPS from Kiri's own certificate authority.
+    - **More than containers**: a one-command Kubernetes cluster and Linux machines.
+    - **A native window** for containers, images, volumes and networks, plus a menu bar item.
+    - **In your language**: 38 languages, on macOS, Windows and Linux alike.
+    
+    ### In your language
+    
+    Kiri's window and setup come in these languages. It follows your system's language, and you can change it in Settings → Appearance. In Arabic, Persian and Central Kurdish the whole window reads right to left.
+    
+    | | Language | | Language | | Language | | Language |
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#4  Tencent/LoopForge
+    ⭐ 1022 stars  |  🍴 233 forks  |  💻 Go  |  📅 2026-07-28
+    🔗 https://github.com/Tencent/LoopForge
+    📡 来源: trending-daily
+    🏷️ agent-orchestration, agentic-workflow, ai-agents, ai-coding, claude-code, code-review, codebuddy, codex, coding-agents, cursor
+    📝 Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.
+
+    README 摘要:
+    English · 简体中文
+    
+      Two ways to work ·
+      Quick start ·
+      SOPs ·
+      Features ·
+      Local ·
+      FAQ ·
+      Docs
+    
+    https://github.com/user-attachments/assets/8af401d9-1aae-427c-b4bc-455c12d17beb
+    
+    80-second product tour (1080p, with sound).
+    
+    **LoopForge** is a self-hosted workspace where your team ships software with coding agents. Describe what you need to **Main Bot** in chat: it opens a Docker sandbox, checks out your repositories, delegates to project roles, and opens the PR. When a way of working proves itself, save it as an **SOP** (a standard workflow of agents, scripts and human gates) so the next requirement is delivered the same way, with review and approval built in.
+    
+    Coding-agent CLIs do the work: CodeBuddy, Codex, Claude Code, OpenCode, Cursor CLI, Antigravity, Kimi Code, Pi, DeepSeek Harness and ZCode. LoopForge adds the roles, sandboxes, checkpoints and history around them, all on your own infrastructure under the MIT license.
+    
+    ## Two ways to work
+    
+    | | **Chat with Main Bot** | **Run an SOP** |
+    | --- | --- | --- |
+    | Best for | Exploring, quick fixes, iterating with the agent | Repeatable delivery with fixed stages and sign-off |
+    | How it runs | Main Bot opens a conversation workspace (a Docker sandbox with your repos) on demand and calls project roles as subagents | The engine runs Agent, Script, Human-gate and sub-SOP nodes in order, in their own sandbox |
+    | You stay in control by | Queuing or steering messages mid-reply, and pausing, resuming or taking over a running SOP from chat | Approving at human gates, sending work back to a chosen step, retrying or rerunning from any node |
+    | Delivers | A PR/MR, or a direct merge into a shared branch (`mode=direct`) | Documents, code or a PR, plus per-node artifacts and logs |
+    
+    Both paths track the same **requirements**, so every change, whether made in chat or by an SOP, links back to what was asked for and counts toward delivery and cost reports.
+    
+      
+        
+        
+      
+    
+    The chat home. Type a request, @ a role, skill, requirement, SOP or repository, and pick the executor, model and permission mode per conversation.
+    
+    ## Why LoopForge
+    
+    Ask a coding agent to "fix this bug" and the result depends on that run. It might skip the plan, forget the tests, review its own code, or stop halfway without anyone noticing. That's fine for a demo, but it isn't how a team ships.
     
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  deepseek-ai/chat-demo
-    ⭐ 1174 stars  |  🍴 190 forks  |  💻 TypeScript  |  📅 2026-11-12
-    🔗 https://github.com/deepseek-ai/chat-demo
+#5  ⚠️风险  Eynnzerr/TelemetryCleaner
+    ⚠️ 命中风险词: poc —— 默认归排除区，需人工确认
+    ⭐ 724 stars  |  🍴 66 forks  |  💻 Kotlin  |  📅 2026-11-11
+    🔗 https://github.com/Eynnzerr/TelemetryCleaner
     📡 来源: 🚀 5天300+星
-    📝 Chat Demo
+    📝 基于 Shizuku 免 Root 清除国产安卓 SystemHelper、RegService 等系统预装隐私数据收集模块
 
     README 摘要:
-    # chat-demo
+    # 遥测清理 · TelemetryCleaner
     
-    English | 简体中文
+    > 运营商为终端入网、自注册、网络运维和故障排查，确有在相应场景收集必要数据的实际需求！本项目仅供学习，用于了解 Android 系统包管理机制。
     
-    A static chat demo powered by the DeepSeek API. No application backend is required: the browser connects directly to the configured API service.
+    TelemetryCleaner 可以检测国行 Android 固件预置的运营商组件，查看各空间的安装状态和权限，并管理卸载与恢复。下载： GitHub Releases
     
-    You can try the app online or download the archive from Releases, extract it, and double-click `index.html` to use it locally without installation or a build. Enter your API key in Settings before your first chat.
+      
+      
+      
+    
+    您可通过不限于以下方式参与贡献，欢迎 PR：
+    1. 提供清单未覆盖的厂商+运营商+包名线索，在 README.md 中补充即可；
+    2. 提供针对某模块的实测与分析报告，不限制是否为 AI 生成，但需保证真实性。放于 docs 目录中即可；
+    3. 协助实现未支持的免 Root 卸载功能（如**现版本不支持部分 vivo 系的电信/移动组件卸载**）；
+    4. 对软件功能的反馈或改进。
+    
+    ## 背景介绍
+    
+    部分国产厂商在国行固件中预置了 `SystemHelper`、`RegService` 等运营商终端管理组件。这些组件在后台静默定时采集数据，用户无感；没有桌面入口，同时无法以常规手段禁用权限和卸载。
+    
+    WiSec 2023 的流量测量还在部分国行样机上观察到运营商组件上报数据，其中小米及 ColorOS 样本的中国移动组件上报了已安装软件列表。 WiSec 2023 实测论文
+    
+    在作者本人的 OPPO 真机上观测到 SystemHelper 有读取定位、设备和 SIM 标识、已安装应用以及按应用统计网络流量，随后向某云端上传的行为，分析详见 SystemHelper 代码与权限分析 by AI。
+    
+    ## 本项目原理
+    
+    Android 10 及以上设备可安装本项目，依赖 Shizuku。先按 Shizuku 启动指南通过 ADB 或无线调试启动 Shizuku，再回到 App 授权并选择需要检查的空间。Android 11 及以上可用无线调试启动。检测完成后，可打开组件详情查看权限，或勾选组件批量操作。
+    
+    ADB 启动的 Shizuku 以 shell 身份代理 Binder 调用。App 直接请求系统包管理服务，避开部分 ROM 对 `pm` 命令行入口的拦截。系统包管理服务仍会执行本机的权限和包状态校验。 Binder 调用实现
+    
+    少数 ROM 会在命令层直接拒绝卸载系统应用，例如返回 `Failure [only root can delete system app for a particular user]`。收到这类系统错误后，App 会以 shell 身份通过 `app_process` 调用隐藏的 `IPackageManager.deletePackageAsUser` 再试一次；重新读取包状态确认失败后，结果页仍显示原始系统错误，不会用兜底流程的错误信息覆盖它。 app_process 兜底实现
+    
+    卸载按选定空间执行，会清除该空间中的组件数据。恢复使用系统保留的 APK。自动清理默认关闭，开启后按配置的周期检查所选空间，只处理自动清理名单内的组件。
+    
+    ## 内置组件清单
+    
+    表中的「未验证」指尚无本人在相应厂商设备上的卸载验证。
+    
+    | 厂商 | 运营商 | 包名 | 卸载验证 |
+    | --- | --- | --- | --- |
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#6  opencoredev/islandcn
+    ⭐ 692 stars  |  🍴 56 forks  |  💻 TypeScript  |  📅 2026-11-13
+    🔗 https://github.com/opencoredev/islandcn
+    📡 来源: 🚀 5天300+星
+    🏷️ dynamic-island, nextjs, react, shadcn, typescript, ui-components
+    📝 The open-source Dynamic Island for React, installed with shadcn.
+
+    README 摘要:
+    # islandcn
+    
+    A Dynamic Island-style component for any React app, installed with shadcn. Show an upload, a timer, a song, a ride on its way, an incoming call or a recording in one island at the top of your app, and shape each activity around your app's own actions.
+    
+    ```bash
+    npx shadcn@latest add https://islandcn.dev/r/island-core.json
+    ```
+    
+    ```tsx
+    "use client";
+    
+    import { Island, IslandProvider, useIsland } from "@/lib/island";
+    
+    // Mount once near the root.
+    
+      
+      
+    ;
+    
+    // Then, from any component inside it:
+    const island = useIsland();
+    const upload = island.start({
+      id: "upload",
+      label: "Uploading report.pdf",
+      compact: { leading: , trailing:  },
+      expanded: { center: report.pdf, bottom:  },
+    });
+    upload.update({ compact: { trailing:  } });
+    upload.end();
+    ```
+    
+    ## What's here
+    
+    - **The engine** (`lib/island/`, registry item `island-core`): the activity stack, four presentations (idle, compact, the split, expanded), springs fitted to frame-by-frame recordings of the real island, long-press, alerts and reduced motion. React only.
+    - **Presets** (`components/islandcn/`): upload, timer, now playing, incoming call, ride or delivery ETA, recording, nearby transfer, battery and the split, each one file on the engine, plus the content kit they share.
+    - **The playground** (`/playground`): build an island for your app from a preset or a blank activity, fire every action, tune the motion and copy the install command and the code.
+    - **The site and docs** (`app/`, `docs/content/`).
+    
+    Coding agents can use the optional `islandcn-skill` registry item as an install helper; see `/docs/agent-skill`.
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#7  Topkiflare74/ai--manus2.0
+    ⭐ 678 stars  |  🍴 5 forks  |  💻 None  |  📅 2026-11-14
+    🔗 https://github.com/Topkiflare74/ai--manus2.0
+    📡 来源: 🚀 5天300+星
+    🏷️ ai, ai-agents, ai-sdk, anthropic, chatbot, function-calling, gemeni, generative-ai, llm, multimodal
+    📝 AI Manus is a general-purpose AI Agent system that supports running various tools and operations in a sandbox environment.
+
+    README 摘要:
+    # Manus - Autonomous AI Agent
+    
+    PROMO2026
+    ---
+    
+    ## Manus Highlights
+    
+    - **Autonomous Code Execution:** Manus AI agent runs code on its own to complete tasks, so you can focus on decisions instead of repetitive typing and debugging.
+    - **Browser Control Made Simple:** Manus browser control lets the agent navigate websites, fill forms, and gather information without you manually clicking through every page.
+    - **Task Automation For Daily Life:** Manus autonomous tasks handle small but time-consuming jobs, from organizing research to scheduling reminders, keeping your day running smoothly.
+    - **Personal Assistant That Works Quietly:** Manus personal assistant stays ready in the background, responding when you need help with study, home projects, or light work tasks.
+    - **Code And Browser In One Flow:** Manus code automation connects scripting with real browser actions, so your workflows move from idea to result without switching between tools.
+    
+    ---
+    
+    ## What Is Manus
+    
+    Manus is an autonomous AI agent designed to run code and control a browser on your behalf. Instead of acting like a simple chatbot that only answers questions, Manus AI agent takes action. It can write and execute scripts, open web pages, interact with elements, and carry out multi-step tasks with minimal supervision. This makes Manus code automation useful for anyone who wants to reduce manual effort without learning a full programming stack.
+    
+    The core idea behind Manus browser control is practical freedom. You describe what you need, and the agent figures out the steps. Whether that means checking a website for updated information, filling out a repetitive form, or testing a small script, Manus autonomous tasks turn your instructions into completed actions. Manus personal assistant works quietly in the background, ready whenever you need to delegate a small but annoying job.
+    
+    Manus is not a heavy studio suite or a complex enterprise platform. It is a focused helper built for home, study, and small tasks. Students can use Manus code automation to organize research notes or run quick calculations. Remote workers can rely on Manus browser control to gather data from multiple pages. Anyone juggling several small projects can let Manus autonomous tasks handle the repetitive parts while they focus on the parts that need human judgment.
+    
+    Over longer sessions, Manus personal assistant proves its value through consistency. You do not need to re-explain the same workflow every time. Manus AI agent remembers th
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#8  WarriorRemember/IPTV_Player_2.0
+    ⭐ 673 stars  |  🍴 12 forks  |  💻 Rust  |  📅 2026-11-14
+    🔗 https://github.com/WarriorRemember/IPTV_Player_2.0
+    📡 来源: 🚀 5天300+星
+    🏷️ dash, ip-tv, iptv, iptv-channels, iptv-m3u8, iptv-player, iptv-player-application, iptvtools, m3u, mag
+    📝 🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes. 
+
+    README 摘要:
+    # 📺 MegaCubo Free – Stream Live TV Channels in 4K Without Limits [2026]
+    
+      
+      
+      
+      
+      
+    
+      
+    
+      
+        
+      
+    
+     
+    
+    ---
+    
+    ## 🎴 Feature Cards
+    
+      
+        
+          
+        
+        
+          
+        
+        
+          
+        
+      
+    
+    ---
+    
+    ## 🎯 What Is MegaCubo Free?
+    
+    **MegaCubo Free** is a powerful IPTV player that gives you access to thousands of free TV channels from around the world in stunning 4K quality. Whether you're into news, sports, movies, or documentaries, MegaCubo Free has something for everyone.
+    
+    **No more:**
+    - ❌ Expensive cable subscriptions
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#9  trackboatwrightplan/GitHub-Copilot-app
+    ⭐ 672 stars  |  🍴 12 forks  |  💻 None  |  📅 2026-11-14
+    🔗 https://github.com/trackboatwrightplan/GitHub-Copilot-app
+    📡 来源: 🚀 5天300+星
+    🏷️ adminlte, agent-skills, ai, awesome, chatgpt, copilot, github-copilot, hacktoberfest, microsoft-copilot, openai
+    📝 The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories. 
+
+    README 摘要:
+    # GitHub Copilot app
+    
+    The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.
+    
+      
+        
+      
+    
+    https://github.com/user-attachments/assets/50f215b5-f708-444e-83f7-3303bfa97963
+    
+    ## The GitHub Copilot app
+    
+    The GitHub Copilot app is an agent-native desktop experience for managing software work from idea to pull request. It gives you a single control center for finding the right work to pick up, starting and steering agents, reviewing progress, and landing changes across repositories without constantly switching between terminals, editors, browser tabs, and GitHub pages.
+    
+    The app is built for parallel agent-driven development. Each local session runs in its own isolated git worktree, and cloud sessions let agents keep working in isolated GitHub-hosted environments that you can pick up from anywhere. That means you can have Copilot investigate bugs, implement issues, address review feedback, or explore changes side by side without branches or files colliding.
+    
+    Canvases turn agent work into shared, inspectable surfaces. Instead of burying plans, terminals, browser previews, diffs, and workflow state in a chat thread, canvases give you a place to see what an agent is doing, edit or redirect the work, and verify progress in context.
+    
+    But we also know as developers, much our time has always been devoted to tasks that aren't 'just' writing code. My Work brings together sessions, issues, pull requests, and repository context so you can decide what needs attention next. Automations turn repeatable prompts and workflows into scheduled or background tasks. Agent Merge helps carry pull requests through review, checks, and merge conditions so you stay focused on judgment, quality, and delivery.
     
     ## Getting started
     
-    Install Node.js 22.12+ and pnpm, then run:
+    ### Prerequisites
     
-    ```sh
-    git clone https://github.com/deepseek-ai/chat-demo.git
-    cd chat-demo
-    pnpm install
-    pnpm dev
-    ```
+    - Git
+    - A GitHub Copilot plan — any plan works, including Copilot Free and GitHub Copilot Student. No Copilot plan? You can still use the app by bringing your own key (BYOK) with your own model provider.
     
-    Open http://localhost:8090.
+    ### Install
     
-    To build the static site:
+    Download the app for your platform:
     
-    ```sh
-    pnpm build
-    ```
+    You can also browse all builds on the Releases page.
     
-    The output is written to `dist/`. Deploy it to a static web server or open `dist/index.html` directly. Opening the file directly requires browser support for storage on `file://` pages and an API service that permits their cross-origin requests.
+    For setup and a walkthrough of your first session, see the documentation.
     
-    ## Features
+    ## This repository
     
-    - Multiple conversations with automatic titles, renaming, and deletion; edit prompts, regenerate replies, and switch between message branches.
-    - Streaming replies, deep thinking, smart search, link reading, and source citations; stop generation or continue eligible replies.
-    - Upload, paste, or drag and drop attachments; use voice input and read replies aloud. A live audio spectrum appears in the first row of the input area while recording on mobile.
-    - Markdown, syntax highlighting, KaTeX math, and Mermaid diagrams.
-    - Simplified Chinese and English, light and dark themes, mobile layouts, location settings, and chat history import and export.
+    This repo is the public home for the GitHub Copilot app. Use it to:
     
-    ## Data and storage
-    
-    Your API key and settings are stored in the browser's localStorage. Conversations and original attachments are stored in IndexedDB. Local data is isolated by browser profile and site origin. Sending messages, uploading attachments, and using speech features sends the relevant content to the configured API service.
+    - Download releases from the Releases page
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#9  JDhruv14/line-art-animation
-    ⭐ 678 stars  |  🍴 108 forks  |  💻 TypeScript  |  📅 2026-11-10
-    🔗 https://github.com/JDhruv14/line-art-animation
+#10  TrapAccountant/GitHub-Copilot-app
+    ⭐ 670 stars  |  🍴 12 forks  |  💻 None  |  📅 2026-11-14
+    🔗 https://github.com/TrapAccountant/GitHub-Copilot-app
     📡 来源: 🚀 5天300+星
-    🏷️ claude-skill, line-art, svg-animation, typescript
-    📝 A Claude skill and TypeScript library for animated line-art SVG components: ink figures that walk and react, scenes with a day/night cycle.
+    🏷️ adminlte, agent-skills, ai, awesome, chatgpt, copilot, github-copilot, hacktoberfest, microsoft-copilot, openai
+    📝 The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories. 
 
     README 摘要:
-    # line-art-animation
+    # GitHub Copilot app
     
-    A Claude skill and a small TypeScript library for animated line-art components:
-    ink-on-paper figures that walk, ride and react, in scenes that run from day to night.
-    Everything is drawn live in SVG, so it stays sharp at any size and responds to the
-    pointer.
+    The GitHub Copilot app is an agent-native desktop experience for finding, running, steering, and landing software work across your GitHub repositories.
     
-    | Day | Night |
-    |---|---|
-    |  |  |
-    
-    ## What's in the repo
-    
-    | | |
-    |---|---|
-    | `SKILL.md`, `references/` | The skill: workflow, the rules that make the style work, and guides for style, motion, scenes, verification, matching a reference clip and rendering video. |
-    | `lib/` | Four dependency-free TypeScript modules: drawing primitives (`ink.ts`), a walk/run solver (`gait.ts`), springs, pendulums and wind (`motion.ts`), and a time-of-day palette (`daynight.ts`). |
-    | `examples/walker/` | One figure in about 150 lines: a man with a briefcase walks across the card; click him and he tips his hat. |
-    | `examples/village/` | A full scene: a street of machiya, a tea house and a bath house by a canal, villagers on schedules, a cat, birds, a boatman, lit windows and reflections, about a dozen interactions. |
-    | `scripts/` | Deterministic frame capture for video, and tools for measuring a reference clip. |
-    
-    ## Install the skill
-    
-    For Claude Code, clone it into your skills folder:
-    
-    ```sh
-    git clone https://github.com/JDhruv14/line-art-animation ~/.claude/skills/line-art-animation
-    ```
-    
-    or into `.claude/skills/` inside a single project. Then ask for what you want, for example:
-    
-    - "Make a line art animation of a bakery at dawn: a baker carrying trays, steam from the oven, a cat in the window."
-    - "Turn this clip into a looping line-art component, matching its walk exactly." (attach or link the clip)
-    - "Add a day-night cycle to the scene and render a 30-second 1080p video."
-    
-    Claude reads `SKILL.md`, copies `lib/` into your project, shows one figure for approval
-    before building the rest, and checks motion frame by frame before handing it over.
-    
-    ## Run the examples
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#10  DevedevT/FFmpeg-GUI-Editor-Windows
-    ⭐ 541 stars  |  🍴 0 forks  |  💻 Visual Basic .NET  |  📅 2026-11-12
-    🔗 https://github.com/DevedevT/FFmpeg-GUI-Editor-Windows
-    📡 来源: 🚀 5天300+星
-    🏷️ converter, ffmpeg, ffmpeg-command, ffmpeg-gui, ffmpeg-libraries, ffmpeg-script, gui, gui-application, image-compression, media-converter
-    📝 Lightweight portable FFmpeg GUI & lossless video trimmer for Windows (ready-to-use .exe). Supports English, Russian, Chinese, German, French & Italian.
-
-    README 摘要:
-    # FFmpeg-GUI-Editor-Windows — Ready-to-Use Free Portable Video Editor (.exe)
-    
-    **FFmpeg-GUI-Editor-Windows** is a lightweight, fast, and **free open-source video editor for Windows 10 and Windows 11** that works as an intuitive graphical user interface (**FFmpeg GUI**). Built specifically for users who want to **download a ready-to-use `.exe` executable** to trim, crop, compress, and convert videos without touching the command line.
-    
-    No installation, no Python setup, no manual `PATH` configuration, and no watermarks. Just download the release files, place them in the same folder, and start editing. Licensed under **GPL v3**.
-    
-    ---
-    
-    ### 📥 Direct Download & Important Setup Instructions (`.exe` + `libvlc.dll`)
-    The release package consists of **two required files**: the main executable (`.exe`) and the media engine library (**`libvlc.dll`**).
-    
-    1. Open the **Releases** page of this repository.
-    2. Download **both files** from the latest release:
-       * **`FFmpeg-GUI-Editor.exe`** (the main application)
-       * **`libvlc.dll`** (required core video playback & rendering library)
-    3. **Important:** Place both files inside the **same folder** on your PC or USB drive (do not separate them).
-    4. Double-click the **`.exe`** file to launch the editor immediately — no installation required.
-    
-    > **⚠️ Note:** Both the `.exe` file and `libvlc.dll` must remain in the exact same directory for the program to start and preview videos properly.
-    
-    ---
-    
-    ### 🖼️ Interface & Quick Visual Guide
-    
-    ---
-    
-    ### 🌍 Multi-Language Interface (6 Languages Built-In)
-    Switch between 6 languages directly in the interface without downloading extra language packs:
-    * 🇬🇧 **English**
-    * 🇷🇺 **Русский** (Russian)
-    * 🇨🇳 **中文** (Chinese)
-    * 🇩🇪 **Deutsch** (German)
-    * 🇫🇷 **Français** (French)
-    * 🇮🇹 **Italiano** (Italiano)
-    
-    ---
-    
-    ### 🎬 Core Video Editing Features
-    * **Lossless Video Trimmer & Cutter:** Cut and trim video start/end points with frame-level precision without re-encoding.
-    * **Smart Video Crop Tool:** Manual crop selection or automatic black-bar removal (**auto-crop**).
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#11  AIRzZ90/study-materials-fork
-    ⭐ 521 stars  |  🍴 723 forks  |  💻 TypeScript  |  📅 2026-11-12
-    🔗 https://github.com/AIRzZ90/study-materials-fork
-    📡 来源: 🚀 5天300+星
-    📝 A cross-platform Tauri 2 interface and interaction practice project
-
-    README 摘要:
-    转载来自：HGhub 源库，请点击小星星
-    
-    # HGhub
-    （FROK不点小星星的人=看黄果也打不出来-哈哈）
-    
-    **基于 Rust 与 Tauri 2 的跨平台界面与交互实践项目。**
-    
-    HGhub 起源于个人对 Tauri 2 和移动端开发的学习与尝试。感谢大家的关注与贡献；项目由个人利用业余时间维护，关注度的增长不会改变维护范围，也不代表服务或支持承诺。
-    
-    ## 维护范围与社区反馈
-    
-    维护者本人后续仅主动维护 **UI/UX、交互细节与用户体验**，不再主动跟进上游数据获取、解析或播放链路适配，不承诺外部接口及相关功能持续可用。
-    
-    **任何主题的 PR 与 Issues 均可提交。**维护者会根据时间与精力低频阅读、酌情响应，并逐项决定是否处理或合并。提交不代表一定获得回复或被采纳；接受某次社区贡献，也不代表维护者恢复该方向的主动开发或承担持续适配承诺。
-    
-    本说明用于交代维护者的工作范围与支持边界，不构成对其他开发者的维护要求，也不代表维护者为第三方贡献、修改版或独立项目提供持续担保。
-    
-    ## 非商业立场
-    
-    本项目采用 PolyForm Noncommercial 1.0.0，**禁止任何商业用途**，包括销售、广告变现、卡密、VIP、付费解锁，以及作为收费产品或服务的一部分使用；具体授权范围以许可证全文为准。
-    
-    维护者**不提供商业授权，不接受任何广告、推广、商务合作或其他合作洽谈**，也未授权任何个人或组织以维护者或本项目名义收费、招揽业务。社区技术贡献与问题反馈不属于商务合作。
-    
-    ## 项目说明与责任边界
-    
-    - 本仓库记录个人技术实践，包含界面、播放、网络请求等实现。维护者不运营内容托管服务，不参与外部音视频内容的制作、上传或经营。
-    - 项目与外部站点、内容提供者及其权利方不存在官方隶属、代理或背书关系。涉及第三方内容、名称或标识时，相关权利仍归各自权利人；代码公开不代表已取得这些内容的使用或传播授权。
-    - 软件按现状提供。在适用法律允许的范围内，维护者不保证其完整性、准确性、安全性、适用性或持续可用性，也不承诺修复、更新或响应期限。
-    - 第三方修改、分发、宣传或经营行为不代表维护者的意见或授权；维护者无法控制独立副本及其后续行为。本项目的信息以本仓库的公开记录为准。
-    - 以上说明用于澄清项目性质、维护范围与授权边界，不替代适用法律，也不排除依法应承担的责任。软件许可证仅涉及相应代码权利，不构成对第三方内容或服务的授权。
-    
-    ## 官方通知与权益反馈
-    
-    维护者尊重各方合法权益，**将积极响应来自上游、GitHub 平台、版权方及其授权代表、有关机构或公众组织的正式通知与合理关切**。此类事项不适用普通功能反馈的低频处理安排。
-    
-    可通过 GitHub Issues或平台正式渠道联系，说明相关主体、涉及内容、具体诉求及可核实依据。涉及个人信息或非公开材料时，可先提出联系请求，再协商适当的沟通方式。
-    
-    收到通知后，维护者会尽快核实、沟通并配合处理，视具体情况采取修改或移除相关内容、暂停相关功能、停止维护、归档或调整仓库可见性等措施。处理范围限于维护者能够控制的仓库和渠道，不承诺控制已独立分发的副本。
-    
-    ## 技术与目录
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#12  makepad/relax
-    ⭐ 514 stars  |  🍴 27 forks  |  💻 Rust  |  📅 2026-11-11
-    🔗 https://github.com/makepad/relax
-    📡 来源: 🚀 5天300+星
-    📝 Relax Rust JIT
-
-    README 摘要:
-    # Relax
-    
-    > [!WARNING]
-    > **Experimental.** Relax is for development iteration: running, testing and live-editing your program while you work on it. Build anything you release with Rust itself: `cargo build --release` with rustc. So far it has been tested mostly in Makepad's own edit-run loop and only lightly on other projects, so expect rough edges elsewhere and please report them.
-    
-    ### Rust without the wait.
-    
-    **rustc builds your program, then you run it. Relax runs your program while it builds it.**
-    
-    Relax is a live compiler and JIT runtime for Rust, written in Rust. It runs a Cargo package straight
-    from source, with no rustc, LLVM or linker in the loop: it compiles each function when it is first
-    called, optimises the hot ones while the program runs, and patches your edits into the running process.
-    
-    ## Relax vs cargo and rustc
-    
-    | | cargo + rustc | **Relax** |
-    | --- | --- | --- |
-    | **Large 3D game, clean checkout → first frame** | ~3 min build, then start | **11 s** on an M4 MacBook, straight from source |
-    | **Same game, second run → first frame** | start the built binary | **1.15 s** on an M4 MacBook, nothing recompiled |
-    | **Small app → first frame** | build it first | **3.7 s** cold, **0.41 s** warm (M4 MacBook) |
-    | **Change one function in a running program** | rebuild, relink, restart: state lost | **patched in**: state kept |
-    | **Save a file → 92 tests re-run** | rebuild the test binary first | **2.2 s** after the save |
-    | **Type and borrow check** | `cargo check`; a build checks everything first | `relax check`; a run type-checks each function before it runs and borrow-checks in the background |
-    | **Speed of optimised code** | 1.00× (`--release`) | **slower: 1.12× the time on x64, 1.24× on arm64** (geomean of 21 workloads) |
-    | **Needs** | rustc, LLVM, a linker | **one Rust library**: 438k lines, 0 crates.io dependencies |
-    
-    Code generation for x86-64 and AArch64; from a fresh clone the repository
-    builds and its tests pass on Linux x86-64 and macOS arm64. Windows isn't tested.
-    
-    ## The tradeoffs
-    
-    - **Slower optimised code.** Overall the code Relax runs is slower than rustc's `--release`: 1.12× the time on x64
-      and 1.24× on arm64 (geomean of 21 workloads), 1.22× and 1.25× against a native-CPU build. It is faster on only
-      a few workloads: see where LLVM still wins.
-    - **More memory.** The compiler, its caches and every code version it publishes share your program's
-      process, and JIT code is append-only. `relax inspect  memory` shows the split, `code` th
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#13  rivet-dev/open-orange
-    ⭐ 471 stars  |  🍴 18 forks  |  💻 TypeScript  |  📅 2026-11-12
-    🔗 https://github.com/rivet-dev/open-orange
-    📡 来源: 🚀 5天300+星
-    🏷️ cloudflare, cloudflare-workers, durable-objects, nodejs, rivet, self-hosted, serverless, sqlite, typescript, wrangler
-    📝 Run Cloudflare Workers and Durable Objects unchanged on AWS, GCP, Azure or your own servers.
-
-    README 摘要:
-    Run Cloudflare Workers anywhere: AWS, Google Cloud, Azure, or your own servers.
-    
-    The same developer experience, without the runtime limits, for a fraction of the bill.
-    
-      Docs ·
-      Deploy ·
-      Migrate ·
-      Bindings ·
-      Examples ·
-      Discord
-    
-    ## What is OpenOrange
-    
-    OpenOrange runs your existing Cloudflare Workers project on AWS, Google Cloud, Azure or your own servers, with no changes to your code. It's built with four goals:
-    
-    - **Zero refactoring, zero-downtime migration**: your Workers and Durable Objects run as they are, and your data moves off Cloudflare while your app keeps serving.
-    - **The same developer experience**: `wrangler dev` becomes `orange dev`, and everything underneath is open source and self-hostable.
-    - **Simpler bills**: you pay for the machines you run on, not Cloudflare's metering or an enterprise contract. Compute is 4.8× cheaper and storage 8.7× cheaper.
-    - **Built for scale**: storage is backed by S3, so scaling out is a matter of adding machines.
-    
-    ## Quickstart
-    
-    You need a Worker project with a `wrangler.jsonc`, `wrangler.json`, or `wrangler.toml` (or use `examples/hello-durable-object`), Node.js 22 or later, and pnpm. Deploying also needs Docker.
-    
-    ### Use a coding agent
-    
-    Paste this into your coding agent (Claude Code, Codex, Cursor, …) from your Worker project:
-    
-    ```text
-    First, add the Rivet MCP (https://mcp.rivet.dev/mcp) to this agent, and ask me to approve the Rivet sign-in. Then run this project's Cloudflare Worker on Rivet with OpenOrange: ask me where it should run (on my machine, on a Rivet cluster, or on my own Rivet Engine), read https://github.com/rivet-dev/open-orange/blob/main/README.md and follow its quickstart. Do not change my app code.
-    ```
-    
-    ### Step 1: Install
-    
-    Install the `orange` CLI globally, then run it in your Worker project. Your code and your Wrangler configuration do not change.
-    
-    ```sh
-    pnpm add -g open-orange
-    ```
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#14  brave-plum-co/leonardo-ai-desktop
-    ⭐ 187 stars  |  🍴 0 forks  |  💻 C++  |  📅 2026-11-14
-    🔗 https://github.com/brave-plum-co/leonardo-ai-desktop
-    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
-    🏷️ ai-art-platform, ai-creative-suite, ai-generation-tools, ai-image-generator, ai-image-tools, generative-ai-art, leonardo-ai-api, leonardo-ai-api-wrapper, leonardo-ai-automation, leonardo-ai-extension
-    📝 Leonardo AI 2026 desktop setup with text-to-image generation using fine-tuned models, canvas editor with inpainting and outpainting, plus real-time generation and image-to-motion for Windows 11
-
-    README 摘要:
-    # 🎨 Leonardo AI 2026: Standalone Offline Build for Windows 11
-    
+      
         
+      
     
-    ## 📦 Intro
+    https://github.com/user-attachments/assets/50f215b5-f708-444e-83f7-3303bfa97963
     
-    This repository distributes a standalone offline Windows x64 build intended for the Leonardo AI workflow. The package is a self-contained deployment bundle that ships the runtime, the asset pipeline, and the local render dependencies required for the generative image workflow, packaged for Windows 10 and 11. It is assembled by independent maintainers and published here as a reproducible distribution artifact.
+    ## The GitHub Copilot app
     
-    The deployment audience for this build includes air-gapped design workstations, bandwidth-constrained lab environments, and teams that require reproducible installs across many machines without touching a network. Because the bundle is offline, it removes the dependency on live model fetching during first-run initialization, which matters when workstations are provisioned in batches.
+    The GitHub Copilot app is an agent-native desktop experience for managing software work from idea to pull request. It gives you a single control center for finding the right work to pick up, starting and steering agents, reviewing progress, and landing changes across repositories without constantly switching between terminals, editors, browser tabs, and GitHub pages.
     
-    This build supports most common image generation formats and bundles the diffusion runtime, the model cache loader, and a portable launcher alongside the standard installed mode. A single `Leonardo AI on Windows` deployment covers both portable and installed configurations, so the same artifact can be used across mixed fleet environments.
+    The app is built for parallel agent-driven development. Each local session runs in its own isolated git worktree, and cloud sessions let agents keep working in isolated GitHub-hosted environments that you can pick up from anywhere. That means you can have Copilot investigate bugs, implement issues, address review feedback, or explore changes side by side without branches or files colliding.
     
-    ## 01 · ⬇️ Download
+    Canvases turn agent work into shared, inspectable surfaces. Instead of burying plans, terminals, browser previews, diffs, and workflow state in a chat thread, canvases give you a place to see what an agent is doing, edit or redirect the work, and verify progress in context.
+    
+    But we also know as developers, much our time has always been devoted to tasks that aren't 'just' writing code. My Work brings together sessions, issues, pull requests, and repository context so you can decide what needs attention next. Automations turn repeatable prompts and workflows into scheduled or background tasks. Agent Merge helps carry pull requests through review, checks, and merge conditions so you stay focused on judgment, quality, and delivery.
+    
+    ## Getting started
+    
+    ### Prerequisites
+    
+    - Git
+    - A GitHub Copilot plan — any plan works, including Copilot Free and GitHub Copilot Student. No Copilot plan? You can still use the app by bringing your own key (BYOK) with your own model provider.
+    
+    ### Install
+    
+    Download the app for your platform:
+    
+    You can also browse all builds on the Releases page.
+    
+    For setup and a walkthrough of your first session, see the documentation.
+    
+    ## This repository
+    
+    This repo is the public home for the GitHub Copilot app. Use it to:
+    
+    - Download releases from the Releases page
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#11  TurquoiseDetective/IPTV_Player_2.0
+    ⭐ 669 stars  |  🍴 12 forks  |  💻 Rust  |  📅 2026-11-14
+    🔗 https://github.com/TurquoiseDetective/IPTV_Player_2.0
+    📡 来源: 🚀 5天300+星
+    🏷️ dash, ip-tv, iptv, iptv-channels, iptv-m3u8, iptv-player, iptv-player-application, iptvtools, m3u, mag
+    📝 🎬 A powerful, intuitive IPTV streaming app supporting M3U playlists, EPG, and community lists. Available for Windows, macOS, Linux, Android & TV Boxes. 
+
+    README 摘要:
+    # 📺 MegaCubo Free – Stream Live TV Channels in 4K Without Limits [2026]
+    
+      
+      
+      
+      
+      
+    
+      
+    
+      
+        
+      
+    
+     
+    
+    ---
+    
+    ## 🎴 Feature Cards
     
       
         
           
+        
+        
+          
+        
+        
           
         
       
     
+    ---
+    
+    ## 🎯 What Is MegaCubo Free?
+    
+    **MegaCubo Free** is a powerful IPTV player that gives you access to thousands of free TV channels from around the world in stunning 4K quality. Whether you're into news, sports, movies, or documentaries, MegaCubo Free has something for everyone.
+    
+    **No more:**
+    - ❌ Expensive cable subscriptions
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#12  ⚠️风险  UlricagglenMonster/aion-2-prompt-rpocket-engineering-suite
+    ⚠️ 命中风险词: poc —— 默认归排除区，需人工确认
+    ⭐ 50 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-11-14
+    🔗 https://github.com/UlricagglenMonster/aion-2-prompt-rpocket-engineering-suite
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | prompt engineering tool
+    🏷️ aion-2, aion-2-2026, aion-2-cheat, aion-2-download, aion-2-dps-meter, aion-2-farming-routes, aion-2-game, aion-2-guide, aion-2-hack, aion-2-kina
+    📝 Aion 2 Trainer Tool: Complete Standalone Setup With Advanced AI Prompt Engineering
+
+    README 摘要:
+    (README 获取失败)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#13  mit-han-lab/EvolvingInfra
+    ⭐ 44 stars  |  🍴 3 forks  |  💻 Python  |  📅 2026-11-10
+    🔗 https://github.com/mit-han-lab/EvolvingInfra
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | LLM agent framework
+    🏷️ distributed-systems, llm, llm-agents, system
+    📝 A inference framework that adapt to diverse and dynamic agent workload
+
+    README 摘要:
+    Evolving Infra: Agent-Adaptive LLM Serving at Scale
+    
+      
+      Corresponding author: hao.kang.sys@gmail.com
+    
+    | Website | Paper | Wiki |
+    
+      
+      
+      
+      
+      
+      
       
     
-    ## 02 · ✨ Features
+    > [!TIP]
+    > **This is an agent-native repository.** Use your coding agent (Claude Code, Codex, ...) to
+    > understand, deploy, benchmark and develop Evolving Infra. It reads `AGENTS.md` for
+    > the rules and the map of the code, and follows a skill for each task.
     
-    **📦 Offline Bundle**
+    ---
     
-    The package includes the runtime, the model loader, and the local asset cache in a single distributable archive.
+    https://github.com/user-attachments/assets/d158ee7e-d554-47f0-a40f-1db343a6cf91
     
-    **🖥️ x64 Native**
+    Evolving Infra is an LLM serving system that adapts itself to the agent workload **purely online**,
+    with **no offline profiling**. Serving coding, math and computer-use agents with GLM-5.2 and Kimi K2.6
+    on up to 256 GB300 GPUs, it reduces mean end-to-end latency by up to **4.1×** and P95 time to
+    first token by up to **14×** compared with NVIDIA Dynamo,
+    with up to **2.7×** its throughput.
     
-    Compiled against the Windows x64 target with native CPU acceleration paths for the raster and diffusion pipelines.
+      
+      Math (Putnam), coding (Claude Code) and computer-use (OSWorld) agents, three concurrency levels each. Lower is better.
     
-    **💼 Portable Mode**
+    ## About
     
-    The build can run from a removable volume without writing to system directories when launched in portable mode.
+    Evolving Infra adapts online through three designs:
     
-    **🔐 SHA256 Manifest**
-    
-    Each release publishes a hash manifest at the artifact root so installations can be verified before first run.
+    1. **Decouple** compute allocation from KV cache management, so online adaptation is cheap: a node
+       switches between prefill and decode **in seconds, without a restart**, and its KV cache stays in
+       a host-memory pool that every node can read.
