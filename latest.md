@@ -1,11 +1,262 @@
-📊 开源日报 — 2026-11-18
-共发现 8 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-11-19
+共发现 11 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  ⚠️风险  huami-dev/GestaltX
+#1  ⚠️风险  astral-sh/uv
+    ⚠️ 命中风险词: bypass —— 默认归排除区，需人工确认
+    ⭐ 92340 stars  |  🍴 3931 forks  |  💻 Rust  |  📅 2023-10-02
+    🔗 https://github.com/astral-sh/uv
+    📡 来源: trending-daily
+    🏷️ packaging, python, resolver, uv
+    📝 An extremely fast Python package and project manager, written in Rust.
+
+    README 摘要:
+    # uv
+    
+    An extremely fast Python package and project manager, written in Rust.
+    
+      
+        
+        
+        
+      
+    
+      Installing Trio's dependencies with a warm cache.
+    
+    ## Highlights
+    
+    - A single tool to replace `pip`, `pip-tools`, `pipx`, `poetry`, `pyenv`, `twine`, `virtualenv`, and
+      more.
+    - 10-100x faster than `pip`.
+    - Provides comprehensive project management, with a
+      universal lockfile.
+    - Runs scripts, with support for
+      inline dependency metadata.
+    - Installs and manages Python versions.
+    - Runs and installs tools published as Python packages.
+    - Includes a pip-compatible interface for a performance boost with a familiar
+      CLI.
+    - Supports Cargo-style workspaces for
+      scalable projects.
+    - Disk-space efficient, with a global cache for
+      dependency deduplication.
+    - Installable without Rust or Python via `curl` or `pip`.
+    - Supports macOS, Linux, and Windows.
+    
+    uv is backed by Astral, the creators of
+    Ruff and ty.
+    
+    ## Installation
+    
+    Install uv with our standalone installers:
+    
+    ```bash
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#2  jquery/jquery
+    ⭐ 60077 stars  |  🍴 20713 forks  |  💻 JavaScript  |  📅 2009-04-03
+    🔗 https://github.com/jquery/jquery
+    📡 来源: trending-daily
+    🏷️ jquery
+    📝 jQuery JavaScript Library
+
+    README 摘要:
+    # jQuery — New Wave JavaScript
+    
+    Meetings are currently held on the matrix.org platform.
+    
+    Meeting minutes can be found at meetings.jquery.org.
+    
+    The latest version of jQuery is available at https://jquery.com/download/.
+    
+    ## Version support
+    
+    | Version | Branch     | Support       |
+    | ------- | ---------- | ------------- |
+    | 4.x     | main       | Full          |
+    | 3.x     | 3.x-stable | Critical-only |
+    | 2.x     | 2.x-stable | None          |
+    | 1.x     | 1.x-stable | None          |
+    
+    jQuery 4.0.0 has been released!
+    
+    The 3.x branch will now only receive critical updates. The 2.x and 1.x branches are no longer supported. We recommend that all users upgrade to the latest version of jQuery to ensure that they have the best performance, security, and features.
+    
+    Commercial support for previous versions is available from HeroDevs or TuxCare.
+    
+    Learn more about our version support.
+    
+    ## Contribution Guides
+    
+    In the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines thoroughly:
+    
+    1. Getting Involved
+    2. Core Style Guide
+    3. Writing Code for jQuery Projects
+    
+    ### References to issues/PRs
+    
+    GitHub issues/PRs are usually referenced via `gh-NUMBER`, where `NUMBER` is the numerical ID of the issue/PR. You can find such an issue/PR under `https://github.com/jquery/jquery/issues/NUMBER`.
+    
+    jQuery has used a different bug tracker - based on Trac - in the past, available under bugs.jquery.com. It is being kept in read only mode so that referring to past discussions is possible. When jQuery source references one of those issues, it uses the pattern `trac-NUMBER`, where `NUMBER` is the numerical ID of the issue. You can find such an issue under `https://bugs.jquery.com/ticket/NUMBER`.
+    
+    ## Environments in which to use jQuery
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#3  appwrite/appwrite
+    ⭐ 58343 stars  |  🍴 5891 forks  |  💻 TypeScript  |  📅 2019-04-08
+    🔗 https://github.com/appwrite/appwrite
+    📡 来源: trending-daily
+    🏷️ android, appwrite, backend, backend-as-a-service, docker, firebase, firewall, flutter, hosting, ios
+    📝 The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more
+
+    README 摘要:
+    Appwrite
+        The open-source cloud for agents and developers. Appwrite is an MCP and agent-first platform for building and scaling apps. Give your agents Auth, Databases, Storage, Functions, Messaging, Realtime, and Hosting, all in one place.
+        
+        
+    
+    English | 简体中文
+    
+    Appwrite is an MCP and agent-first, open-source platform for building and scaling apps. MCP is included, so coding agents can operate on a live Appwrite project. Appwrite is available as a managed cloud platform and can also be self-hosted on infrastructure you control.
+    
+    It is designed for the AI agents in your workflow as well as for developers. Connect Cursor, Claude Code, Codex, and other agents through the hosted MCP server, or integrate an SDK into your app. Modular products stay unified from the first prototype to production scale.
+    
+    Find out more at https://appwrite.io.
+    
+    Table of Contents:
+    
+    - Products
+    - Installation \& Setup
+    - Self-Hosting
+      - Unix
+      - Windows
+        - CMD
+        - PowerShell
+      - Docker API version mismatch
+      - Upgrade from an Older Version
+    - One-Click Setups
+    - Getting Started
+      - Agents
+      - SDKs
+        - Client
+        - Server
+    - Architecture
+    - Contributing
+    - Security
+    - Follow Us
+    - License
+    
+    ## Products
+    
+    - **Appwrite Auth** - Authenticate users securely with email, SMS, OAuth, anonymous sessions, and magic URLs.
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#4  solidjs/solid
+    ⭐ 36706 stars  |  🍴 1191 forks  |  💻 TypeScript  |  📅 2018-04-24
+    🔗 https://github.com/solidjs/solid
+    📡 来源: trending-daily
+    🏷️ declarative, fine-grained, javascript, jsx, performance, proxies, reactive, solid
+    📝 A declarative, efficient, and flexible JavaScript library for building user interfaces.
+
+    README 摘要:
+    **Website • Docs • Tutorial • Playground • Discord**
+    
+    Solid is a declarative JavaScript library for building user interfaces. Instead of a Virtual DOM, it compiles templates to real DOM nodes and updates them with fine-grained reactivity. Declare your state and use it throughout your app — when a piece of state changes, only the code that depends on it re-runs.
+    
+    ## At a glance
+    
+    ```tsx
+    import { createSignal } from "solid-js";
+    import { render } from "@solidjs/web";
+    
+    function Counter() {
+      const [count, setCount] = createSignal(0);
+      const doubled = () => count() * 2;
+    
+      // The component body runs once. Only `{doubled()}` updates when count changes.
+      return  setCount(c => c + 1)}>{doubled()};
+    }
+    
+    render(() => , document.getElementById("app")!);
+    ```
+    
+    Try it in our Playground.
+    
+    Explain this!
+    
+    Solid compiles your JSX to real DOM operations at build time. The component function runs once on mount; reactivity is per-expression, not per-render. The `{doubled()}` expression compiles to a tracked update that only touches that one DOM position when `count()` changes.
+    
+    ```js
+    import { template, delegateEvents, insert } from "@solidjs/web";
+    import { createSignal } from "solid-js";
+    
+    const _tmpl$ = /*#__PURE__*/ template(``);
+    
+    function Counter() {
+      const [count, setCount] = createSignal(0);
+      const doubled = () => count() * 2;
+    
+      return (() => {
+        const _el$ = _tmpl$();
+        _el$._$$click = () => setCount(c => c + 1);
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  openvinotoolkit/openvino
+    ⭐ 11421 stars  |  🍴 3609 forks  |  💻 C++  |  📅 2018-10-15
+    🔗 https://github.com/openvinotoolkit/openvino
+    📡 来源: trending-daily
+    🏷️ ai, computer-vision, deep-learning, deploy-ai, diffusion-models, generative-ai, good-first-issue, inference, llm-inference, natural-language-processing
+    📝 OpenVINO™ is an open source toolkit for optimizing and deploying AI inference
+
+    README 摘要:
+    Open-source software toolkit for optimizing and deploying deep learning models.
+    
+     Documentation • Blog • Key Features • Tutorials • Integrations • Benchmarks • Generative AI
+    
+     
+    
+    - **Inference Optimization**: Boost deep learning performance in computer vision, automatic speech recognition, generative AI, natural language processing with large and small language models, and many other common tasks.
+    - **Flexible Model Support**: Use models trained with popular frameworks such as PyTorch, TensorFlow, ONNX, Keras, PaddlePaddle, and JAX/Flax. Directly integrate models built with transformers and diffusers from the Hugging Face Hub using Optimum Intel. Convert and deploy models without original frameworks.
+    - **Broad Platform Compatibility**: Reduce resource demands and efficiently deploy on a range of platforms from edge to cloud. OpenVINO™ supports inference on CPU (x86, ARM), GPU (Intel integrated & discrete GPU) and AI accelerators (Intel NPU).
+    - **Community and Ecosystem**: Join an active community contributing to the enhancement of deep learning performance across various domains.
+    
+    Check out the OpenVINO Cheat Sheet and Key Features for a quick reference.
+    
+    ## Installation
+    
+    Get your preferred distribution of OpenVINO or use this command for quick installation:
+    
+    ```sh
+    pip install -U openvino
+    ```
+    
+    ### Verify Installation
+    
+    After installation, you can verify OpenVINO is installed correctly by running:
+    
+    ```python
+    import openvino as ov
+    print(ov.__version__)
+    ```
+    
+    Check system requirements and supported devices for detailed information.
+    
+    ## Tutorials and Examples
+    
+    OpenVINO Quickstart example will walk you through the basics of deploying your first model.
+    
+    Learn how to optimize and deploy popular models with the OpenVINO Notebooks 📚:
+    - Create an LLM-powered Chatbot using OpenVINO
+    - YOLOv11 Optimization
+    - Text-to-Image Generation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#6  ⚠️风险  huami1314/GestaltX
     ⚠️ 命中风险词: exploit —— 默认归排除区，需人工确认
-    ⭐ 8210 stars  |  🍴 2705 forks  |  💻 Swift  |  📅 2026-11-09
-    🔗 https://github.com/huami-dev/GestaltX
+    ⭐ 8441 stars  |  🍴 2734 forks  |  💻 Swift  |  📅 2026-11-09
+    🔗 https://github.com/huami1314/GestaltX
     📡 来源: 🚀 两周800+星
     📝 An MobileGestalt editor for iOS 27.x, featuring region-code tweaks, device presets, backups.
 
@@ -39,342 +290,232 @@
     Presets modify capability flags; actual effects depend on the device and OS.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  truefoundry/cognita
-    ⭐ 4407 stars  |  🍴 396 forks  |  💻 Python  |  📅 2023-07-26
-    🔗 https://github.com/truefoundry/cognita
-    📡 来源: 🤖 AI / LLM / RAG | 活跃 | RAG retrieval augmented 
-    🏷️ agent, ai, application, data, deep-learning, fine-tuning, framework, generative-ai, llm, llm-ops
-    📝 RAG (Retrieval Augmented Generation) Framework for building modular, open source applications for production by TrueFoundry 
+#7  Hut-hzf/ung220z-tool
+    ⭐ 1507 stars  |  🍴 361 forks  |  💻 Python  |  📅 2026-11-15
+    🔗 https://github.com/Hut-hzf/ung220z-tool
+    📡 来源: 🚀 5天300+星
+    📝 ung220z-tool 是一个针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。
 
     README 摘要:
-    > [!Note]
-    > This project is no longer actively maintained. We thank all contributors for their contributions.
+    # ung220z-tool
     
-    # Cognita
+    针对 **UNG220Z（九联 / Unionman 中国移动光猫）** 的一键凭据提取工具。
     
-    ## Why use Cognita?
+    > ⚠️ 仅用于**你自己的设备**，用于找回自己忘记的管理密码、迁移宽带配置或安全自查。
+    > 未经授权对他人设备使用属于违法行为，作者不承担任何责任。
     
-    Langchain/LlamaIndex provide easy to use abstractions that can be used for quick experimentation and prototyping on jupyter notebooks. But, when things move to production, there are constraints like the components should be modular, easily scalable and extendable. This is where Cognita comes in action.
-    Cognita uses Langchain/Llamaindex under the hood and provides an organisation to your codebase, where each of the RAG component is modular, API driven and easily extendible. Cognita can be used easily in a local setup, at the same time, offers you a production ready environment along with no-code UI support. Cognita also supports incremental indexing by default.
+    ## 背景
     
-    You can try out Cognita at: https://cognita.truefoundry.com
+    这类光猫的 Web 管理页基于 `.gch` CGI 框架，登录口令由 TR-069 定期轮换，普通用户拿到的密码往往几天就失效。本工具走 Telnet 通道，直接读取设备配置库，拿到**当下有效**的全部凭据。
     
-    # 🎉 What's new in Cognita
+    ## 工作流程
     
-    - [September, 2024] Cognita now has AudioParser (https://github.com/fedirz/faster-whisper-server) and VideoParser (AudioParser + MultimodalParser).
-    - [August, 2024] Cognita has now moved to using pydantic v2.
-    - [July, 2024] Introducing `model gateway` a single file to manage all the models and their configurations.
-    - [June, 2024] Cognita now supports it's own Metadatastore, powered by Prisma and Postgress. You can now use Cognita via UI completely without the need of `local.metadata.yaml` file. You can create collections, data sources, and index them via UI. This makes it easier to use Cognita without any code changes.
-    - [June, 2024] Added one click local deployment of cognita. You can now run the entire cognita system using docker-compose. This makes it easier to test and develop locally.
-    - [May, 2024] Added support for Embedding and Reranking using Infninty Server. You can now use hosted services for variatey embeddings and reranking services available on huggingface. This reduces the burden on the main cognita system and makes it more scalable.
-    - [May, 2024] Cleaned up requirements for optional package installations for vector dbs, parsers, embedders, and rerankers.
-    - [May, 2024] Conditional docker builds with arguments for optional package installations
-    - [April, 2024] Support for multi-modal vision parser using GPT-4
+    ```
+    用户输入账号密码
+       ↓
+    拼出 http:///usr=&psw=&cmd=1&telnet.gch 并打开浏览器（同时脚本直连兜底）
+       ↓
+    Telnet 登录 → root shell
+       ↓
+    sidbg 1 DB decry /userconfig/cfg/db_user_cfg.xml 解密配置
+       ↓
+    提取 Web 账号 / Telnet 口令 / PPPoE / WiFi 密钥 / root 口令
+       ↓
+    打印凭据表 + 落盘日志
+    ```
     
-    # Contents
+    ## 用法
     
-    - Cognita
-      - Why use Cognita?
-    - 🎉 What's new in Cognita
-    - Contents
-      - Introduction
-        - Advantages of using Cognita are:
-        - Features:
-    - :rocket: Quickstart: Running Cognita Locally
-      - :whale: Using Docker compose (recommended)
-      - Cogn
+    ```bash
+    python3 ung220z.py
+    ```
+    
+    会依次询问：
+    
+    ```
+    ※ 用户名和密码通常印在光猫【背面贴纸】上（S/N 标签）
+      形如「用户名：user   密码：xxxxxxxx」，把光猫翻过来就能看到
+    
+    ① 光猫地址 [192.168.1.1]:
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  ersinkoc/phonebox
-    ⭐ 2846 stars  |  🍴 400 forks  |  💻 C#  |  📅 2026-11-07
-    🔗 https://github.com/ersinkoc/phonebox
-    📡 来源: 🚀 两周800+星
-    🏷️ android, claude-code, codex, dashboard, desk-panel, dotnet, linux, macos, old-phone, smart-stack
-    📝 Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 115 widgets for system stats, AI coding, media and automation. USB or paired Wi-Fi. No cloud required.
+#8  boringmarketer/boring-marketing-skills
+    ⭐ 681 stars  |  🍴 253 forks  |  💻 Python  |  📅 2026-11-16
+    🔗 https://github.com/boringmarketer/boring-marketing-skills
+    📡 来源: 🚀 5天300+星
+    🏷️ agent-skills, ai-agents, claude-code, codex, copywriting, local-seo, marketing, seo
+    📝 32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.
 
     README 摘要:
-    PhoneBox
+    # Boring Marketing Skills
     
-      English ·
-      Türkçe ·
-      Deutsch ·
-      Français ·
-      Español ·
-      Italiano ·
-      Português ·
-      Nederlands ·
-      Polski ·
-      Русский ·
-      Tiếng Việt ·
-      中文 (简体)
+    Free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep pack for local businesses and the people who market them.
     
-    Turn an old Android phone into a desk panel for your computer.
-    PC stats, AI coding sessions, music and touch controls over USB or Wi-Fi.
-    Windows, Linux and macOS. No root, PhoneBox account or cloud service required.
+    32 skills for Claude Code, Codex, Cursor and other agents. They were built from real campaigns, and every one works without a paid tool. MIT licensed.
     
-      Try the live demo ·
-      Download ·
-      Quick start
+    Made by James Dickerson (@boringmarketer). More at boringmarketing.com. Need clients to use this on? boringfunnels.com finds local businesses losing customers (I make it). Want agents built for your team? Work with us.
     
-      
-      
-      
-      
-      
+    Want the bigger picture? The free forward-deployed marketing playbook is 49 boards on building the marketing brain your agents run on, with these skills as the context layer.
     
-    Example layouts with demo data.
+    ## Install
     
-    PhoneBox pairs a full-screen **Android app** with a small **desktop agent**. Build your panel in a browser-based
-    visual editor: **123 widgets**, **30 templates**, multiple pages and a live preview. Connect several phones with
-    their own layouts, or switch one phone between paired computers.
+    Any agent (Claude Code, Codex, Cursor and others):
     
-    ## What you can do
+    ```bash
+    npx skills add boringmarketer/boring-marketing-skills
+    ```
     
-    | Use it for | What appears on the phone |
+    Claude Code plugin:
+    
+    ```
+    /plugin marketplace add boringmarketer/boring-marketing-skills
+    /plugin install boring-marketing@boring-marketing-skills
+    ```
+    
+    Then type `/start-here` and name the business. It reads the site and the reviews, writes the brand files every other skill uses, and tells you which skill to run next. The first run takes about 3 minutes.
+    
+    ## The skills
+    
+    Grouped by stage, in the order a customer meets a business.
+    
+    ### Start here
+    
+    | Skill | What it does |
     |---|---|
-    | **PC monitoring** | CPU, GPU, RAM, disks, network and ping; charts, GPU details and process controls |
+    | `start-here` | Reads the business (yours or a client's), writes the brand files, and routes you to the next skill |
+    | `brand-voice` | Pulls the voice from the site and reviews so every page and post sounds like the business |
+    | `positioning-angles` | Finds the angle and the offer that make them the obvious call |
+    | `audience-research` | Reads reviews, forums and competitors for the words customers actually use |
+    | `competitive-intel` | Sizes up the rivals that show up first, including what their customers complain about |
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  gylive/google-ultra
-    ⭐ 2263 stars  |  🍴 831 forks  |  💻 Python  |  📅 2026-11-17
-    🔗 https://github.com/gylive/google-ultra
+#9  Illson/RustText
+    ⭐ 648 stars  |  🍴 2 forks  |  💻 Rust  |  📅 2026-11-16
+    🔗 https://github.com/Illson/RustText
     📡 来源: 🚀 5天300+星
     📝 无描述
 
     README 摘要:
-    # google-ultra
+    # RustText
     
-    简体中文 | English
+    Текстовый редактор и просмотрщик больших логов для Windows x64 на Rust и GPUI Kit.
     
-    Google One 的 AI Ultra 有个 12 个月免费试用的 offer，任何页面上都看不到，只存在于 Play 结算库（BillingClient）的返回值里。这个脚本把「查 offer → 拉起 Play 收银台 → 确认 0 元 → 开通」串成了一条命令。
+    ## Запуск
     
-    原理是借 Google One 自己的进程调 BillingClient，不需要 Xposed，不需要改 APK。
+    Для переносимой сборки распакуйте архив и запустите `rusttext.exe`. Отладочная и релизная сборки запускаются без отдельного окна консоли. Повторный запуск передаёт файлы открытому RustText. Сборка проверена на Windows 11 x64. Для Windows 10 x64 нужна отдельная проверка.
     
-    ## 两个版本
+    ### Сборка из исходников
     
-    **简单版**：一个网页，双击 `web/index.html` 打开，登录 → 绑卡 → 点一下，完事。不用装 Python，不用 root，不用数据线。
+    Нужны Rust с целью `x86_64-pc-windows-msvc`, инструменты C++ и Windows SDK из Visual Studio, а также CMake в `PATH`. Локальная сборка проверена с Rust 1.100.0 и CMake 4.5.0. Версия Rust закреплена в `rust-toolchain.toml`; Cargo по умолчанию собирает не более двух пакетов одновременно.
     
-    **脚本版**：`ultra0.py`，要一台 root 手机和 frida。优点是 offer 从真实客户端取，不依赖浏览器指纹。
-    
-    先试简单版，不行再上脚本。
-    
-    ## 能拿到什么
-    
-    拿到的是 **Ultra 5x，20TB，12 个月 $0**，到期前取消就不用付钱。开通后 Play 订阅页会写「即将扣款 2027-11-17 US$99.99/月」，这是试用结束后的价格，不是现在扣。
-    
-    30TB 那档（20x）也查得到 offer，但 Play 结算时会二次校验，大部分号会弹「您不符合免费试用条件」。这个脚本不会去点它。
-    
-    ## 需要什么
-    
-    一台 root 过的安卓手机，USB 连着电脑。Magisk、KernelSU、APatch 都行，模拟器也行。
-    
-    电脑上要 Python 3.9 以上，外加两个包：
-    
-    ```bash
-    pip3 install frida
+    ```powershell
+    cargo run --locked
+    cargo run --locked -- "C:\путь\к\файлу.txt"
     ```
     
-    adb 用 Android SDK 里的 platform-tools。装好后 `adb devices` 能看到手机就行。没装过的话，Mac 上 `brew install android-platform-tools`，Windows 去下 platform-tools 压缩包，解压后把目录加进 PATH。
-    
-    手机上要开「开发者选项 → USB 调试」，插上后在弹窗里点允许。
-    
-    ## 用法
-    
-    ### 简单版怎么用
-    
+    - Верхнее меню содержит «Файл», «Инструменты» и «Поиск». Открытие и сохранение собраны в меню «Файл»; отдельной панели этих команд нет.
+    - Кнопка «+», двойной щелчок по свободному месту на полосе вкладок или `Ctrl+N` создают пустую вкладку. Пока вкладка не привязана к файлу, её заголовок повторяет первую строку текста в пределах настраиваемого лимита (по умолчанию 10 символов, для пустой строки – «Без имени»). «Файл → Открыть…» или `Ctrl+O` открывает файлы. Файлы также можно передать аргументами запуска или перетащить в окно.
+    - «Файл → Сохранить» (`Ctrl+S`) сохраняет документ, «Файл → Сохранить как…» (`Ctrl+Shift+S`) открывает диалог выбора пути. Для логов эти команды недоступны.
+    - Двойной щелчок по вкладке или `Ctrl+W` закрывает её. `Ctrl+Shift+T` или кнопка «↶» восстанавливают последнюю закрытую вкладку с её позицией и выделением в редакторе либо позицией и настройками просмотра лога. В меню «Файл → Закрытые вкладки» можно выбрать любую из последних 100 закрытых вкладок. История и текст вкладок «Без имени» сохраняются между запусками.
+    - Вкладки из сессии и закрытые черновики загружаются в фоне. Можно переключиться на другую вкладку или нажать «Отменить загрузку». Черновик остаётся в истории для повторного открытия. При восстановлении черновика размером свыше 8 МиБ, с более чем 50 000 строками или со строкой длиннее 64 КиБ RustText открывает постраничный просмотр. «Сохранить копию…» выгружает весь черновик в UTF-8.
+    - Нижняя строка состояния показывает путь или уведомление, состояние сохранения документа, позицию курсора (`Ctrl+G` открывает переход к строке), кодировку и переводы строк.
+    - «Файл → Недавние файлы» показывает 16 последних открытых или сохранённых файлов. После закрытия всех вкладок ли
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  erkamyaman/rust-anything
-    ⭐ 2000 stars  |  🍴 144 forks  |  💻 Rust  |  📅 2026-11-16
-    🔗 https://github.com/erkamyaman/rust-anything
+#10  siliconjungle/shapeshift-labs-ink-studio
+    ⭐ 620 stars  |  🍴 51 forks  |  💻 JavaScript  |  📅 2026-11-16
+    🔗 https://github.com/siliconjungle/shapeshift-labs-ink-studio
     📡 来源: 🚀 5天300+星
-    🏷️ agent-skills, claude-code, cli, code-migration, codex, ffi, golang, java, javascript, mcp
-    📝 Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.
+    📝 Sculpting, animation and simulation toolkit for pixel-art Gaussian splats
 
     README 摘要:
-    rust-anything
+    # @shapeshift-labs/ink-studio
     
-    by erKam Yaman
+    A JavaScript toolkit for sculpting signed-distance solids, baking them into pixel-art Gaussian splats, and making them move, react, break, grow and remember what happened to them. Use it from Node, drive it through the `ink-studio` command, or embed the source bundle in an Inkwell or browser application.
     
-    English · Türkçe · 简体中文 · 繁體中文 · Deutsch · Français · Русский · Українська · 日本語 · 한국어 · Azərbaycanca · Oʻzbekcha · Қазақша · Кыргызча · Türkmençe · Татарча · ئۇيغۇرچە
+    The package includes geometry, materials, lighting, animation, character controls, particles, physics, procedural generation, and retained authoring. Write scenes in JavaScript or JSON, render images through the CPU-based Node and CLI tools, or draw into a canvas with the default WebGL 2 browser renderer. Browser hosts supply the editor UI and advance the scene.
     
-    Rewrite your whole app in Rust. Keep it working the whole way.
+    ## Contents
     
-    CLIs, servers and libraries, piece by piece, checked against the original at every step.
+    - Install and run
+    - First sculpted scene
+    - Using the library in Node
+    - Scene lifecycle and splat data
+    - Geometry and materials
+    - Scenes as JSON
+    - Animation and puppets
+    - Particles and interaction
+    - Physics and persistent effects
+    - Importing meshes
+    - Exporting GLB models
+    - Importing depth maps
+    - Procedural worlds
+    - Retained authoring
+    - Rendering and command reference
+    - View-dependent surface materials
+    - Projected and procedural effects
+    - Reflections, ripples and atmosphere
+    - Embedding and custom scene collections
+    - Browser renderer
+    - Screen transitions
+    - Module reference
+    - Validation and development
     
-    Node.js and TypeScript · Python · C · Go · Ruby · Java · PHP and C# in preview
+    ## Install and run
     
-      
-      
-      
-      
-      
-      
-      
+    Requires **Node 18 or later**. There are no declared runtime dependencies. The package is available from GitHub.
     
-    up to 20x faster · 38,251 recorded cases replayed · 0 mismatches · one command
+    From a checkout:
     
-      
-    
-    **Rewrite your whole app in Rust, one piece at a time.** rust-anything records what your
-    Node.js (TypeScript/JavaScript), Python, C, Go, Ruby or Java app does today, then checks every piece of the
-    Rust rewrite against that recording before it moves on, until the app is pure Rust. CLIs, HTTP
-    servers and libraries; your coding agent (or you) writes the Rust. It can only catch what the
-    recording covers: see What it can't catch. Only need the slow part fast?
-    Port just that, one hot path at a time:
-    
-    | Real workload, same results as the original | Original | With rust-anything |
-    | --- | ---: | ---: |
-    | x18n's sidebar search, 50,000 keys (TypeScript, Node) | 10 ms per query | **0.5 ms: 20x faster** |
-    | The same search in the browser (wasm, one thread) | 10 ms | **0.95 ms: 11.5x** |
-    | `slugify` over 20,000 strings (Python) | 98 ms | **17x faster** |
-    | `Shellwords.shellescape` from Ruby's standard library, 50,000 values | 88 ms | **11.8x faster** |
-    | `Slugify` over 50,000 strings (Go) | 49 ms | **4x faster** |
-    | `slugify` over 50,000 strings (Java) | 43 ms | **3x faster** |
-    
+    ```sh
+    node cli/ink-studio.js help
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  sybil-solutions/inference-optimisation-skill
-    ⭐ 989 stars  |  🍴 85 forks  |  💻 Python  |  📅 2026-11-16
-    🔗 https://github.com/sybil-solutions/inference-optimisation-skill
+#11  YellowLaborerMarket/Gemini-Config-Checker-
+    ⭐ 475 stars  |  🍴 0 forks  |  💻 Makefile  |  📅 2026-11-15
+    🔗 https://github.com/YellowLaborerMarket/Gemini-Config-Checker-
     📡 来源: 🚀 5天300+星
-    🏷️ agent-skill, benchmarking, claude-code, inference, llm, speculative-decoding
-    📝 Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization
+    🏷️ ai, ai-search, aichecker, chatgpt, cli, config-checker, gemeni, gemeni-checker, generative-ai, lim-seo
+    📝 Chain region scanner: find proxy configs that get you into Google AI Studio and Gemini (signed-in browser check, anti-DPI, Windows/macOS/Linux/Android) 
 
     README 摘要:
-    # inference-optimisation
+    English · فارسی
     
-    An agent skill for **hill-climbing the speed of a local LLM server** on any hardware and any quantization. It covers:
+       
+        
+      
     
-    - single-user and concurrent decode
-    - speculative decoding
-    - prefill
-    - KV cache size
-    - startup time and time to first token
+    # Gemini Config Checker
     
-    It works under a memory cap, and every result has to survive a full-context stability check.
+    Find proxy configs that actually get you into **Google AI Studio and Gemini**, by testing each one the way a person would: in a
+    *signed-in* browser, through the route you will really use.
     
-    It encodes how we actually got these speedups. It is not a list of flags. The workflow:
+    > **Version 0.1.0, early pre-release.** It works end to end on Windows (the only platform it has been run on so far). The macOS,
+    > Linux and Android builds come from the CI pipeline and have not been exercised on real devices yet. Please report what you find.
     
-    1. Compute the theoretical ceiling.
-    2. Change one thing at a time.
-    3. Measure against interleaved controls.
-    4. Log every result, including the failures.
-    5. Gate on long-context retrieval.
-    6. Qualify a clean, pinned build before publishing.
+    ## Two modes, one switch
     
-    It works with Claude Code and any agent that loads `SKILL.md`-style skills. Any model can also follow it from `PROMPT.md`.
+    The big **Simple / Advanced** switch in the header decides what is tested. The route diagram under the title morphs to show it.
     
-    ## What we've been able to accomplish
-    
-    Results from the hill-climbs this skill was distilled from. Every number was measured on the hardware named; see the linked sources for methods and raw data.
-    
-    | Hardware | Model / quant / engine | Before → after |
+    | | **Simple** | **Advanced** |
     |---|---|---|
-    | **Intel Arc B390 iGPU** (laptop, 64 GB unified LPDDR5X, ~115 GB/s) | Ornith-1.5-35B-A3B, EXL3 4 bpw, SGLang XPU + MTP | Decode, 1 user: 43.6 → **53 tok/s** (median)Decode, 4 users: 84.7 → **103 tok/s**Prefill 32K: 1,037 → **1,660 tok/s**Prefill 256K: 297 → **628 tok/s** (2.1×)KV cache: 264K tokens → **4 × 256K**Startup: 113 → **43 s**Registry Lab gates: decode 28.6 → **41.0**, prefill 255 → **667** |
-    | **Intel Arc Pro B70** | Qwen3.8-27B, EXL3 4 bpw, vLLM + custom XPU kernels | Decode: **91.2 tok/s** at 1 user, **365** at 16 (prose, thinking on)Same card with llama.cpp Q4_K_M: 25.0Prefill 4K/32K/128K/254K: 1,654/1,434/928/650 → **2,421/2,259/1,415/911**Agent-session replay: 193 → **147 s** |
-    | **Intel Arc Pro B70** | Same model, SGLang + the same kernels | Decode, 1 user: **82.6 tok/s**, vs vLLM 75.7 on the same card and day |
-    | **RTX 3090** | Qwen3.8-27B EXL3 3 bpw + MTP | **96.2 tok/s** prose / **141.1** code, 1 user |
-    | **RTX 3090** | Qwen3.6-35B-A3B EXL3 3 bpw + MTP | **251.7 / 357.9 tok/s**, 1 user |
-    | **RTX 3090** | Flash-Next EXL3, 256K context | MTP: 45.5 → **65.6 tok/s** |
-    | **4× H200 NVL** | DeepSeek-V4.1-Flash, vLLM + speculative decoding | Crashed under load → **229.1 tok/s** decode, **17,546 tok/s** prefill; all six gates pass |
+    | Question it answers | *Which of my configs work?* | *Which free configs work through my config?* |
+    | Route | you → **config** → AI Studio / Gemini | you → **base config** → **free config** → AI Studio / Gemini |
+    | You provide | your configs (links, a subscription URL or base64), or pick a ready-made free list | one working base config, plus a free list or pasted configs |
+    | Anti-DPI profile is applied to | every config under test (each one connects from your machine) | the base config's first hop (free configs run inside its tunnel) |
+    | Typical use | check a pile of configs you already have; test a config before you rely on it | your Cloudflare config works, but you need a *different exit* that Google accepts |
+    | Export | links, base64, a full Xray config of one config | links, base64, a chain Xray config (`base → free`) |
     
-    Sources:
+    ## Contents
+    Credits · Why a signed-in browser · Download and install ·
+    User guide · Troubleshooting · Privacy and security ·
+    Build from source · Releases and CI
     
-    - local-ai-registry:
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  chuanqisun/spaceship
-    ⭐ 781 stars  |  🍴 77 forks  |  💻 HTML  |  📅 2026-11-16
-    🔗 https://github.com/chuanqisun/spaceship
-    📡 来源: 🚀 5天300+星
-    📝 Steer your ideas in realtime
-
-    README 摘要:
-    # 🕹️ Spaceship IDE
+    ## Credits and references
     
-    Steer your ideas in realtime, space pilot style!
+    This project exists because of other people's work. Please go and use and star them.
     
-    ## Demos
-    
-    Watch on Instagram and YouTube. You can try the simulator at https://chuanqisun.github.io/spaceship/ with the option to go live with your API keys for Cerebras and Gemini. Keys stay in your browser local storage. Do it at your own risk.
-    
-    ## Conjecture
-    
-    > In the near future, LLM and Decision Models will reach 60 FPS interactivity.
-    
-    When that happens, what new interaction paradigms will unlock? This project demonstrates plausible and desirable interactions for that future.
-    
-    1. **Focus monitor**: can we visualize what LLM is paying attention to, and use that to guide human's focus towards what's important?
-    
-       
-    
-    2. **Attention lock**: can we force LLM to pay more attention to specific phrases so as to bias its future behavior?
-    
-       
-    
-    3. **Future Vector Steering**: can we decompose the task into eigenvectors, independently tune each, and re-compose them to influence the incoming text?
-    
-       
-    
-    4. **Realtime re-generation**: when text generation is cheap and fast, can we explore alternative futures by scrubbing?
-    
-       
-    
-    ## Design process
-    
-    I used Claude Code for most of the implementation but stayed hands-on for the UI/UX. I iterate using interactive style swatch, a technique where I prompt AI to give me diverse options of designs, I provide feedback, and it iterates. You can see the design artifacts in the extra page.
-    
-    To achieve the realtime experience, I have to use agreesive speculative generation and manage cache invalidation based on user interactions. For example, when the main knob moves backward, I have to empty future texts and cancel ongoing requests. There are many considerations like this throughout the system and that took a lot of human judgement - claude didn't one shot them.
-    
-    ## Theory
-    
-    I'm currently focusing on systems that help human shape ideas in realtime. This project is a small step towards my upcoming thesis at the MIT Media Lab, where I investigate how semantic and symoblic systems can be coupled to enhance human creativity, agency, and joy of craft.
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  superwyh/Game-Localization-Engineering
-    ⭐ 74 stars  |  🍴 1 forks  |  💻 Python  |  📅 2026-11-14
-    🔗 https://github.com/superwyh/Game-Localization-Engineering
-    📡 来源: 🌍 本地化/多语言 | 新建 | localization i18n transl
-    🏷️ agent-skills, codex, game-development, game-localization, i18n, l10n, localization, python, quality-assurance, translation
-    📝 Engineering-focused game localization for coding agents: contextual translation, naturalness review, engine integration, QA, and detailed developer reports.
-
-    README 摘要:
-    # Game Localization Engineering
-    
-    **English** · 简体中文 · 繁體中文 · 日本語 · 한국어 · Français · Deutsch · Español (ES) · Português (BR) · All languages
-    
-    ## Install with your agent
-    
-    Copy this prompt into your coding agent:
-    
-    ```text
-    Install the game-localization skill from this repository:
-    https://github.com/superwyh/Game-Localization-Engineering
-    
-    Locate game-localization/SKILL.md and preserve the complete folder.
-    Use the current agent’s supported user-level skill directory.
-    Check existing local changes before updating.
-    Verify Python 3.10+ and run scripts/check_package.py in the installed package.
-    Report the installation path, check results, and invocation method.
-    ```
-    
-    Game Localization Engineering is a self-contained skill for translating game projects, preserving resource integrity, reviewing updates, and producing a detailed developer handoff. The agent translates using the game’s context; bundled Python tools manage extraction, review records, structural checks, staging, integration, and recovery.
-    
-    ## Capabilities
-    
-    | Capability | What it handles |
+    | Project | What it gave us |
     |---|---|
-    | Context and voice | Terminology by concept; speaker, addressee and story-stage voice; UI, dialogue, subtitles, items, quests, humor and linked puzzle clues. |
-    | Resource protection | Stable IDs, parameters, markup, protected literals, source revisions and metadata. Direct adapters for flat JSON maps, CSV and TSV. |
-    | Incremental updates | Retain unchanged translations, mark changed source/context/guidance as stale, keep the original translation basis, and preserve removed entries for recovery. |
-    | Returned reviews | Export CSV packets; match reordered rows by ID; detect competing edits, changed source fields and concurrent local changes before writing. |
-    | Guarded integration | Stage outputs, inspect per-ID changes, check destination hashes, retain backups and refuse rollback over later developer edits. |
-    | Coverage and LQA | Separate logical messages, physical resource slots and build-bound scene evidence; validate layout, switching, input, fonts and accessibility when applicable. |
-    | Scoped compliance | Off by default. Enable triage or release review only for selected markets, platforms and mechanics, using local versioned evidence. |
-    | Developer delivery | Full source/target comparison plus decisions, file changes, actual checks, unresolved issues, exclusions and a concrete verification checklist. |
-    
-    ## Naturalness and translation post-editing
-    
-    Review awkward phrasing, sou
+    | **0xRadikal/Free-v2ray-Configs** | The auto-updated lists of free configs (`verified`, `fast`, `secure`, ...) that this tool scans |
+    | **patterniha** | PattN (Windows / Linux / macOS client) and PattNG (Android): the anti-DPI recipe, plus the fragment `finalmask` semantics from his Xray-core fork that our fragmenting forwarder reproduces |
