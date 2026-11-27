@@ -1,285 +1,234 @@
-📊 开源日报 — 2026-11-26
-共发现 6 个新项目（已自动过滤历史记录）
+📊 开源日报 — 2026-11-27
+共发现 5 个新项目（已自动过滤历史记录）
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#1  n8n-io/nod
-    ⭐ 3688 stars  |  🍴 585 forks  |  💻 TypeScript  |  📅 2026-09-25
-    🔗 https://github.com/n8n-io/nod
+#1  obsidianmd/obsidian-skills
+    ⭐ 54147 stars  |  🍴 3852 forks  |  💻 Shell  |  📅 2026-01-02
+    🔗 https://github.com/obsidianmd/obsidian-skills
     📡 来源: trending-weekly
-    🏷️ agents, ai-agent, ai-assistant, anthropic, automation, browser-automation, computer-use, electron, llm, local-first
-    📝 Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.
+    🏷️ agents, agentskills, bases, chatgpt, claude, claude-code, claude-skills, cli, codex, defuddle
+    📝 Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.
 
     README 摘要:
-    It chases invoices, preps your calls and cancels trials, on real websites.
-      It runs on your machine with the model you choose, and asks before it acts for you.
+    Agent Skills for use with Obsidian.
     
-      
-      
-      
-      
-      
-      
+    These skills follow the Agent Skills specification, so they work with any agent that supports skills, including Claude Code, Claude, ChatGPT, Antigravity, Cursor, GitHub Copilot, Grok Bot, Hermes Agent, Kiro, Muse, OpenCode, and many more.
     
-      macOS 14+ (Apple silicon or Intel) · Windows 11 preview · Linux x64 preview · Free and open source · ChatGPT Plus or Pro, or an AI key
+    ## Installation
     
-      
-      
-      
-      
-      
-      
+    Obsidian is an official plugin for Claude, ChatGPT, Dots, Cursor, Grok Bot, Hermes, and Kiro. Most other agents can install the skills from GitHub.
     
-      On your machine · The hard ones · Memory · Your rules · Measured · Under the hood · Next · Answers · Get Nod · Build with us
+    ### Claude
     
-      
-        
-          
-          
-          
-        
-      
+    Add Obsidian from the official Claude plugin directory.
     
-    It gets on with the work across Gmail, Calendar, Slack, Notion, and the web,and asks before it speaks for you.
+    For the Claude Code CLI use:
     
-    Every morning, Nod reads your threads, your calendar, and the client's latest news,then writes a one-page brief for each call.
-    
-    It drafts the reply you owe from your own pricing sheet,and sends it only after you say yes.
-    
-    It checks a page on your schedule and tells you only when something changes.
-    
-      
-        
-          
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#2  Belobug/VIctory-Belobug-AMD
-    ⭐ 1703 stars  |  🍴 305 forks  |  💻 Rust  |  📅 2026-11-25
-    🔗 https://github.com/Belobug/VIctory-Belobug-AMD
-    📡 来源: 🚀 5天300+星
-    📝 无描述
-
-    README 摘要:
-    # VIctory on an RX 7900 XTX
-    
-    A fork of VIctory, a compatibility layer
-    that runs an Xbox Series title natively on Windows from files the user supplies.
-    This one is about **speed on AMD RDNA 3**: the world at 30 frames a second on
-    one PC, without giving up the picture. It is not there yet.
-    
-    **This repository contains no game files, code or assets.** You need your own
-    copy of the game. It is not affiliated with or endorsed by the game's developer
-    or publisher.
-    
-    ## Where it stands (2026-11-25)
-    
-    Tested on one machine only: Windows 11, Intel i9-12900K, 64 GB RAM, Radeon
-    RX 7900 XTX, 1440p, the Series X profile.
-    
-    | | |
-    |---|---|
-    | Menus, videos, loading screens | 30 fps |
-    | Prologue, indoors | 50-75 ms a frame (13-20 fps) |
-    | First mission with the boat | 46-53 ms (19-22 fps) |
-    | Street chase with many cars and people | 100-165 ms (6-10 fps), single frames far longer |
-    | Outdoors on foot, the camp | 60-90 ms |
-    | Flying | 42-57 ms |
-    | Longest session so far | 41 minutes, no crash |
-    | Memory | 40-46 GB of private memory: **64 GB of RAM recommended** |
-    
-    It started at 280 ms a frame in the same scenes two days earlier.
-    
-    What is known to be wrong:
-    
-    - Trees, plants and far buildings flicker outdoors in some places.
-    - Rooms with little direct light are too dark without `-RayTracing`.
-    - Textures of what just came into view appear late while the title streams.
-    - The first run with a new driver or a new build stutters while the driver makes
-      pipelines (`victory warm` makes them ahead).
-    - Recording a frame in the world makes the title's own watchdog end it.
-    
-    ## How to run it
-    
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#3  crhywun/g1-acq
-    ⭐ 1415 stars  |  🍴 338 forks  |  💻 JavaScript  |  📅 2026-11-22
-    🔗 https://github.com/crhywun/g1-acq
-    📡 来源: 🚀 5天300+星
-    📝 无描述
-
-    README 摘要:
-    # g1-acq
-    
-    > 💬 **AI羊毛交流群**:https://t.me/muihbb —— 交流 AI 优惠、订阅羊毛
-    
-    Google One（iOS）订阅入口的商品 ID 改写与采集工具，适用于 **Shadowrocket / 小火箭**。
-    
-    **v7.11.0 主模块为 G1 ACQ SKU 管理，新增「1 元开 Pro」预制模板，目标命名空间支持 com.google.gemini.*。** 打开本地报告页，在 **预制映射模板** 中点击 **应用模板**，即可直接合并并保存到手机本地，无需再填源、目标或另点保存。页面继续支持添加、编辑、勾选启用、逐条保存、删除映射和恢复默认；采集列表可预填源，输入框提供已采集 SKU 与模板目标候选。**点击时保存配置，下一次 `/ai?` 响应才使用新规则**，已打开或缓存的方案页需重新进入。
-    
-    默认模式 `discount75` 保留 20TB / 30TB 三个月 75p 和原始 iOS 2TB → `g1.2tb.ai.12months_ip_90p`；应用模板或保存手动规则后为 `custom`，即使模板目标恰好与默认相同。**75p = 75% off、实付 25%、2.5折**。当前改写运行版本为 `g1-acq-v7.11-mappings`，保留原始 SKU 采集、最近 10 次响应、重复诊断与 JSON 导出，无需另装扫描器；完整步骤见 SKU 管理、Pro 12个月优惠测试与采集。
-    
-    采集只读取手机实际收到的匹配响应，**不会主动查询全量 SKU**；旧 ID 再次出现时累加次数。字符串改写与 App Store 商品返回分别记录，商品名称、周期、初次与续费金额按收银台实际显示核对，权益按 Google One 账户实际状态记录。
-    
-    ## 主模块安装地址
-    
-    **G1 ACQ SKU 管理 — 四套预制模板与本地手动映射，保留默认 75p 与 2TB 目标**
-    
-    ```text
-    https://cdn.jsdelivr.net/gh/crhywun/g1-acq@v7.11.0/g1-acq-ultra-discount.sgmodule
+    ```sh
+    claude plugin marketplace add obsidianmd/obsidian-skills
+    claude plugin install obsidian@obsidian-skills
     ```
     
-    | 项目 | 当前主入口 |
-    |---|---|
-    | 当前配置 `configuredMode` | 默认 `discount75`；应用模板或保存手动规则后 `custom` |
-    | 响应脚本 | g1-acq-discount.js，与 g1-acq.js 实现相同 |
-    | 响应运行版本 | `g1-acq-v7.11-mappings` |
-    | 报告脚本 | g1-sku-report-discount.js，与 g1-sku-report.js 实现相同 |
-    | 报告版本 | `v7.11.0` |
-    | 默认 2TB 目标 | `g1.2tb.ai.12months_ip_90p`，无 `.acq` |
-    | 本地数据 | 沿用 v7.9 的三个 schema 1 键；模板结果仍保存在 `g1.sku.mappings.v1`，无数据迁移 |
+    From within a Claude Code session:
     
-    首次安装时在小火箭模块管理中添加上方地址并启用。升级顺序为：**关闭旧模块 → 安装新地址 → 只开启 G1 ACQ SKU 管理一个改写入口 → 重新连接小火箭 → 重新打开 Google App 的方案页**。曾安装 **G1 ACQ Ultra 75p**、**G1 ACQ**、**G1 ACQ Ultra 一折**、**G1 ACQ Ultra 试用**、独立 **G1 SKU Scan**、**G1 Pro Annual Test** 或其它改写副本时，停用旧副本，避免重复计数或改写。
+    ```sh
+    /plugin marketplace add obsidianmd/obsidian-skills
+    /plugin install obsidian@obsidian-skills
+    ```
     
-    安装入口与全部内部脚本固定引用 `@v7.11.0`，无需单独添加脚本。**旧固定链接需换成新地址，不会自动更新。** 当前树保留四个模块，试用模块仍缺席；历史 `v7.10.0` / `v7.9.0` / `v7.8.0` / `v7.7.0` / `v7.6.0` / `v7.5.0` / `v7.4.0` / `v7.3.0` / `v7.2.0` / `v7.1.0` / `v7.0.0` 与 `pro-annual-test-v1` / `pro-annual-test-v2` 标签保持原样，旧试用链接仍指向原内容。
+    To get new skills later, run `claude plugin update obsidian@obsidian-skills`.
     
-    升级沿用 `g1.sku.scan.v1`、`g1.pro.annual.test.v1`、`g1.sku.mappings.v1`，三个键的 `schemaVersion=1` 保持不变，无自动配置迁移；v7.9 已保存的手动规则、累计 SKU、次数、最近 10 次响应和旧执行记录继续保留。当前配置与实际采集、执行记录分别显示，应用模板、保存或恢复规则不重写历史版本、模式、目标与时间。
+    ### ChatGPT
     
-    g1-acq-v7.sgmodule 保留名称 **G1 ACQ**；g1-pro-annual-test.sgmodule 保留名称 **G1 Pro Annual Test** 和仅 `/ai?` 的响应范围，二者使用同一本地映射配置。g1-sku-scan.sgmodule 更新下载 pin 并保留报告请求体配置，扫描实现仍为 `pro-annual-test-v2`，保持响应原文，没有模式或响应事件字段；报告保留其真实旧版本、空模式与缺失历史。四个报告 `http-request` 均设置 `requires-body=1,max-size=0`，供本地表单提交使用。
+    Add Obsidian from the ChatGPT plugin directory. The plugin works in ChatGPT, Codex, and Dots.
     
-    ## 四套预制映射模板
+    To install from this repo instead:
+    
+    ```sh
+    codex plugin marketplace add obsidianmd/obsidian-skills
+    ```
+    
+    Then install Obsidian from the plugin directory in Codex or the ChatGPT desktop app.
     
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#4  avatarmanz/VIctory-7900XTX
-    ⭐ 1346 stars  |  🍴 376 forks  |  💻 Rust  |  📅 2026-11-25
-    🔗 https://github.com/avatarmanz/VIctory-7900XTX
+#2  alesha-pro/llm.asm
+    ⭐ 1792 stars  |  🍴 277 forks  |  💻 Assembly  |  📅 2026-11-25
+    🔗 https://github.com/alesha-pro/llm.asm
     📡 来源: 🚀 5天300+星
-    📝 Goal: an Xbox Series title (your own dump) at a stable 30+ fps on PC without ray tracing, then higher. Porting, not emulating: renderer patches + ahead-of-time shaders, RX 7900 XTX first. No game files.
+    🏷️ assembly, avx2, bare-metal, llm, machine-learning, nasm, osdev, qwen, transformer, x86-64
+    📝 Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.
 
     README 摘要:
-    # VIctory on an RX 7900 XTX
+    # llm.asm
     
-    A fork of VIctory, a compatibility layer
-    that runs an Xbox Series title natively on Windows from files the user supplies.
+    **Three complete LLM projects written in 100% pure x86-64 NASM assembly.**
+    Zero C, zero C++, zero Rust, zero libc, zero libm, zero runtime dependencies.
     
-    ## The goal
+    Assembled directly with `nasm` and linked with `ld`. Every math kernel (`expf`, `sincosf`, `RMSNorm`, `RoPE`, `SiLU`, `Softmax`), AVX2+FMA+F16C GEMM/GEMV engine, BPE tokenizer, `clone()`/`futex()` thread pool, bare-metal SMP kernel, analytical backward pass, AdamW optimizer, and live Unicode Braille TUI is hand-written x86-64 assembly (`17,252` lines total across all three projects).
     
-    **A stable 30 fps or more without ray tracing, then as high a frame rate and as
-    low frame times as the PC allows**, on an AMD RX 7900 XTX first and on PCs with
-    32 GB (later 16 GB) of RAM.
+    ## The Trilogy
     
-    The way there is **porting, not emulating**: patching the title's renderer so it
-    behaves the way a PC renderer does, rather than having the layer watch and copy
-    the console's shared memory every frame. Shaders are translated ahead of time
-    into a versioned store that is kept between builds. Ray tracing stays optional
-    and off by default. The picture comes after the frame rate: texture pop-in and
-    lighting that is too bright or too dark when walking indoors are next in line.
-    
-    **This repository contains no game files, code or assets.** You need your own
-    copy of the game. It is not affiliated with or endorsed by the game's developer
-    or publisher.
-    
-    ## Where it stands (2026-11-26)
-    
-    Tested on one machine only: Windows 11, Intel i9-12900K, 64 GB RAM, Radeon
-    RX 7900 XTX, the Series X profile, ray tracing off.
-    
-    | | |
-    |---|---|
-    | City street, renderer patches 1+2 on | about 53 ms a frame (about 19 fps) |
-    | Same scene before the patches | 57-75 ms (13-17 fps) |
-    | Shaders the title uses that translate | all of them (25,790 of 25,985; the rest are unused geometry shaders) |
-    | Memory | about 35 GB of private memory: **64 GB of RAM recommended** for now |
-    
-    It started at 280 ms a frame in the same scenes three days earlier.
-    
-    ### Renderer patches (off by default while they are tested)
-    
-    | Switch | What it does |
-    |---|---|
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#5  Avaneesh-Inamdar/Stream-Tube-Desktop
-    ⭐ 1324 stars  |  🍴 114 forks  |  💻 Rust  |  📅 2026-11-22
-    🔗 https://github.com/Avaneesh-Inamdar/Stream-Tube-Desktop
-    📡 来源: 🚀 5天300+星
-    🏷️ dearrow, desktop-app, gpui, mpv, rust, sponsorblock, windows, youtube, youtube-client
-    📝 Native YouTube client for Windows in Rust, with SponsorBlock, DeArrow and Return YouTube Dislike built in
-
-    README 摘要:
-    Stream Tube
-    
-      A native YouTube client for Windows and Linux, written in Rust.
-      No browser, no ads, no tracking. SponsorBlock, DeArrow and Return YouTube Dislike built in.
-    
-      
-      
-      
-      
-      
-    
-      
-    
-    ## Why
-    
-    I wanted YouTube on my desktop without keeping a browser tab open, and without the
-    ads, autoplaying junk and sponsor reads. The existing options were either Electron
-    apps that eat a gigabyte of RAM or web frontends that break every other week.
-    Stream Tube is a single native app: the UI is drawn on the GPU with
-    GPUI, and video
-    goes through libmpv, so it starts fast and scrolls smoothly even with big feeds.
-    
-    ## What it does
-    
-    **No ads, anywhere**
-    - No pre-roll, mid-roll or overlay ads: the app plays the video stream directly, so YouTube's ads are never loaded
-    - No promoted videos, banners or sponsored cards in Home, search or Shorts
-    - Sponsor reads inside videos are skipped too, with SponsorBlock (below)
-    - Nothing to install or keep updated: it isn't an ad blocker that YouTube can break, ads simply aren't part of how the app plays video
-    
-    **Watching**
-    - Home, Shorts, Subscriptions, Explore categories, channels (including their courses and shows), playlists and search, with search suggestions and your recent searches
-    - A personal Home without an account: "For you" recommends videos related to what you've watched and searched in the app, mixed with new uploads from your subscriptions. Signed in, Home is your own YouTube Home feed
-    - A *Recently uploaded* chip on Home, like youtube.com's: videos from your Home feed and subscriptions uploaded in the last two weeks, newest first
-    - Hover a video title in a grid or list to read the full title
-    - Ctrl+click a link or middle-click a video to open it in a background tab. A video's menu also has *Open in new tab*. Switch with Ctrl+Tab, Ctrl+1…9 or a click. Ctrl+T opens a new tab. Ctrl+W or a middle click on the tab closes it.
-    - Videos made for kids (YouTube Kids) play and download like any other video
-    - Old video annotations are back: notes, speech bubbles and clickable links from YouTube's annotation archive, drawn over the video where they used to be (turn them off in *Settings → Player* or from the player's gear menu)
-    - Arabic, Hebrew and other right-to-left text is shown in the right order
-    - Shorts follow your account's recommendations when you're signed in, or start from the Shorts you watched last
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-#6  EmpressRevolution/aion-2-trainer-tool
-    ⭐ 362 stars  |  🍴 0 forks  |  💻 HTML  |  📅 2026-06-26
-    🔗 https://github.com/EmpressRevolution/aion-2-trainer-tool
-    📡 来源: 🤖 AI / LLM / RAG | 活跃 | prompt engineering tool
-    🏷️ aion-2, aion-2-2026, aion-2-game, aion-2-optimizer, aion-2-trainer, aion-2-trainer-tool, aion2-combat-analysis, aion2-meter, automation, developer-tools
-    📝 Aion 2, an advanced AI language model repository for prompt engineering, offers a pre-configured environment optimized for rapid deployment...
-
-    README 摘要:
-    # Aion 2 Cheat - Windows 10 & 11
-    
-    ## Introduction
-    
-    Aion 2 Cheat is a specialized tool designed for players looking to enhance their experience in the popular MMORPG, Aion 2. This software addresses common challenges that players often face, including difficulties in navigating certain game mechanics, optimizing gameplay performance, and automating repetitive tasks. By utilizing this tool, players can enjoy a more streamlined gaming experience, enabling them to focus on strategy and enjoyment rather than tedious tasks that can detract from the overall fun of the game.
-    
-    With Aion 2 Cheat, users can expect practical capabilities that allow for easier access to game features, improved character performance, and the ability to automate repetitive tasks. This program is geared towards enhancing the overall gaming experience without compromising the integrity of the gameplay. By providing tools that help players maximize their character's potential and automate time-consuming activities, Aion 2 Cheat aims to create a more enjoyable and efficient gaming environment.
+    | Project | Binary | Size | Deps | Key Numbers |
+    |---|---|---:|---:|---|
+    | **01-qwen3-inference/** | `build/asm-llm` | **14,712 B** *(14,008 B `FAST_Q8=0`)* | **0** | Static Linux ELF running `Qwen/Qwen3-0.6B` (Q8_0, built-in BPE tokenizer, GQA + QK-Norm + RoPE + SwiGLU, single-shot & `--chat` multi-turn KV-cache REPL). **`FAST_Q8=1` (default):** **126.8 tok/s** decode at 40T (**20.7 tok/s** at 1T), **+18% to +36% faster than `llama.cpp` CPU (`Q8_0`) across 1..40T**, **`0.99965`** cosine & **64/64** exact greedy tokens vs PyTorch FP32. |
+    | **02-baremetal-os/** | `build/asm-llm-os.elf` | **24,252 B** *(23,612 B `FAST_Q8=0`)* | **0** | Bootable bare-metal `Qwen3-0.6B` OS with no Linux or Windows. Multiboot 1 -> Long Mode -> AVX2/FMA/F16C -> ACPI/APIC SMP -> VGA + PS/2 + COM1 multi-turn KV-cache chat (`/clear`, `/think`, `/bench`). **74–94 ms** boot, **134.9 tok/s** KVM EPYC (**23.7 tok/s** 1 vCPU, **136.6 tok/s** peak), **55.4 tok/s** live on Proxmox Xeon E5-2670 v3 with **0 GB** disk. |
+    | **03-minigpt-train/** | `build/asm-gpt-train` | **32,944 B** | **0** | From-scratch FP32 Mini-GPT trainer and sampler. Register-blocked `6x16` AVX2+FMA SGEMM, full analytical backward pass (**`1.0000000000`** cosine across all 21 gradient tensors vs PyTorch CPU), decoupled AdamW, **27,662 train tok/s**, live 80x24 Braille TUI, `val_loss 4.19 -> 1.51` on TinyShakespeare in 4 min. |
     
     ---
     
-    ## System Requirements
+    ## Head-to-Head CPU Decode Benchmark: `llm.asm` vs `llama.cpp` (`Qwen3-0.6B Q8_0`)
     
-    | Requirement                  | Details                                         |
-    |------------------------------|-------------------------------------------------|
-    | **Supported Windows Versions** | Windows 10, Windows 11                          |
-    | **Architecture**             | x64                                            |
-    | **Processor**                | Not specified; a modern multi-core processor is recommended for optimal performance. |
-    | **RAM**                      | Not specified; at least 8 GB is recommended for smooth operation. |
-    | **Storage**                  | Not specified; ensure sufficient space is available for installation and updates. |
-    | **Permissions**              | Requires administrative privileges for installation and certain features. |
-    | **Internet Connection**      | Not specified; a stable internet connection is recommended for real-time updates and community support. |
-    | **Dependencies**             | Not specified; ensure Windows is updated to the latest version for best compatibility. |
+    Measured on the same machine (**AMD EPYC 7642**, 47C online, 256 MiB L3, DDR4, CPU-only `-ngl 0`), same model (`Qwen3-0.6B Q8_0`: `613.66 MiB` `.asmbin` v2 FP16-scale vs `604.15 MiB` GGUF `Q8_0`), `34` prompt tokens / `64` generated tokens, `3`-run average:
     
-    ### Additional Notes on System Requirements
+    | Threads | `llm.asm` (`FAST_Q8=0`, FP32 act) | `llama.cpp` (`Q8_0`, `-ngl 0`) | **`llm.asm` (`FAST_Q8=1`, 14.7 KB)** | **vs `llama.cpp`** | **Bare-Metal OS KVM (`FAST_Q8=1`)** |
+    |---:|---:|---:|
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#3  nexu-io/opengame
+    ⭐ 1636 stars  |  🍴 273 forks  |  💻 TypeScript  |  📅 2026-11-25
+    🔗 https://github.com/nexu-io/opengame
+    📡 来源: 🚀 5天300+星
+    🏷️ agent-skills, ai-agents, ai-game-generator, claude-code, codex, deepseek, deepseek-harness, dsh, dsh-plugin, game-development
+    📝 The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D & mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more.
+
+    README 摘要:
+    The First Super Game Agent — Open-Source Full-Stack AI Game Studio
     
-    While the specific hardware requirements are not disclosed, it is important to note that running Aion 2 Cheat effectively will depend on the overall performance of your PC. A system with a modern multi-core processor, at least 8 GB of RAM, and an SSD for faster loading times is sugg
+      
+    
+      
+      
+      
+    
+      
+      
+      
+      
+      
+      
+    
+    Quick Start · Agents · Playable Templates · Why OpenGame · Publish &amp; Monetize · Setup &amp; MCP · Community
+    
+    **English** · 简体中文 · 日本語
+    
+    # Introducing OpenGame
+    
+    OpenGame is **the first open-source Super Game Agent** — turning **DeepSeek (DSH)**, **Claude Code**, **Codex**, or any of your local coding agents into an AI Unreal Engine / Unity and full-stack game studio. Go from a single idea to **AAA-grade 3D worlds** or **monetization-ready viral mini-games** in one end-to-end pipeline.
+    
+    - 🚀 **Build AAA-Grade 3D Games with Your Agent.** Drive full-stack 3D gameplay, art, music, and voice straight from **DeepSeek (DSH)**, **Claude**, **Codex**, or **Gemini** — from one prompt to playable 3D action, racing, and open-world games.
+    - 🎮 **One-Click Remix & Re-style Any Game.** Start from **25 built-in playable templates** (3D, voxel, anime, pixel & 9:16 hits) with full editable source — keep proven mechanics while swapping characters, worlds, and art styles in minutes.
+    - 💰 **Build Games That Earn: Create → Verify → Monetize.** Automated logic checks, balance simulation, headless playtesting, covers, and gameplay trailers — ship live web links, export single-file **9:16 Playable Ads**, and connect publishing paths for **WeChat Mini Games**, **TikTok**, and **Douyin**.
+    - 🔓 **Full-Stack Open Source (BYOA + BYOK).** Code, art, video, music, voice, SFX, and Three.js 3D are all open source — plug in your favorite local agent and own API keys, or connect OpenDesign Go (Black Friday lowest-ever discount, with free access to **DeepSeek V4.1 Flash**, **Seedream**, and more).
+    
+     
+    
+    ## ⚡ Quick Start
+    
+    ### 1. Give one prompt to your local Agent
+    
+    Paste this instruction into **DeepSeek TUI / Harness**, **Claude Code**, **Codex**, **WorkBuddy**, **Cursor**, **Gemini CLI**, or any of the 22 supported local agents:
+    
+    ```text
+    Follow https://github.com/nexu-io/opengame/blob/main/docs/opengame-setup.md to connect OpenGame to this agent and open the Game Studio template gallery.
+    ```
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#4  Reukix/Reloc
+    ⭐ 1126 stars  |  🍴 215 forks  |  💻 Swift  |  📅 2026-11-25
+    🔗 https://github.com/Reukix/Reloc
+    📡 来源: 🚀 5天300+星
+    📝 iOS accessory-level location simulator over local loopback (iAP2 / MFi-v3 / NMEA)
+
+    README 摘要:
+    Reloc
+      面向 iOS 的外设级定位模拟工具
+      
+        基于 Swift、Objective-C 与 Rust FFI 构建 · 通过本机回环实现 iAP2 / MFi-v3 / NMEA 外设定位注入
+      
+      
+        
+        
+        
+      
+    
+    ---
+    
+    ## 简介
+    
+    **Reloc** 是一款运行在 iPhone 本机的外设级定位模拟应用。应用通过外部代理提供的本地回环（`10.7.0.1`）连接系统的 `com.apple.carkit.service` 服务，完成 Remote Pairing / Lockdown 会话协商、iAP2 链路同步、MFi-v3 鉴权与 NMEA-0183（`$GPGGA` / `$GPRMC`）报文流式下发，使系统以标准外设 GPS 身份接收实时坐标。
+    
+    ---
+    
+    ## 核心功能
+    
+    | 模块 | 能力说明 |
+    | :--- | :--- |
+    | **定格定位** | 地图点击选点、关键词搜索、手动输入 WGS-84 坐标、多级反地理编码（`CLGeocoder` → `Nominatim` → `BigDataCloud` 兜底不卡顿）、运行中浏览并热更新定位 |
+    | **多源地图与纠偏** | 默认使用 **Apple 地图（MapKit 原生）** 并支持中国大陆 GCJ-02 ↔ WGS-84 自动双向纠偏；同时内置免 API Key 的 **全球街道图（Esri） / OpenStreetMap / 全球卫星图** 纯原生 WGS-84 瓦片地图（完全脱离 `MKMapView`，无高德字样）；可选 ±0.6 m 自然微漂移 |
+    | **极速触发与优雅恢复** | iAP2 鉴权后延迟唤醒 `CoreLocation` + 自动脉冲订阅 `0xFFFA` + 初始高速锁定突发，首页实时显示外设生效状态；系统缓存顽固时提供 **一键刷新定位服务（PiP 悬浮 5 秒倒计时）**；停止定位时下发 NMEA 失效报文（`quality=0` / `V`）与 iAP2 `RST` 复位包并自动唤醒本机真实 GPS |
+    | **后台保活** | 导航级后台定位保活 + 非零次声音频双保险；支持开关系统「定位服务」刷新缓存后自动重建后台断言，以及断线自动重连 |
+    | **本机配对与导入** | 兼容 `.rppairing` / `.mobiledevicepairing` / `.mobilepair` / `.plist`；原生副本文件选择器避免置灰不可选，支持「用 Reloc 打开」直接导入；iOS 27+ 支持本机一键配对与 **画中画（PiP）悬浮指引窗** 实时展示 6 位配对码 |
+    | **数据与实测** | 收藏夹（支持重命名 / 删除）、最近 30 条使用记录、异常中断一键恢复；内置 `CoreLocation` 实测面板（`isSimulatedBySoftware` / `isProducedByAccessory`）与协议日志筛选 |
+    
+    ---
+    
+    ## 系统兼容性
+    
+    | 设备 / 系统版本 | 日常脱离电脑运行 | 首次获取配对文件方式 | 说明 |
+    | :--- | :---: | :--- | :--- |
+    | **iPhone · iOS 27.0+** | 支持 | **本机一键配对**（免电脑）或导入已有文件 | 通过 `_remotepairing-pairable-host._tcp.` + 画中画悬浮窗完成配对 |
+    | **iPhone · iOS 17.0 – 26.x** | 支持 | **需电脑通过 USB 首次导出**，导入后长期脱离电脑 | iOS 27 之前系统限制陌生主机无线首次配对 |
+    | **iPad（iPadOS）** | **不支持** | — | iPadOS 不支持 CarPlay 且不提供 `com.apple.carkit.service` 外设通道，启动时将自动提示不可用 |
+    
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#5  yzfly/LightRead
+    ⭐ 154 stars  |  🍴 15 forks  |  💻 TypeScript  |  📅 2026-07-05
+    🔗 https://github.com/yzfly/LightRead
+    📡 来源: 📖 阅读/内容平台 | 活跃 | epub reader open source
+    🏷️ android, arxiv, azw3, calibre, cross-platform, djvu, ebook-reader, epub, epub-reader, mobi
+    📝 轻阅 LightRead · 免费开源的全格式电子书阅读器 Free open-source ebook reader: EPUB / PDF / MOBI / AZW3 / FB2 / TXT / DjVu / 漫画 · 点睛阅读、打字机等多种阅读模式 · 听书 TTS · PDF 对照翻译 · Windows / macOS / Linux / Android 多端同步
+
+    README 摘要:
+    # LightRead 轻阅 · 开源免费的全格式电子书阅读器
+    
+    **让想读的书，变成读进去的书。**
+    
+    EPUB / PDF / MOBI / AZW3 / TXT 全格式 · 点睛阅读 · 多种阅读模式 · 听书 · PDF 对照翻译 · 多端同步
+    
+    中文 · English
+    
+    **官网** · **下载桌面版** · **下载安卓 App** · 国内镜像（GitCode） · 使用手册 · 反馈建议
+    
+    Windows · macOS · Linux · Android · iOS（TestFlight 测试版）· 网页 PWA
+    
+    免费、开源、无广告。本地阅读无需账号、无需联网；藏书、进度与笔记默认留在自己的设备上。
+    
+    PDF 翻译 · 点睛阅读 · 书单 · 阅读记录 · 听书与专注
+    
+    ## 一眼看懂轻阅
+    
+    | | |
+    | --- | --- |
+    | 是什么 | 开源、本地优先的电子书与 PDF 阅读器，读书、读论文、听书都在一个应用里 |
+    | 支持设备 | Windows 10 / 11、macOS（Apple 芯片与 Intel）、Linux（deb / rpm / AppImage）、Android（arm64）、网页 PWA |
+    | 支持格式 | EPUB、PDF、MOBI、AZW、AZW3、FB2、TXT、Markdown、HTML、DjVu、CBZ / CBR 漫画，以及代码、日志等纯文本文件 |
+    | 阅读模式 | 点睛阅读（重点词 / 要句标记）、打字机、歌词、仿生阅读、自动翻页与匀速滚动、听书跟读；夜读、护眼、墨水屏、大字、沉浸场景 |
+    | 排版 | 翻页 / 按章滚动 / 跨章连续滚动，单栏 / 双栏，字号、行距、边距、字体、主题随手调；App 支持音量键翻页、PDF 重排 |
+    | 多端 | 轻阅账号或 WebDAV 同步进度、笔记、书签、书单、阅读记录与设置；藏书包导入导出 |
+    | 费用与隐私 | 免费，AGPL-3.0 开源；不需要账号即可使用，联网功能按需开启 |
+    | 不支持 | KFX 与 DRM 加密文件 |
+    
+    ## 手机 App
+    
+    安卓 App 与桌面版共用同一套阅读引擎，界面按手机重新设计：底部标签栏、单手可达的阅读工具栏、底部抽屉面板。
+    
+    | 藏书 | 正文 · 点睛阅读 | 阅读模式 | 排版 · 音量键翻页 |
+    | --- | --- | --- | --- |
+    |  |  |  |  |
+    
+    | 听书 | 书源 | 阅读记录 |
+    | --- | --- | --- |
+    |  |  |  |
